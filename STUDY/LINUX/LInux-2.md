@@ -1,3 +1,3 @@
-# I'm folder1
+# Linux-2
 
 source: `{{ page.path }}`
