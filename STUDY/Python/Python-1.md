@@ -23,7 +23,7 @@ while(my_num != random_num):
 print("count = {}".format(count))
 
 if count <= 5:
-     print("천재")
+    print("천재")
 elif count <= 10:
     print("보통")
 else:

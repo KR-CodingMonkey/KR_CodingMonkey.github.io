@@ -1,7 +1,4 @@
----
-sort: 2
----
 
-# LINUX
+# Linux
 
 source: `{{ page.path }}`
