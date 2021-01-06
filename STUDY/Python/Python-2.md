@@ -1,4 +1,6 @@
-# 단어 개수 세기
+# Python-2
+
+## 단어 개수 세기
 
 ```python
 import re # To use refindall func
