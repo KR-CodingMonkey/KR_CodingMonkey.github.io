@@ -3,7 +3,7 @@ sort : 1
 ---
 
 # Docker란?
-![](https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io/blob/develop/assets/images/Docker-logo1.png)
+![](/assets/images/Docker-logo1.png)
 
 ## Docker
 
