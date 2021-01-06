@@ -1,6 +1,6 @@
 # Python-2
 
-'''python
+```python
 import re # To use refindall func
 
 # file = open('the_little_prince_test.txt', 'r')
@@ -21,4 +21,4 @@ for word in words:
 # print(count_words)
 for word, count in count_words.items():
     print("{0} : {1}".format(word, count))
-'''
+```

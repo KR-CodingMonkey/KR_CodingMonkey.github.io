@@ -1,6 +1,6 @@
 # Python-1
 
-'''python
+```python
 import random
 
 my_num = 0
@@ -28,4 +28,4 @@ elif count <= 10:
 else:
     print("바보")
 
-'''
+```
