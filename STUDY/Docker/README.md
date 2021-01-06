@@ -1,7 +1,4 @@
----
-sort: 2
----
 
-# Docker
+#  Docker
 
 source: `{{ page.path }}`
