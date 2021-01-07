@@ -6,20 +6,22 @@ sort : 1
 ![Docker-logo1](https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png){: width = "50%" height = "50%"}{: .center}
 
 
-## Docker
+# Docker
 
 Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼입니다.
 
-가상화 기술에는 여러가지 방식이 있지만 
-
-![vm-vs-docker](https://user-images.githubusercontent.com/76420201/103851534-5ba5dd00-50ed-11eb-9e00-83e77f2bdbd7.png){: width = "50%" height = "50%"}
-
-
 즉, Docker를 이해하기 위해서는 컨테이너 기술이 무엇인지 먼저 이해해야 합니다.
 
-## 컨테이너
+# 컨테이너
 
 Docker에서 의미하는 컨테이너(Container)란 프로그램(소프트웨어)을 담는 격리된 공간을 의미합니다.
 상단의 로고에서 알 수 있듯이 고래가 컨테이너를 운반하는 모습을 하고 있습니다. 이 그림에서 고래는 컨테이너를
 생성하고 관리하는 도커엔진을 뜻합니다.
 
+![vm-vs-docker](https://user-images.githubusercontent.com/76420201/103851534-5ba5dd00-50ed-11eb-9e00-83e77f2bdbd7.png){: width = "50%" height = "50%"}
+
+
+가상화 기술에는 여러가지 방식이 있지만 VMware나 VirtualBox와 같은 가상머신들은 성능이 좋지 않다는 단점이 있습니다. 물리적으로 하나의 환경으로 존재하는 것을 논리적으로 가상화하는 과정중에 비용(overhead)이 추가적으로 발생하기 때문입니다.
+
+이를 개선하기 위해서 **프로세스를 격리**하는 방식이 등장했습니다. 단순히 프로세스를 격리 시켜서 사용하기 때문에 CPU나
+메모리는 딱 프로세스가 필요한 만큼만 가져다 사용하여 성능적으로도 거의 손실이 없습니다.
