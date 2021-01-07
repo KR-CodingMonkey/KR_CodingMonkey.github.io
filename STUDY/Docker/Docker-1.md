@@ -1,6 +1,6 @@
----
+<!-- ---
 sort : 1
----
+--- -->
 
 # Docker란?
 ![Docker-logo1](https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png){: width = "50%" height = "50%"}{: .center}
@@ -11,7 +11,6 @@ sort : 1
 Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼입니다.
 
 가상화 기술에는 여러가지 방식이 있지만 
-
 
 ![vm-vs-docker](https://user-images.githubusercontent.com/76420201/103851534-5ba5dd00-50ed-11eb-9e00-83e77f2bdbd7.png){: width = "50%" height = "50%"}
 
