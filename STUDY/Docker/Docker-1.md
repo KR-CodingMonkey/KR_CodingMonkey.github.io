@@ -1,10 +1,10 @@
 # Docker-1
 
-# Docker란?
+## Docker란?
 ![Docker-logo1](https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png){: width = "50%" height = "50%"}{: .center}
 
 
-# Docker
+## Docker
 
 Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼입니다.
 
@@ -12,7 +12,7 @@ Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼입니다.
 
 ---
 
-# 컨테이너(Container)
+## 컨테이너(Container)
 
 Docker에서 의미하는 컨테이너(Container)란 프로그램(소프트웨어)을 담는 격리된 공간을 의미합니다.
 상단의 로고에서 알 수 있듯이 고래가 컨테이너를 운반하는 모습을 하고 있습니다. 이 그림에서 고래는 컨테이너를
@@ -30,7 +30,7 @@ Docker에서 의미하는 컨테이너(Container)란 프로그램(소프트웨�
 
 ---
 
-# 이미지(ISO image)
+## 이미지(ISO image)
 
 Docker를 이해하는 데 있어 이미지(ISO image) 또한 중요한 개념입니다.
 
