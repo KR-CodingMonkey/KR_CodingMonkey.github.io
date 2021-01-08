@@ -61,27 +61,27 @@ yum update
 ```
 
 - Host 파일 수정
-
 ```
 vi /etc/hosts
 192.168.56.10 ansible-server
 192.168.56.11 jenkins-server
 192.168.56.12 tomcat-server
 192.168.56.13 docker-server
-
+```
+```
 ping jenkins-server 
 ```
 
 ## Docker 설치, 실행
 
 - Docker 설치
-
 ```
 yum install -y yum-utils device-mapper-persistent-data lvm2 
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum update && yum install docker-ce
 useradd dockeradmin
-
+```
+```
 passwd dockeradmin <-- password: dockeradmin
 usermod -aG docker dockeradmin
 systemctl enable --now docker && systemctl start docker
