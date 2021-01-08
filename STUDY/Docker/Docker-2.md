@@ -38,7 +38,6 @@ net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
 ```
-
 ```
 sysctl --system
 ```
@@ -96,7 +95,6 @@ docker-compose -version
 ```
 
 - Docker 설치 확인
-
 ```
 docker run hello-world
 ```
