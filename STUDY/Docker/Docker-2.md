@@ -9,24 +9,94 @@ Linux에 Docker 설치하는 방법도 버전마다 다르지만, 여기서는 C
 
 ## 사전 준비
 - Root 계정 변경
+```
+su -
+```
 
 - SELinux 설정
+```
+setenforce 0
+sestatus
+sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+```
 
 - 방화벽 해제
+```
+systemctl stop firewalld && systemctl disable firewalld
+systemctl stop NetworkManager && systemctl disable NetworkManager
+```
 
 - SWAP 비활성화
+```
+swapoff -a && sed -i '/ swap / s/^/#/' /etc/fstab
+```
 
 - Iptables 커널 옵션 활성화
+```
+cat <<EOF >  /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+```
+
+```
+sysctl --system
+```
 
 - 쿠버네티스를 위한 yum repository 설정
+```
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+```
 
 - CentOS update
+```
+yum update
+```
 
 - Host 파일 수정
+```
+vi /etc/hosts
+192.168.56.10 ansible-server
+192.168.56.11 jenkins-server
+192.168.56.12 tomcat-server
+192.168.56.13 docker-server
+
+ping jenkins-server 
+```
 
 ## Docker 설치, 실행
 
+- Docker 설치
+
+```
+yum install -y yum-utils device-mapper-persistent-data lvm2 
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum update && yum install docker-ce
+useradd dockeradmin
+
+passwd dockeradmin <-- password: dockeradmin
+usermod -aG docker dockeradmin
+systemctl enable --now docker && systemctl start docker
+```
+
 - Docker Compose 설치
+```
+curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose -version 
+```
 
 - Docker 설치 확인
 
+```
+docker run hello-world
+```
