@@ -61,6 +61,7 @@ yum update
 ```
 
 - Host 파일 수정
+
 ```
 vi /etc/hosts
 192.168.56.10 ansible-server
