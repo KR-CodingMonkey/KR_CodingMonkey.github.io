@@ -3,9 +3,11 @@
 ![docker_version](https://user-images.githubusercontent.com/76420201/104095250-38d81c00-52d9-11eb-8a97-c52fbc07c4a0.GIF)
 
 ## 컨테이너 실행하기 
+
 도커를 실행하는 명령입니다.
 
 `docker run [option] IMAGE[:tag] [command]`
+
 
 자주 사용하는 옵션입니다.
 
