@@ -12,6 +12,7 @@ Linux에 Docker 설치하는 방법도 버전마다 다르지만, 여기서는 C
 ```
 su -
 ```
+![1](https://user-images.githubusercontent.com/76420201/104091810-3f5b9900-52c3-11eb-89fc-39671df5ba65.GIF)
 
 - SELinux 설정
 ```
@@ -19,17 +20,22 @@ setenforce 0
 sestatus
 sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 ```
+![2](https://user-images.githubusercontent.com/76420201/104091826-57cbb380-52c3-11eb-87ec-b5c57bcea286.GIF)
+
 
 - 방화벽 해제
 ```
 systemctl stop firewalld && systemctl disable firewalld
 systemctl stop NetworkManager && systemctl disable NetworkManager
 ```
+![3](https://user-images.githubusercontent.com/76420201/104091835-61edb200-52c3-11eb-8935-6805e31d6695.GIF)
 
 - SWAP 비활성화
 ```
 swapoff -a && sed -i '/ swap / s/^/#/' /etc/fstab
 ```
+![4](https://user-images.githubusercontent.com/76420201/104091841-6914c000-52c3-11eb-8a8d-f70eca34a7a6.GIF)
+
 
 - Iptables 커널 옵션 활성화
 ```
@@ -41,6 +47,8 @@ EOF
 ```
 sysctl --system
 ```
+![5](https://user-images.githubusercontent.com/76420201/104091846-72059180-52c3-11eb-9776-ae6de36e500b.GIF)
+
 
 - 쿠버네티스를 위한 yum repository 설정
 ```
@@ -54,11 +62,17 @@ repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 ```
+![5 6](https://user-images.githubusercontent.com/76420201/104091963-4b942600-52c4-11eb-9392-d5e7d4bea817.GIF)
+
 
 - CentOS update
 ```
 yum update
 ```
+![6-1](https://user-images.githubusercontent.com/76420201/104091907-e6403500-52c3-11eb-9870-9d7218e3795d.GIF)
+
+![6-2](https://user-images.githubusercontent.com/76420201/104091957-459e4500-52c4-11eb-8528-4532e90734be.GIF)
+
 
 - Host 파일 수정
 ```
