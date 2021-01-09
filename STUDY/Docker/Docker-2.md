@@ -70,21 +70,8 @@ EOF
 yum update
 ```
 ![6-1](https://user-images.githubusercontent.com/76420201/104091907-e6403500-52c3-11eb-9870-9d7218e3795d.GIF)
-
 ![6-2](https://user-images.githubusercontent.com/76420201/104091957-459e4500-52c4-11eb-8528-4532e90734be.GIF)
 
-
-- Host 파일 수정
-```
-vi /etc/hosts
-192.168.56.10 ansible-server
-192.168.56.11 jenkins-server
-192.168.56.12 tomcat-server
-192.168.56.13 docker-server
-```
-```
-ping jenkins-server 
-```
 
 ## Docker 설치, 실행
 
@@ -93,13 +80,15 @@ ping jenkins-server
 yum install -y yum-utils device-mapper-persistent-data lvm2 
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum update && yum install docker-ce
-useradd dockeradmin
 ```
+![7-1](https://user-images.githubusercontent.com/76420201/104092313-84cd9580-52c6-11eb-830f-79d1dd680b09.GIF)
+![7-2](https://user-images.githubusercontent.com/76420201/104092316-87c88600-52c6-11eb-9e35-6fdf85b7d09a.GIF)
+![7-3](https://user-images.githubusercontent.com/76420201/104092321-8a2ae000-52c6-11eb-87d4-d138f0039474.GIF)
+
 ```
-passwd dockeradmin <-- password: dockeradmin
-usermod -aG docker dockeradmin
 systemctl enable --now docker && systemctl start docker
 ```
+![8](https://user-images.githubusercontent.com/76420201/104092354-cb22f480-52c6-11eb-83b3-0c2641826632.GIF)
 
 - Docker Compose 설치
 ```
@@ -108,8 +97,13 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose -version 
 ```
+![9-1](https://user-images.githubusercontent.com/76420201/104092363-d37b2f80-52c6-11eb-8370-3edd28fe10ff.GIF)
+![9-2](https://user-images.githubusercontent.com/76420201/104092365-d4ac5c80-52c6-11eb-8bfc-7e1af092ded2.GIF)
+
 
 - Docker 설치 확인
 ```
 docker run hello-world
 ```
+![10](https://user-images.githubusercontent.com/76420201/104092372-df66f180-52c6-11eb-9b3b-87ea199c7f68.GIF)
+
