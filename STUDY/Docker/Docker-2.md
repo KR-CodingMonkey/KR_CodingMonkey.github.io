@@ -88,7 +88,7 @@ yum update && yum install docker-ce
 ```
 systemctl enable --now docker && systemctl start docker
 ```
-> ![8](https://user-images.githubusercontent.com/76420201/104092354-cb22f480-52c6-11eb-83b3-0c2641826632.GIF)
+>> ![8](https://user-images.githubusercontent.com/76420201/104092354-cb22f480-52c6-11eb-83b3-0c2641826632.GIF)
 
 - Docker Compose 설치
 ```
