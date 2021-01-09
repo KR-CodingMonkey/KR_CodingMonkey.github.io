@@ -107,3 +107,4 @@ docker run hello-world
 ```
 ![10](https://user-images.githubusercontent.com/76420201/104092372-df66f180-52c6-11eb-9b3b-87ea199c7f68.GIF)
 
+docker run 커맨드로 'hello-world'라는 이미지를 실행시킨 결과입니다. 이와 같이 뜬다면 정상적으로 설치를 완료한 것입니다.
