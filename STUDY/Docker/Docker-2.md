@@ -83,6 +83,7 @@ yum update && yum install docker-ce
 ![7-1](https://user-images.githubusercontent.com/76420201/104092313-84cd9580-52c6-11eb-830f-79d1dd680b09.GIF)
 ![7-2](https://user-images.githubusercontent.com/76420201/104092316-87c88600-52c6-11eb-9e35-6fdf85b7d09a.GIF)
 ![7-3](https://user-images.githubusercontent.com/76420201/104092321-8a2ae000-52c6-11eb-87d4-d138f0039474.GIF)
+
 {:.m-5}
 ```
 systemctl enable --now docker && systemctl start docker
