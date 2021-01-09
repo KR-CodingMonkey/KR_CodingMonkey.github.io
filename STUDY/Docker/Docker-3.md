@@ -6,6 +6,7 @@
 'docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]'
 
 자주 사용하는 옵션입니다.
+
 | Option  | Description  |
 | ------- | -------- |
 | --name | 컨테이너 이름 부여 |
