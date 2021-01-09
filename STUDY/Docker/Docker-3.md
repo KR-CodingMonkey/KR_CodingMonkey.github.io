@@ -4,7 +4,7 @@
 
 도커를 실행하는 명령입니다.
 
-'docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]'
+`docker run [option] IMAGE[:tag] [command]`
 
 자주 사용하는 옵션입니다.
 
