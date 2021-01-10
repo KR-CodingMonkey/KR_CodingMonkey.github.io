@@ -24,8 +24,8 @@
 **공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**
 
 
-`docker run [image]` 라는 명령어는 `docker pull [image]`이미지를 다운받고 `docker container create`컨테이너를 생성하고 `docker container start`컨테이너를 실행하는 3가지 명령어를 동시에 처리할 수 있습니다. 이미지가 이미 존재한다면 다운로드(`pull`)하지 않습니다. 
+`docker run [image]` 라는 명령어는 이미지를 다운받고`docker pull [image]` 컨테이너를 생성하고`docker container create` 컨테이너를 실행하는`docker container start` 3가지 명령어를 동시에 처리할 수 있습니다. 이미지가 이미 존재한다면 다운로드`pull`하지 않습니다. 
 ![docker_run](https://user-images.githubusercontent.com/76420201/104117172-9795a800-5362-11eb-907a-9e471f31c88b.GIF)
 
 이미지 이름 뒤에 tag를 붙이지 않으면 자동으로 latest버전을 다운로드 하게 됩니다.
-`docker run ubuntu` == `docker run ubuntu:latest`, 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 하니다. `docker run ubuntu:16.04`
+`docker run ubuntu` = `docker run ubuntu:latest` 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 하니다. `docker run ubuntu:16.04`
