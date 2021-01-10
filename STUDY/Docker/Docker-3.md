@@ -2,10 +2,13 @@
 
 ![docker_version](https://user-images.githubusercontent.com/76420201/104095250-38d81c00-52d9-11eb-8a97-c52fbc07c4a0.GIF){: width = "50%" height = "50%"}
 
-## 컨테이너 실행하기 
+## Docker run  
 
 
-도커를 실행하는 명령입니다. `docker run [option] IMAGE[:tag] [command]`
+도커를 실행하는 명령입니다. container는 생략 가능합니다.
+`docker container run [[option] IMAGE[:tag] [command]`
+
+`docker run [option] IMAGE[:tag] [command]`
 
 | Option  | Description |
 | ------- | -------- |
