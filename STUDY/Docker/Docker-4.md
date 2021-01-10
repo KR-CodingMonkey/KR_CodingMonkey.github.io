@@ -43,5 +43,5 @@
 정지 상태인 컨테이너를 삭제할 때 `docker rm [Container ID]`명령어를 입력하시면 됩니다. 
 ![docker_rm](https://user-images.githubusercontent.com/76420201/104118742-7d61c700-536e-11eb-822b-e792c83eb55b.GIF)
 
-'[Container ID]'입력 하실때  ID 전체를 쓰지 않아도 구분할 수 있을정도만 써주시면 됩니다. 실행중인 컨테이너는 삭제되지 않습니다. 또한, 정지 중인 모든 컨테이너를 삭제하려면 `docker container prune`명령어를 입력하시면 됩니다.
+`[Container ID]`입력 하실때  ID 전체를 쓰지 않아도 구분할 수 있을정도만 써주시면 됩니다. 실행중인 컨테이너는 삭제되지 않습니다. 또한, 정지 중인 모든 컨테이너를 삭제하려면 `docker container prune`명령어를 입력하시면 됩니다.
 
