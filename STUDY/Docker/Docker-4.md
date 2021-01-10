@@ -1,10 +1,9 @@
-# Docker-4.md
-
-## 컨테이너 실행하기  
-
-도커를 실행하는 명령입니다. container는 생략 가능합니다.
+# Docker-4
+  
 
 ### 컨테이너 실행
+도커를 실행하는 명령어입니다. container는 생략 가능합니다.
+
 `docker container run [option] [image:tag] [command]`<br/>
 `docker run [option] [image:tag] [command]`
 
@@ -24,13 +23,16 @@
 이미지 이름 뒤에 tag를 붙이지 않으면 자동으로 latest버전을 다운로드 하게 됩니다.
 `docker run ubuntu` = `docker run ubuntu:latest` 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 합니다. ex) `docker run ubuntu:16.04`
 
+컨테이너는 정상적으로 실행됐지만 뭘 하라고 명령어를 전달하지 않았기 때문에 컨테이너는 생성되자마자 종료됩니다. 컨테이너는 프로세스이기 때문에 실행중인 프로세스가 없으면 컨테이너는 종료됩니다.
+
 
 ### 컨테이너 리스트
 
 `docker container ls`<br/>
 `docker ps`
 
-`docker run`명령어를 입력하면 컨테이너 생성되고 실행됩니다. `docker ps`명령어를 통해서 현재 가동중인 컨테이너 목록을 확인할 수 있습니다. `docker ps -a`와 같이 `-a`옵션을 부여하게 되면 실행 중/정지 중인 모든 컨테이너를 표시합니다.
+`docker run`명령어를 입력하면 컨테이너 생성되고 실행됩니다. `docker ps`명령어를 통해서 현재 가동중인 컨테이너 목록을 확인할 수 있습니다. `docker ps -a`와 같이 `-a`옵션을 부여하게 되면 실행 중/정지 중인 모든 컨테이너를 표시합니다.<br/>
+STATUS가 UP은 실행중 Exited는 정지 상태를 의미합니다.
 
 ![docker_ps_a](https://user-images.githubusercontent.com/76420201/104118439-86519900-536c-11eb-8412-40aaa86f368c.GIF)
 
