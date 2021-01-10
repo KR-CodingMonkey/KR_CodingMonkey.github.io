@@ -4,8 +4,8 @@
 
 도커를 실행하는 명령입니다. container는 생략 가능합니다.
 
-`docker container run [option] IMAGE[:tag] [command]`<br/>
-`docker run [option] IMAGE[:tag] [command]`
+`docker container run [option] [image:tag] [command]`<br/>
+`docker run [option] [image:tag] [command]`
 
 | Option  | Description |
 | ------- | -------- |
@@ -22,3 +22,4 @@
 
 이미지 이름 뒤에 tag를 붙이지 않으면 자동으로 latest버전을 다운로드 하게 됩니다.
 `docker run ubuntu` = `docker run ubuntu:latest` 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 합니다. `docker run ubuntu:16.04`
+
