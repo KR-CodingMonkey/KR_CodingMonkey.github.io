@@ -12,7 +12,7 @@
 
 ![docker_image_search](https://user-images.githubusercontent.com/76420201/104095269-4ab9bf00-52d9-11eb-836e-c274f111eff1.GIF)
 
-**공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**  
+**공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**<br/>
 
 
 
