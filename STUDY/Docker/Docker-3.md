@@ -11,11 +11,8 @@
 컨테이너를 실행하기 위해서는 [Docker hub](https://hub.docker.com/) 사이트에서 이미지를 검색 또는 콘솔에서 `docker search [image]`입력하고 버전을 확인 후 `docker pull [image:tag]` 커맨드로 다운받아야 합니다. 
 
 ![docker_image_search](https://user-images.githubusercontent.com/76420201/104095269-4ab9bf00-52d9-11eb-836e-c274f111eff1.GIF)
-
-**공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**<br/>
-
-
-
+**공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**
+<br/>
 
 ### 이미지 리스트 : `docker image ls` `docker images`
 
@@ -29,7 +26,6 @@
 
 
 ## 컨테이너 실행하기  
-
 
 도커를 실행하는 명령입니다. container는 생략 가능합니다.
 `docker container run [[option] IMAGE[:tag] [command]`
