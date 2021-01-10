@@ -18,6 +18,7 @@
 
 
 `docker run [image]` 라는 명령어는 이미지를 다운받고`docker pull [image]` 컨테이너를 생성하고`docker container create` 컨테이너를 실행하는`docker container start` 3가지 명령어를 동시에 처리할 수 있다. 이미지가 이미 존재한다면 다운로드`pull`하지 않는다. 
+
 ![docker_run](https://user-images.githubusercontent.com/76420201/104117172-9795a800-5362-11eb-907a-9e471f31c88b.GIF)
 
 이미지 이름 뒤에 tag를 붙이지 않으면 자동으로 latest버전을 다운로드 하게 된다.
