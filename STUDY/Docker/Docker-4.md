@@ -22,7 +22,7 @@
 ![docker_run](https://user-images.githubusercontent.com/76420201/104117172-9795a800-5362-11eb-907a-9e471f31c88b.GIF)
 
 이미지 이름 뒤에 tag를 붙이지 않으면 자동으로 latest버전을 다운로드 하게 됩니다.
-`docker run ubuntu` = `docker run ubuntu:latest` 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 합니다. `docker run ubuntu:16.04`
+`docker run ubuntu` = `docker run ubuntu:latest` 하지만 특정한 버전을 다운로드 하고 싶을때는 tag를 원하는 버전에 맞추어 입력해야 합니다. ex) `docker run ubuntu:16.04`
 
 
 ### 컨테이너 리스트
@@ -37,3 +37,7 @@
 이와 같이 하나의 이미지로 여러개의 컨테이너를 실행할 수 있습니다. 주의해야 할 점은 서로 다른이름을 부여해줘야 한다는 것입니다. 이름이 중복되면 에러메세지가 출력됩니다.
 
 ### 컨테이너 삭제 
+`docker container rm [Container ID]`
+`docker rm [Container ID]`
+
+정지 상태인 컨테이너를 삭제할 때 `docker rm [Container ID]`명령어를 입력하시면 됩니다. [Container ID]입력 하실때  ID 전체를 쓰지 않아도 구분할 수 있을정도만 써주시면 됩니다. 실행중인 컨테이너는 삭제되지 않습니다. 또한, 정지 중인 모든 컨테이너를 삭제하려면 `docker container prune`명령어를 입력하시면 됩니다.
