@@ -1,7 +1,7 @@
 # Docker-4
   
 
-### 컨테이너 실행
+## 컨테이너 실행
 도커를 실행하는 명령어이다. container는 생략 가능하다.
 
 `docker container run [option] [image:tag] [command]`<br/>
@@ -25,7 +25,7 @@
 
 컨테이너는 정상적으로 실행됐지만 뭘 하라고 명령어를 전달하지 않았기 때문에 컨테이너는 생성되자마자 종료된다. **컨테이너는 프로세스**이기 때문에 실행중인 프로세스가 없으면 컨테이너는 종료된다.
 
-### 컨테이너 리스트
+## 컨테이너 리스트
 
 `docker container ls`<br/>
 `docker ps`
@@ -37,7 +37,7 @@ STATUS가 UP은 실행중 Exited는 정지 상태를 의미한다.
 
 이와 같이 하나의 이미지로 여러개의 컨테이너를 실행할 수 있다. 주의해야 할 점은 서로 다른이름을 부여해줘야 한다는 것이다. 이름이 중복되면 에러메시지가 출력된다.
 
-### 컨테이너 삭제 
+## 컨테이너 삭제 
 `docker container rm [Container ID]`<br/>
 `docker rm [Container ID]`
 
