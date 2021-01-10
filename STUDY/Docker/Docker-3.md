@@ -14,6 +14,9 @@
 
 **공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장해드립니다.**  
 
+
+
+
 - 이미지 리스트 : `docker image ls` `docker images`
 
 로컬에 다운받아 놓은 이미지 목록을 보기위해서 `docker image ls` 또는 `docker images` 명령어를 사용합니다.
