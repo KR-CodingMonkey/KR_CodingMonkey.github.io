@@ -49,5 +49,5 @@ Admin Mode
 
 User Mode
 
-<img src="e_commerce\user.GIF" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="assets/images/e_commerce/user.GIF" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 ![user](https://user-images.githubusercontent.com/76420201/104425241-c65e8900-55c3-11eb-8ae9-21d67056c247.GIF).{: width = "20%" height = "20%"}
