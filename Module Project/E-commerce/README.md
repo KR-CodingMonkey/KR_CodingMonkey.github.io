@@ -39,7 +39,9 @@ Init Page
 ![init](https://user-images.githubusercontent.com/76420201/104425234-c3fc2f00-55c3-11eb-8f90-7ee102b3742a.GIF)
 
 Admin Mode
+
 ![admin](https://user-images.githubusercontent.com/76420201/104425244-c8284c80-55c3-11eb-9fd7-da45dc80e5ab.GIF)
 
 User Mode
+
 ![user](https://user-images.githubusercontent.com/76420201/104425241-c65e8900-55c3-11eb-8ae9-21d67056c247.GIF)
