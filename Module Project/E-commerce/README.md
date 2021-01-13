@@ -1,6 +1,7 @@
 # E-commerce
 
 - 프로젝트 주제
+
 1. 회원관리 프로그램 -> python
 2. 주문관리 프로그램 -> python
 3. 상품목록 관리 프로그램 -> python
@@ -8,7 +9,9 @@
 5. 데이터베이스 생성 -> Mysql
 6. Container 가상화로 프로그램과 데이터베이스 구성 -> Docker contianer
 7. [Docker hub](https://hub.docker.com) 사이트 자신의 repository에 이미지 배포
+
 ---
+
 - 요구사항
 
 1. 회원
@@ -46,4 +49,5 @@ Admin Mode
 
 User Mode
 
+<img src="C:\Users\ahipp\OneDrive\바탕 화면\GitHub\KR-CodingMonkey.github.io\assets\images\e_commerce\user.GIF" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 ![user](https://user-images.githubusercontent.com/76420201/104425241-c65e8900-55c3-11eb-8ae9-21d67056c247.GIF){: width = "20%" height = "20%"}
