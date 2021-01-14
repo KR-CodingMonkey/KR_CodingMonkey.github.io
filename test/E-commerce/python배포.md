@@ -50,8 +50,7 @@ CMD ["python3", "e_commerce_app_linux.py"]
 docker build -t myapp_test:0.1 .
 ```
 
-![docker_myapp_build](https://user-images.githubusercontent.com/76420201/104558559-59f88e00-5686-11eb-8051-e8de728c7673.GIF)
-<img src="https://user-images.githubusercontent.com/76420201/104558559-59f88e00-5686-11eb-8051-e8de728c7673.GIF" width="40%">
+<img src="https://user-images.githubusercontent.com/76420201/104558559-59f88e00-5686-11eb-8051-e8de728c7673.GIF" width="70%"><br/>
 이미지가 정상적으로 생성이 되었으니 실행해봅시다. 
 
 ```
