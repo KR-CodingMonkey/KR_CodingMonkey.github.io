@@ -259,7 +259,7 @@ else:
 ```
 ---
 
-### Singup_page()
+## Singup_page()
 
 - 사용자로부터 아이디/이메일/비밀번호를 입력받아서 회원가입`INSERT`
 - DB member에 이미 존재하는`SELECT` 아이디일 경우 실패
