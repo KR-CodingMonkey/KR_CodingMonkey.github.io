@@ -4,5 +4,4 @@ sort: 2
 
 # MODULE PROJECT
 
-
-{% include list.liquid all=true %}
+1. E-commerce (21.1.11 - 21.1.15)
