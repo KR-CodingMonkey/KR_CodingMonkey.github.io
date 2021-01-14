@@ -174,9 +174,9 @@ mum = 0
 
 - 초기화면에 나의정보 출력`SELECT`
 - 메뉴선택을 input()으로 받음
-- 정보수정 `SELECT` 회원탈퇴 `DELETE`
-- 아이디 수정시 이미 존재하는 아이디인지 조회 후 수정
-- 아이디 수정 성공 시 order_list내에 동일한 아이디 모두 수정
+- 정보수정`UPDATE` 회원탈퇴`DELETE`
+- 아이디 수정 시 이미 존재하는 아이디인지 조회`SELECT` 후 수정`UPDATE`
+- 아이디 수정 성공 시 order_list내에 동일한 아이디 모두 수정`UPDATE`
 
 ```
             elif mum == 2: 
