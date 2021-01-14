@@ -101,7 +101,22 @@ create table order_list(
     total_price int(10) not null,
     c_date varchar(30) not null);
 ```
-
 ---
+
+DB 설계가 끝났으니 `docker commit [컨테이너명] [새로운 이미지 이름:tag]`해서 이미지를 새롭게 만들어 줍니다.
+
+```
+docker commit mysql kcm_mysql:0.1
+
+docker tag kcm_mysql:0.1 kcm/kcm_mysql:0.1
+
+# 로그인
+docker login
+
+# 배포
+docker push kcm/kcm_mysql:0.1
+```
+
+이렇게 docker hub 사이트 자신의 repository에 배포가 되었습니다.
 
 ---
