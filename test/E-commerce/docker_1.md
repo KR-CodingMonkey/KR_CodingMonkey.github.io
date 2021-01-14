@@ -1,7 +1,7 @@
 # mysql DB 생성
 
 linux환경에서 docker mysql image를 다운로드`docker pull`받고 컨테이너를 실행했다.<br/>
-`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql`<br/>
+`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest`<br/>
 
 잘 구동되고 있는지 확인하고 `docker ps -a` mysql에 접속했습니다.<br/>
 `docker exec -it mysql mysql -h127.0.0.1 -uroot -p`<br/>
@@ -38,3 +38,14 @@ CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ```
 
 이렇게 이미지를 새로 빌드`docker build`해서 사용하면 데이터가 잘 보관되어 있네요.
+![docker_build](https://user-images.githubusercontent.com/76420201/104550631-9c1ad300-5678-11eb-8ea9-a8bcf51ab739.GIF)
+
+```
+docker run -d --name mysql_test -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql_test:0.1
+docker ps -a
+docker run exec -it mysql_test mysql -h127.0.0.1 -uroot -p
+```
+
+```
+show databases;
+```
