@@ -1,6 +1,6 @@
 # E-commerce
 
-*전체코드* : [github](https://github.com/KR-CodingMonkey/e_commerce_app.git)
+**전체코드** : [github](https://github.com/KR-CodingMonkey/e_commerce_app.git)
 
 - 프로젝트 주제
 
