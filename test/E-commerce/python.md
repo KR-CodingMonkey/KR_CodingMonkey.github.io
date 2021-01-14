@@ -122,16 +122,19 @@ while(1):
     print("종료")
 
     key = ord(getch())    
-    if key == 0: #Special keys (arrows, f keys, ins, del, etc.)
+    
+    #Special keys (arrows, f keys, ins, del, etc.)
+    if key == 0: 
         key = ord(getch())
-        if key == 80: #Down arrow
+        if key == 80: # Down arrow
             mum += 1 
             if mum > 2: mum = 0;
 
-        elif key == 72: #Up arrow
+        elif key == 72: # Up arrow
             mum -= 1 
             if mum < 0: mum = 2;
 
+    # Enter
     elif key == 13:
         if mum == 0:
             # 로그인 메뉴 (1.관리자, 2.회원)
@@ -144,5 +147,58 @@ while(1):
             break
 ```
 
+getch()라는 함수로 사용자의 키보드 입력을 받는데 Unix기반 OS와 windows 함수를 다르게 정의 해줘야 합니다.
 
+```
+class _Getch:
+    """Gets a single character from standard input.  Does not echo to the
+    screen."""
+    def __init__(self):
+        try:
+            self.impl = _GetchWindows()
+        except ImportError:
+            self.impl = _GetchUnix()
+
+    def __call__(self): return self.impl()
+
+# os -> unix
+class _GetchUnix:
+    def __init__(self):
+        import tty, sys
+
+    def __call__(self):
+        import sys, tty, termios
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+        try:
+            tty.setraw(sys.stdin.fileno())
+            ch = sys.stdin.read(1)
+        finally:
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+        return ch
+
+# os -> windows
+class _GetchWindows:
+    def __init__(self):
+        import msvcrt
+
+    def __call__(self):
+        import msvcrt
+        return msvcrt.getch()
+
+# 함수 재정의
+getch = _Getch()
+
+```
+
+`getch = _Getch()` 객체를 생성하게 되면 실행환경 OS에 따라서 적용이 됩니다.
+
+그리고!! 윈도우에서의 방향키값과 리눅스에서의 방향키값이 다르더군요.(Enter는 동일합니다)   
+- Windows 
+위 : 0 72
+아래 : 0 80 
+
+- Linux
+위 : 27 91 65
+아래 : 27 91 66
 ---
