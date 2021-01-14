@@ -256,5 +256,3 @@ else:
     cursor.close()
     return 0
 ```
-
-심플하고
