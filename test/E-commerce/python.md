@@ -3,6 +3,12 @@
 6가지의 모듈로 나누어서 작업을 했음
 
 ```
+import pymysql # 데이터 베이스 연동
+from os import system # system('cls') or system('clear')
+# from msvcrt import getch
+from time import sleep # sleep()
+from datetime import datetime # datetime.now()
+
 class member:
 
 def Init_Display():
@@ -42,6 +48,7 @@ if __name__ == '__main__'
     conn.close()
 ```
 ---
+
 ### class member
 
 class는 쓰지 않아도 됐지만 써봤음
@@ -91,4 +98,52 @@ mm = 0.5;
 `from os import system`<br/>
 sleep(n) n초의 시간을 대기한다.   system('cls') 콘솔화면의 내용을 지운다
 
+---
+
+---
+
+###
+
+```
+    mum = 0;
+
+    while(1):    
+        system('cls')
+        print("┌────────────────────────────┐")
+        print("        e-commerce v0.1")
+        print("└────────────────────────────┘")
+
+        mum = mum % 3;
+        if mum == 0: print("\t ▶ ", end = '')
+        else: print("\t ▷ ", end = '')
+        print("로그인")
+        if mum == 1: print("\t ▶ ", end = '')
+        else: print("\t ▷ ", end = '') 
+        print("회원가입")
+        if mum == 2: print("\t ▶ ", end = '')
+        else: print("\t ▷ ", end = '')
+        print("종료")
+
+        key = ord(getch())    
+        if key == 0: #Special keys (arrows, f keys, ins, del, etc.)
+            key = ord(getch())
+            if key == 80: #Down arrow
+                mum += 1 
+                if mum > 2: mum = 0;
+
+            elif key == 72: #Up arrow
+                mum -= 1 
+                if mum < 0: mum = 2;
+
+        elif key == 13:
+            if mum == 0:
+                # 로그인 메뉴 (1.관리자, 2.회원)
+                Login_Page()
+            elif mum == 1: 
+                # 회원가입 메뉴
+                Singup_Page()
+            else:
+                # 종료
+                break
+```
 ---
