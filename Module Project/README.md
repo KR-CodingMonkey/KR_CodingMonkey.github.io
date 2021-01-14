@@ -2,4 +2,12 @@
 sort: 2
 ---
 
-# Module Project
+# MODULE PROJECT
+
+```
+{% raw %}{% include list.liquid all=true %}{% endraw %}
+
+{% include list.liquid all=true %}
+```
+
+{% include list.liquid all=true %}
