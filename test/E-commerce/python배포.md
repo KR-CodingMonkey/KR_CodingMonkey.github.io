@@ -29,6 +29,10 @@ WORKDIR /app/
 
 # To use python & git clone
 RUN yum install -y python3
+---
+sort: 5 
+---
+
 RUN yum install -y git
 
 # Clone
