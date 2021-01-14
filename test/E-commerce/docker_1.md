@@ -37,15 +37,6 @@ RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
 CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ```
 
-이렇게 이미지를 새로 빌드`docker build`해서 사용하면 데이터가 잘 보관되어 있네요.
+이렇게 이미지를 새로 빌드`docker build`해서 새로 생성된 이미지를 실행 -> DB데이터 입력 -> commit -> 배포 -> 다운로드 후 재실행 하시면 입력했던 데이터가 잘 보존되어 있을겁니다.
+
 ![docker_build](https://user-images.githubusercontent.com/76420201/104550631-9c1ad300-5678-11eb-8ea9-a8bcf51ab739.GIF)
-
-```
-docker run -d --name mysql_test -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql_test:0.1
-docker ps -a
-docker run exec -it mysql_test mysql -h127.0.0.1 -uroot -p
-```
-
-```
-show databases;
-```
