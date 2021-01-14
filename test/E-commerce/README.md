@@ -12,6 +12,9 @@
 6. Container 가상화로 프로그램과 데이터베이스 구성 -> Docker contianer
 7. [Docker hub](https://hub.docker.com) 사이트 자신의 repository에 이미지 배포
 
+
+{% include list.liquid all=true %}
+
 ---
 
 - 요구사항
