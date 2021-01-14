@@ -19,7 +19,7 @@ touch Dockerfile
 vi Dockerfile
 ```
 
-```
+```Dockerfile
 # Base Image 73MB
 FROM centos:centos7
 
