@@ -1,3 +1,7 @@
+---
+sort: 5 
+---
+
 # python 프로그램 배포
 
 Windows에서 작업한 python파일을 리눅스에서 Dockerfile로 만드는 방법은 여러가지 있습니다.<br/>
@@ -29,10 +33,6 @@ WORKDIR /app/
 
 # To use python & git clone
 RUN yum install -y python3
----
-sort: 5 
----
-
 RUN yum install -y git
 
 # Clone
