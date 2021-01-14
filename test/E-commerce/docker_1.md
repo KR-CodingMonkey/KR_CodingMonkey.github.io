@@ -31,6 +31,7 @@ You can accomplish what you're trying to do by creating your own mysql base imag
 
 ```
 #Dockerfile
+
 FROM mysql:latest
 
 RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
