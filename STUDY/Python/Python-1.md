@@ -1,6 +1,6 @@
-# Python-1
 
-## 숫자야구
+# 숫자야구
+
 ```python
 import random
 

@@ -1,4 +1,4 @@
-# Python-3
+# Pymysql
 
 ```python
 # 1.Mysql에서 member 테이블에 아래 작업 실행
