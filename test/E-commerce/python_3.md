@@ -10,7 +10,7 @@
 
 ## def Admin_Mode()
 
-초기화면 생성
+- 초기화면 생성
 ```
 def Admin_Mode():
 
@@ -18,7 +18,6 @@ def Admin_Mode():
 
     while(1):
 
-            
         system('cls')
         print("┌────────────────────────────┐")
         print("    Administrator Mode v0.1")
@@ -59,6 +58,8 @@ def Admin_Mode():
 
 ### 전체 회원 목록 조회
 
+- DB member 테이블 조회`SELECT`
+
 ```
         elif key == 13:
             # 전체 회원 목록
@@ -87,6 +88,9 @@ def Admin_Mode():
 ---
 
 ### 전체 주문 내역
+
+- DB order_list 테이블 조회`SELECT`
+- 특정 멤버 주문내역 조회`SELECT`
 
 ```
             # 주문 목록
@@ -133,6 +137,10 @@ def Admin_Mode():
 ---
 
 ### 상품 추가/업데이트
+
+- 초기화면 DB item 테이블 출력`SELECT`
+- 상품 ID/이름/가격/수량을 입력 데이터로 받음
+- 기존에 있는 제품이면 업데이트`UPDATE` 없다면 신규 추가`INSERT`
 
 ```
             # 상품 추가
@@ -236,6 +244,8 @@ def Admin_Mode():
 
 ### VIP 고객 리스트
 
+- 주문내역을 조회`SELECT`해서 가장많은 금액을 주문한 사용자 내림차순으로 출력
+
 ```
             elif mum == 3: 
 
@@ -264,10 +274,12 @@ def Admin_Mode():
                 exit = input("뒤로가려면 아무키나 누르세요.\n")
                 cursor.close()
 ```
-
 ---
 
 ### 인기 상품 리스트
+
+- DB order_list 조회`SELECT` 주문량이 가장많은 상품부터 내림차순으로 출력
+
 ```
             elif mum == 4: 
                 system('cls')
@@ -275,7 +287,7 @@ def Admin_Mode():
                 cursor = conn.cursor()
                 
                 sql_member_total = "select item_id, sum(order_qty) as total_qty from order_list Group by item_id order by sum(order_qty) desc"
-                cursor.execute(sql_member_total) # 구매한 총 가격
+                cursor.execute(sql_member_total) # 상품 주문량
                 best_list = cursor.fetchall()
                 
                 strFormat = '%-20s%-20s'
@@ -304,6 +316,4 @@ def Admin_Mode():
             else:
                 # 로그아웃
                 break
-
-
 ```
