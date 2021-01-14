@@ -1,6 +1,6 @@
 # python_2
 
-회원 모드는<br/> 
+회원 모드는<br/> <br/>
 1)상품 목록 조회<br/>
 2)주문 내역<br/>
 3)나의 정보<br/>
@@ -38,10 +38,10 @@ mum = 0
 
 ### 상품 목록
 
--상품 목록을 출력하고 아랫줄에 구매할 상품의 아이디/수량을 입력받는다<br/>
--DB item테이블을 조회(SELECT)해서 재고가 더 많다면 주문<br/>
--상품 목록에서 주문량을 반영해 업데이트(UPDATE)
--DB order_list 테이블에 주문내역(사용자ID/제품ID 등)을 추가한다(INSERT)
+- 상품 목록을 출력하고 아랫줄에 구매할 상품의 아이디/수량을 입력받는다<br/>
+- DB item테이블을 조회`SELECT`해서 재고가 더 많다면 주문<br/>
+- 상품 목록에서 주문량을 반영해 업데이트`UPDATE`<br/>
+- DB order_list 테이블에 주문내역(사용자ID/제품ID 등)을 추가한다`INSERT`
 
 ```
         key = ord(getch())    
@@ -145,7 +145,7 @@ mum = 0
 
 ### 주문 내역
 
-- DB order_list 테이블에서 memberID를 키값으로 조회(SELECT)
+- DB order_list 테이블에서 memberID를 키값으로 조회`SELECT`
 
 ```                 
             elif mum == 1: 
