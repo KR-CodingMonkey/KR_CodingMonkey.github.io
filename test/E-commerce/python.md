@@ -201,4 +201,21 @@ getch = _Getch()
 - Linux
 위 : 27 91 65
 아래 : 27 91 66
+
+리눅스에서 사용할때는 이렇게 입력받아야 합니다.
+```
+key = ord(getch())
+if key == 27:
+    key = ord(getch())
+    if key == 91: #Down arrow
+        key = ord(getch())
+        if key == 66:
+            mum += 1
+            if mum > 2: mum = 0       
+
+        elif key == 65: #Up arrow
+            mum -= 1
+            if mum < 0: mum = 2
+```
+
 ---
