@@ -42,9 +42,9 @@ if __name__ == '__main__'
     conn.close()
 ```
 ---
-### class memeber
+### class member
 
-class member는 쓰지 않아도 됐지만 써봤다.
+class는 쓰지 않아도 됐지만 써봤음
 
 ```
 class member:
@@ -60,6 +60,7 @@ class member:
 ```
 
 회원가입시 입력받은 아이디/이메일/비밀번호를 토대로 클래스를 생성후 출력한다.
+
 ---
 
 ---
@@ -85,5 +86,9 @@ mm = 0.5;
     print("└────────────────────────────┘")
     sleep(mm);
 ```
+
+`from time import sleep`<br/>
+`from os import system`<br/>
+sleep(n) n초의 시간을 대기한다.   system('cls') 콘솔화면의 내용을 지운다
 
 ---
