@@ -11,6 +11,14 @@ Windows에서 작업한 python파일을 리눅스에서 Dockerfile로 만드는 
 
 ## Dockerfile
 
+```linux
+# Dockerfile 생성
+touch Dockerfile
+
+# Dockerfile 작성
+vi Dockerfile
+``
+
 ```
 # Base Image 73MB
 FROM centos:centos7
@@ -34,3 +42,19 @@ CMD ["python3", "e_commerce_app_linux.py"]
 
 윈도우 환경에서 작성한 Python파일을 깃허브에 업로드 해놓고 Linux에서 Dockerfile을 생성 했습니다.<br/>
 `ENV PYTHONIOENCODING=UTF-8` 이 코드는 Linux에 설치된 Python환경에서 한국어가 깨짐을 방지한 것입니다.
+
+---
+
+도커파일 빌드를 해봅시다.
+```
+docker build -t myapp_test:0.1 .
+```
+
+![docker_myapp_build](https://user-images.githubusercontent.com/76420201/104558559-59f88e00-5686-11eb-8051-e8de728c7673.GIF)
+이미지가 정상적으로 생성이 되었으니 실행해봅시다. 
+
+```
+docker run -it --rm myapp_test:0.1
+```
+
+`docker run` 시 주의해야 할점은 `-it` 옵션을 꼭 붙여줘야 합니다!!
