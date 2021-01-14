@@ -1,5 +1,7 @@
 # E-commerce
 
+*전체코드* : [github](https://github.com/KR-CodingMonkey/e_commerce_app.git)
+
 - 프로젝트 주제
 
 1. 회원관리 프로그램 -> python
