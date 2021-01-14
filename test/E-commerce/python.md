@@ -66,7 +66,7 @@ class member:
         "\nPassword    = " + self.pwd + "\nCreate Date = " + self.create_date + "\n"
 ```
 
-회원가입시 입력받은 아이디/이메일/비밀번호를 토대로 클래스를 생성후 출력한다.
+회원가입 시 입력받은 아이디/이메일/비밀번호를 토대로 클래스를 생성 후 출력한다.
 
 ---
 
