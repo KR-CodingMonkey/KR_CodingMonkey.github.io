@@ -59,7 +59,6 @@ def Admin_Mode():
 
 ### 전체 회원 목록 조회
 
-
 ```
         elif key == 13:
             # 전체 회원 목록
@@ -83,6 +82,13 @@ def Admin_Mode():
                 cursor.close()
                 exit = input("뒤로가려면 아무키나 눌러주세요.")
 
+```
+
+---
+
+### 전체 주문 내역
+
+```
             # 주문 목록
             elif mum == 1: 
                 system('cls')
@@ -123,6 +129,12 @@ def Admin_Mode():
                 exit = input("뒤로가려면 아무키나 눌러주세요.")
                 cursor.close()
 
+```
+---
+
+### 상품 추가/업데이트
+
+```
             # 상품 추가
             elif mum == 2:
                 cursor = conn.cursor(pymysql.cursors.DictCursor) # 딕셔너리 형태
@@ -219,7 +231,12 @@ def Admin_Mode():
                             sleep(3)
                             cursor.close()
                             break
+```
+---
 
+### VIP 고객 리스트
+
+```
             elif mum == 3: 
 
                 system('cls')
@@ -246,7 +263,12 @@ def Admin_Mode():
                 print(strOut)
                 exit = input("뒤로가려면 아무키나 누르세요.\n")
                 cursor.close()
+```
 
+---
+
+### 인기 상품 리스트
+```
             elif mum == 4: 
                 system('cls')
                 print("인기 상품 리스트")
@@ -273,6 +295,12 @@ def Admin_Mode():
                 exit = input("뒤로가려면 아무키나 누르세요.\n")
                 cursor.close()
 
+```
+
+---
+
+### 로그아웃
+```
             else:
                 # 로그아웃
                 break
