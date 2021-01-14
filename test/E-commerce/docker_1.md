@@ -30,6 +30,7 @@ You can accomplish what you're trying to do by creating your own mysql base imag
 그렇다네요.
 
 ```
+#Dockerfile
 FROM mysql:latest
 
 RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
