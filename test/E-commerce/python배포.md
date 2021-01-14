@@ -17,7 +17,7 @@ touch Dockerfile
 
 # Dockerfile 작성
 vi Dockerfile
-``
+```
 
 ```
 # Base Image 73MB
