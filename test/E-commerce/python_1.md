@@ -220,6 +220,10 @@ if key == 27:
 
 ## Login_Page()
 
+- 사용자로부터 ID/PW 입력받고 DB member에서 회원 조회`SELECT`
+- 회원일 경우 회원모드로 전환
+- admin/admin1234 일 경우 관리자모드로 전환
+
 ```
 system('clear')
 print("Login page\n")
