@@ -49,3 +49,14 @@ CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ![docker_build](https://user-images.githubusercontent.com/76420201/104550631-9c1ad300-5678-11eb-8ea9-a8bcf51ab739.GIF)
 
 ---
+
+데이터가 잘 보존되어 있는걸 확인했으니 테이블을 만들어 봅시다.<br/>
+DB에 접속을하고 **e_commerce**라는 이름으로 지어주었습니다.
+
+```MYSQL
+# DB목록 확인
+SHOW databases;
+
+# DB 생성
+create database e_commerce;
+```
