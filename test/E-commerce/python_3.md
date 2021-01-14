@@ -11,6 +11,7 @@
 ## def Admin_Mode()
 
 - 초기화면 생성
+
 ```
 def Admin_Mode():
 
