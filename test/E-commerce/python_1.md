@@ -253,3 +253,61 @@ else:
     cursor.close()
     return 0
 ```
+---
+
+### Singup_page()
+
+- 사용자로부터 아이디/이메일/비밀번호를 입력받아서 회원가입`INSERT`
+- DB member에 이미 존재하는`SELECT` 아이디일 경우 실패
+
+```
+def Singup_Page():
+
+    while(1):
+        system('cls')
+        print("-Sign up-\n")
+        sleep(0.5)
+
+        new_id = input("아이디: ")
+        new_email = input("이메일: ")
+        new_pwd = input("비밀번호: ")
+        confirm_pwd = input("비밀번호 확인: ")
+
+        if new_pwd == confirm_pwd: 
+
+            cursor = conn.cursor()
+
+            # 중복된 아이디가 존재한다면 다시
+            sql_search = '''SELECT * FROM member where id = '{}';'''.format(new_id)  
+            result = cursor.execute(sql_search)
+
+            if result:
+                print("이미 존재하는 아이디 입니다.")
+                sleep(3)
+                continue
+
+            else:
+                new_member = member(new_id, new_email, new_pwd)
+                
+                # DB member 테이블에 INSERT
+                sql_insert = '''
+                INSERT INTO member (id, email, pw, c_date)
+                values(%s, %s, %s, %s)
+                '''
+
+                values = (new_member.id, new_member.email, new_member.pwd, new_member.create_date)
+                cursor.execute(sql_insert, values)
+                conn.commit()
+                cursor.close()
+
+                print("회원가입이 되었습니다.")
+                print(new_member)
+                sleep(5)
+                break
+
+        else:
+            print("\n비밀번호를 확인해주세요!!\n")
+            sleep(3)
+            system('cls')
+            break
+```
