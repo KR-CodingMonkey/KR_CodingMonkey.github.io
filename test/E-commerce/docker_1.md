@@ -10,7 +10,7 @@ docker ps -a
 docker exec -it mysql mysql -h127.0.0.1 -uroot -p
 ```
 
-이제 DB를 만들고 table을 생성하면 되는데 문제가 생겼습니다. DB를 생성하고 기존 데이터를 넣어두고 `docker commit`해서 이미지로 배포하려고 했으나 `commit`한 이미지를 확인해 보니 아무 데이터도 없더군요.
+이제 DB를 만들고 table을 생성하면 되는데 문제가 생겼습니다. DB를 생성하고 데이터를 작성해두고 `docker commit`해서 이미지로 배포하려고 했으나 `commit`한 이미지를 확인해 보니 아무 데이터도 없더군요.
 
 구글 검색 결과..<br/>
 
