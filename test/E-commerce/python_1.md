@@ -74,6 +74,7 @@ class member:
 - 프로그램 실행시 초기화면으로 프로그램 이름/버전과 선택할수 있는 3가지의 기능이 보여진다.
 - sleep(n) n초의 시간을 대기한다.<br/>
 - system('cls') 콘솔화면의 내용을 지운다
+- Linux의 경우 system('clear')
 
 ```
 mm = 0.5;
