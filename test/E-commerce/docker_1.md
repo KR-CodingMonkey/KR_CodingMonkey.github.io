@@ -1,12 +1,10 @@
 # mysql DB 생성
 
-linux환경에서 docker mysql image를 다운로드`pull`받고 컨테이너를 실행했다`run`.<br/>
+linux환경에서 docker mysql image를 다운로드`docker pull`받고 컨테이너를 실행했다.<br/>
 
-`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql`,<br/>
+`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql`<br/>
 
-잘 구동되고 있는지 확인하고 `docker ps -a`<br/>
-
-mysql에 접속했다.<br/>
+잘 구동되고 있는지 확인하고 `docker ps -a` mysql에 접속했습니다.<br/>
 `docker exec -it mysql mysql -h127.0.0.1 -uroot -p`<br/>
 
 이제 DB를 만들고 table을 생성하면 되는데 문제가 생겼습니다.<br/>
@@ -25,9 +23,11 @@ You can accomplish what you're trying to do by creating your own mysql base imag
 ```
 
 ```
-공식 mysql 이미지는 데이터를 볼륨에 저장합니다. 일반적으로 이는 데이터가 컨테이너의 수명 이상으로 지속될 수 있도록하는 것이 바람직하지만 데이터 볼륨은 Union File System을 우회하고 이미지에 커밋되지 않습니다.
+공식 mysql 이미지는 데이터를 볼륨에 저장합니다. 일반적으로 이는 데이터가 컨테이너의 수명 이상으로 지속될 수 있도록하는 것이 바람직하지만<br/>
+데이터 볼륨은 Union File System을 우회하고 이미지에 커밋되지 않습니다.
 
-볼륨이없는 자체 mysql 기본 이미지를 생성하여 수행하려는 작업을 수행 할 수 있습니다. 그러면 데이터를 추가하고 이미지에 커밋 할 수 있지만 커밋 후 실행중인 컨테이너에 추가 된 모든 데이터는 컨테이너가 사라지면 손실됩니다.
+볼륨이없는 자체 mysql 기본 이미지를 생성하여 수행하려는 작업을 수행 할 수 있습니다.<br/>
+그러면 데이터를 추가하고 이미지에 커밋 할 수 있지만 커밋 후 실행중인 컨테이너에 추가 된 모든 데이터는 컨테이너가 사라지면 손실됩니다.
 ```
 
 그렇다네요.
@@ -40,4 +40,4 @@ RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
 CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ```
 
-이렇게 이미지를 새로 빌드`docker build`해서 사용하면 데이터가 잘 보관 되어있네요.
+이렇게 이미지를 새로 빌드`docker build`해서 사용하면 데이터가 잘 보관되어 있네요.
