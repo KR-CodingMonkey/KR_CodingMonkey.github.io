@@ -4,10 +4,10 @@
 
 ```
 import pymysql # 데이터 베이스 연동
-from os import system # system('cls') or system('clear')
+from os import system
 # from msvcrt import getch
-from time import sleep # sleep()
-from datetime import datetime # datetime.now()
+from time import sleep
+from datetime import datetime
 
 class member:
 
