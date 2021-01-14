@@ -95,7 +95,8 @@ sleep(mm);
 
 `from time import sleep`<br/>
 `from os import system`<br/>
-sleep(n) n초의 시간을 대기한다.   system('cls') 콘솔화면의 내용을 지운다
+sleep(n) n초의 시간을 대기한다.<br/>
+system('cls') 콘솔화면의 내용을 지운다
 
 ---
 
