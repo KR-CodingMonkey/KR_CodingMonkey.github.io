@@ -51,7 +51,7 @@ if __name__ == '__main__'
 
 ## class member
 
-class는 쓰지 않아도 됐지만 써봤음
+- 회원가입 시 입력받은 아이디/이메일/비밀번호를 토대로 클래스를 생성 후 출력한다.
 
 ```
 class member:
@@ -65,14 +65,16 @@ class member:
         return "\nID          = " + self.id + "\nEmail       = " + self.email + \
         "\nPassword    = " + self.pwd + "\nCreate Date = " + self.create_date + "\n"
 ```
-
-회원가입 시 입력받은 아이디/이메일/비밀번호를 토대로 클래스를 생성 후 출력한다.
-
 ---
 
 ## Init_Display()
 
-프로그램 실행시 초기화면으로 프로그램 이름/버전과 선택할수 있는 3가지의 기능이 보여진다.
+`from time import sleep`<br/>
+`from os import system`<br/>
+- 프로그램 실행시 초기화면으로 프로그램 이름/버전과 선택할수 있는 3가지의 기능이 보여진다.
+- sleep(n) n초의 시간을 대기한다.<br/>
+- system('cls') 콘솔화면의 내용을 지운다
+
 ```
 mm = 0.5;
 system('cls')
@@ -92,11 +94,6 @@ print("        e-commerce v0.1")
 print("└────────────────────────────┘")
 sleep(mm);
 ```
-
-`from time import sleep`<br/>
-`from os import system`<br/>
-sleep(n) n초의 시간을 대기한다.<br/>
-system('cls') 콘솔화면의 내용을 지운다
 
 ---
 
@@ -148,7 +145,7 @@ while(1):
             break
 ```
 
-getch()라는 함수로 사용자의 키보드 입력을 받는데 Unix기반 OS와 windows 함수를 다르게 정의 해줘야 합니다.
+getch()라는 함수로 사용자의 키보드 입력을 받는데 Unix기반 OS와 windows 함수를 다르게 정의 해줘야 한다.
 
 ```
 class _Getch:
