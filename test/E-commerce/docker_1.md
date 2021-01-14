@@ -59,4 +59,49 @@ SHOW databases;
 
 # DB 생성
 create database e_commerce;
+
+# 사용할 DB 지정
+use e_commerce;
+
 ```
+
+![db_structure](https://user-images.githubusercontent.com/76420201/104553079-5b718880-567d-11eb-845c-0aff0ec5b6c2.GIF)
+
+이러한 형태로 테이블을 구성해봤습니다.(모듈프로젝트의 요구사항)
+
+- member
+
+```MYSQL
+create table member1(
+    id varchar(20) not null primary key,
+    email varchar(20) not null,
+    pw varchar(20) not null,
+    c_date varchar(30) not null);
+```
+
+- item 
+
+```MYSQL
+create table item(
+    product_id varchar(20) not null primary key,
+    product_name varchar(20) not null,
+    product_price int(10) not null,
+    product_qty int(10) not null,
+    c_date varchar(30) not null);
+```
+- order_list
+
+```MYSQL
+create table order_list(
+    order_id int(10) not null primary key AUTO_INCREMENT,
+    memberID varchar(20) not null,
+    item_id varchar(20) not null,
+    product_name varchar(20) not null,
+    order_qty int(10) not null,
+    total_price int(10) not null,
+    c_date varchar(30) not null);
+```
+
+---
+
+---
