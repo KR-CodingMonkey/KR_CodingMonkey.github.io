@@ -1,4 +1,4 @@
-# mysql DB 생성
+# MYSQL DB 생성
 
 
 linux환경에서 docker mysql image를 다운로드`pull`받고 컨테이너를 실행했습니다. 잘 구동되고 있는지 확인하고 `docker ps -a` mysql에 접속했습니다.
