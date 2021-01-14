@@ -1,8 +1,9 @@
 # mysql DB 생성
 
+
 linux환경에서 docker mysql image를 다운로드`pull`받고 컨테이너를 실행했습니다. 잘 구동되고 있는지 확인하고 `docker ps -a` mysql에 접속했습니다.
 
-```
+```Linux
 docker pull mysql
 docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest
 
@@ -31,7 +32,7 @@ You can accomplish what you're trying to do by creating your own mysql base imag
 그러면 데이터를 추가하고 이미지에 커밋 할 수 있지만 커밋 후 실행중인 컨테이너에 추가 된 모든 데이터는 컨테이너가 사라지면 손실됩니다.
 ```
 
-그렇다네요.
+그렇다네요.. 친절하게 해결책까지 제시되어 있으니 해봅시다.
 
 ```
 #Dockerfile
@@ -43,7 +44,7 @@ RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
 CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ```
 
-이렇게 이미지를 새로 빌드`docker build`해서 새로 생성된 이미지를 실행 -> DB데이터 입력 -> commit -> 배포 -> 다운로드 후 재실행 하시면 입력했던 데이터가 잘 보존되어 있을겁니다.
+이렇게 이미지를 새로 빌드`docker build`해서 새로 생성된 이미지를 실행 -> DB데이터 입력 -> commit -> 배포 -> 다운로드 후 재실행 했더니 입력했던 데이터가 잘 보존되어 있네요.
 
 ![docker_build](https://user-images.githubusercontent.com/76420201/104550631-9c1ad300-5678-11eb-8ea9-a8bcf51ab739.GIF)
 
