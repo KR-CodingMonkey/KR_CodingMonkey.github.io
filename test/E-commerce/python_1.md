@@ -152,7 +152,7 @@ while(1):
 
 <img src = "https://user-images.githubusercontent.com/76420201/104425234-c3fc2f00-55c3-11eb-8f90-7ee102b3742a.GIF" width="70%">
 
-getch()라는 함수로 사용자의 키보드 입력을 받는데 Unix기반 OS와 windows 함수를 다르게 정의 해줘야 한다.
+getch()라는 함수로 사용자의 키보드 입력(↑, ↓, Enter)을 받는데 Unix기반 OS와 windows 함수를 다르게 정의 해줘야 한다.
 
 ```
 class _Getch:
