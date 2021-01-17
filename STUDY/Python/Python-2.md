@@ -23,3 +23,5 @@ for word in words:
 for word, count in count_words.items():
     print("{0} : {1}".format(word, count))
 ```
+
+<img src="https://user-images.githubusercontent.com/76420201/104839352-c8964f80-5903-11eb-98c8-15b1406011f0.GIF" width = 70%>
