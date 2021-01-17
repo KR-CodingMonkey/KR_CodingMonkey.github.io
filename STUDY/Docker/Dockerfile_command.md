@@ -1,5 +1,9 @@
 # Dockerfile 명령어
 
+`docker build -t [image:tag] .`<br/>
+- `docker build`를 하게되면 현재 디렉토리안에 있는 Dockerfile 내용을 바탕으로 이미지가 생성된다.
+- [image:tag] tag명을 붙이지 않으면 자동으로 latest
+- 마지막에 점(.)은 Dockerfile의 경로를 지정한다. 파일 이름이 Dockerfile이 아닌 경우 --file(또는 -f) 옵션을 사용해서 파일 이름을 지정한다.
 
 |명령어|용도|
 |------|----|

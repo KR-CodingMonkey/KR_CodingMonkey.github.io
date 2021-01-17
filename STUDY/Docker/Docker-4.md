@@ -15,6 +15,7 @@
 | -e | 환경변수 설정 |
 | -rm | 컨테이너 종료시 컨테이너 자동 삭제 |
 | -it | 콘솔에 결과를 출력하는 옵션, -i -> 컨테이너 표준출력을 연다 -t -> tty(디바이스)를 확보한다 |
+| exec | 외부에서 실행되고 있는 컨테이너 안의 명령을 내릴 수 있다 | 
 
 
 `docker run [image]` 라는 명령어는 이미지를 다운받고`docker pull [image]` 컨테이너를 생성하고`docker container create` 컨테이너를 실행하는`docker container start` 3가지 명령어를 동시에 처리할 수 있다. 이미지가 이미 존재한다면 다운로드`pull`하지 않는다. 
