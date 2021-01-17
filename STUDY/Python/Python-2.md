@@ -3,9 +3,11 @@
 
 모든 단어의 갯수 카운트하기
 
-```tip
+```note
 대소문자 주의
-  ex)You you, The the
+
+  ex) You you, The the
+
 ```
 
 ```python
