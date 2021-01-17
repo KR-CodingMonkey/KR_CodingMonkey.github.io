@@ -49,7 +49,7 @@ RUN cp -r /var/lib/mysql /var/lib/mysql-no-volume
 CMD ["--datadir", "/var/lib/mysql-no-volume"]
 ```
 
-이렇게 이미지를 새로 빌드`docker build`해서 새로 생성된 이미지를 실행 -> DB데이터 입력 -> commit -> 배포 -> 다운로드 후 재실행 했더니 입력했던 데이터가 잘 보존되어 있네요.
+이렇게 이미지를 새로 빌드`docker build`해서 새로 생성된 이미지를 실행 -> DB데이터 입력 -> commit -> 커밋된 이미지 실행 했더니 입력했던 데이터가 잘 보존되어 있네요.
 
 ![docker_build](https://user-images.githubusercontent.com/76420201/104550631-9c1ad300-5678-11eb-8ea9-a8bcf51ab739.GIF)
 
