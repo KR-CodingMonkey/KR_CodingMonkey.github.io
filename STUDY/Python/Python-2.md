@@ -46,7 +46,7 @@ re.search(r'abc', '123abcABC')
 
 ## 단어 개수 세기
 
-![어린왕자](https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io/blob/develop/assets/the_little_prince.txt)의 모든 단어의 갯수 카운트하기
+[어린왕자](https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io/blob/develop/assets/the_little_prince.txt)의 모든 단어의 갯수 카운트하기
 
 ```note
 대소문자 주의
