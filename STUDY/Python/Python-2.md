@@ -7,7 +7,9 @@ import re
 
 re.search(r'abc', '123abcABC')
 ```
+```
 <re.Match object; span=(3, 6), match='abc'>
+```
 
 - Meta Characters
 
