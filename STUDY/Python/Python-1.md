@@ -51,4 +51,4 @@ while (1):
             break
 
 ```
-<center><img src="https://user-images.githubusercontent.com/76420201/104839003-db0f8980-5901-11eb-9254-0b306a169d6d.GIF" width="50" alt = "실행화면"></center>
+<center><img src="https://user-images.githubusercontent.com/76420201/104839003-db0f8980-5901-11eb-9254-0b306a169d6d.GIF" width="50%" alt = "실행화면"></center>
