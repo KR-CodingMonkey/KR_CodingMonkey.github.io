@@ -2,6 +2,13 @@
 
 ## 정규 표현식
 
+```python
+import re
+
+re.search(r'abc', '123abcABC')
+```
+<re.Match object; span=(3, 6), match='abc'>
+
 - Meta Characters
 
 1. [] 문자들의 범위를 나타내기 위해 사용
@@ -16,6 +23,10 @@
 |[A-Z] | 모든 대문자 |
 |[a-zA-Z0-9] | 모든 알파벳 문자 및 숫자 |
 |[^0-9] | ^가 맨 앞에 사용 되는 경우 해당 문자 패턴이 아닌 것과 매칭 (유사 Not)|
+
+
+
+
 
 2. .(마침표) 모든 문자를 의미
 
@@ -33,7 +44,7 @@
 
 ## 단어 개수 세기
 
-모든 단어의 갯수 카운트하기
+![text파일](assets/the_little_prince.txt)의 모든 단어의 갯수 카운트하기
 
 ```note
 대소문자 주의
