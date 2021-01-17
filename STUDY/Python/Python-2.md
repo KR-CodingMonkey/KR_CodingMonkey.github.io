@@ -44,6 +44,13 @@ print(m)
 
 2. (마침표) . 모든 문자를 의미
 
+```
+re.search(r'p.g', 'pig')
+```
+```
+<re.Match object; span=(0, 3), match='pig'>
+```
+
 3. \ 단축어
 
 | | |
