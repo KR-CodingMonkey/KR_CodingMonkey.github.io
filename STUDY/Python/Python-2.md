@@ -26,8 +26,20 @@ re.search(r'abc', '123abcABC')
 |[a-zA-Z0-9] | 모든 알파벳 문자 및 숫자 |
 |[^0-9] | ^가 맨 앞에 사용 되는 경우 해당 문자 패턴이 아닌 것과 매칭 (유사 Not)|
 
+```
+re.search(r'[0-7]test', '7testest')
+```
+```
+<re.Match object; span=(0, 5), match='7test'>
+```
 
-
+```
+m = re.search(r'[^at]tude', 'attitude')
+print(m)
+```
+```
+<re.Match object; span=(3, 8), match='itude'>
+```
 
 
 2. (마침표) . 모든 문자를 의미
