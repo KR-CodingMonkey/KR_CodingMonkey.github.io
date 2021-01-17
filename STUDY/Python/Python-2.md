@@ -11,7 +11,7 @@ re.search(r'abc', '123abcABC')
 <re.Match object; span=(3, 6), match='abc'>
 ```
 
-- Meta Characters
+## Meta Characters
 
 1. [] 문자들의 범위를 나타내기 위해 사용
 
@@ -33,6 +33,7 @@ re.search(r'[0-7]test', '7testest')
 <re.Match object; span=(0, 5), match='7test'>
 ```
 
+^가 맨 앞에 사용 되는 경우 (Not[])
 ```
 m = re.search(r'[^at]tude', 'attitude')
 print(m)
@@ -41,10 +42,9 @@ print(m)
 <re.Match object; span=(3, 8), match='itude'>
 ```
 
-
 2. (마침표) . 모든 문자를 의미
 
-3. \
+3. \ 단축어
 
 | | |
 |-|-|
