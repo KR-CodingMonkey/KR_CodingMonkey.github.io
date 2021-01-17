@@ -14,7 +14,7 @@
 <br/>
 
 ## 이미지 리스트
-`docker image ls`,<br\> 
+`docker image ls`,<br/> 
 `docker images`
 
 로컬에 다운받아 놓은 이미지 목록을 보기위해서 `docker image ls` 또는 `docker images` 명령어를 사용한다.
@@ -22,7 +22,7 @@
 ![docker_images](https://user-images.githubusercontent.com/76420201/104117522-3f13da00-5365-11eb-9b06-96aa3b2da7e0.GIF)
 
 ## 이미지 삭제 
-`docker image rm [IMAGE ID]`<br\>
+`docker image rm [IMAGE ID]`<br/>
 `docker rmi [IMAGE ID]`
 
 이미지를 삭제하려면 `docker images`로 해당 이미지의 ID를 확인하고 `docker rmi [Image ID]`명령을 실행하면 된다.
