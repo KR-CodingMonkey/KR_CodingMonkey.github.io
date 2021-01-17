@@ -1,6 +1,13 @@
 
 # 단어 개수 세기
 
+모든 단어의 갯수 카운트하기
+
+```tip
+대소문자 주의 
+    ex)You you, The the
+```
+
 ```python
 import re # To use refindall func
 
@@ -24,4 +31,5 @@ for word, count in count_words.items():
     print("{0} : {1}".format(word, count))
 ```
 
-<img src="https://user-images.githubusercontent.com/76420201/104839352-c8964f80-5903-11eb-98c8-15b1406011f0.GIF" width = 70%>
+
+<img src="https://user-images.githubusercontent.com/76420201/104839352-c8964f80-5903-11eb-98c8-15b1406011f0.GIF" width = "70%">
