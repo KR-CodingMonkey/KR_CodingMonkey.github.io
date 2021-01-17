@@ -1,7 +1,9 @@
 # Docker 이해하기
 
 ## Docker
-![Docker-logo1](https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png){: width = "50%" height = "50%"}{: .center}
+<center><img src="https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png" width="70%"></center><br/>
+
+<!-- ![Docker-logo1](https://user-images.githubusercontent.com/76420201/103785473-91f84380-507e-11eb-9f03-2bd36817ed4b.png){: width = "50%" height = "50%"}{: .center} -->
 
 Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼이다.
 
