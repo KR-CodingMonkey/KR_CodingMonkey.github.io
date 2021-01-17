@@ -13,7 +13,7 @@ re.search(r'abc', '123abcABC')
 
 ## Meta Characters
 
-\1. [] 문자들의 범위를 나타내기 위해 사용
+<br/>1. [] 문자들의 범위를 나타내기 위해 사용
 
 | | |
 |-|-|
@@ -42,7 +42,7 @@ print(m)
 <re.Match object; span=(3, 8), match='itude'>
 ```
 
-\2. (마침표) . 모든 문자를 의미
+<br/>2. (마침표) . 모든 문자를 의미
 
 ```
 re.search(r'p.g', 'pig')
@@ -51,7 +51,7 @@ re.search(r'p.g', 'pig')
 <re.Match object; span=(0, 3), match='pig'>
 ```
 
-\3. \ 단축어
+<br/>3. \ 단축어
 
 | | |
 |-|-|
