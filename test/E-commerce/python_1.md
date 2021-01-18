@@ -78,7 +78,16 @@ Windows(host) -> Linux(guset)
 1111 : 2222
        2222 : 3333
 ```
-이렇게 설정해주고 나서 h:127.0.0.1 p:1111 연결을 해주면 됩니다.
+이렇게 설정해주고 나서 연결을 해주면 됩니다.
+```
+conn = pymysql.connect(
+    host = '127.0.0.1', 
+    user = 'root', 
+    password='', 
+    port = 13306, 
+    db = 'e_commerce', 
+    charset = 'utf8')
+```
 
 ## class member
 ---
