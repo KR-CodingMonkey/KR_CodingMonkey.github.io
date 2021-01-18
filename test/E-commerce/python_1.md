@@ -51,14 +51,14 @@ if __name__ == '__main__'
 
     conn.close()
 ```
-포트번호와 아이피가 헷갈리수 있는데 <br/>
 
-<!-- | | DB            || -->
+포트번호와 아이피가 헷갈리수 있는데, DB컨테이너를 다음과 같이 구동해봤다고 합시다.<br/>
+`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest`
 
 |DB\Python |Windows | Linux |
 |----------|-------|
-|Windows | | |
-|Linux | | |
+|Windows | h:<br/>p: | x |
+|Linux | h:  127.0.0.1<br/>p: 3306| h:<br/>p: |
 
 ## class member
 ---
