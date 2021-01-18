@@ -107,7 +107,7 @@ class member:
         return "\nID          = " + self.id + "\nEmail       = " + self.email + \
         "\nPassword    = " + self.pwd + "\nCreate Date = " + self.create_date + "\n"
 ```
-
+<br/>
 ## Init_Display()
 ---
 
@@ -268,8 +268,7 @@ if key == 27:
             mum -= 1
             if mum < 0: mum = 2
 ```
-
-
+<br/>
 ## Login_Page()
 ---
 
@@ -310,7 +309,7 @@ else:
     cursor.close()
     return 0
 ```
-
+<br/>
 ## Singup_page()
 ---
 
