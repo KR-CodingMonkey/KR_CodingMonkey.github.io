@@ -29,7 +29,7 @@ You can accomplish what you're trying to do by creating your own mysql base imag
 [출처](https://stackoverflow.com/questions/30740828/commit-data-in-a-mysql-container)
 ```
 
-```
+```note
 공식 mysql 이미지는 데이터를 볼륨에 저장합니다. 일반적으로 이는 데이터가 컨테이너의 수명 이상으로 지속될 수 있도록하는 것이 바람직하지만
 데이터 볼륨은 Union File System을 우회하고 이미지에 커밋되지 않습니다.
 
