@@ -86,9 +86,9 @@ class member:
         return "\nID          = " + self.id + "\nEmail       = " + self.email + \
         "\nPassword    = " + self.pwd + "\nCreate Date = " + self.create_date + "\n"
 ```
----
 
 ## Init_Display()
+---
 
 `from time import sleep`<br/>
 `from os import system`<br/>
@@ -117,9 +117,9 @@ print("└───────────────────────�
 sleep(mm);
 ```
 
----
 
 ## Main_Page()
+---
 
 ```
 mum = 0;
@@ -248,9 +248,9 @@ if key == 27:
             if mum < 0: mum = 2
 ```
 
----
 
 ## Login_Page()
+---
 
 - 사용자로부터 ID/PW 입력받고 DB member에서 회원 조회`SELECT`
 - 회원일 경우 회원모드로 전환
@@ -289,9 +289,9 @@ else:
     cursor.close()
     return 0
 ```
----
 
 ## Singup_page()
+---
 
 - 사용자로부터 아이디/이메일/비밀번호를 입력받아서 회원가입`INSERT`
 - DB member에 이미 존재하는`SELECT` 아이디일 경우 실패
