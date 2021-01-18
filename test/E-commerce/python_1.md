@@ -51,6 +51,12 @@ if __name__ == '__main__'
 
     conn.close()
 ```
+포트번호와 아이피가 헷갈리수 있는데 <br/>
+| | DB            ||
+| |Windows | Linux |
+|----------|-------|
+|Windows | | |
+|Linux | | |
 
 ## class member
 ---
