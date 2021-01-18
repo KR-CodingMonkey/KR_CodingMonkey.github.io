@@ -143,6 +143,7 @@ mum = 0
 
                 cursor.close()  
 ```
+<img src="https://user-images.githubusercontent.com/76420201/104859879-8bfe3e80-596b-11eb-8c98-c4ac3a54f79e.GIF" width = "70%">
 
 ---
 
