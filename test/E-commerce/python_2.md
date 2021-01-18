@@ -3,6 +3,7 @@ sort: 3
 ---
 
 # python_2
+---
 
 회원 모드는 네가지 메뉴가 제공된다.<br/> <br/>
 1. 상품 목록 조회<br/>
@@ -10,8 +11,9 @@ sort: 3
 3. 나의 정보<br/>
 4. 로그아웃<br/>
 
----
+<br/>
 ## Member_Mode(id:str)
+---
 
 - 동일하게 사용자 메뉴를 만들어주고 키입력을 받습니다.
 
@@ -37,10 +39,10 @@ mum = 0
         else: print("\t▷ ", end = '')
         print("로그아웃\n")
 ```
----
+<br/>
 
 ### 상품 목록
-
+---
 - 상품 목록을 출력하고 아랫줄에 구매할 상품의 아이디/수량을 입력받는다<br/>
 - DB item테이블을 조회`SELECT`해서 재고가 더 많다면 주문<br/>
 - 상품 목록에서 주문량을 반영해 업데이트`UPDATE`<br/>
@@ -145,10 +147,10 @@ mum = 0
 ```
 <img src="https://user-images.githubusercontent.com/76420201/104859879-8bfe3e80-596b-11eb-8c98-c4ac3a54f79e.GIF" width = "70%">
 
----
+<br/>
 
 ### 주문 내역
-
+---
 - DB order_list 테이블에서 memberID를 키값으로 조회`SELECT`
 
 ```                 
@@ -172,10 +174,10 @@ mum = 0
                 exit = input("\n뒤로가려면 아무키나 눌러주세요.")
                 cursor.close()
 ```
----
+<br/>
 
 ### 나의 정보
-
+---
 - 초기화면에 나의정보 출력`SELECT`
 - 메뉴선택을 input()으로 받음
 - 정보수정`UPDATE` 회원탈퇴`DELETE`
@@ -305,9 +307,10 @@ mum = 0
 
                 cursor.close()
 ```
+<br/>
+### 로그아웃
 ---
 
-### 로그아웃
 ```
             else:
                 # 로그아웃
