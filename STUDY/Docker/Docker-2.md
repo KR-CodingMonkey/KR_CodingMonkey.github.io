@@ -46,7 +46,7 @@ EOF
 ```
 sysctl --system
 ```
-![5](https://user-images.githubusercontent.com/76420201/104091846-72059180-52c3-11eb-9776-ae6de36e500b.GIF)
+<img src = "https://user-images.githubusercontent.com/76420201/104091846-72059180-52c3-11eb-9776-ae6de36e500b.GIF" width = "70%">
 
 
 - 쿠버네티스를 위한 yum repository 설정
@@ -68,7 +68,8 @@ EOF
 ```
 yum update
 ```
-![6-1](https://user-images.githubusercontent.com/76420201/104091907-e6403500-52c3-11eb-9870-9d7218e3795d.GIF)
+<img src = "https://user-images.githubusercontent.com/76420201/104091907-e6403500-52c3-11eb-9870-9d7218e3795d.GIF" width = "70%">
+
 ![6-2](https://user-images.githubusercontent.com/76420201/104091957-459e4500-52c4-11eb-8528-4532e90734be.GIF)
 
 
@@ -105,6 +106,6 @@ docker-compose -version
 ```
 docker run hello-world
 ```
-![10](https://user-images.githubusercontent.com/76420201/104092372-df66f180-52c6-11eb-9b3b-87ea199c7f68.GIF)
+<img src = "https://user-images.githubusercontent.com/76420201/104092372-df66f180-52c6-11eb-9b3b-87ea199c7f68.GIF" width = "70%">
 
 docker run 커맨드로 'hello-world'라는 이미지를 실행시킨 결과이다다. 이와 같이 뜬다면 정상적으로 설치를 완료된 것이다.
