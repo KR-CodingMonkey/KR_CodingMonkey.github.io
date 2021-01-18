@@ -322,3 +322,5 @@ def Singup_Page():
             system('cls')
             break
 ```
+
+<img src= "https://user-images.githubusercontent.com/76420201/104859877-8b65a800-596b-11eb-8a2d-4713fda5b230.GIF" width = "50%">
