@@ -53,7 +53,9 @@ if __name__ == '__main__'
 ```
 
 포트번호와 아이피가 헷갈리수 있는데, DB컨테이너를 다음과 같이 구동해봤다고 합시다.<br/>
-`docker run --name mysql -p 3306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest`
+`docker run --name mysql -p 13306:3306 -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest`
+
+`-p Host:Container` 옵션은 포트포워딩을 위한 옵션입니다. 13306은 외부에서 찾아올 때 번지수, 3306은 내부에서의 번지수라고 이해하시면 됩니다. `-p 13306:3306` 옵션을 주게 되면 컨테이너의 3306번지수를 밖에는 13306으로 써놓겠다. 13306으로 찾아온 신호들을 내부의 3306으로 연결해 주겠다라는 뜻입니다. 하지만 충돌이 일어나지 않는다는 가정하에 `-p 3306:3306`으로 써주면 편하겠죠?
 
 |DB\Python |Windows | Linux |
 |----------|-------|
