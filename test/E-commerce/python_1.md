@@ -55,7 +55,7 @@ if __name__ == '__main__'
 
 <!-- | | DB            || -->
 
-| |Windows | Linux |
+|DB\Python |Windows | Linux |
 |----------|-------|
 |Windows | | |
 |Linux | | |
