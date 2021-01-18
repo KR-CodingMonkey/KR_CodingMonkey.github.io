@@ -59,5 +59,5 @@ docker build -t myapp_test:0.1 .
 docker run -it --rm myapp_test:0.1
 ```
 
-`docker run` 시 주의해야 할점은 `-it` 옵션을 꼭 붙여줘야 합니다!!
+`docker run` 시 주의해야 할 점은 Python 프로그램이 초기에 입력 데이터 값을 받도록 되어있다면 `-it` 옵션을 꼭 붙여줘야 합니다!! -it 옵션을 붙이지 않으면 컨테이너는 입력값이 없다고 여기고 종료해버립니다. 이것 때문에 애먹었어요.
 
