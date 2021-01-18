@@ -17,7 +17,7 @@
 | -it | 콘솔에 결과를 출력하는 옵션, -i -> 컨테이너 표준출력을 연다 -t -> tty(디바이스)를 확보한다 |
 | exec | 외부에서 실행되고 있는 컨테이너 안의 명령을 내릴 수 있다 | 
 
-
+<br/>
 `docker run [image]` 라는 명령어는 이미지를 다운받고`docker pull [image]` 컨테이너를 생성하고`docker container create` 컨테이너를 실행하는`docker container start` 3가지 명령어를 동시에 처리할 수 있다. 이미지가 이미 존재한다면 다운로드`pull`하지 않는다. 
 
 ![docker_run](https://user-images.githubusercontent.com/76420201/104117172-9795a800-5362-11eb-907a-9e471f31c88b.GIF)
@@ -33,7 +33,7 @@
 `docker ps`
 
 `docker run`명령어를 입력하면 컨테이너 생성되고 실행된다. `docker ps`명령어를 통해서 현재 가동중인 컨테이너 목록을 확인할 수 있다. `docker ps -a`와 같이 `-a`옵션을 부여하게 되면 실행 중/정지 중인 모든 컨테이너를 표시한다.<br/>
-STATUS가 UP은 실행중 Exited는 정지 상태를 의미한다.
+STATUS UP은 실행중 Exited는 정지 상태를 의미한다.
 
 ![docker_ps_a](https://user-images.githubusercontent.com/76420201/104118439-86519900-536c-11eb-8412-40aaa86f368c.GIF)
 
