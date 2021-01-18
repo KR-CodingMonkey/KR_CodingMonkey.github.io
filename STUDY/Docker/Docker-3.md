@@ -14,7 +14,7 @@
 <br/>
 
 ## 이미지 리스트
-`docker image ls`,<br/> 
+`docker image ls`<br/> 
 `docker images`
 
 로컬에 다운받아 놓은 이미지 목록을 보기위해서 `docker image ls` 또는 `docker images` 명령어를 사용한다.
