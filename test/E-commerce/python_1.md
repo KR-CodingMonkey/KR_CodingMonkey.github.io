@@ -59,8 +59,11 @@ if __name__ == '__main__'
 
 |DB\Python |Windows | Linux |
 |----------|-------|
-|Windows | h:<br/>p: | x |
+|Windows | h:<br/>p: |  |
 |Linux | h:  127.0.0.1<br/>p: 3306| h:<br/>p: |
+
+우선 DB서버를 윈도우에 두고 파이썬을 리눅스에 테스트 하지 않을거라고 생각합니다. <br/>
+
 
 ## class member
 ---
