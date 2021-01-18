@@ -202,9 +202,11 @@ getch = _Getch()
 
 | |↑|↓|
 |-|-|-|
+
 |Windows|0 72| 0 80|
 |Linux|27 91 65| 27 91 66|
-|Enter| 13 |
+<!-- |Enter| 13 | -->
+
 <!-- 
 - Windows<br/>
 위 : 0 72<br/>
