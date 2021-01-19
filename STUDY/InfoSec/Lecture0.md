@@ -142,3 +142,16 @@ APT는 ‘지능형 지속 공격(Advanced Persistent Threat)’의 약자로, �
 [more..](https://ko.wikipedia.org/wiki/%EC%A0%9C%EB%A1%9C_%EB%8D%B0%EC%9D%B4_%EA%B3%B5%EA%B2%A9)
 
 </details>
+
+---
+
+<details markdown="1">
+<summary><b>쇼단(Shodan)</b></summary>
+
+<br>
+쇼단(Shodan) 검색엔진은 “보안취약점을 가진 시스템”을 찾아 내어, 보안을 강화하기 위한 수단으로 개발되었지만, “보안취약점을 가진 시스템”을 찾아 주는 기능을 가지고 있기 때문에, “어둠의 구글” , “해커들의 놀이터” 라는 별칭이 따라 붙고 있습니다.
+
+[more..](https://m.blog.naver.com/PostView.nhn?blogId=aepkoreanet&logNo=221384830952&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
+</details>
+
