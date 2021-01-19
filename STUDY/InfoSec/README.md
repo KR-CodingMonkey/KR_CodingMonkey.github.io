@@ -2,7 +2,7 @@
 sort: 3
 ---
 
-# 정보보안
+# InfoSec
 
 e
 
