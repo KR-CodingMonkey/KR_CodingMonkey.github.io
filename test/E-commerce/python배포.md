@@ -3,13 +3,14 @@ sort: 5
 ---
 
 # python 프로그램 배포
+---
 
 Windows에서 작업한 python파일을 리눅스에서 Dockerfile로 만드는 방법은 여러가지 있습니다.<br/>
 저는 제가 만든 python 파일을 저의 github사이트에 올려놓고 Dockerfile안에서 `git clone`하는 방식으로 만들었습니다.
 python파일을 수정했을때 github에 업데이트 해주기만 하면 이미지 버전관리를 따로 하지 않아도 되니 편하지 않을까 생각해봤습니다.<br/>
 
 다른방법으로는 리눅스 자체에 `git clone`으로 파일을 다운로드한 후 `copy`라는 커멘드로 Dockerfile에 복사하셔도 됩니다.<br/>마우스로 드래그 해도 파일이 옮겨지긴 하더라고요.
-
+<br/>
 
 ## Dockerfile
 ---
