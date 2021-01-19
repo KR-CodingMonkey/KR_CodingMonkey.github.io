@@ -1,14 +1,23 @@
 
 # 용어정리
 
-**Heartbleed** 
 
+<details markdown="1">
+<summary><b>Heartbleed</b></summary>
+
+<br/>
 HeartBleed란 OpenSSL 1.0.1 버전에서 발견된 매우 위험한 취약점 입니다. OpenSSL을 구성하고 있는 TLS/DTLS의 HeartBeat 확장규격에서 발견된 취약점으로, 해당 취약점을 이용하면 서버와 클라이언트 사이에 주고받는 정보들을 탈취할 수 있습니다.
 
 [more..](https://blog.alyac.co.kr/76)
 
+</details>
+
 ---
 
+<details markdown="1">
+<summary><b>MTBF, MTTR, MTTF</b></summary>
+
+<br/>
 **MTBF**(Mean Time Between Failure) : 평균 고장 시간 간격<br/>
 **MTTR**(Mean Time To Repair) : 평균 수리 시간<br/>
 **MTTF**(Mean Time to Failure) : 평균 고장시간<br/>
@@ -21,13 +30,19 @@ MTBF는 MTBF = MTTR + MTTF 입니다.<br/>
 
 [more..](https://m.blog.naver.com/sigmagil/222000246303)
 
+</details>
+
 ---
 
-**OSINT**
+<details markdown="1">
+<summary><b>OSINT</b></summary>
 
+<br/>
 공개출처정보(open source intelligence, OSINT)는 공개된 출처에서 얻은 정보들을 말한다. 혹은 오픈소스 인텔리전스 또는 공개정보, 공개된 정보, 공개소스정보, 오픈소스정보 등으로도 불린다.
 
 [more..](https://mrrootable.tistory.com/90)
+
+</details>
 
 ---
 
