@@ -46,7 +46,8 @@ Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간
 [more..](https://m.blog.naver.com/PostView.nhn?blogId=on21life&logNo=221388898666&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 ---
-<details markdown="3">
+
+<details markdown="1">
 <summary><b>CVE, CWE, CCE, CVSS</b></summary>
 
 <br>
@@ -82,7 +83,7 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 
 ---
 
-<details markdown="1">
+<details markdown="3">
 <summary><b>시큐어코딩(secure coding)</b></summary>
 
 <br>
