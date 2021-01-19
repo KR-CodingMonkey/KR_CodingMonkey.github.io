@@ -31,19 +31,27 @@ MTBF는 MTBF = MTTR + MTTF 입니다.<br/>
 
 ---
 
-**NTP서버**
+<details markdown="1">
+<summary><b>NTP서버</b></summary>
 
+<br/>
 Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간에 시간 정보를 동기화하기 위한 프로토콜
 
 [more..](https://aorica.tistory.com/46)
 
+</details>
+
 ---
 
-**ESM**
+<details markdown="1">
+<summary><b>ESM</b></summary>
 
+<br/>
 통합보안관리(Enterprise Security Management, ESM) 전산환경의 장애 발생 시 중앙에서 원격으로 통제하여 처리 및 조치를 취할 수 있도록 전산환경의 성능이나 보안의 취약성을 종합 관리하여 시스템의 안전성을 높여주는 시스템
 
 [more..](https://m.blog.naver.com/PostView.nhn?blogId=on21life&logNo=221388898666&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
+</details>
 
 ---
 
