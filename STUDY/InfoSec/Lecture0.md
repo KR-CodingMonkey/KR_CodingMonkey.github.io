@@ -225,7 +225,7 @@ APT에 대응하기 위해 록히드 마틴사가 제시한 방법으로, 공격
 <summary><b>디페이스(Deface)</b></summary>
 
 <br>
-2가지 종류의 공격으로 분류됩니다.
+deface는 외관을 훼손한다는 뜻이며 2가지 종류의 공격으로 분류됩니다.
 
 1. Website Defacement<br/>
 실제적으로 Web Site에 침투하여, 홈페이지 화면의 내용을 변경시키는 공격입니다. Web Site 관리자의 ID/PW를 탈취하여, 관리자 권한으로 Web site의 Source code를 해커의 입맛에 맞게 수정하는것입니다.
