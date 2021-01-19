@@ -2,8 +2,11 @@
 
 ![docker_version](https://user-images.githubusercontent.com/76420201/104095250-38d81c00-52d9-11eb-8a97-c52fbc07c4a0.GIF){: width = "50%" height = "50%"}
 
+
 ## 이미지 검색
 `docker search [image]`
+<br/>
+
 ## 이미지 다운로드
 `docker pull [image:tag]`
 
@@ -11,6 +14,7 @@
 
 ![docker_image_search](https://user-images.githubusercontent.com/76420201/104095269-4ab9bf00-52d9-11eb-836e-c274f111eff1.GIF)
 **공식 Docker 이미지는 [OFFICIAL] 이 [OK] 표시되어 있으므로 공식 이미지를 사용해 주는 것을 권장한다.**
+
 <br/>
 
 ## 이미지 리스트
@@ -20,6 +24,8 @@
 로컬에 다운받아 놓은 이미지 목록을 보기위해서 `docker image ls` 또는 `docker images` 명령어를 사용한다.
 
 ![docker_images](https://user-images.githubusercontent.com/76420201/104117522-3f13da00-5365-11eb-9b06-96aa3b2da7e0.GIF)
+
+<br/>
 
 ## 이미지 삭제 
 `docker image rm [IMAGE ID]`<br/>
