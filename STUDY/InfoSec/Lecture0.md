@@ -46,8 +46,9 @@ Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간
 [more..](https://m.blog.naver.com/PostView.nhn?blogId=on21life&logNo=221388898666&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 ---
+<details markdown="3">
+<summary><b>CVE, CWE, CCE, CVSS</b></summary>
 
-**CVE, CWE, CCE**
 
 ```note
 **취약점**(Vulnerability)이란, **정보시스템이나 소프트웨어 상에 존재하는 보안상의 약점**을 말한다.
@@ -55,6 +56,7 @@ Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간
 기업에서 해킹이나 서비스 장애, 데이터 유출, 변조, 삭제 등이 일어난 경우, 이러한 시스템 상의 취약점을 악용하여 피해가 발생하게 된다.
 ```
 
+<br>
 CVE(Common Vulnerabilities and Exposures): 컴퓨터 하드웨어 또는 소프트웨어 결함이나 체계, 설계상의 취약점 <br/>
 CWE(Common Weakness Enumeration): 다양한 언어 (C, C++, C#, Python..) 및 아키텍쳐, 디자인 설계, 코딩 등의 개발단계에서 발생가능한 취약점<br/>
 CCE(Common Configuration Enumeration): 사용자에게 허용된 권한 이상의 동작을 허용하거나, 범위 이상의 정보 열람, 변조, 유출을 가능하게 하는 시스템 설정 상의 취약점
@@ -65,21 +67,19 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 
 [more..](https://m.blog.naver.com/lhi5693/221676723094)
 
+</details>
+
 ---
 
-**Snort**
+<details markdown="2">
+<summary><b>Snort</b></summary>
 
+<br>
 스노트(snort)는 오픈소스 네트워크 침입 탐지 시스템이다. 또한, 침입 탐지 시스템 IDS의 대명사로 사용된다.
 
 [more..](https://nan491.tistory.com/entry/VMware-Snort%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-%EC%8B%A4%EC%8A%B5%ED%95%98%EA%B8%B0-1)
 
----
-
-**시큐어코딩(secure coding)**
-
-소프트웨어(SW)를 개발함에 있어 개발자의 실수, 논리적 오류 등으로 인해 SW에 내포될 수 있는 보안취약점(vulnerability)을 배제하기 위한 코딩 기법을 뜻 한다. 
-
-[more..](https://m.blog.naver.com/PostView.nhn?blogId=gs_info&logNo=220707616924&proxyReferer=https:%2F%2Fwww.google.com%2F)
+</details>
 
 ---
 
@@ -92,3 +92,5 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 [more..](https://m.blog.naver.com/PostView.nhn?blogId=gs_info&logNo=220707616924&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 </details>
+
+---
