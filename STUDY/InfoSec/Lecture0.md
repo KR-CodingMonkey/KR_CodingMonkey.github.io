@@ -118,3 +118,14 @@ CVSS(Common Vulnerability Scoring System): CVSS는 공통 취약점 등급 시�
 </details>
 
 ---
+
+
+<details markdown="1">
+<summary><b>시큐어코딩(secure coding)</b></summary>
+
+<br>
+APT는 ‘지능형 지속 공격(Advanced Persistent Threat)’의 약자로, 오랜 기간에 걸친 지속적인 해킹 시도를 통해 개인정보와 같은 중요한 데이터를 유출하는 형태의 공격을 의미합니다.
+
+[more..](https://www.samsungsemiconstory.com/1912)
+
+</details>
