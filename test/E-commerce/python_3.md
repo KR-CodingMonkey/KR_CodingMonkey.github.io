@@ -3,16 +3,17 @@ sort: 4
 ---
 
 # python_3
-
+---
 1. 전체 회원 목록 조회
 2. 전체 주문 목록과 회원별 주문 목록을 조회할 수 있다
 3. 상품목록에 상품을 추가할 수 있다.
 4. 가장 많은 금액을 주문한 사용자 목록을 확인할 수 있다.
 5. 가장 많이 주문된 상품 목록을 확인할 수 있다.
 
----
+<br/>
 
 ## def Admin_Mode()
+---
 
 - 초기화면 생성
 
@@ -59,9 +60,10 @@ def Admin_Mode():
                 mum -= 1 
                 if mum < 0: mum = 5;
 ```
----
+<br/>
 
 ### 전체 회원 목록 조회
+---
 
 - DB member 테이블 조회`SELECT`
 
@@ -89,10 +91,10 @@ def Admin_Mode():
                 exit = input("뒤로가려면 아무키나 눌러주세요.")
 
 ```
-
----
+<br/>
 
 ### 전체 주문 내역
+---
 
 - DB order_list 테이블 조회`SELECT`
 - 특정 멤버 주문내역 조회`SELECT`
@@ -139,9 +141,10 @@ def Admin_Mode():
                 cursor.close()
 
 ```
----
+<br/>
 
 ### 상품 추가/업데이트
+---
 
 - 초기화면 DB item 테이블 출력`SELECT`
 - 상품 ID/이름/가격/수량을 입력 데이터로 받음
@@ -245,9 +248,10 @@ def Admin_Mode():
                             cursor.close()
                             break
 ```
----
+<br/>
 
 ### VIP 고객 리스트
+---
 
 - 주문내역을 조회`SELECT`해서 가장많은 금액을 주문한 사용자 내림차순으로 출력
 
@@ -279,9 +283,10 @@ def Admin_Mode():
                 exit = input("뒤로가려면 아무키나 누르세요.\n")
                 cursor.close()
 ```
----
+<br/>
 
 ### 인기 상품 리스트
+---
 
 - DB order_list 조회`SELECT` 주문량이 가장많은 상품부터 내림차순으로 출력
 
@@ -313,10 +318,11 @@ def Admin_Mode():
                 cursor.close()
 
 ```
-
----
+<br/>
 
 ### 로그아웃
+---
+
 ```
             else:
                 # 로그아웃
