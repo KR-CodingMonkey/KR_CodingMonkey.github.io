@@ -59,10 +59,16 @@
 
 ---
 
+<details markdown="1">
+<summary><b>DLP(Data Loss Prevention)</b></summary>
 
----
+<br>
+- 데이터 유출 방지 솔루션이라고 하며 기업내의 다양한 주요 정보를 보호하며 외부 유출을 차단 또는 방지하기 위한 장비.
 
-## DLP
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
 
 ---
 
