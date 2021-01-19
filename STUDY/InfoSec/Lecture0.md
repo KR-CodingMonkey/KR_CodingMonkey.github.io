@@ -119,13 +119,26 @@ CVSS(Common Vulnerability Scoring System): CVSS는 공통 취약점 등급 시�
 
 ---
 
-
 <details markdown="1">
-<summary><b>시큐어코딩(secure coding)</b></summary>
+<summary><b>APT(Advanced Persistent Threat) 공격</b></summary>
 
 <br>
 APT는 ‘지능형 지속 공격(Advanced Persistent Threat)’의 약자로, 오랜 기간에 걸친 지속적인 해킹 시도를 통해 개인정보와 같은 중요한 데이터를 유출하는 형태의 공격을 의미합니다.
 
 [more..](https://www.samsungsemiconstory.com/1912)
+
+</details>
+
+---
+
+<details markdown="1">
+<summary><b>Zero day attack</b></summary>
+
+<br>
+제로 데이 공격(또는 제로 데이 위협, Zero-Day Attack)은 컴퓨터 소프트웨어의 취약점을 공격하는 기술적 위협으로, 해당 취약점에 대한 패치가 나오지 않은 시점에서 이루어지는 공격을 말한다. 이러한 시점에서 만들어진 취약점 공격(익스플로잇)을 제로 데이 취약점 공격이라고도 한다.
+
+제로 데이 공격 대상물이 되는 프로그램은 공식적으로 패치가 배포되기 전에 감행된다. 이런 프로그램들은 보통 대중들에게 공개되기 전 공격자들에게로 배포된다. 단어의 어원은 공격이 감행되는 시점에서 유래한 것이다. 제로 데이 공격 대상물은 대중과 프로그램 배포자들이 잘 모르는 것이 보통이다
+
+[more..](https://ko.wikipedia.org/wiki/%EC%A0%9C%EB%A1%9C_%EB%8D%B0%EC%9D%B4_%EA%B3%B5%EA%B2%A9)
 
 </details>
