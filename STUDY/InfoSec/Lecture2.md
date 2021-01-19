@@ -3,10 +3,9 @@
 
 
 <details markdown="1">
-<summary><b>방화벽</b></summary>
+<summary><b>방화벽(firewall)</b></summary>
 
 <br>   
-방화벽(firewall)
 - 침입 차단 시스템
 - 가장 기본적으로 사용되는 솔루션
 - 외부 네트워크와 내부 네트워크 사이에서 지나다니는 패킷을 **미리 정한 정책/규칙(RuleSet)**에 따라 차단하거나 보내주는 기능을 하는 H/W 또는 S/W
@@ -16,14 +15,19 @@
 </details>
 
 ---
+<details markdown="1">
+<summary><b>IDS(Intrusion Detection System)</b></summary>
 
-## IDS
-
-IDS(Intrusion Detection System)
+<br>   
 - 침입 탐지 시스템
 - 네트워크를 통한 공격을 탐지하기 위한 장비
 - 방화벽이 차단하지 못한 해킹, 악성코드의 활동 탐지
 - 설치위치에 따라 호스트기반(HIDS), 네트워크기반(NIDS)으로 나뉜다
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+---
 
 
 ## IPS
