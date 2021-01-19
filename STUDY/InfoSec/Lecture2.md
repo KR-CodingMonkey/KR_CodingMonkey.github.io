@@ -29,10 +29,38 @@
 </details>
 ---
 
+<details markdown="1">
+<summary><b>IPS(Intrusion Prevention System)</b></summary>
 
-## IPS
+<br>   
+- 침입 탐지+차단 시스템
+- IDS+Firewall 네트워크 기반의 솔루션을 논리적으로 결합한 시스템
+- 방화벽의 rule 차단은 공격에 대한 차단율이 낮다는 점을 보완하기 위해 만들어짐
+- 보통 비정상적인 트래픽에 대해 능동적으로 분석하고 차단한다.
 
-## UTM
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+
+---
+
+<details markdown="1">
+<summary><b>UTM (Unified Threat Management)</b></summary>
+
+<br>   
+- 통합 위협 관리
+- 하나의 장비에서 여러 보안기능을 통합적으로 제공
+- 개별 장비보다는 기능이 떨어질 수 있다.
+- 포함된 기능 (방화벽,web filter, waf, vpn, ids, ips...)
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+
+---
+
+
+---
 
 ## DLP
 
@@ -41,6 +69,23 @@
 webKnight
 
 ## VPN
+
+---
+
+<details markdown="1">
+<summary><b>VPN (Virtual Private Network)</b></summary>
+
+<br>   
+- 가상 사설망
+- 인터넷을 전용선처럼 사용할 수있게 함
+- 본사와 자사간 전용망을 설치한것과같은 효과
+- 기존의 사설망의 고비용 부담 해소
+- 터널링 + 암호화
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+---
 
 ## NAC
 
