@@ -2,6 +2,6 @@
 sort: 3
 ---
 
-# STUDY
+# 정보보안
 
 {% include list.liquid all=true %}
