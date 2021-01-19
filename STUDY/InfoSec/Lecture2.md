@@ -64,9 +64,17 @@
 
 ## DLP
 
-## WAF 
+---
 
-webKnight
+<details markdown="1">
+<summary><b>WAF (WEB APPLICATION FIREWALL)</b></summary>
+
+<br>   
+- 웹 방화벽
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
 
 ---
 
