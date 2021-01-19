@@ -71,7 +71,7 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 
 ---
 
-<details markdown="2">
+<details markdown="1">
 <summary><b>Snort</b></summary>
 
 <br/>
@@ -83,7 +83,7 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 
 ---
 
-<details markdown="3">
+<details markdown="1">
 <summary><b>시큐어코딩(secure coding)</b></summary>
 
 <br>
