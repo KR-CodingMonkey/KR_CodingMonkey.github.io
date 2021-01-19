@@ -51,7 +51,7 @@
 - 통합 위협 관리
 - 하나의 장비에서 여러 보안기능을 통합적으로 제공
 - 개별 장비보다는 기능이 떨어질 수 있다.
-- 포함된 기능 (방화벽,web filter, waf, vpn, ids, ips...)
+- 제공되는 기능 (방화벽,web filter, waf, vpn, ids, ips...)
 
 [more..](https://liveyourit.tistory.com/3)
 
