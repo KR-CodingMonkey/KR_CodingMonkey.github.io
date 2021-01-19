@@ -38,15 +38,11 @@
 - OSI 7 layer의 3계층(네트워크) 4계층(전송)에서 동작
 - 패킷 필터링
 
- 
-
 2) Application Layer Gateway(=ALG)
 
 - 2세대 방화벽 : Proxy
 - OSI 7 LAYER의 application 계층
 - 실제 데이터까지 보고 필터링
-
- 
 
 3) Circuit Gateway
 
@@ -54,8 +50,6 @@
 - OSI 7 layer의 session layer에서 동작함
 - 클라이언트와 서버가 세션 연결을 맺어야하기 때문에 외적으로 S/W가 필요하다
 - 현재는 잘 쓰이지 않는다.
-
- 
 
 4) Stateful Inspection
 
@@ -65,8 +59,6 @@
 : 방화벽에서 상태추적테이블을 생성하여 l3,l4 정보를 기억하여 정책 검사를 한번만 수행함.
 즉, 필터링을 한번 통과하면 지속적으로 통과시킴
 : 동적으로 보안정책을 수정하며 실제 접속상태를 감시하여 통신상태에 따라 허용/거부 수행
-
- 
 
 5) Dynamic Packet Filtering
 
