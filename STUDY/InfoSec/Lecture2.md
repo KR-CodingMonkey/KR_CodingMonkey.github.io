@@ -1,13 +1,21 @@
  
 # 보안 솔루션 종류
 
-## 방화벽
 
+<details markdown="1">
+<summary><b>방화벽</b></summary>
+
+<br>   
 방화벽(firewall)
 - 침입 차단 시스템
 - 가장 기본적으로 사용되는 솔루션
 - 외부 네트워크와 내부 네트워크 사이에서 지나다니는 패킷을 **미리 정한 정책/규칙(RuleSet)**에 따라 차단하거나 보내주는 기능을 하는 H/W 또는 S/W
-<br/>
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+
+---
 
 ## IDS
 
