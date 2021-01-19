@@ -59,6 +59,10 @@ file.close()
 <img src="https://user-images.githubusercontent.com/76420201/104859674-4d1bb900-596a-11eb-8bab-f2f255db6dbd.GIF" width = "70%" >
 
 
+---
+
+
+
 ```
 import csv
 
