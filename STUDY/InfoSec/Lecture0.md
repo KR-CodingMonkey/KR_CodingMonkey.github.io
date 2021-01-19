@@ -237,3 +237,36 @@ Web Site 내용은 건드리지 않고, 도메인 이름을 IP 주소로 변경�
 [more..](https://it.donga.com/8222/)
 
 </details>
+
+---
+
+<details markdown="1">
+<summary><b>VPN(Virtual Private Network)</b></summary>
+
+<br>   
+VPN(Virtual Private Network)는 의미 그대로 가상 사설망을 의미한다. VPN은 인터넷과 같은 공중망을 마치 전용회선처럼 사용해 보안성을 향상하면서도 사설망을 이용하지 않았기 때문에 비용문제까지 해결한 네트워크라고 보면 된다.
+
+공중망을 통해 데이터가 송수신되더라도 정보 유출이 없도록 라우터 체계를 비공개하고, 데이터를 암호화하고, 사용자 인증 기능을 추가하는 등 다양한 방법으로 보안 기능을 제공한다.
+
+- 사설망(Private Networt): 특정 조직 내에서만 사용되는 네트워크로 인증된 사용자만이 사용 가능하며 보안성이 우수하지만 설치비용이나 관리비용이 든다는 단점이 존재
+
+- 공중망(Public Network): 인터넷처럼 모두에게 공개된 네트워크로 보안성이 취약함
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+
+---
+
+<details markdown="1">
+<summary><b>VPN 터널링</b></summary>
+
+<br>   
+터널링이란 연결해야 할 두 지점간에 마치 터널이 뚫린 것처럼 통로를 생성하는 것을 말한다. 그리고 이 터널은 터널링을 지원하는 프로토콜을 사용하여 구현되고 있으며 사설망과 같은 보안 기능을 제공하게 된다.
+
+![vpn_tunneling](https://user-images.githubusercontent.com/76420201/105048769-42b70780-5aaf-11eb-89b6-972a59bce1e2.GIF)
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
+
