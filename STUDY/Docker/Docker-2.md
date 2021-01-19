@@ -72,6 +72,7 @@ yum update
 
 ![6-2](https://user-images.githubusercontent.com/76420201/104091957-459e4500-52c4-11eb-8528-4532e90734be.GIF)
 
+<br/>
 
 ## Docker 설치 & 실행
 
