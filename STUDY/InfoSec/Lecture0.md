@@ -50,6 +50,12 @@ Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간
 <details markdown="1">
 <summary><b>CVE, CWE, CCE, CVSS</b></summary>
 
+
+```note
+**취약점**(Vulnerability)이란, **정보시스템이나 소프트웨어 상에 존재하는 보안상의 약점**을 말한다.
+
+기업에서 해킹이나 서비스 장애, 데이터 유출, 변조, 삭제 등이 일어난 경우, 이러한 시스템 상의 취약점을 악용하여 피해가 발생하게 된다.
+```
 <br>
 CVE(Common Vulnerabilities and Exposures): 컴퓨터 하드웨어 또는 소프트웨어 결함이나 체계, 설계상의 취약점 <br/>
 CWE(Common Weakness Enumeration): 다양한 언어 (C, C++, C#, Python..) 및 아키텍쳐, 디자인 설계, 코딩 등의 개발단계에서 발생가능한 취약점<br/>
@@ -63,11 +69,6 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 
 </details>
 
-```note
-**취약점**(Vulnerability)이란, **정보시스템이나 소프트웨어 상에 존재하는 보안상의 약점**을 말한다.
-
-기업에서 해킹이나 서비스 장애, 데이터 유출, 변조, 삭제 등이 일어난 경우, 이러한 시스템 상의 취약점을 악용하여 피해가 발생하게 된다.
-```
 
 ---
 
