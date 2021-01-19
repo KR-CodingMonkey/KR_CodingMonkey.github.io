@@ -112,4 +112,15 @@ PC 및 네트워크 장치 통제(무결성 체크)
 
 </details>
 
-## ESM
+---
+
+<details markdown="1">
+<summary><b>ESM(Enterprise Security Management)</b></summary>
+
+<br>   
+- Gui를 통해 각종 시스템 및 장비의 상태, 성능, 장애여부 등을 모니터링하고 관리하기 위한 시스템
+- 회사의 비즈니스 안정성 확보, 자원최적화, 가치 향상
+
+[more..](https://liveyourit.tistory.com/3)
+
+</details>
