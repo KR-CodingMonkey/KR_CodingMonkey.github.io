@@ -56,14 +56,14 @@ Network Time Protocol의 약자로 Network 상에 연결된 장비와 장비 간
 
 기업에서 해킹이나 서비스 장애, 데이터 유출, 변조, 삭제 등이 일어난 경우, 이러한 시스템 상의 취약점을 악용하여 피해가 발생하게 된다.
 ```
-<br>
-CVE(Common Vulnerabilities and Exposures): 컴퓨터 하드웨어 또는 소프트웨어 결함이나 체계, 설계상의 취약점 <br/>
-CWE(Common Weakness Enumeration): 다양한 언어 (C, C++, C#, Python..) 및 아키텍쳐, 디자인 설계, 코딩 등의 개발단계에서 발생가능한 취약점<br/>
-CCE(Common Configuration Enumeration): 사용자에게 허용된 권한 이상의 동작을 허용하거나, 범위 이상의 정보 열람, 변조, 유출을 가능하게 하는 시스템 설정 상의 취약점<br/>
 
-CVSS(Common Vulnerability Scoring System):<br/>
+CVE(Common Vulnerabilities and Exposures): 컴퓨터 하드웨어 또는 소프트웨어 결함이나 체계, 설계상의 취약점
 
-CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약점 위험도를 계산할 수 있는 개방형 프레임워크이다. 취약점의 위험도 평가를 위해 취약점의 접근 경로, 복잡성, 인증 여부, 사용자 인터페이스, 기밀성, 무결성, 가용성 등 여러 항목을 사용한다. 점수를 계산할 수 있는 사이트는 NIST(National Institute of Standards and Technology)에서 관리하고 있는 NVD에서 제공하고 있다.<br/>
+CWE(Common Weakness Enumeration): 다양한 언어 (C, C++, C#, Python..) 및 아키텍쳐, 디자인 설계, 코딩 등의 개발단계에서 발생가능한 취약점
+
+CCE(Common Configuration Enumeration): 사용자에게 허용된 권한 이상의 동작을 허용하거나, 범위 이상의 정보 열람, 변조, 유출을 가능하게 하는 시스템 설정 상의 취약점
+
+CVSS(Common Vulnerability Scoring System): CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약점 위험도를 계산할 수 있는 개방형 프레임워크이다. 취약점의 위험도 평가를 위해 취약점의 접근 경로, 복잡성, 인증 여부, 사용자 인터페이스, 기밀성, 무결성, 가용성 등 여러 항목을 사용한다. 점수를 계산할 수 있는 사이트는 NIST(National Institute of Standards and Technology)에서 관리하고 있는 NVD에서 제공하고 있다.<br/>
 
 [more..](https://m.blog.naver.com/lhi5693/221676723094)
 
