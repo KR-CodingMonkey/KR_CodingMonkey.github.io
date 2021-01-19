@@ -84,7 +84,7 @@ CVSS는 공통 취약점 등급 시스템으로 해석할 수 있으며, 취약�
 ---
 
 <details markdown="1">
-<summary>**시큐어코딩(secure coding)**</summary>
+<summary><b>시큐어코딩(secure coding)</b></summary>
 
 소프트웨어(SW)를 개발함에 있어 개발자의 실수, 논리적 오류 등으로 인해 SW에 내포될 수 있는 보안취약점(vulnerability)을 배제하기 위한 코딩 기법을 뜻 한다. 
 
