@@ -61,12 +61,15 @@ Network란 ?
 
     ISP(Internet Service Provider, 인터넷서비스 제공업체, SKT KT LG)
 
-- Internet ?
+---
+
+Internet ?
 
   - 다수의 네트워크가 서로 접속하여 하나의 큰 네트워크로 통합된것
 
+---
 
-- Protocol ?
+Protocol ?
 
   - 컴퓨터나 네트워크 장비가 서로 통신하기 위해서 미리 정해놓은 약속 (TCP/IP protocol라는 규칙안에 모든 약속들이 정해져있다.)
   - RFC(IETF) : 많은 프로토콜의 정의나 설명이 RFC문서로 정리되어 있으며 각 프로토콜의 역할과 구성이 명확이 정해져있다. (www.ietf.com)
