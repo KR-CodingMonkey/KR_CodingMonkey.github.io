@@ -50,7 +50,7 @@ OSI 7 계층은 네트워크에서 통신이 일어나는 과정을 7단계로 �
 
   - 데이터 전송방식을 결정하는 계층
 
-    TCP : 확인하면서 전송(ACK = 확인메세지, ACK가 안오면 다시보냄, 손실거의x)
+    TCP : 확인하면서 전송(ACK = 확인메세지, ACK가 안오면 다시보냄, 손실거의x)<br/>
 	UDP : 확인하지 않고 쭉쭉 보냄(손실 가능성이 있음)
 
 	| |TCP	|	UDP|
@@ -58,7 +58,8 @@ OSI 7 계층은 네트워크에서 통신이 일어나는 과정을 7단계로 �
 	|신뢰성(확인)  |    O	|	 x| 
     |  속도 | ↓ | ↑ |
 
-	일반적으로 TCP방식을 쓰지만, 급할경우 UDP 쓸 수도 있음. 음성데이터같은경우 처리속도가 빨라야 하기 때문에 UDP사용
+	일반적으로 TCP방식을 쓰지만, 급할경우 UDP 쓸 수도 있음. <br/>
+    음성데이터같은경우 처리속도가 빨라야 하기 때문에 UDP사용
 
   - Network 서비스를 구분해주는 계층
 
@@ -67,34 +68,32 @@ OSI 7 계층은 네트워크에서 통신이 일어나는 과정을 7단계로 �
 
 - Network(네트워크 계층, 3 Layer)
 	
-	● 네트워크 통신경로를 만들어주는 계층
-	   Routing - 통신경로를 만들어주는 작업
+  - 네트워크 통신경로를 만들어주는 계층<br/> 
+    Routing -> 통신경로를 만들어주는 작업
 
-	● 논리적주소를 사용하여 통신하는 계층
-	   주소 - IP(4byte)
-	   장비 - Router, L3 switch 
-	   data unit - Packet
+  - 논리적주소를 사용하여 통신하는 계층
+	주소 - IP(4byte)<br/>
+	장비 - Router, L3 switch<br/> 
+	data unit - Packet
 	
-
 - Data(2 Layer)
 
-	● 데이터의 포장방식을 결정하는 계층
-	   LAN - Ethernet
-	   WAN - HDLC(Cisco에서 개발한 포장방식), PPP(표준으로 채택된 방법)
+  - 데이터의 포장방식을 결정하는 계층
+	LAN - Ethernet<br/>
+	WAN - HDLC(Cisco에서 개발한 포장방식), PPP(표준으로 채택된 방법)
 
-	● 물리적주소를 사용하여 통신하는 계층
-	   주소 - MAC(6byte)
-	   장비 - Switch, Bridge(포트개수가 적어서 거의 사용안함)
-	   Data unit - Frame
+  - 물리적주소를 사용하여 통신하는 계층
+	주소 - MAC(6byte)<br/>
+	장비 - Switch, Bridge(포트개수가 적어서 거의 사용안함)<br/>
+	Data unit - Frame
 
-	출발지 주소 - source address
+	출발지 주소 - source address<br/>
 	도착지 주소 - destination address
 
-5. Physical Layer(물리적 계층) 
+### Physical Layer(물리적 계층) 
 
-	● 위에서 만들어진 프레임을 전기적 신호로 바꿔서 
-	   매개체를 통해 다른 장비로 전달하는 실질적인 계층
+위에서 만들어진 프레임을 전기적 신호로 바꿔서 매개체를 통해 다른 장비로 전달하는 실질적인 계층
 
-	   주소 - 없음
-	   장비 - cable, Hub, Repeater
-	   Data unit - bit
+- 주소 - 없음
+- 장비 - cable, Hub, Repeater
+- Data unit - bit
