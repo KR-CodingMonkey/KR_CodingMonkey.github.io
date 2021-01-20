@@ -31,10 +31,10 @@ static과 dynamic 동시에 입력되었을때 우선도가 static > dynamic 이
 0000 0000(0) ~ 1111 1111(255)
 
 주소확인(cmd) :<br/> 
-ipconfig -> IPv4주소(4byte 10진법표기) <br/>
+`ipconfig` -> IPv4주소(4byte 10진법표기) <br/>
 192.168.6.22 (. 1byte) = (1100 0000).(1010 1000).(0000 0110).(0001 0110)
 
-ipconfig /all -> 물리적주소 (RAM의 고유주소)(- 1byte)<br/>
+`ipconfig /all` -> 물리적주소 (RAM의 고유주소)(- 1byte)<br/>
 MAC (6BYTE, 16진법 표기) D0-50-99-92-DF-B3(H) 같은 네트워크 장비끼리 서로를 구분
 
 ---
