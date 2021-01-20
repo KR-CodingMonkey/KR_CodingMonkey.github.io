@@ -30,8 +30,8 @@ static과 dynamic 동시에 입력되었을때 우선도가 static > dynamic 이
 (0,1) 하나를 1bit, 1byte = 8bits <br/>
 0000 0000(0) ~ 1111 1111(255)
 
-주소확인 :<br/> 
-cmd -> ipconfig -> IPv4주소(4byte 10진법표기) <br/>
+주소확인(cmd) :<br/> 
+ipconfig -> IPv4주소(4byte 10진법표기) <br/>
 192.168.6.22 (. 1byte) = (1100 0000).(1010 1000).(0000 0110).(0001 0110)
 
 ipconfig /all -> 물리적주소 (RAM의 고유주소)(- 1byte)<br/>
