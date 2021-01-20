@@ -286,6 +286,8 @@ IP에는 오로지 패킷을 목적지에 도달시키기 위한 내용들로만
 
 ICMP는 해당 호스트가 없거나, 해당 포트에 대기중에 서버 프로그램이 없는 등의 에러 상황이 발생할 경우 IP헤더에 기록되어 있는 출발지 호스트로 이러한 에러에 대한 상황을 보내주는 역할을 수행하게 된다.
 
-[more..](https://liveyourit.tistory.com/3)
+![ICMP](https://user-images.githubusercontent.com/76420201/105119159-1df47b80-5b13-11eb-90ab-c4b0e5549395.jpg)
+
+[more..](https://m.blog.naver.com/PostView.nhn?blogId=rbdi3222&logNo=220602423771&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 </details>
