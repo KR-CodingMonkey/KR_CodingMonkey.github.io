@@ -46,7 +46,7 @@ OSI 7 계층은 네트워크에서 통신이 일어나는 과정을 7단계로 �
 - Transport(전송계층, 4 Layer)
 	
   - 데이터의 분할과 조합이 일어나는 계층<br> 
-     
+
     (한번의 전달할수있는 최대데이터 크기 = MTU, Maximum Transmisson Unit)<br/>
 	(분할후 받기쉽게 번호를 붙여줌, 데이터의 순서번호 = Sequence Number)
 
@@ -92,7 +92,11 @@ OSI 7 계층은 네트워크에서 통신이 일어나는 과정을 7단계로 �
 	출발지 주소 - source address<br/>
 	도착지 주소 - destination address
 
+
+
 ### Physical Layer(물리적 계층) 
+
+---
 
 위에서 만들어진 프레임을 전기적 신호로 바꿔서 매개체를 통해 다른 장비로 전달하는 실질적인 계층
 
