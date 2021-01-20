@@ -1,7 +1,7 @@
 
 # WireShark
 
-<img src = "https://user-images.githubusercontent.com/76420201/105180489-fd0d4400-5b6d-11eb-958b-0ba9c22e78da.png" width = "70%">
+<center><img src = "https://user-images.githubusercontent.com/76420201/105180489-fd0d4400-5b6d-11eb-958b-0ba9c22e78da.png" width = "90%"></center>
 
 와이어샤크(Wireshark)는 자유 및 오픈 소스 패킷 분석 프로그램이다. 네트워크의 문제, 분석, 소프트웨어 및 통신 프로토콜 개발, 교육에 쓰인다. 
 
