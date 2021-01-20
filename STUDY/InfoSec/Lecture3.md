@@ -56,9 +56,6 @@ Wireshark는 자체 프로그램으로 네트워크 트래픽을 캡처하는 �
 |Length | 패킷의 길이|
 |Info | 패킷 정보|
 
-
-출처: https://jeong-pro.tistory.com/155 [기본기를 쌓는 정아마추어 코딩블로그]
-
 - 4번은 2번 출력창에서 선택한 하나의 단일 패킷에 대하여 패킷 데이터를 16진수와 ASCII 코드로 보여줍니다. 
 
 [출처](https://itsaessak.tistory.com/162)
