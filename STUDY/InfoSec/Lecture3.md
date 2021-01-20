@@ -31,7 +31,7 @@ Wireshark는 자체 프로그램으로 네트워크 트래픽을 캡처하는 �
 ![와이어샤크 인터페이스](https://user-images.githubusercontent.com/76420201/105182684-ad7c4780-5b70-11eb-9aac-9562a52dfd29.jpg)
 
 
-- 1번은 메뉴들을 나타내며 [ File | Edit | View | Go | Capture | Analyze | Statistics | Help ] 총 8개의 메뉴로 구성되어 있습니다. 
+- 1번은 메뉴들을 나타내며 ( File, Edit, View, Go, Capture, Analyze, Statistics, Help ) 총 8개의 메뉴로 구성되어 있습니다. 
 
     - [File]       : 캡쳐 데이터를 열거나 저장
     - [Edit]       : 패킷을 찾거나 표시합니다. 프로그램의 속성 설정 (예를들어, ssl 패킷을 보기위한 개인키 등록 등)
