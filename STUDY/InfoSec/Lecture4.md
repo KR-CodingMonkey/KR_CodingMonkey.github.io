@@ -1,7 +1,18 @@
 
 # 패킷 분석
 
-## ARP Poison 분석 방법 
+## TCP
+
+## UDP
+
+## DNS
+
+## FTP 무차별 대입
+
+## conversation을 이용한 분석
+
+
+<!-- ## ARP Poison 분석 방법 
 
 ARP 스푸핑(ARP spoofing)은 근거리 통신망(LAN) 하에서 주소 결정 프로토콜(ARP) 메시지를 이용하여 상대방의 데이터 패킷을 중간에서 가로채는 중간자 공격 기법이다. 이 공격은 데이터 링크 상의 프로토콜인 ARP 프로토콜을 이용하기 때문에 근거리상의 통신에서만 사용할 수 있는 공격이다.
 
@@ -29,13 +40,7 @@ ARP 스푸핑(ARP spoofing)은 근거리 통신망(LAN) 하에서 주소 결정 
 
  (1) ARP table을 통한 MAC주소 중복 확인
 
- - ARP Spoofing공격이 실행될 때 서버의 ARP 패킷을 분석하면 필요 이상의 reply패킷이 있습니다. 서버는 지속적으로 G/W와 통신하기 때문에 MAC의 주소가 ARP table에서 삭제되지 않기 때문에 request가 없는 reply패킷만 수신되지 않습니다.
+ - ARP Spoofing공격이 실행될 때 서버의 ARP 패킷을 분석하면 필요 이상의 reply패킷이 있습니다. 서버는 지속적으로 G/W와 통신하기 때문에 MAC의 주소가 ARP table에서 삭제되지 않기 때문에 request가 없는 reply패킷만 수신되지 않습니다. -->
 
 
-
-## FTP 무차별 대입
-
-## conversation을 이용한 분석
-
-
-출처: https://soldier5683.tistory.com/18 [White-hacker]
+<!-- 출처: https://soldier5683.tistory.com/18 [White-hacker] -->
