@@ -25,6 +25,20 @@ WireShark를 통한 패킷 분석 방법을 알아본다.
 
 - Header length : 데이터 오프셋필드는 TCP헤더의 길이를 정의합니다. 길이는 4byte씩 증가되고, 이 필드의 값이 20이면 80바이트 길이를 갖는다는 것입니다. TCP헤더의 길이가 다양하게 변화시킬 필요가 있으므로 이 필드가 필요하게 됩니다.
 
+<br/>
+
+[3] Flag
+
+![wireshark-tcp3](https://user-images.githubusercontent.com/76420201/105363729-b4be5680-5c3f-11eb-8dd7-18062bc4bda9.GIF)
+
+
+<br/>
+
+[4]
+
+![wireshark-tcp4](https://user-images.githubusercontent.com/76420201/105363740-b720b080-5c3f-11eb-805a-aefd878595c0.GIF)
+
+
 ## UDP
 
 ## ICMP
