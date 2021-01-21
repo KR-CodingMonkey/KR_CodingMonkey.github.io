@@ -1,15 +1,15 @@
 
 # 패킷 분석
 
+WireShark를 통한 패킷 분석 방법을 알아본다.
+
 ## TCP
 
 ## UDP
 
+## ICMP
+
 ## DNS
-
-## FTP 무차별 대입
-
-## conversation을 이용한 분석
 
 
 <!-- ## ARP Poison 분석 방법 
