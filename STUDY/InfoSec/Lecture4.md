@@ -5,10 +5,15 @@ WireShark를 통한 패킷 분석 방법을 알아본다.
 
 ## TCP
 
-[1] wireshark에서 패킷 캡쳐링을 실시 한 후, 화면에서 Protocol 영역 중에 TCP를 찾아서 클릭하면 TCP에 관한 정보가 나오게 됩니다.
+[1] Protocol이 TCP 인걸 찾아서 클릭하면 TCP에 관한 정보가 나오게 됩니다.
+
+![wireshark-tcp1](https://user-images.githubusercontent.com/76420201/105362187-eafad680-5c3d-11eb-82ef-59c278888f06.GIF)
 
 
 [2]
+
+
+![wireshark-tcp2](https://user-images.githubusercontent.com/76420201/105362478-49c05000-5c3e-11eb-8d11-c853efa93033.GIF)
 
 -(Src Port)Source port (발신지 포트 필드) : 발신지 포트필드는 발신지에서 오픈된 포트입니다. 위의 패킷을 보면 https 포트 (443) 인 것을 확인할 수 있습니다.
 
