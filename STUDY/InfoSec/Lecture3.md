@@ -81,7 +81,7 @@ Wireshark는 자체 프로그램으로 네트워크 트래픽을 캡처하는 �
 
 데이터를 찾을때 자주 사용하는 필터 식
 
-![wireshark_option](https://user-images.githubusercontent.com/76420201/105183945-2039f280-5b72-11eb-9b39-c06d61855a8f.png)
+<img src = "https://user-images.githubusercontent.com/76420201/105183945-2039f280-5b72-11eb-9b39-c06d61855a8f.png" width = "90%">
  
 
  논리/비교 연산자
