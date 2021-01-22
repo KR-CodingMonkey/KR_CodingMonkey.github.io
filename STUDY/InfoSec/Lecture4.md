@@ -27,7 +27,7 @@ WireShark를 통한 패킷 분석 방법을 알아본다.
 예를 들어 5000byte 짜리 파일을 전송하는 경우를 살펴보자. 이 때의 MSS가 100byte라고 생각하면 TCP는 5000 byte짜리 파일을 전송하기 위해 50개의 세그먼트를 생성하게 될 것이다. (5000 / 100 = 50). 이런 경우 TCP는 각 세그먼트의 Sequence Number Field에 Byte 기준 번호를 붙인다. 즉, 첫 번째 세그먼트의 Sequence number가 0이라 가정하면 두 번째 세그먼트는 100번, 세번째 세그먼트는 200번의 식으로 Sequence number가 설정된다. 
 ```
 
-- Ack(Acknowledgment number) : 확인 응답 번호는 ACK = Seq + 1. ack number에 관련하여 1078의 값을 가지게 됩니다.
+- Ack(Acknowledgment number) : 확인 응답 번호는 ACK = Seq + 1. 위에 화면에서는 7098
 
 - Header length : 데이터 오프셋필드는 TCP헤더의 길이를 정의합니다. 길이는 4byte씩 증가되고, 이 필드의 값이 20이면 80바이트 길이를 갖는다는 것입니다. TCP헤더의 길이가 다양하게 변화시킬 필요가 있으므로 이 필드가 필요하게 됩니다.
 
