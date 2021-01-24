@@ -145,7 +145,7 @@ C:\Windows\system32> `arp -a` ARP 테이블 확인 가능
 
 네트워크의 입출력단자들은 포트라고 하며 0부터 65535까지 있습니다. 네트워크는 크게 3가지 영역으로 지정되어 있습니다.
 
-1. Well-Known Port -> 0 ~ 1023 포트
+1) Well-Known Port -> 0 ~ 1023 포트
 
   - 미리 특수용도로 지정되어 있는 포트
 
@@ -162,7 +162,7 @@ C:\Windows\system32> `arp -a` ARP 테이블 확인 가능
   | 443 | HTTPS |
   | 445 | SMB |
 
-2. Registered Port -> 1024 ~ 49151 포트
+2) Registered Port -> 1024 ~ 49151 포트
 
   - 등록된 포트
 
@@ -173,6 +173,6 @@ C:\Windows\system32> `arp -a` ARP 테이블 확인 가능
   | 5900 | VNC |
   | 6112 | Warcraft 3 |
 
-3. Dynamic Port -> 49152 ~ 65535
+3) Dynamic Port -> 49152 ~ 65535
 
   - 동적 포트, 사용자가 임의로 사용가능한 포트 번호
