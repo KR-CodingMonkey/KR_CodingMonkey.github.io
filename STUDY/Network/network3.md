@@ -81,8 +81,6 @@ PC-A와 PC-B는 동일 네트워크
 LAN 카드에 새겨진 주소
 LAN 영역에서 내부 통신을 수행하기 위해 필요한 주소
 
-48비트로 구성 ⇒ OUI(Organizationally Unique Identifier, 24비트) + 일련번호(24비트)
-
 <br/>
 
 ## ping 8.8.8.8 동작 순서
