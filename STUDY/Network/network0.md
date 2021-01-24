@@ -40,3 +40,16 @@ ex ) www.naver.com -> 125.209.222.141
 </details>
 
 ---
+
+<details markdown="1">
+<summary><b>Bandwidth(대역폭)</b></summary>
+<br>   
+
+Bandwidth(대역폭) - 1초당 보낼 수 있는 데이터의 양<br>
+기본단위 : bps(bit per second)<br>
+bps -> kbps -> Mbps -> Gbps
+
+ex ) 100Base-T, 1초에 100Mbit의 데이터를 보낼수 있음
+ex ) 대역폭이 커졋다 -> 양이 늘어낫지만 속도가 빨라졋다고도 많이 사용함
+
+</details>
