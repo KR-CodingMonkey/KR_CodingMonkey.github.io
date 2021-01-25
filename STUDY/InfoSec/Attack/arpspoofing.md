@@ -16,16 +16,21 @@
 
 **1) WinXP에서 ARP 캐시 테이블 내용과 기본 게이트웨이 주소를 확인**
 
+공격이 있기 전 ARP 테이플에서는 정상적인 Gateway의 MAC주소를 저장하고 있습니다.
+
 ![spoofing1](https://user-images.githubusercontent.com/76420201/105667103-102d6480-5f1e-11eb-96f5-921fcd475bc1.GIF)
 
 **2) WinXP에서 IE로 www.google.com에 접속 확인**
+
+정상적인 게이트웨이를 통해서 통신이 잘 이루어지는 모습입니다.
 
 ![spoofing2](https://user-images.githubusercontent.com/76420201/105667105-128fbe80-5f1e-11eb-86ee-44fc1658618e.GIF)
 
 **3) Attacker에서 arp spoofing 공격을 시도**
 
-WinXP의 ARP 캐시 테이블에 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경할 수 있습니다.
+이제,  WinXP ARP 테이블 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 spoofing 공격으로 Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경할 수가 있습니다.
 
+이렇게 Attacker의 MAC주소를 GateWay의 MAC주소라고 입력시켜 버리면 WinXP에서 보내려고 했던 패킷을 Attacker가 훔칠 수 있게 됩니다. 
 **4) WinXP에서 ARP 캐시 테이블을 확인**
 
 **5) Attacker에서 Wireshark를 실행**
