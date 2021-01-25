@@ -34,6 +34,6 @@ WinXP의 ARP 캐시 테이블에 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 Att
 
 **7) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
 
-**8) WinXP에서 구글에 접속하면 @Attacker에 아래 로그가 생성되는 것을 확인**
+**8) WinXP에서 구글에 접속하면 Attacker에 아래 로그가 생성되는 것을 확인**
 
 **9) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
