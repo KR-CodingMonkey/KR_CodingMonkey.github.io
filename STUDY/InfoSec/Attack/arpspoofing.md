@@ -53,7 +53,7 @@ ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Ga
 
 **5) WinXP에서 구글에 접속되지 않는 것을 확인**
 
-![spoofing6](https://user-images.githubusercontent.com/76420201/105710372-5e605900-5f5a-11eb-891e-61e53ead9820.GIF)
+<img src = "https://user-images.githubusercontent.com/76420201/105710372-5e605900-5f5a-11eb-891e-61e53ead9820.GIF" width = "70%">
 
 
 **6) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
