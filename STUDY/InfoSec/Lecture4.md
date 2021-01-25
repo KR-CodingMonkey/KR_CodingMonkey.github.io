@@ -53,7 +53,7 @@ WireShark를 통한 패킷 분석 방법을 알아본다.
 
 [4]
 
-![wireshark-tcp4](https://user-images.githubusercontent.com/76420201/105363740-b720b080-5c3f-11eb-805a-aefd878595c0.GIF)
+<img src = "https://user-images.githubusercontent.com/76420201/105363740-b720b080-5c3f-11eb-805a-aefd878595c0.GIF" width = "70%">
 
 
 ## UDP
