@@ -6,9 +6,8 @@
 <center><img src = "https://user-images.githubusercontent.com/76420201/105661757-8e373e80-5f11-11eb-9a24-f413d87914b1.GIF" width = "60%"></center>
 
 
-| | | | |
-|-|-|-|-|
 |Name|IP|MAC|GateWay|
+|-|-|-|-|
 |WinXP|192.168.126.128|00-0C29-4B43-8E|192.168.126.2|
 |Victim|192.168.126.129 | 00:50:56:27:10:7e| |
 |Attacker|192.168.126.130|00:50:56:22:93:7f| |
