@@ -25,11 +25,15 @@
 
 ![spoofing1](https://user-images.githubusercontent.com/76420201/105667103-102d6480-5f1e-11eb-96f5-921fcd475bc1.GIF)
 
+<br>
+
 **2) WinXP에서 IE로 www.google.com에 접속 확인**
 
 정상적인 게이트웨이를 통해서 통신이 잘 이루어지는 모습입니다.
 
 ![spoofing2](https://user-images.githubusercontent.com/76420201/105667105-128fbe80-5f1e-11eb-86ee-44fc1658618e.GIF)
+
+<br>
 
 **3) Attacker에서 arp spoofing 공격을 시도**
 
