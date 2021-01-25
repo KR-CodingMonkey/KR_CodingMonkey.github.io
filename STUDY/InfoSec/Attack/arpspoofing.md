@@ -10,6 +10,7 @@
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105661757-8e373e80-5f11-11eb-9a24-f413d87914b1.GIF" width = "60%"></center>
 
+ARP spoofing이 어떻게 이루어 지는지 살펴봅니다.
 
 |Name|IP|MAC|GateWay|
 |-|-|-|-|
@@ -41,15 +42,34 @@ ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Ga
 
 이렇게 Attacker의 MAC주소를 GateWay의 MAC주소라고 입력시켜 버리면 WinXP에서 보내려고 했던 패킷을 Attacker가 가로채거나 변조할 수 있게 됩니다. 
 
+![spoofing3](https://user-images.githubusercontent.com/76420201/105709665-62d84200-5f59-11eb-87ee-28aa9826e142.GIF)
+
 
 **4) WinXP에서 ARP 캐시 테이블을 확인**
+![spoofing4](https://user-images.githubusercontent.com/76420201/105709672-64096f00-5f59-11eb-90d5-61718cc7f82a.GIF)
 
-**5) Attacker에서 Wireshark를 실행**
 
-**6) WinXP에서 구글에 접속되지 않는 것을 확인**
+**5) WinXP에서 구글에 접속되지 않는 것을 확인**
 
-**7) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
+![spoofing6](https://user-images.githubusercontent.com/76420201/105710372-5e605900-5f5a-11eb-891e-61e53ead9820.GIF)
 
-**8) WinXP에서 구글에 접속하면 Attacker에 아래 로그가 생성되는 것을 확인**
 
-**9) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
+**6) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
+
+`fragrouter -B1` B1 옵션은 송수신 데이터가 변조없이 그대로 포워딩을 해주는 역할을 합니다.
+
+arpspoof 만을 사용하게 되면 희생자는 서비스를 원할하게 이용할 수 없게 되니 이상함을 눈치챌수 있습니다.
+
+fragrouter를 같이 이용해줌으로서 통신은 정상적으로 되고 모든 패킷은 공격자를 통해서 전달하게 됩니다.
+
+
+**7) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
+
+![spoofing7](https://user-images.githubusercontent.com/76420201/105712207-d4fe5600-5f5c-11eb-94bc-1bce0bcc9440.GIF)
+
+이렇게 APR Table을 확인 하였을때 GateWay의 MAC주소가 다른 IP의 MAC주소와 같다면 Spoofing을 당하고 있다는 것입니다.
+
+
+![spoofing5](https://user-images.githubusercontent.com/76420201/105709673-64096f00-5f59-11eb-975f-0131417b969a.GIF)
+
+spoofing을 종료하게 되면 자동으로 원래 MAC주소로 돌려 놓읍니다.
