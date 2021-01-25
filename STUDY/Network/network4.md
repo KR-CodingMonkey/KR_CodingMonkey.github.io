@@ -45,13 +45,14 @@ UDP 사용하는 대표적인 프로그램 : RIP 프로토콜, DNS 서버, tftp 
     - 실제 데이터를 주고 받을 때는 상대방이 보낸 시퀀스 번호 + 자신 받은 데이터의 바이트 수 를 확인 번호로 설정
 
 
-<ceter><img src = "https://user-images.githubusercontent.com/76420201/105720962-64a90200-5f67-11eb-8e12-17b9325ce41e.gif" width = "70%"></center>
+<center><img src = "https://user-images.githubusercontent.com/76420201/105720962-64a90200-5f67-11eb-8e12-17b9325ce41e.gif" width = "70%"></center>
 
 - 오프셋(offset)
     전체 세그먼트에서 헤더가 아닌 데이터가 시작되는 위치를 표시
 
 - TCP 플래그(flags)
     현재 세그먼트의 속성을 나타낸다.
+    
     |-|-|
     |CWR (Congestion Window Reduced)	|	혼잡 윈도우 크기 감소 신호|
     |ECN (Explicit Congestion Notification) |	혼잡 발생 신호|
