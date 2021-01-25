@@ -63,6 +63,8 @@ UDP 사용하는 대표적인 프로그램 : RIP 프로토콜, DNS 서버, tftp 
     |SYN (Synchronize)		|		연결을 생성|
     |FIN (Finish)			|		연결을 종료|
 
+    ACK, RST, SYN, FIN 은 중요하니 꼭 숙지합니다.
+
 - 윈도우 크기(windows size): 한번에 전송할 수 있는 데이터의 양(크기)
 - 오류 검사(checksum): 데이터 송수신 중에 발생하는 오류를 검출하기 위해 사용
 - 긴급 포인트(urgent pointer): URG 플래그사 설정된 경우, 해당 데이터를 우선 처리
