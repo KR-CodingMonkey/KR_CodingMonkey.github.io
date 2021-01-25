@@ -37,9 +37,11 @@
 
 **3) Attacker에서 arp spoofing 공격을 시도**
 
-이제,  WinXP ARP 테이블 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 spoofing 공격으로 Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경할 수가 있습니다.
+ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경할 수가 있습니다.
 
-이렇게 Attacker의 MAC주소를 GateWay의 MAC주소라고 입력시켜 버리면 WinXP에서 보내려고 했던 패킷을 Attacker가 훔칠 수 있게 됩니다. 
+이렇게 Attacker의 MAC주소를 GateWay의 MAC주소라고 입력시켜 버리면 WinXP에서 보내려고 했던 패킷을 Attacker가 가로채거나 변조할 수 있게 됩니다. 
+
+
 **4) WinXP에서 ARP 캐시 테이블을 확인**
 
 **5) Attacker에서 Wireshark를 실행**
