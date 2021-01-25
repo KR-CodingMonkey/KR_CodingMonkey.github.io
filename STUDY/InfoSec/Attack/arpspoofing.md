@@ -14,26 +14,26 @@
 
 3개 가상머신의 각각 IP 정보입니다.
 
-#1 @WinXP에서 ARP 캐시 테이블 내용과 기본 게이트웨이 주소를 확인
+**1) WinXP에서 ARP 캐시 테이블 내용과 기본 게이트웨이 주소를 확인**
 
 ![spoofing1](https://user-images.githubusercontent.com/76420201/105667103-102d6480-5f1e-11eb-96f5-921fcd475bc1.GIF)
 
-#2 @WinXP에서 IE로 www.google.com에 접속 확인
+**2) WinXP에서 IE로 www.google.com에 접속 확인**
 
 ![spoofing2](https://user-images.githubusercontent.com/76420201/105667105-128fbe80-5f1e-11eb-86ee-44fc1658618e.GIF)
 
-#3 @Attacker에서 arp spoofing 공격을 시도
+**3) Attacker에서 arp spoofing 공격을 시도**
 
 WinXP의 ARP 캐시 테이블에 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경할 수 있습니다.
 
-#4 @WinXP에서 ARP 캐시 테이블을 확인
+**4) WinXP에서 ARP 캐시 테이블을 확인**
 
-#5 @Attacker에서 Wireshark를 실행
+**5) Attacker에서 Wireshark를 실행**
 
-#6 @WinXP에서 구글에 접속되지 않는 것을 확인
+**6) WinXP에서 구글에 접속되지 않는 것을 확인**
 
-#7 @Attacker에서 fragrouter 도구를 이용해서 라우팅 처리
+**7) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
 
-#8 @WinXP에서 구글에 접속하면 @Attacker에 아래 로그가 생성되는 것을 확인
+**8) WinXP에서 구글에 접속하면 @Attacker에 아래 로그가 생성되는 것을 확인**
 
-#9 @WinXP에서 @Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인
+**9) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
