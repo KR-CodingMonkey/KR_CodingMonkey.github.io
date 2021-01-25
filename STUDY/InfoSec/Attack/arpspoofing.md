@@ -18,7 +18,9 @@
 
 #2 @WinXP에서 IE로 www.google.com에 접속 확인
 
-#3 @Attacker에서 arp spoofing 공격을 시도 
+#3 @Attacker에서 arp spoofing 공격을 시도
+ 
+@WinXP의 ARP 캐시 테이블에 Gateway의 MAC 주소(00:50:56:e5:2d:46)를 @Attacker의 MAC 주소(00:50:56:22:93:7f)로 변경
 
 #4 @WinXP에서 ARP 캐시 테이블을 확인
 
