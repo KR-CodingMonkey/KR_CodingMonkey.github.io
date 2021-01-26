@@ -36,7 +36,9 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만들어진 프로그램
 
-`vi /etc/ettercap/etter.dns` 파일 수정을 
+`vi /etc/ettercap/etter.dns` 파일 수정
+
+www.google.com 의 주소를 공격자의 IP인 192.168.126.130으로 설정해줍니다.
 
 Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인
 
