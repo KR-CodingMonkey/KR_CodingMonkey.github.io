@@ -1,6 +1,14 @@
 
 # DNS Spoofing
 
+DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서버로 보내는 질문을 가로채서 변조된 결과를 보내주는 것으로 일종의 중간자 공격이다.
+
+![DNS-spoofing](https://user-images.githubusercontent.com/76420201/105853028-93d37800-6028-11eb-9b62-5bfb607fb803.jpg)
+
+- MITM(Man in the middle) : 사용자를 다른 or 악의적인 IP주소로 라우팅하기 위해 사용자와 DNS서버간의 통신을 가로채는 것
+
+- DNS 서버 손상 : DNS서버를 손상시켜 악의적인 IP주소를 반환하도록 함
+
 `ipconfig /flushdns` : dns 테이플 초기화
 `ipconfig /displaydns` : dns 테이블 조회
 
