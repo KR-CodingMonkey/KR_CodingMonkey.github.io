@@ -26,6 +26,8 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 `ipconfig /flushdns` : dns 테이플 초기화<br>
 `ipconfig /displaydns` : dns 테이블 조회
 
+![DNS-spoofing0](https://user-images.githubusercontent.com/76420201/105919614-52b78400-6079-11eb-9974-caed91c4035c.jpg)
+
 winXP에서 `ping google.com` google.com에 핑을 찍어보고 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
 
 <br>
