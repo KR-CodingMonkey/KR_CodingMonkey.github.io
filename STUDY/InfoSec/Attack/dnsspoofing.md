@@ -16,10 +16,7 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 2. 이때 중간자 공격을 받고 있는 경우에는 사용자의 컴퓨터가 보내는 질의의 내용을 수정하여 도메인 네임 시스템서버에 전송하고, 도메인 네임 시스템서버는 변경된 질의에 대한 답을 사용자의 컴퓨터로 보내고, 사용자의 컴퓨터는 질의에 나와 있는 IP 주소를 이용하여 접속을 하게 된다. 이때 이미 질의가 중간자 공격으로 인해 원래의 값이 아니기 때문에 의도치 않은 곳으로 접속될 수 있다.
 
 
-## DNS Spoofing 공격 방법
-
-`ipconfig /flushdns` : dns 테이플 초기화
-`ipconfig /displaydns` : dns 테이블 조회
+## DNS Spoofing 공격 순서
 
 ettercap : 중간자 공격(MTM Attack, Man in the Middle)을 쉽게 할 수 있도록 만들어진 프로그램
 
@@ -27,7 +24,14 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 Step 1. WinXP에서 DNS 캐시 테이블을 확인
 
-Step 2. Attacker 가상머신에서 ettercap에서 사용할 변조 DNS정보를 설정
+`ipconfig /flushdns` : dns 테이플 초기화
+`ipconfig /displaydns` : dns 테이블 조회
+
+`ping google.com` google.com에 핑을 찍어보고 winXP에서 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
+
+<br>
+
+Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정
 
 `vi /etc/ettercap/etter.dns` 파일 수정
 
