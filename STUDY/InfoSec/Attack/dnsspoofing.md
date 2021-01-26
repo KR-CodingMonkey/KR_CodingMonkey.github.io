@@ -47,6 +47,12 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인
 
+`sudo service apache2 start`<br>
+`sudo service apache2 status`
+
+![DNS-spoofing3](https://user-images.githubusercontent.com/76420201/105858772-0c3d3780-602f-11eb-8752-609bd0292fa6.jpg)
+
+![DNS-spoofing2](https://user-images.githubusercontent.com/76420201/105858852-2414bb80-602f-11eb-9d6e-6ccf99c7c2cb.jpg)
 
 Step 4. Attacker 가상머신에서 ettercap 실행
 
