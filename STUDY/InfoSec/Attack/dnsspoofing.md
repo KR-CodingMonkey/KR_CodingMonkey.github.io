@@ -23,16 +23,14 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 
 **Step 1. WinXP에서 DNS 캐시 테이블을 확인**
 
-`ipconfig /flushdns` : dns 테이플 초기화
+`ipconfig /flushdns` : dns 테이플 초기화<br>
 `ipconfig /displaydns` : dns 테이블 조회
 
-`ping google.com` google.com에 핑을 찍어보고 winXP에서 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
+winXP에서 `ping google.com` google.com에 핑을 찍어보고 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
 
 <br>
 
 **Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정**
-
-ettercap에서 사용할 변조 DNS 정보를 설정
 
 ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만들어진 프로그램
 
@@ -42,6 +40,10 @@ ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만�
 
 
 www.google.com 의 주소를 공격자의 IP인 192.168.126.130으로 설정해줍니다.
+
+
+ettercap에서 사용할 변조 DNS 정보를 설정
+
 
 Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인
 
