@@ -23,7 +23,7 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 
 ettercap에서 사용할 변조 DNS 정보를 설정
 
-Step 1. WinXP에서 DNS 캐시 테이블을 확인
+**Step 1. WinXP에서 DNS 캐시 테이블을 확인**
 
 `ipconfig /flushdns` : dns 테이플 초기화
 `ipconfig /displaydns` : dns 테이블 조회
@@ -32,7 +32,7 @@ Step 1. WinXP에서 DNS 캐시 테이블을 확인
 
 <br>
 
-Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정
+**Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정**
 
 ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만들어진 프로그램
 
