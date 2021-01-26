@@ -21,8 +21,6 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 
 ## DNS Spoofing 공격 순서
 
-ettercap에서 사용할 변조 DNS 정보를 설정
-
 **Step 1. WinXP에서 DNS 캐시 테이블을 확인**
 
 `ipconfig /flushdns` : dns 테이플 초기화
@@ -34,9 +32,14 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 **Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정**
 
+ettercap에서 사용할 변조 DNS 정보를 설정
+
 ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만들어진 프로그램
 
 `vi /etc/ettercap/etter.dns` 파일 수정
+
+![DNS-spoofing1](https://user-images.githubusercontent.com/76420201/105856995-2e35ba80-602d-11eb-8ac7-d121302e2b13.jpg)
+
 
 www.google.com 의 주소를 공격자의 IP인 192.168.126.130으로 설정해줍니다.
 
