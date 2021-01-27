@@ -93,6 +93,7 @@ Attacker에서 ARP Poisoing으로 인해 WinXP의 게이트웨이 MAC주소가 �
 
 **Step 6. Attacker 가상머신에서 DNS Spoofing을 실행**
 
+- Plugins -> Manage plugins -> dns_spooft 더블 클릭
 <center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70%"></center>
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106009036-4411b100-60fb-11eb-91fd-e7e5fca9dd09.GIF" width = "70%"></center>
