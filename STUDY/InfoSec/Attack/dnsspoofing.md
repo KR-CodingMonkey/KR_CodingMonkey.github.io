@@ -41,7 +41,7 @@ ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만�
 ![DNS-spoofing1](https://user-images.githubusercontent.com/76420201/105856995-2e35ba80-602d-11eb-8ac7-d121302e2b13.jpg)
 
 
-www.google.com 의 주소를 공격자의 IP인 192.168.126.130으로 설정해줍니다.
+www.google.com 의 주소를 공격자(Attacker)의 IP인 192.168.126.130으로 설정해줍니다.
 
 <br>
 
@@ -63,12 +63,12 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 - Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
 ![ettercap1](https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF)
 
-- 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인해 하고 Accept 버튼 클릭
-<center><img src = "https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF" width = "70%"></center>
+- 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인하고 Accept 버튼 클릭
+<img src = "https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF" width = "70%">
 
 
 Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호스트를 검색
-<center><img src = "https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF" width = "70%"></center>
+<img src = "https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF" width = "70%">
 
 - Hosts List 버튼을 클릭 ⇒ 중간자로 끼어들 위치를 지정 
 
@@ -93,11 +93,7 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <br>
 
-**Step 6. WinXP 가상머신에서 구글 접속을 확인**
-
-<br>
-
-**Step 7. Attacker 가상머신에서 DNS Spoofing을 실행**
+**Step 6. Attacker 가상머신에서 DNS Spoofing을 실행**
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70%"></center>
 
@@ -107,7 +103,7 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <br>
 
-**Step 8. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인**
+**Step 7. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인**
 
 ![ettercapx](https://user-images.githubusercontent.com/76420201/106010288-9bfce780-60fc-11eb-9998-d6f9d2ce888d.GIF)
 
