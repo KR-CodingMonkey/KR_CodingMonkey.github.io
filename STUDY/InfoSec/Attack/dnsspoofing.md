@@ -77,7 +77,7 @@ Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호�
 3. 희생자(Windows XP) 선택
 4. Add to Target2 클릭
 
-![ettercap4](https://user-images.githubusercontent.com/76420201/105924171-20aa2000-6081-11eb-9131-b1018d8d60fd.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105924171-20aa2000-6081-11eb-9131-b1018d8d60fd.GIF"></center>
 
 - MITM 메뉴 클릭 > ARP poisoning 메뉴 클릭 ⇒ 게이트웨이와 희생자의 MAC 주소를 공격자의 MAC 주소로 변조 ⇒ MITM 공격
 ettercap에서 사용할 변조 DNS 정보를 설정
