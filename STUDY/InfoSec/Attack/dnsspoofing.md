@@ -30,7 +30,7 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 
 winXP에서 `ping google.com` google.com에 핑을 찍어보고 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
 
-<br>
+---
 
 **Step 2. Attacker 가상머신 -> ettercap에서 사용할 변조 DNS정보를 설정**
 
