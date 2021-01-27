@@ -30,12 +30,12 @@
 ![slowloris](https://user-images.githubusercontent.com/76420201/105925447-8ac3c480-6083-11eb-9d32-a8c568352850.gif)
 
 
-- netstat [option]
+netstat [option]
 
-    -p	: 해당 프로토콜을 사용하고 있는 프로그램을 표시<br>
-    -a	: 모든 연결 및 수신 대기 포트 표시<br>
-    -n	: 주소나 포트 형식을 숫자로 표현<br>
-    -t	: TCP로 연결된 포트를 표시<br>
+-p	: 해당 프로토콜을 사용하고 있는 프로그램을 표시<br>
+-a	: 모든 연결 및 수신 대기 포트 표시<br>
+-n	: 주소나 포트 형식을 숫자로 표현<br>
+-t	: TCP로 연결된 포트를 표시<br>
 
 <br>
 
