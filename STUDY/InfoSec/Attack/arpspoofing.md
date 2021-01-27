@@ -28,7 +28,7 @@ ARP spoofing이 어떻게 이루어 지는지 살펴봅니다.
 
 ![spoofing1](https://user-images.githubusercontent.com/76420201/105667103-102d6480-5f1e-11eb-96f5-921fcd475bc1.GIF)
 
-<br>
+---
 
 **2) WinXP에서 IE로 www.google.com에 접속 확인**
 
@@ -36,7 +36,7 @@ ARP spoofing이 어떻게 이루어 지는지 살펴봅니다.
 
 ![spoofing2](https://user-images.githubusercontent.com/76420201/105667105-128fbe80-5f1e-11eb-86ee-44fc1658618e.GIF)
 
-<br>
+---
 
 **3) Attacker에서 arp spoofing 공격을 시도**
 
@@ -46,18 +46,18 @@ ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Ga
 
 ![spoofing3](https://user-images.githubusercontent.com/76420201/105709665-62d84200-5f59-11eb-87ee-28aa9826e142.GIF)
 
-<br>
+---
 
 **4) WinXP에서 ARP 캐시 테이블을 확인**
 ![spoofing4](https://user-images.githubusercontent.com/76420201/105709672-64096f00-5f59-11eb-90d5-61718cc7f82a.GIF)
 
-<br>
+---
 
 **5) WinXP에서 구글에 접속되지 않는 것을 확인**
 
 <img src = "https://user-images.githubusercontent.com/76420201/105710372-5e605900-5f5a-11eb-891e-61e53ead9820.GIF" width = "70%">
 
-<br>
+---
 
 **6) Attacker에서 fragrouter 도구를 이용해서 라우팅 처리**
 
@@ -66,7 +66,7 @@ ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Ga
 arpspoof 만을 사용하게 되면 희생자는 서비스를 원활하게 이용할 수 없게 되니 이상함을 눈치챌 수 있으니<br>
 fragrouter를 같이 이용해 줌으로서 통신은 정상적으로 되고 모든 패킷은 공격자를 통해서 전달하게 됩니다.
 
-<br>
+---
 
 **7) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
 
