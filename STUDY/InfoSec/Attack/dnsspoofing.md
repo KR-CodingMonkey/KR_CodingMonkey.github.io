@@ -87,11 +87,13 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70%"></center>
 
-희생자에서 DNS 서비스 요청을 하면, 공격자가 etter.dns 파일에 있는 정보를 기반으로 잘못된 DNS 정보를 반환
+희생자가 DNS 서비스 요청을 하면, 공격자의 etter.dns 파일에 있는 정보를 기반으로 잘못된 DNS 정보를 반환하게 된다.
 
 <br>
 
 **Step 5. WinXP 가상머신에서 ARP 테이블을 확인**
+
+![ettercat_arpa](https://user-images.githubusercontent.com/76420201/106008896-204e6b00-60fb-11eb-8931-6a666a2377ff.GIF)
 
 <br>
 
@@ -101,6 +103,12 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 **Step 7. Attacker 가상머신에서 DNS Spoofing을 실행**
 
+![ettercap7](https://user-images.githubusercontent.com/76420201/106009036-4411b100-60fb-11eb-91fd-e7e5fca9dd09.GIF)
+
 <br>
 
 **Step 8. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인**
+
+![ettercapx](https://user-images.githubusercontent.com/76420201/106010288-9bfce780-60fc-11eb-9998-d6f9d2ce888d.GIF)
+
+![ettercap9](https://user-images.githubusercontent.com/76420201/106010283-9acbba80-60fc-11eb-9f21-58e2cb6d9bb2.GIF)
