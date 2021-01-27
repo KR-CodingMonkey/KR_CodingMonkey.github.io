@@ -108,3 +108,5 @@ Attacker에서 ARP Poisoing으로 인해 WinXP의 게이트웨이 MAC주소가 �
 ![ettercapx](https://user-images.githubusercontent.com/76420201/106010288-9bfce780-60fc-11eb-9998-d6f9d2ce888d.GIF)
 
 ![ettercap9](https://user-images.githubusercontent.com/76420201/106010283-9acbba80-60fc-11eb-9f21-58e2cb6d9bb2.GIF)
+
+DNS Spoofing 공격이 이루어 지고 WinXP에서 구글 접속을 해보면 정상적인 구글 사이트가 뜨지 않고 **공격자(Attacker)가 설정해 놓은 주소로 이동** 하는것을 확인할 수 있습니다.
