@@ -60,10 +60,10 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 
 **Step 4. Attacker 가상머신에서 ettercap 실행**
 
-Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
+- Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
 ![ettercap1](https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF)
 
-툴을 실행시키면 화면이 나오는데, 기본 설정을 확인해 하고 Accept 버튼 클릭
+- 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인해 하고 Accept 버튼 클릭
 ![ettercap2](https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF)
 
 
@@ -71,12 +71,15 @@ Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호�
 ![ettercap3](https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF)
 
 - Hosts List 버튼을 클릭 ⇒ 중간자로 끼어들 위치를 지정 
-    1. 게이트웨이 선택 
-    2. Add to Target1 클릭
-    3. 희생자(Windows XP) 선택
-    4. Add to Target2 클릭
+
+1. 게이트웨이 선택 
+2. Add to Target1 클릭
+3. 희생자(Windows XP) 선택
+4. Add to Target2 클릭
+
 ![ettercap4](https://user-images.githubusercontent.com/76420201/105924171-20aa2000-6081-11eb-9131-b1018d8d60fd.GIF)
 
+- MITM 메뉴 클릭 > ARP poisoning 메뉴 클릭 ⇒ 게이트웨이와 희생자의 MAC 주소를 공격자의 MAC 주소로 변조 ⇒ MITM 공격
 ettercap에서 사용할 변조 DNS 정보를 설정
 
 
