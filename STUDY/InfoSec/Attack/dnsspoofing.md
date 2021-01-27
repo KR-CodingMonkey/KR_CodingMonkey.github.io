@@ -87,6 +87,8 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106008896-204e6b00-60fb-11eb-8931-6a666a2377ff.GIF" width = "70%"></center>
 
+Attacker에서 ARP Poisoing으로 인해 WinXP의 게이트웨이 MAC주소가 변경
+
 ---
 
 **Step 6. Attacker 가상머신에서 DNS Spoofing을 실행**
