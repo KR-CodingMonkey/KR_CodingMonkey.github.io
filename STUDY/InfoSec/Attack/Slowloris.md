@@ -40,6 +40,8 @@
 
 **Step 2. Attacker 가상머신에서 브라우저로 Victim 가상머신의 아파치로 접속**
 
+![slowloris0](https://user-images.githubusercontent.com/76420201/106067998-21a38600-6143-11eb-91ae-2e60f826c0fe.jpg)
+
 |STATE| 의미|
 |-|-|
 |LISTEN 	|	서버의 데몬이 떠 있어서 클라이언트의 접속 요청을 기다리고 있는 상태 (LISTENING)|
