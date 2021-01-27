@@ -92,7 +92,7 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70%"></center>
 
-![ettercap7](https://user-images.githubusercontent.com/76420201/106009036-4411b100-60fb-11eb-91fd-e7e5fca9dd09.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/106009036-4411b100-60fb-11eb-91fd-e7e5fca9dd09.GIF" width = "70%"></center>
 
 희생자가 DNS 서비스 요청을 하면, 공격자의 etter.dns 파일에 있는 정보를 기반으로 잘못된 DNS 정보를 반환하게 된다.
 
