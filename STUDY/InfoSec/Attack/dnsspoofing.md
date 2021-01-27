@@ -26,7 +26,7 @@ DNS(Domain Name Server) spoofing(DNS cache Spoofing 이라고도 함)은 DNS 서
 `ipconfig /flushdns` : dns 테이플 초기화<br>
 `ipconfig /displaydns` : dns 테이블 조회
 
-![DNS-spoofing0](https://user-images.githubusercontent.com/76420201/105919614-52b78400-6079-11eb-9974-caed91c4035c.jpg)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105919614-52b78400-6079-11eb-9974-caed91c4035c.jpg" width = "70%"></center>
 
 winXP에서 `ping google.com` google.com에 핑을 찍어보고 DNS 캐시테이블을 확인해보면 google.com IP 주소를 정상적으로 받아와서 DNS 캐시 테이블에 반영합니다.
 
@@ -64,11 +64,11 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 ![ettercap1](https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF)
 
 - 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인해 하고 Accept 버튼 클릭
-![ettercap2](https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF" width = "70%"></center>
 
 
 Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호스트를 검색
-![ettercap3](https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF" width = "70%"></center>
 
 - Hosts List 버튼을 클릭 ⇒ 중간자로 끼어들 위치를 지정 
 
@@ -86,6 +86,8 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 <center><img src = "https://user-images.githubusercontent.com/76420201/105932104-b3ea5200-608f-11eb-9a67-d8929e0bcac1.GIF" width = "70%"></center>
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70%"></center>
+
+희생자에서 DNS 서비스 요청을 하면, 공격자가 etter.dns 파일에 있는 정보를 기반으로 잘못된 DNS 정보를 반환
 
 <br>
 
