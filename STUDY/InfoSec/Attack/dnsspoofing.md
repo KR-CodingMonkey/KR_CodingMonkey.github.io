@@ -43,7 +43,7 @@ ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만�
 
 www.google.com 의 주소를 공격자(Attacker)의 IP인 192.168.126.130으로 설정해줍니다.
 
-<br>
+---
 
 **Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인**
 
@@ -56,7 +56,7 @@ www.google.com 의 주소를 공격자(Attacker)의 IP인 192.168.126.130으로 
 
 Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과를 보여주기 위한 사전 작업을 합니다.
 
-<br>
+---
 
 **Step 4. Attacker 가상머신에서 ettercap 실행**
 
@@ -76,19 +76,19 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105924171-20aa2000-6081-11eb-9131-b1018d8d60fd.GIF"></center>
 
-<br>
+---
 
 - MITM 메뉴 클릭 > ARP poisoning 메뉴 클릭 ⇒ 게이트웨이와 희생자의 MAC 주소를 공격자의 MAC 주소로 변조 ⇒ MITM 공격
 ettercap에서 사용할 변조 DNS 정보를 설정
 <center><img src = "https://user-images.githubusercontent.com/76420201/105932104-b3ea5200-608f-11eb-9a67-d8929e0bcac1.GIF" width = "70%"></center>
 
-<br>
+---
 
 **Step 5. WinXP 가상머신에서 ARP 테이블을 확인**
 
 ![ettercat_arpa](https://user-images.githubusercontent.com/76420201/106008896-204e6b00-60fb-11eb-8931-6a666a2377ff.GIF)
 
-<br>
+---
 
 **Step 6. Attacker 가상머신에서 DNS Spoofing을 실행**
 
@@ -98,7 +98,7 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 희생자가 DNS 서비스 요청을 하면, 공격자의 etter.dns 파일에 있는 정보를 기반으로 잘못된 DNS 정보를 반환하게 된다.
 
-<br>
+---
 
 **Step 7. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인**
 
