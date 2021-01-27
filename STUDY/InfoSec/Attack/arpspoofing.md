@@ -66,6 +66,13 @@ ARP spoofing 공격을 통해서 WinXP ARP 테이블안에 저장되어있는 Ga
 arpspoof 만을 사용하게 되면 희생자는 서비스를 원활하게 이용할 수 없게 되니 이상함을 눈치챌 수 있으니<br>
 fragrouter를 같이 이용해 줌으로서 통신은 정상적으로 되고 모든 패킷은 공격자를 통해서 전달하게 됩니다.
 
+```                                                                         
+┌──(kali㉿kali)-[~]
+└─$ sudo fragrouter -B1
+[sudo] password for kali: 
+fragrouter: base-1: normal IP forwarding
+```
+
 ---
 
 **7) WinXP에서 Attacker로 ping을 전송하고 ARP 캐시 테이블을 확인**
