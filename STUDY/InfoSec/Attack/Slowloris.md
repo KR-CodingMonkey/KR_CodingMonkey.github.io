@@ -71,7 +71,9 @@ netstat [option]
 └─$ code slowloris.py
 ```
 
-- 파이썬 파일을 작성후 저장<br>
+<br>
+
+- 파이썬 파일을 작성후 저장
 
 ```
 # python3 slowloris.py TARGET_IP TARGET_PORT NO_OF_GETS
@@ -114,7 +116,9 @@ for s in range(0, no_of_gets):
     sr1(ack_get)
 ```
 
-- 파이썬 파일 실행<br>
+<br>
+
+- 파이썬 파일 실행
 
 ```
 ┌──(kali㉿kali)-[~]
