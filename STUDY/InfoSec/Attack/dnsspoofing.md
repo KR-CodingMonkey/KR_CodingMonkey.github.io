@@ -61,7 +61,7 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 **Step 4. Attacker 가상머신에서 ettercap 실행**
 
 - Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
-![ettercap1](https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF" ></center>
 
 - 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인하고 Accept 버튼 클릭
 <center><img src = "https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF" width = "70%"></center>
