@@ -39,6 +39,8 @@ netstat [option]
 
 <br>
 
+---
+
 **Step 2. Attacker 에서 브라우저로 Victim의 아파치로 접속**
 
 ![slowloris0](https://user-images.githubusercontent.com/76420201/106067998-21a38600-6143-11eb-91ae-2e60f826c0fe.jpg)
@@ -55,6 +57,8 @@ netstat [option]
 
 <br>
 
+---
+
 **Step 3. Attacker 가상머신에서 Slowloris.py를 생성**
 
 ```
@@ -68,6 +72,7 @@ netstat [option]
 ```
 
 - 파이썬 파일을 작성후 저장<br>
+
 ```
 # python3 slowloris.py TARGET_IP TARGET_PORT NO_OF_GETS
 #                      공격대상웹서버주소 공격대상웹서버서비스포트 동시공격개수
@@ -110,6 +115,7 @@ for s in range(0, no_of_gets):
 ```
 
 - 파이썬 파일 실행<br>
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo python3 slowloris.py victim 80 1000
@@ -126,7 +132,6 @@ for s in range(0, no_of_gets):
 <br>
 
 **Step 6. 다시 공격을 시도하면 해당 웹 페이지로 접속되지 않는 것을 확인**
-
 
 ---
 
