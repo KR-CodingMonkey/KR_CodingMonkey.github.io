@@ -72,10 +72,7 @@ Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호�
 
 - Hosts List 버튼을 클릭 ⇒ 중간자로 끼어들 위치를 지정 
 
-1. 게이트웨이 선택 
-2. Add to Target1 클릭
-3. 희생자(Windows XP) 선택
-4. Add to Target2 클릭
+게이트웨이 선택 -> Add to Target1 클릭 -> 희생자(Windows XP) 선택 -> Add to Target2 클릭
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/105924171-20aa2000-6081-11eb-9131-b1018d8d60fd.GIF"></center>
 
