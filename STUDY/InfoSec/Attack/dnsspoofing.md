@@ -43,11 +43,9 @@ ettercap : 중간자 공격(Man in the Middle)을 쉽게 할 수 있도록 만�
 
 www.google.com 의 주소를 공격자의 IP인 192.168.126.130으로 설정해줍니다.
 
+<br>
 
-ettercap에서 사용할 변조 DNS 정보를 설정
-
-
-Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인
+**Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통해 확인**
 
 `sudo service apache2 start`<br>
 `sudo service apache2 status`
@@ -56,7 +54,22 @@ Step 3. Attacker 가상머신에서 아파치를 실행 후 브라우저를 통�
 
 ![DNS-spoofing2](https://user-images.githubusercontent.com/76420201/105858852-2414bb80-602f-11eb-9d6e-6ccf99c7c2cb.jpg)
 
-Step 4. Attacker 가상머신에서 ettercap 실행
+Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과를 보여주기 위한 사전 작업을 합니다.
+
+<br>
+
+**Step 4. Attacker 가상머신에서 ettercap 실행**
+
+Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
+![ettercap1](https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF)
+
+툴을 실행시키면 화면이 나오는데, 기본 설정을 확인해 하고 Accept 클릭
+![ettercap2](https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF)
+
+
+
+ettercap에서 사용할 변조 DNS 정보를 설정
+
 
 Step 5. WinXP 가상머신에서 ARP 테이블을 확인
 
