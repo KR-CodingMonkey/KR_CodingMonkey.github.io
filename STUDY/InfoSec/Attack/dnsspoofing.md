@@ -62,10 +62,11 @@ Attacker 가상머신에서 희생자 DNS 서버를 조작해 변조된 결과�
 
 - Attacker 가상머신에서 ettercap을 실행해줍니다. `sudo ettercap -G`
 <center><img src = "https://user-images.githubusercontent.com/76420201/105920373-98288100-607a-11eb-9bf0-ea8aaee2c905.GIF" ></center>
+<br>
 
 - 툴을 실행시키면 화면이 나오는데, 기본 설정을 확인하고 Accept 버튼 클릭
 <center><img src = "https://user-images.githubusercontent.com/76420201/105920375-9959ae00-607a-11eb-8181-f988e1e8db72.GIF" width = "70%"></center>
-
+<br>
 
 - Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호스트를 검색
 <center><img src = "https://user-images.githubusercontent.com/76420201/105924194-2acc1e80-6081-11eb-8f30-4bd03f330bf5.GIF" width = "70%"></center>
