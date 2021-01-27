@@ -83,17 +83,22 @@ Scan for hosts 버튼을 클릭 ⇒ 로컬 네트워크 상에 존재하는 호�
 
 - MITM 메뉴 클릭 > ARP poisoning 메뉴 클릭 ⇒ 게이트웨이와 희생자의 MAC 주소를 공격자의 MAC 주소로 변조 ⇒ MITM 공격
 ettercap에서 사용할 변조 DNS 정보를 설정
-![ettercap5](https://user-images.githubusercontent.com/76420201/105932104-b3ea5200-608f-11eb-9a67-d8929e0bcac1.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105932104-b3ea5200-608f-11eb-9a67-d8929e0bcac1.GIF" width = "70%"></center>
 
-![ettercap6](https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF)
+<center><img src = "https://user-images.githubusercontent.com/76420201/105933307-8900fd80-6091-11eb-8740-a6906367a4da.GIF" width = "70"></center>
 
-
-
+<br>
 
 Step 5. WinXP 가상머신에서 ARP 테이블을 확인
 
+<br>
+
 Step 6. WinXP 가상머신에서 구글 접속을 확인
 
+<br>
+
 Step 7. Attacker 가상머신에서 DNS Spoofing을 실행
+
+<br>
 
 Step 8. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인
