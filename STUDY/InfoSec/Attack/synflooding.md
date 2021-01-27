@@ -1,5 +1,5 @@
 
-# TCP SYN Flooding
+# TCP syn Flooding
 
 공격자가 SYN패킷만 계속해서 전달
 
