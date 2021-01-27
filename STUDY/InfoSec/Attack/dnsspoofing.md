@@ -89,16 +89,16 @@ ettercap에서 사용할 변조 DNS 정보를 설정
 
 <br>
 
-Step 5. WinXP 가상머신에서 ARP 테이블을 확인
+**Step 5. WinXP 가상머신에서 ARP 테이블을 확인**
 
 <br>
 
-Step 6. WinXP 가상머신에서 구글 접속을 확인
+**Step 6. WinXP 가상머신에서 구글 접속을 확인**
 
 <br>
 
-Step 7. Attacker 가상머신에서 DNS Spoofing을 실행
+**Step 7. Attacker 가상머신에서 DNS Spoofing을 실행**
 
 <br>
 
-Step 8. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인
+**Step 8. WinXP 가상머신에서 구글 접속 및 DNS 캐시 테이블 확인**
