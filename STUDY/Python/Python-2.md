@@ -63,6 +63,8 @@ re.search(r'p.g', 'pig')
 |\W | non alpha-numeric 문자 [^0-9a-zA-Z]와 동일 |
 |\t, \n, \r | tab, newline, return |
 
+<br>
+
 ## 단어 개수 세기
 
 [어린왕자](https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io/blob/develop/assets/the_little_prince.txt)의 모든 단어의 갯수 카운트하기
