@@ -34,3 +34,37 @@
 <br>
 
 **Step 3. Attacker 가상머신에서 Slowloris.py를 생성**
+
+<br>
+
+**Step 4. Victim 가상머신에서 패킷 정보, 웹 서버 상태 정보, 네트워크 상태 정보를 확인**
+
+<br>
+
+**Step 5. Victim 가상머신에서 Request Timeout 모듈을 제거 후 아파치를 재실행**
+
+<br>
+
+**Step 6. 다시 공격을 시도하면 해당 웹 페이지로 접속되지 않는 것을 확인**
+
+
+
+```tip
+공격이 원활히 진행되지 않는 경우 @Attacker 가상머신의 iptables 설정을 확인
+효율적으로 공격이 진행될 수 있도록 RST 패킷이 외부로 전달되지 않도록 설정
+
+┌──(kali㉿kali)-[~]
+└─$ sudo iptables -L
+
+[sudo] password for kali: 
+Chain INPUT (policy ACCEPT)
+target     prot opt source              destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       tcp  --  anywhere             anywhere             tcp flags:RST/RST
+                                          
+```
