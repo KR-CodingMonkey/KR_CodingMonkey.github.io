@@ -1,6 +1,9 @@
 
 # Slowloris Attack
 
+**Slowloris Attack** : 웹 서버의 다수의 커넥션 연결 후 각 커넥션 별로 비정상 HTTP헤더 (완료되지 않는 헤더)를 전송함으로써 웹 서버 단의 커넥션 자원을 고갈 시키는 공격
+
+- 
 
 **Step 1. Victim 가상머신에서 네트워크 상태를 모니터링**
 
@@ -52,7 +55,9 @@
 
 ```tip
 공격이 원활히 진행되지 않는 경우 @Attacker 가상머신의 iptables 설정을 확인
-효율적으로 공격이 진행될 수 있도록 RST 패킷이 외부로 전달되지 않도록 설정
+효율적으로 공격이 진행될 수 있도록 RST 패킷이 외부로 전달되지 않도록 설정 
+
+└─$ sudo iptables -A OUTPUT -p tcp --tcp-flags RST RST -j DROP
 ```
 ```
 ┌──(kali㉿kali)-[~]
