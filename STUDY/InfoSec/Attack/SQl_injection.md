@@ -14,13 +14,13 @@ SQL Injection 이란 악의적인 사용자가 보안상의 취약점을 이용�
 ## 공격자 패턴
 
 1. 항상 참이 되는 입력<br>
-ex) a' or 'a' = 'a<br>
-select * from users where name = 'a' or 'a' = 'a'<br>
+ex) `a' or 'a' = 'a`<br>
+`select * from users where name = 'a' or 'a' = 'a'`<br>
 -> 모든 데이터를 조회 -> 권한 밖에 데이터에 접근 가능
 
 2. 오류를 유발하는 입력<br>
-ex) a'<br>
-select * from users where name = 'a''<br> 
+ex) `a'`<br>
+`select * from users where name = 'a''`<br> 
 -> 구문 오류를 유발<br>
 -> 시스템 오류를 통해서 시스템 내부 정도 수집에 활용
 
