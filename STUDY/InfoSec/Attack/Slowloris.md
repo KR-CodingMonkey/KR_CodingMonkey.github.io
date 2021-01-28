@@ -125,6 +125,8 @@ for s in range(0, no_of_gets):
 └─$ sudo python3 slowloris.py victim 80 1000
 ```
 
+![slowloris1](https://user-images.githubusercontent.com/76420201/106069982-f327aa00-6146-11eb-90d4-a52f246b57c3.jpg)
+
 <br>
 
 **Step 4. Victim 가상머신에서 패킷 정보, 웹 서버 상태 정보, 네트워크 상태 정보를 확인**
