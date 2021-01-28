@@ -133,7 +133,7 @@ for s in range(0, no_of_gets):
 
 **Step 4. Victim 가상머신에서 패킷 정보, 웹 서버 상태 정보, 네트워크 상태 정보를 확인**
 
-![slowloris2](https://user-images.githubusercontent.com/76420201/106070606-1d2d9c00-6148-11eb-8e7f-c68710e17275.jpg)
+<img src = "https://user-images.githubusercontent.com/76420201/106070606-1d2d9c00-6148-11eb-8e7f-c68710e17275.jpg" width = "70%">
 
 <br>
 
