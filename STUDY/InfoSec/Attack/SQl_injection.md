@@ -1,6 +1,8 @@
 
 # SQL Injection
 
+![injection0](https://user-images.githubusercontent.com/76420201/106089260-ee74ed00-616a-11eb-8fe7-1ac6681d5e2e.png)
+
 SQL Injection 이란 악의적인 사용자가 보안상의 취약점을 이용하여, 임의의 SQL 문을 주입하고 실행되게 하여 데이터베이스가 비정상적인 동작을 하도록 조작하는 행위 입니다. 인젝션 공격은 비교적 쉬운 편이고 공격에 성공할 경우 큰 피해를 입힐 수 있는 공격입니다.
 
 외부 입력값을 쿼리 조작 문자열 포함 여부를 검증하지 않고 SQL문 생성 및 실행에 사용하는 경우 <br>
