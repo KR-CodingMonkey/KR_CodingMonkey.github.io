@@ -9,27 +9,26 @@ SQL Injection 이란 악의적인 사용자가 보안상의 취약점을 이용�
     - 쿼리의 의미와 구조가 변경되어서 실행
     - 의도하지 않은 데이터베이스에 대한 조작이 가능
 
+<br>
+
 ## 공격자 패턴
 
-1. 항상 참이 되는 입력
-ex) a' or 'a' = 'a
+1. 항상 참이 되는 입력<br><br>
+ex) a' or 'a' = 'a<br>
 select * from users where name = 'a' or 'a' = 'a' -> 모든 데이터를 조회 -> 권한 밖에 데이터에 접근 가능
 
-2. 오류를 유발하는 입력
-
-ex) a'
--> select * from users where name = 'a'' -> 구분 오류를 유발
-
+2. 오류를 유발하는 입력<br>
+ex) a'<br>
+-> select * from users where name = 'a'' -> 구분 오류를 유발<br><br>
 시스템 오류를 통해서 시스템 내부 정도 수집에 활용
 
-3. 추가 정보를 조회하는 입력
-ex) hong' union select * from ... --
-select * from users where name = 'hong' 
-union
-select * from ... --
+3. 추가 정보를 조회하는 입력<br>
+ex) hong' union select * from ... --<br>
+select * from users where name = 'hong' <br>
+union<br>
+select * from ... --<br>
 
-4. 시스템 명령어 실행하는 입력
-
+4. 시스템 명령어 실행하는 입력<br><br>
 입력 ex) hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- 
 select * from users where name = 'hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- '
 
