@@ -136,25 +136,17 @@ select * from users where user_id = 'admin'#' and user_pw = 'b'#' -->
 <details markdown="1">
 <summary><b>WebGoat / Numeric SQL Injection</b></summary>
 <br>   
-소스코드 ⇒ @WinXP > Eclipse > Ctrl+Shift+R ><br> 
-@Attacker 가상머신에서 http://winxp:8080/WebGoat으로 접속
 
 </details>
 
 <details markdown="1">
 <summary><b>WebGoat / Blind Numeric SQL Injection</b></summary>
 <br>   
-소스코드 ⇒ @WinXP > Eclipse > Ctrl+Shift+R ><br> 
-@Attacker 가상머신에서 http://winxp:8080/WebGoat으로 접속
-
-</details>
 
 </details>
 
 <details markdown="1">
 <summary><b>WebGoat / Blind String SQL Injection</b></summary>
 <br>   
-소스코드 ⇒ @WinXP > Eclipse > Ctrl+Shift+R ><br> 
-@Attacker 가상머신에서 http://winxp:8080/WebGoat으로 접속
 
 </details>
