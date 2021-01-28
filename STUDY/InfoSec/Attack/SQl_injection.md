@@ -20,8 +20,8 @@ select * from users where name = 'a' or 'a' = 'a'<br>
 
 2. 오류를 유발하는 입력<br>
 ex) a'<br>
-select * from users where name = 'a'' 
--> 구분 오류를 유발<br>
+select * from users where name = 'a''<br> 
+-> 구문 오류를 유발<br>
 -> 시스템 오류를 통해서 시스템 내부 정도 수집에 활용
 
 3. 추가 정보를 조회하는 입력<br>
