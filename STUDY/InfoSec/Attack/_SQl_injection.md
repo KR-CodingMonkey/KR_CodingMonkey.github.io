@@ -111,18 +111,13 @@ http://winxp:8080/openeg/login.do?userid=admin'#&userpw=b'#
 서버에서 처리
 select * from users where user_id = 'admin'#' and user_pw = 'b'#' -->
 
-<br>
+<details markdown="1">
+<summary><b>SQL Injection을 이용한 인증과정 우회</b></summary>
+<br>   
+소스코드 ⇒ @WinXP > Eclipse > Ctrl+Shift+R ><br> 
+@Attacker 가상머신에서 http://winxp:8080/WebGoat으로 접속
 
-## 방어 기법
-
-- 쿼리 조작 문자열 포함 여부를 확인
-    - 제거하고 사용
-    - 안전한 형태로 바꿔서 사용
-- 일정한 형태로 쿼리가 실행되는 것을 보장 = 구조화된 쿼리 실행 = 파라미터화된 쿼리 실행 = 정적 쿼리 실행
-- 오류 메시지를 통제 = 오류 메시지에 시스템 정보가 포함되지 않도록 처리
-- 어플리케이션에서 사용하는 DB 사용자의 권한을 최소로 부여
-
-
+</details>
 
 
 <details markdown="1">
@@ -150,3 +145,14 @@ select * from users where user_id = 'admin'#' and user_pw = 'b'#' -->
 <br>   
 
 </details>
+
+<br>
+
+## 방어 기법
+
+- 쿼리 조작 문자열 포함 여부를 확인
+    - 제거하고 사용
+    - 안전한 형태로 바꿔서 사용
+- 일정한 형태로 쿼리가 실행되는 것을 보장 = 구조화된 쿼리 실행 = 파라미터화된 쿼리 실행 = 정적 쿼리 실행
+- 오류 메시지를 통제 = 오류 메시지에 시스템 정보가 포함되지 않도록 처리
+- 어플리케이션에서 사용하는 DB 사용자의 권한을 최소로 부여
