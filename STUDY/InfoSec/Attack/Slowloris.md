@@ -139,7 +139,7 @@ for s in range(0, no_of_gets):
 
 <img src = "https://user-images.githubusercontent.com/76420201/106070606-1d2d9c00-6148-11eb-8e7f-c68710e17275.jpg" width = "70%">
 
-<img src = "https://user-images.githubusercontent.com/76420201/106214502-3dc22880-6212-11eb-8c9f-877b571072ba.gif" width = "70%">
+<img src = "https://user-images.githubusercontent.com/76420201/106214502-3dc22880-6212-11eb-8c9f-877b571072ba.gif" width = "50%">
 
 <br>
 
