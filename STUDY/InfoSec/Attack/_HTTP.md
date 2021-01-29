@@ -4,7 +4,7 @@
 - 요청 (request) / 응답(response)
 - Stateless = Sessionless => 요청과 요청 간의 관계를 알 수 없다
 
-보안하기 위해서 Cookie, Session 개념이 발생
+보안하기 위해서 **Cookie, Session** 개념이 발생
 
 http1 
 
