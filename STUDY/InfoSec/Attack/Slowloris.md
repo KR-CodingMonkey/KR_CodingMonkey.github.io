@@ -172,7 +172,7 @@ for s in range(0, no_of_gets):
 공격이 원활히 진행되지 않는 경우 @Attacker 가상머신의 iptables 설정을 확인
 효율적으로 공격이 진행될 수 있도록 RST 패킷이 외부로 전달되지 않도록 설정 
 
-└─$ sudo iptables -A OUTPUT -p tcp --tcp-flags RST RST -j DROP
+`└─$ sudo iptables -A OUTPUT -p tcp --tcp-flags RST RST -j DROP`
 ```
 ```
 ┌──(kali㉿kali)-[~]
