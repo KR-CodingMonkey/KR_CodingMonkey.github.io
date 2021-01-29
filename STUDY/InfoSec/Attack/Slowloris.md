@@ -147,6 +147,8 @@ for s in range(0, no_of_gets):
 
 **Step 5. Victim 가상머신에서 Request Timeout 모듈을 제거 후 아파치를 재실행**
 
+Slowloris 공격은 Timeout이 일어나기 전에 반복해서 보내는 것인데 현재 웹서버에서 처리하는 Request Timeout이 더 빨리 처리되기 때문에 테스트를 위해서 Request Timeout 모듈을 제거하고 확인해 봅니다.
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ cd /etc/apache2/mods-enabled 
