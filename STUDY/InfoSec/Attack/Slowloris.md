@@ -153,7 +153,7 @@ for s in range(0, no_of_gets):
                                                         
 ┌──(kali㉿kali)-[/etc/apache2/mods-enabled]
 └─$ sudo rm -rf reqtimeout.*
-                                                                                                                              
+                                                        
 ┌──(kali㉿kali)-[/etc/apache2/mods-enabled]
 └─$ sudo service apache2 restart
 ```
@@ -163,6 +163,11 @@ for s in range(0, no_of_gets):
 ---
 
 **Step 6. 다시 공격을 시도하면 해당 웹 페이지로 접속되지 않는 것을 확인**
+
+http://localhost/server-status 접속되지 않음을 확인 -> 공격이 정상적으로 이루어 짐
+
+![slowloris15](https://user-images.githubusercontent.com/76420201/106218505-bf1db900-621a-11eb-939f-733a9fc31f82.gif)
+
 
 <br>
 
