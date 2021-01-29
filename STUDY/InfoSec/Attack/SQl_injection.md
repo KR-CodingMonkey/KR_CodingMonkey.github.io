@@ -41,7 +41,7 @@ select * from ... --<br>
 
 <br>
 
-## SQL Injection을 이용한 인증과정 우회
+## SQL Injection 실습
 
 <!-- @Attacker 가상머신에서 Proxy를 해제 후 http://winxp:8080/openeg로 접속
 
@@ -114,8 +114,6 @@ select * from users where user_id = 'admin'#' and user_pw = 'b'#' -->
 <details markdown="1">
 <summary><b>SQL Injection을 이용한 인증과정 우회</b></summary>
 <br>   
-소스코드 ⇒ @WinXP > Eclipse > Ctrl+Shift+R ><br> 
-@Attacker 가상머신에서 http://winxp:8080/WebGoat으로 접속
 
 </details>
 
