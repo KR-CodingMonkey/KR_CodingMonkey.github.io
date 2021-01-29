@@ -134,16 +134,16 @@ for s in range(0, no_of_gets):
 **Step 4. Victim 가상머신에서 패킷 정보, 웹 서버 상태 정보, 네트워크 상태 정보를 확인**
 
 - Attacker에서 다수의 연결이 수립 (SYN -> SYN/ACK -> ACK)
-![slowloris11](https://user-images.githubusercontent.com/76420201/106214499-3bf86500-6212-11eb-87e8-e7f6051c64d1.gif)
+![slowloris11](https://user-images.githubusercontent.com/76420201/106214499-3bf86500-6212-11eb-87e8-e7f6051c64d1.gif)<br>
 
 - 요청 헤더가 끝나지 않은 상태로 전달된 것과 408 Request Timeout 응답이 반환된 것을 확인
-![slowloris12](https://user-images.githubusercontent.com/76420201/106214500-3d299200-6212-11eb-8122-757c2c106afd.gif)
+![slowloris12](https://user-images.githubusercontent.com/76420201/106214500-3d299200-6212-11eb-8122-757c2c106afd.gif)<br>
 
 - http://localhost/server-status 페이지에서 R(Reading Request) 상태의 연결이 다수 유지되고 있는 것을 확인
-<img src = "https://user-images.githubusercontent.com/76420201/106214502-3dc22880-6212-11eb-8c9f-877b571072ba.gif" width = "50%">
+<img src = "https://user-images.githubusercontent.com/76420201/106214502-3dc22880-6212-11eb-8c9f-877b571072ba.gif" width = "50%"><br>
 
-- 특정 호스트(@Attacker)의 다수 포트와 연결이 유지되고 있는 것을 확인
-<img src = "https://user-images.githubusercontent.com/76420201/106070606-1d2d9c00-6148-11eb-8e7f-c68710e17275.jpg" width = "70%">
+- 특정 호스트(Attacker)의 다수 포트와 연결이 유지되고 있는 것을 확인
+<img src = "https://user-images.githubusercontent.com/76420201/106070606-1d2d9c00-6148-11eb-8e7f-c68710e17275.jpg" width = "70%"><br>
 
 <br>
 
@@ -180,7 +180,7 @@ http://localhost/server-status 접속되지 않음을 확인 -> 공격이 정상
 ---
 
 ```tip
-공격이 원활히 진행되지 않는 경우 @Attacker 가상머신의 iptables 설정을 확인
+공격이 원활히 진행되지 않는 경우 Attacker 가상머신의 iptables 설정을 확인
 효율적으로 공격이 진행될 수 있도록 RST 패킷이 외부로 전달되지 않도록 설정 
 
 `└─$ sudo iptables -A OUTPUT -p tcp --tcp-flags RST RST -j DROP`
