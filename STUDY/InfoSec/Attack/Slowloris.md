@@ -147,6 +147,17 @@ for s in range(0, no_of_gets):
 
 **Step 5. Victim 가상머신에서 Request Timeout 모듈을 제거 후 아파치를 재실행**
 
+```
+┌──(kali㉿kali)-[~]
+└─$ cd /etc/apache2/mods-enabled 
+                                                        
+┌──(kali㉿kali)-[/etc/apache2/mods-enabled]
+└─$ sudo rm -rf reqtimeout.*
+                                                                                                                              
+┌──(kali㉿kali)-[/etc/apache2/mods-enabled]
+└─$ sudo service apache2 restart
+```
+
 <br>
 
 ---
