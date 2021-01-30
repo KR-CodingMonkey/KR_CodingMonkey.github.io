@@ -9,6 +9,8 @@ SQL Injection 이란 악의적인 사용자가 보안상의 취약점을 이용�
     - 쿼리의 의미와 구조가 변경되어서 실행
     - 의도하지 않은 데이터베이스에 대한 조작이 가능
 
+- 공격 방법이나 사용 언어에 따라 인젝션의 종류가 달라지는데, 대표적인 유형으로 SQL 인젝션, HTML 인젝션, OS command 인젝션, LDAP 인젝션 등이 있음
+
 <br>
 
 ## 공격자 패턴
@@ -35,7 +37,6 @@ select * from ... --<br>
 예) hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- <br>
 `select * from users where name = 'hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- '`<br>
 -> 해당 DBMS의 쉘 이용이 가능 = 제어권을 탈취
-
 
 5. 참, 거짓을 유발하는 입력 ⇒ Blind SQL Injection
 
