@@ -1,6 +1,8 @@
 
 # Slowloris Attack
 
+![slowloris_info](https://user-images.githubusercontent.com/76420201/106358354-14f37d80-634f-11eb-8a36-f352cb8d201c.png)
+
 **Slowloris Attack** : 웹 서버의 다수의 커넥션 연결 후 각 커넥션 별로 비정상 HTTP헤더 (완료되지 않는 헤더)를 전송함으로써 웹 서버 단의 커넥션 자원을 고갈 시키는 공격
 
 - HTTP Header 정보를 비정상적으로 조작하여 웹서버가 온전한 Header정보가 올때 까지 기다리도록 한다.
