@@ -35,6 +35,7 @@ bWQPP -> SQL Injection(GET/Search) level = Low
 
 ![bwapp1](https://user-images.githubusercontent.com/76420201/106378433-1d4bc700-63e8-11eb-960d-4bd979b6dc9b.gif)
 
+오류 메시지에는 DB 서버가 포함되는데, DB서버 종류의 따라 SQL 구문이 다르기 때문에 가장먼서 서버 정보를 확인한다. 오류 메시지를 확인해 보면 해당 DB 서버는 MYSQL이라는 정보를 출력하고 있다.
 
 ---
 
