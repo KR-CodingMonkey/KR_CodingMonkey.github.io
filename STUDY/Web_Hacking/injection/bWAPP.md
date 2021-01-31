@@ -9,10 +9,24 @@
 <br>   
 bWQPP -> SQL Injection(GET/Search) level = Low
 
+영화 정보 제공 서비스
+
+문제: 해당 사이트의 사용자 정보(예: 이름, 이메일 주소, 전화번호, 아이디, 패스워드, …)를 탈취하시오. 
+
+**Step 1. 기본 동작을 유추** 
+
+**Step 2. 인젝션 가능 여부를 확인**
+
+**Step 3. 정상적인 서비스 쿼리가 반환하는 컬럼의 개수를 확인**
+
+**Step 4. UNION 구문을 이용해서 데이터 출력 개수와 위치를 확인**
+
+**Step 5. UNION 구문을 이용해서 데이터베이스 정보를 조회**
 </details>
 
 <details markdown="1">
-<summary><b>WebGoat / Numeric SQL Injection</b></summary>
+<summary><b>sqlmap을 이용한 공격
+</b></summary>
 <br>   
 
 </details>
