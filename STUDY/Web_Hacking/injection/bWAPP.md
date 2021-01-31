@@ -31,10 +31,11 @@ bWQPP -> SQL Injection(GET/Search) level = Low
 
 **Step 2. 인젝션 가능 여부를 확인**
 
-검색란에 작은따옴표(')를 입력하여 SQL 인젝션이 가능한지 알아본다. 변수에 SQL 인젝션 취약점이 존재하는 경우 SQL오류 메시지를 출력한다.<br>
-작은따옴표(')를 입력하는 이유는 DB에서 `'`로 문자 데이터를 구분하기 때문이다. 따라서 취약점이 존재할 때 `'`를 입력하면 웹서버에서 DB서버에 질의한느 쿼리에 문법 오류가 발생한다.
+검색란에 작은따옴표`'`를 입력하여 SQL 인젝션이 가능한지 알아본다. 변수에 SQL 인젝션 취약점이 존재하는 경우 SQL오류 메시지를 출력한다.<br>
+작은따옴표`'`를 입력하는 이유는 DB에서 `'`로 문자 데이터를 구분하기 때문이다. 따라서 취약점이 존재할 때 `'`를 입력하면 웹서버에서 DB서버에 질의한느 쿼리에 문법 오류가 발생한다.
 
-`SELECT * FROM moview WEHRE LIKE ' man' '`
+서버 내부 처리(추측)<br>
+`SELECT * FROM moview WEHRE LIKE ' %man'% '`
 
 ![bwapp1](https://user-images.githubusercontent.com/76420201/106378433-1d4bc700-63e8-11eb-960d-4bd979b6dc9b.gif)
 
