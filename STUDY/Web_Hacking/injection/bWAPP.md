@@ -14,8 +14,6 @@
 <br>   
 bWQPP -> SQL Injection(GET/Search) level = Low
 
-영화 정보 제공 서비스
-
 문제: 해당 사이트에서 사용자 정보(이름, 아이디, 패스워드 등)를 탈취하기 
 
 ---
@@ -24,6 +22,7 @@ bWQPP -> SQL Injection(GET/Search) level = Low
 
 해당 페이지는 영화 제목을 검색하는 페이지기 때문에 **DB에서 사용자 입력을 키워드로 조회한 결과**를 보여준다.
 
+![bwapp0](https://user-images.githubusercontent.com/76420201/106378432-1c1a9a00-63e8-11eb-924b-c9bdac4f8bfd.gif)
 
 ---
 
@@ -32,7 +31,10 @@ bWQPP -> SQL Injection(GET/Search) level = Low
 검색란에 작은따옴표(')를 입력하여 SQL 인젝션이 가능한지 알아본다. 변수에 SQL 인젝션 취약점이 존재하는 경우 SQL오류 메시지를 출력한다.<br>
 작은따옴표(')를 입력하는 이유는 DB에서 `'`로 문자 데이터를 구분하기 때문이다. 따라서 취약점이 존재할 때 `'`를 입력하면 웹서버에서 DB서버에 질의한느 쿼리에 문법 오류가 발생한다.
 
-`SELECT * FROM moview WEHRE LIKE ' ' '`
+`SELECT * FROM moview WEHRE LIKE ' man' '`
+
+![bwapp1](https://user-images.githubusercontent.com/76420201/106378433-1d4bc700-63e8-11eb-960d-4bd979b6dc9b.gif)
+
 
 ---
 
