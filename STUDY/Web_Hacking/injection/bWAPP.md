@@ -163,6 +163,7 @@ SQL 인젝션 후 웹 브라우저에서 데이터베이스에 저장된 users �
 전체적인 로직은 위와 같음.
 
 **Step 1. 사용법**
+
 `sqlmap -u [SQL Injection 취약점이 존재하는 페이지의 주소] --cookie = [인증을 전제하는 경우에 SESSIONID가 포함된 쿠키값]`
 
 - 페이지 주소 : http://bee-box/bWAPP/sqli_1.php?title=man&action=search
