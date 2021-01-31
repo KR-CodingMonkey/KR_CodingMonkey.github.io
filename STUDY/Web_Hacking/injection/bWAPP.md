@@ -108,6 +108,9 @@ https://dev.mysql.com/doc/refman/8.0/en/information-schema-schemata-table.html
 
 `' UNION SELECT 1,SCHEMA_NAME, 3, 4, 5, 6, 7 from information_schema.schemata#`
 
+<center><img src = "https://user-images.githubusercontent.com/76420201/106382185-580e2900-6401-11eb-81a5-717b3f4dcded.gif"></center>
+
+
 </details>
 
 <br>
