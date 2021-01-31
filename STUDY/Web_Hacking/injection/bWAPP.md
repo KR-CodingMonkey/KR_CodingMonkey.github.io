@@ -24,6 +24,9 @@ bWQPP -> SQL Injection(GET/Search) level = Low
 
 ![bwapp0](https://user-images.githubusercontent.com/76420201/106378432-1c1a9a00-63e8-11eb-924b-c9bdac4f8bfd.gif)
 
+서버 내부 처리(추측)<br>
+`select * from movies where title like '%man%'`
+
 ---
 
 **Step 2. 인젝션 가능 여부를 확인**
