@@ -1,6 +1,6 @@
 
 
-# Bee - Box
+# bee-box
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106377985-3783a600-63e4-11eb-924e-731743774575.jpg" width = "70%"></center>
 <br>
