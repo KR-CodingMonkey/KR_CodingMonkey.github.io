@@ -87,6 +87,7 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 `' UNION SELECT 1, @@version, 3, 4, 5, 6, 7#`
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106381745-52fbaa80-63fe-11eb-9503-cf5ac7de52d3.gif" width = "70%"></center>
+<br>
 
 - SQL 인젝션으로 데이터베이서의 정보를 파악할 수 있는 변수와 함수
 
