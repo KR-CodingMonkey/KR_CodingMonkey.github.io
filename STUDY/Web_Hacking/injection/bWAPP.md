@@ -24,7 +24,7 @@ bWQPP -> SQL Injection(GET/Search) -> ID = bee, PW = bug, level = Low
 
 해당 페이지는 영화 제목을 검색하는 페이지기 때문에 **DB에서 사용자 입력을 키워드로 조회한 결과**를 보여준다.
 
-![bwapp0](https://user-images.githubusercontent.com/76420201/106378432-1c1a9a00-63e8-11eb-924b-c9bdac4f8bfd.gif)
+<center><img src = "https://user-images.githubusercontent.com/76420201/106378432-1c1a9a00-63e8-11eb-924b-c9bdac4f8bfd.gif"></center>
 
 서버 내부 처리(추측)<br>
 `select * from movies where title like '%man%'`
@@ -34,12 +34,12 @@ bWQPP -> SQL Injection(GET/Search) -> ID = bee, PW = bug, level = Low
 **Step 2. 인젝션 가능 여부를 확인**
 
 검색란에 작은따옴표`'`를 입력하여 SQL 인젝션이 가능한지 알아본다. 변수에 SQL 인젝션 취약점이 존재하는 경우 SQL오류 메시지를 출력한다.<br>
-작은따옴표`'`를 입력하는 이유는 DB에서 `'`로 문자 데이터를 구분하기 때문이다. 따라서 취약점이 존재할 때 `'`를 입력하면 웹서버에서 DB서버에 질의하는 쿼리에 문법 오류가 발생한다.
+작은따옴표`'`를 입력하는 이유는 DB에서 `'`로 문자 데이터를 구분하기 때문이다. 따라서 취약점이 존재할 때 `'`를 입력하면 웹 서버에서 DB서버에 질의하는 쿼리에 문법 오류가 발생한다.
 
 서버 내부 처리(추측)<br>
 `SELECT * FROM moview WEHRE LIKE ' %man'% '`
 
-![bwapp1](https://user-images.githubusercontent.com/76420201/106378433-1d4bc700-63e8-11eb-960d-4bd979b6dc9b.gif)
+<center><img src= "https://user-images.githubusercontent.com/76420201/106378433-1d4bc700-63e8-11eb-960d-4bd979b6dc9b.gif"></center>
 
 오류 메시지에는 DB 서버가 포함되는데, DB서버 종류의 따라 SQL 구문이 다르기 때문에 가장먼서 서버 정보를 확인한다. 오류 메시지를 확인해 보면 해당 DB 서버는 MySQL이라는 정보를 출력하고 있다.
 
@@ -58,10 +58,9 @@ MySQL주석 문자는 `#` 또는 `--`을 사용한다. 따라서 두가지 쿼�
 1. `' or 1=1--`
 2. `' or 1=1#` 
 
-![bwapp2](https://user-images.githubusercontent.com/76420201/106378861-50dc2080-63eb-11eb-9e03-29994b7f91b3.gif)
+<center><img src = "https://user-images.githubusercontent.com/76420201/106378861-50dc2080-63eb-11eb-9e03-29994b7f91b3.gif" width = "70%"></center>
 
-더 자세한 정보를 알아내기 위하여 UNION SELECT 구문을 사용한다.<br>
-UNION은 SELECT 문이 둘 이상일 때 이를 결합하여 결과를 하나로 반환한다.
+더 자세한 정보를 알아내기 위하여 UNION SELECT 구문을 사용한다. UNION은 SELECT 문이 둘 이상일 때 이를 결합하여 결과를 하나로 반환한다.
 
 ---
 
