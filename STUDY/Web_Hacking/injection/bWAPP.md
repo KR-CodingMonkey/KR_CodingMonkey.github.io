@@ -115,6 +115,17 @@ MySQL 공식 문서를 참고해보면 information_schema.schemata은 데이터�
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106382451-0f576f80-6403-11eb-988d-3b7a5f36f556.gif" width = "80%"></center>
 
+SQL 인젝션 결과 데이터베이스 서버에 존재하는 모든 데이터베이스 명을 출력했습니다.
+
+---
+
+**Step 6. Table 정보 확인**
+
+[https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html](https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html)
+
+출력된 테이블 명 중 users 테이블에 사용자의 계정 정보가 들어있다고 추측할 수 있습니다. users DB의 정보를 출력해봅니다.
+
+---
 
 </details>
 
