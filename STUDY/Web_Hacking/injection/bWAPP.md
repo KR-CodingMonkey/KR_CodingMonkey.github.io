@@ -178,7 +178,8 @@ security_level = 0
 
 ```
 ┌──(kali㉿kali)-[~]
-└─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" \ --cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0"
+└─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" \
+--cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0"
 ```
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106384672-6d8a4f80-640f-11eb-992a-3b0a7db2a87b.gif" width = "100%"></center>
