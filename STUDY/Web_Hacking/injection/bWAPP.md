@@ -63,7 +63,7 @@ MySQL주석 문자는 `#` 또는 `--`을 사용한다. 따라서 두가지 쿼�
 
 `' UNION SELECT  1,2,3,4,5#`
 
-<cetner><img src = "https://user-images.githubusercontent.com/76420201/106379433-59cef100-63ef-11eb-8937-fc0ad93e4445.gif"></center>
+<center><img src = "https://user-images.githubusercontent.com/76420201/106379433-59cef100-63ef-11eb-8937-fc0ad93e4445.gif"></center>
 <br>
 
 `' UNION SELECT  1,2,3,4,5,6,7#`
