@@ -135,6 +135,11 @@ SQL 인젝션 결과 데이터베이스 서버에 존재하는 모든 데이터�
 
 ---
 
+**Step 7. users 테이블의 정보를 조회**
+
+[https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html](https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html)
+
+
 </details>
 
 <br>
