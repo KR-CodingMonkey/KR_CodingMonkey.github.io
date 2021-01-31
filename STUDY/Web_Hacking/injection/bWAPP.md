@@ -104,7 +104,7 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 
 https://dev.mysql.com/doc/refman/8.0/en/information-schema-schemata-table.html
 
-<center><img src = "https://user-images.githubusercontent.com/76420201/106382105-bbe42200-6400-11eb-8b4d-8e071a2982ec.gif" width = "70%"></center>
+<center><img src = "https://user-images.githubusercontent.com/76420201/106382105-bbe42200-6400-11eb-8b4d-8e071a2982ec.gif" width = "90%"></center>
 
 <br>
 
