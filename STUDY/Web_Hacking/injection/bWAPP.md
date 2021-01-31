@@ -107,13 +107,13 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106382105-bbe42200-6400-11eb-8b4d-8e071a2982ec.gif" width = "90%"></center>
 
-MySQL 공식 문서를 참고해보면 information_schema.schemata은 데이터베이스들의 정보를 제공해줍니다. 그중 SCEMA_NAME이라는 컬럼은 sechema의 name값을 가지고 있다는 것을 알 수 있습니다.
+MySQL 공식 문서를 참고해보면 information_schema.schemata은 데이터베이스들의 정보를 제공해줍니다. 그중 SCEMA_NAME이라는 컬럼은 schema의 name값을 가지고 있다는 것을 알 수 있습니다.
 
 <br>
 
 `' UNION SELECT 1,SCHEMA_NAME, 3, 4, 5, 6, 7 from information_schema.schemata#`
 
-<center><img src = "https://user-images.githubusercontent.com/76420201/106382185-580e2900-6401-11eb-81a5-717b3f4dcded.gif"></center>
+<center><img src = "https://user-images.githubusercontent.com/76420201/106382451-0f576f80-6403-11eb-988d-3b7a5f36f556.gif" width = "80%"></center>
 
 
 </details>
