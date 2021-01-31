@@ -221,4 +221,6 @@ security_level = 0
 
 </details>
 
+---
+
 Security Level을 올리게 되면 SQL Injection 공격이 통하지 않음
