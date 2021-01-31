@@ -66,7 +66,7 @@ MySQL주석 문자는 `#` 또는 `--`을 사용한다. 따라서 두가지 쿼�
 <center><img src = "https://user-images.githubusercontent.com/76420201/106379433-59cef100-63ef-11eb-8937-fc0ad93e4445.gif"></center>
 <br>
 
-`' UNION SELECT  1,2,3,4,5,6,7#`
+`' UNION SELECT  1,2,3,4,5,6,7#`<br>
 칼럼수가 7개가 될 때 정상적으로 결과를 출력한다. 또한 `1,2,3,4,5,6,7`로 입력 하였을때 `2, 3, 5, 4,`칼럼의 값만 출력되는 것을 확인할 수 있다.
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106379432-589dc400-63ef-11eb-8b33-ee22c1813be0.gif" width = "70%"></center>
