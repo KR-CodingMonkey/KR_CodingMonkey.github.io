@@ -129,6 +129,7 @@ SQL 인젝션 결과 데이터베이스 서버에 존재하는 모든 데이터�
 - 불필요한 정보를 쿼리 실행 결과에 포함되지 않도록 쿼리를 수정<br>
 `' and 1 = 2 UNION select 1, TABLE_SCHEMA, TABLE_NAME, 4, 5, 6, 7 from information_schema.tables where table_schema = 'bWAPP' #` 
 
+<center><img src = "https://user-images.githubusercontent.com/76420201/106382834-7b3ad780-6405-11eb-98b6-cd6a9d131a6b.gif" width = "70%"></center>
 
 출력된 테이블 명 중 users 테이블에 사용자의 계정 정보가 들어있다고 추측할 수 있습니다. users table의 정보를 출력해봅니다.
 
