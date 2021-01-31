@@ -153,7 +153,7 @@ SQL 인젝션 후 웹 브라우저에서 데이터베이스에 저장된 users �
 
 </details>
 
-<br>
+---
 
 <details markdown="1">
 <summary><b>sqlmap을 이용한 공격
