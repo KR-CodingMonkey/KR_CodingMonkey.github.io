@@ -12,7 +12,7 @@
 <details markdown="1">
 <summary><b>Union SQL Injection</b></summary>
 <br>   
-bWQPP -> SQL Injection(GET/Search) level = Low
+bWQPP -> SQL Injection(GET/Search) -> ID = bee PW = bug level = Low
 
 문제: 해당 사이트에서 사용자 정보(이름, 아이디, 패스워드 등)를 탈취하기 
 
