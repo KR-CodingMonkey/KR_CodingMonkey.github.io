@@ -95,8 +95,8 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 | databases() | 데이터베이스 명을 알려주는 함수|
 | user() | 현자 사용자의 아이디 |
 | system_user() | 최고 권한 사용자의 아이디 |
-| @@version | 데이터베이스 서버의 버전 |
-| @@datadir | 데이터베이스 서버가 존재하는 디렉터리 |
+| @\@version | 데이터베이스 서버의 버전 |
+| @\@datadir | 데이터베이스 서버가 존재하는 디렉터리 |
 
 ---
 
@@ -105,6 +105,8 @@ MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 �
 https://dev.mysql.com/doc/refman/8.0/en/information-schema-schemata-table.html
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106382105-bbe42200-6400-11eb-8b4d-8e071a2982ec.gif" width = "70%"></center>
+
+<br>
 
 `' UNION SELECT 1,SCHEMA_NAME, 3, 4, 5, 6, 7 from information_schema.schemata#`
 
