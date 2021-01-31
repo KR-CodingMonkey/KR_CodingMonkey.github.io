@@ -82,6 +82,22 @@ MySQL주석 문자는 `#` 또는 `--`을 사용한다. 따라서 두가지 쿼�
 
 **Step 4. UNION 구문을 이용해서 데이터베이스 정보를 조회**
 
+MySQL 버전을 확인하기 위해서 시스템 변수나 시스템 함수를 활용하여 쿼리를 입력한다.
+
+`' UNION SELECT 1, @@version, 3, 4, 5, 6, 7#`
+
+<center><img src = "https://user-images.githubusercontent.com/76420201/106381745-52fbaa80-63fe-11eb-9503-cf5ac7de52d3.gif" width = "70%"></center>
+
+- SQL 인젝션으로 데이터베이서의 정보를 파악할 수 있는 변수와 함수
+
+| 시스템 변수 및 함수 | 설명 |
+|-------------------|------|
+| databases() | 데이터베이스 명을 알려주는 함수|
+| user() | 현자 사용자의 아이디 |
+| system_user() | 최고 권한 사용자의 아이디 |
+| @@version | 데이터베이스 서버의 버전 |
+| @@datadir | 데이터베이스 서버가 존재하는 디렉터리 |
+
 ---
 
 **Step 5. 구글링을 통해 버전 정보 확인 ⇒ DBMS의 종류가 MySQL인 것을 확인**
