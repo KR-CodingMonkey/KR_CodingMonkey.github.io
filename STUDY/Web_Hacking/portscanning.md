@@ -25,7 +25,12 @@ sort: 5
 - 동작 방식
   - TCP SYN(Half-Open)스캔 (스텔스 스캔)
     - 완전한 연결을 수행하지 않기 때문에 로그가 남지 않는다.
-    - SYN -> SYN + ACK -> RST<br>
+    - SYN -> SYN + ACK -> RST
+    ```
+    서비스 포트가 동작하는 경우 :  SYN → SYN/ACK
+    서비스 포트가 동작하지 않는 경우 : SYN → RST
+    ```
+    <br>
   
   - TCP Connection(Open)스캔
     - 결과가 가장 정확하지만 로그가 남는다.
