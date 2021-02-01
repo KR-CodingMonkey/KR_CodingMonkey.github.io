@@ -40,3 +40,10 @@ syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 �
 ```
 
 ---
+
+**Step 2. TCP syn flooding 공격**
+
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo scapy   
+```
