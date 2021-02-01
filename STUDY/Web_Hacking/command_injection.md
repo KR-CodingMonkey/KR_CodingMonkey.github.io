@@ -39,7 +39,11 @@ http://.../help.jsp?doc_page=sqli.html ⇒ type c:\data\help_file\sqli.html 명�
 - 개발자가 의도하지 않은 형태의 입력
 http://.../help.jsp?doc_page=sqli.html %26 ipconfig ⇒ 의도하지 않은 ipconfig 명령어의 추가 실행 결과를 사용자에게 반환
 
+**방법**
 
+1. 사용자 화면에서 서버로 전달되는 값을 조작 (브라우저의 개발자 도구를 이용)
+
+2. 프록시를 이용해서 서버로 전달되는 값을 조작
 
 <br>
     
