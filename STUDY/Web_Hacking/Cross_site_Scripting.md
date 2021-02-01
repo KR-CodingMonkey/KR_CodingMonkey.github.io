@@ -2,7 +2,7 @@
 sort: 8
 ---
 
-zmfhtm tkdlxm tmzmflqxld(XSS: Cross-Site Scripting)
+# 크로스 사이트 스크립팅(XSS: Cross-Site Scripting)
 
 공격자가 전달한 스크립트 코드가 사용자 브라우저를 통해서 실행
 
