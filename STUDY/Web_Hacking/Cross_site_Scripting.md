@@ -1,5 +1,5 @@
 ---
-sort: 7
+sort: 8
 ---
 
 # 크로스 사이트 스크립팅(XSS: Cross-Site Scripting)
