@@ -22,27 +22,27 @@
 - 동작 방식
   - TCP SYN(Half-Open)스캔 (스텔스 스캔)
     - 완전한 연결을 수행하지 않기 때문에 로그가 남지 않는다.
-    - SYN -> SYN + ACK -> RST
+    - SYN -> SYN + ACK -> RST<br>
   
   - TCP Connection(Open)스캔
     - 결과가 가장 정확하지만 로그가 남는다.
-    - 방화벽 존재시, DROP(해당 패킷 폐기) / REJECT(해당 패킷 폐기 후 ICMP 메시지 전송) 2방법 존재
+    - 방화벽 존재시, DROP(해당 패킷 폐기) / REJECT(해당 패킷 폐기 후 ICMP 메시지 전송) 2방법 존재<br>
 
   - TCP FIN/NULL/Xmas 스캔 (스텔스 스캔)
     - TCP Header의 제어비트를 비정상적으로 설정해서 스캔하는 방식
     - 포트 상태가 Closed라면 요청 세그먼트에 대한 응답으로 RST를 받게 된다.
-    - RST가 오지 않으면 포트가 열려있거나 방화벽에서 filtered 된 상황
+    - RST가 오지 않으면 포트가 열려있거나 방화벽에서 filtered 된 상황<br>
 
   - TCP ACK 스캔
     - 포트 오픈 여부를 판단하는 것이 아니라 방화벽의 룰셋(필터링 룰셋)을 테스트하기 위한 스캔
     - 대상 방화벽이 상태 기반(stateful)인지 여부(TCP연결 상태 추적)
-    - 대상 포트가 방화벽에 의해 필터링 되고 있는지 여부
+    - 대상 포트가 방화벽에 의해 필터링 되고 있는지 여부<br>
 
   - UDP 스캔
-    - ICMP Unreachable 메시지를 이용하여 UDP포트의 Open 여부를 확인하기 위한 스캐닝 방식
+    - ICMP Unreachable 메시지를 이용하여 UDP포트의 Open 여부를 확인하기 위한 스캐닝 방식<br>
 
   - Decoy 스캔
-    - 실제 스캐너 주소 외에 다양한 위조된 주소로 스캔하는 방식
+    - 실제 스캐너 주소 외에 다양한 위조된 주소로 스캔하는 방식<br>
     
 
 `nmap -sT -p [port No.] [상대 IP]`
