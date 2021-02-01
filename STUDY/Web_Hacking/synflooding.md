@@ -23,10 +23,20 @@ TCP 통신 연결 수립을 위한 3way-handshake 특성을 이용하여 클라�
 
 ## 공격과정
 
-Step 1. Victim 가상머신에서 syncookie 사용을 확인 후 사용을 해제
+**Step 1. Victim 가상머신에서 syncookie 사용을 확인 후 사용을 해제**
 
-`sudo sysctl -a | grep syncookies`
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo sysctl -a | grep syncookies
+'net.ipv4.tcp_syncookies = 1'
+```
 
-net.ipv4.tcp_syncookies = 1
+syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 쌓을 수 있다. 실습을 위해서 Victim의 syncookie를 해제한다.
 
-syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 쌓을 수 있다.
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo sysctl -w  net.ipv4.tcp_syncookies=0		
+'net.ipv4.tcp_syncookies = 0'	
+```
+
+---
