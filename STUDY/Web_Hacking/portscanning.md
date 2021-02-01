@@ -5,7 +5,7 @@
 
 - 어떤 포트가 열려 있는지 확인하는 것으로 침입 전 취약점을 분석하기 위한 사전작업 중 하나
 
-- nmap을 주로 샤용
+- nmap을 주로 사용 (오픈 소스 기반의 포트 스캔 도구)
   - nmap [scan_type] [options] [target]
   - scan type 문법
 
@@ -35,9 +35,8 @@
 
     - TCP ACK 스캔
       -
-nmap
 
-오픈 소스 기반의 포트 스캔 도구
+    
 
 `nmap -sT -p [port No.] [상대 IP]`
 
