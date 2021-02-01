@@ -2,12 +2,12 @@
 sort: 6
 ---
 
-# OS Command Injection(운영체제 명령어 삽입)
+# OS Command Injection
 
 <center><img src = "https://user-images.githubusercontent.com/76420201/106404668-cc36e400-6476-11eb-9695-c38bd8098047.png" width = "80%"></center>
 <br>
 
-## OS Command Injection 
+## OS Command Injection (운영체제 명령어 삽입)
 <u>OS Command Injection</u>은 공격자가 웹 어플리케이션 파라미터(입력값)에 시스템 명령어를 입력 후 실행시켜 서버정보 확인, 권한 상승, 다른 취약점과 병행하여 비밀 파일 등에 접근 및 서버를 제어할 수 있는 취약점 이다.
 
 <br>
