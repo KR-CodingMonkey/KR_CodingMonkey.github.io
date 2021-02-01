@@ -34,10 +34,10 @@ OS명령어를 처리하는 페이지에 제공되는 명령어와 ', &#124;, &&
 
 
 - 개발자가 의도한 형태의 입력
-http://.../help.jsp?doc_page=sqli.html ⇒ type c:\data\help_file\sqli.html 명령어의 실행 결과를 사용자에게 반환
+http://.../help.jsp?doc_page=`sqli.html` ⇒ type c:\data\help_file\sqli.html 명령어의 실행 결과를 사용자에게 반환
                                               
 - 개발자가 의도하지 않은 형태의 입력
-http://.../help.jsp?doc_page=sqli.html %26 ipconfig ⇒ 의도하지 않은 ipconfig 명령어의 추가 실행 결과를 사용자에게 반환
+http://.../help.jsp?doc_page=`sqli.html %26 ipconfig` ⇒ 의도하지 않은 ipconfig 명령어의 추가 실행 결과를 사용자에게 반환
 
 **방법**
 
