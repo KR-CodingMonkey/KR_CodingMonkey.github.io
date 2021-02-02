@@ -2,7 +2,7 @@
 sort: 5
 ---
 
-# port scanning
+# Port scanning
 
 포트 스캐닝(Port Scaning)
 
