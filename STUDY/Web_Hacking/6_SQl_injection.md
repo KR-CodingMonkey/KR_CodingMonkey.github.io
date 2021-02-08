@@ -31,10 +31,12 @@ SQL Injection 이란 악의적인 사용자가 보안상의 취약점을 이용�
 -> 시스템 오류를 통해서 시스템 내부 정도 수집에 활용
 
 3. 추가 정보를 조회하는 입력<br>
-예) hong' union select * from ... --<br>
+예) `hong' union select * from ... --`<br>
+```
 select * from users where name = 'hong' <br>
 union<br>
 select * from ... --<br>
+```
 
 4. 시스템 명령어 실행하는 입력<br><br>
 예) hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- <br>
