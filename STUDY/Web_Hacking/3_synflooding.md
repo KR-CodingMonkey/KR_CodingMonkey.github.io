@@ -62,6 +62,8 @@ syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 �
 >>> send(syn, loop=True)
 ```
 
+---
+
 **Step 3. Victim 가상머신에서 네트워크 상태 확인**
 
 ```
@@ -74,6 +76,7 @@ syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 �
 - WinXP 가상머신에서 Victim 가상머신의 아파치 서버로 접속을 시도
 ![synflooding2](https://user-images.githubusercontent.com/76420201/107165492-758d5500-69f6-11eb-9ea0-e1523287231a.GIF)
 
+---
 
 **Step 4. Victim 가상머신에서 syncookie 설정**
 
