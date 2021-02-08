@@ -38,7 +38,7 @@ union<br>
 select * from ... --<br>
 ```
 
-4. 시스템 명령어 실행하는 입력<br><br>
+4. 시스템 명령어 실행하는 입력<br>
 예) hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- <br>
 `select * from users where name = 'hong'; exec xp_cmdshell 'cmd.exe /c ipconfig'; -- '`<br>
 -> 해당 DBMS의 쉘 이용이 가능 = 제어권을 탈취
