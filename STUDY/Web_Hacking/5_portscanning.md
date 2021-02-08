@@ -84,23 +84,40 @@ Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
 
 </details>
 
-**TCP FIN/NULL/Xmas 스캔 (스텔스 스캔)**
+---
+
+<details markdown="1">
+<summary><b>TCP FIN/NULL/Xmas 스캔 (스텔스 스캔)</b></summary>
+
+<br>
 - TCP Header의 제어비트를 비정상적으로 설정해서 스캔하는 방식
 - 포트 상태가 Closed라면 요청 세그먼트에 대한 응답으로 RST를 받게 된다.
 - RST가 오지 않으면 포트가 열려있거나 방화벽에서 filtered 된 상황<br>
 ```
 서비스 포트가 동작하는 경우 :  FIN → ??? (무응답)
 서비스 포트가 동작하지 않는 경우 : FIN → RST
-```
+```   
 
-**TCP ACK 스캔**
+</details>
 
+---
+
+<details markdown="1">
+<summary><b>TCP ACK 스캔</b></summary>
+
+<br>
 - 포트 오픈 여부를 판단하는 것이 아니라 방화벽의 룰셋(필터링 룰셋)을 테스트하기 위한 스캔
 - 대상 방화벽이 상태 기반(stateful)인지 여부(TCP연결 상태 추적)
-- 대상 포트가 방화벽에 의해 필터링 되고 있는지 여부<br>
+- 대상 포트가 방화벽에 의해 필터링 되고 있는지 여부<br>  
+
+</details>
+
+---
 
 **UDP 스캔**
 - ICMP Unreachable 메시지를 이용하여 UDP포트의 Open 여부를 확인하기 위한 스캐닝 방식<br>
+
+---
 
 **Decoy 스캔**
 - 실제 스캐너 주소 외에 다양한 위조된 주소로 스캔하는 방식<br>
