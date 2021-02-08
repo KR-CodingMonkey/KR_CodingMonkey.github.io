@@ -10,7 +10,7 @@ sort: 5
 
 - nmap을 주로 사용 (오픈 소스 기반의 포트 스캔 도구)
   - `nmap [scan_type] [options] [target]`
-  - scan type 문법
+  - scan_type 옵션
 
   | -sS | TCP SYN(Half - Open) Scan|
   | -sT | TCP Connect(Open) Scan |
@@ -122,7 +122,3 @@ Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
 **Decoy 스캔**
 - 실제 스캐너 주소 외에 다양한 위조된 주소로 스캔하는 방식<br>
     
-
-`nmap -sT -p [port No.] [상대 IP]`
-
-Attacker 가상 머신에서 `nmap -sT -p 192.168.126.129` 
