@@ -2,6 +2,8 @@
 sort: 8
 ---
 
+<center><img src = "https://user-images.githubusercontent.com/76420201/107176952-fad33280-6a13-11eb-8af1-5e471960eb95.jpg"></center>
+
 # 크로스 사이트 스크립팅(XSS: Cross-Site Scripting)
 
 공격자가 전달한 스크립트 코드가 사용자 브라우저를 통해서 실행
