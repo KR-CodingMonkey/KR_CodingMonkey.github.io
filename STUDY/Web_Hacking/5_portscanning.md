@@ -52,7 +52,7 @@ sort: 5
 서비스 포트가 동작하지 않는 경우 : SYN → RST 
 ```
 
-- 열려있는 경우<br>
+- 열려있는 경우
 
 ```javascript
 ┌──(kali㉿kali)-[~]
@@ -67,7 +67,7 @@ PORT   STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
-- 닫혀있는 경우<br>
+- 닫혀있는 경우
 
 ```javascript               
 ┌──(kali㉿kali)-[~]
