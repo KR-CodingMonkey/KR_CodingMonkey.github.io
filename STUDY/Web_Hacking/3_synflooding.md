@@ -74,6 +74,7 @@ syncookie를 사용하면 backlog que가 가득 차 있어도 정보를 계속 �
 ![synflooding1](https://user-images.githubusercontent.com/76420201/107165490-73c39180-69f6-11eb-9140-af935a7eb2d8.GIF)
 
 - WinXP 가상머신에서 Victim 가상머신의 아파치 서버로 접속을 시도
+
 ![synflooding2](https://user-images.githubusercontent.com/76420201/107165492-758d5500-69f6-11eb-9ea0-e1523287231a.GIF)
 
 ---
@@ -94,6 +95,7 @@ net.ipv4.tcp_syncookies = 1
 ```
 
 - WinXP 가상머신에서 Victim 가상머신의 아파치 서버로 접속 시도
+
 ![synflooding3](https://user-images.githubusercontent.com/76420201/107165494-76be8200-69f6-11eb-9a0e-ea6dc959f788.GIF)
 
 
