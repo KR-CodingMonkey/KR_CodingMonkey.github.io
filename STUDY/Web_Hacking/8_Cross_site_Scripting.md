@@ -2,8 +2,6 @@
 sort: 8
 ---
 
-<center><img src = "https://user-images.githubusercontent.com/76420201/107176952-fad33280-6a13-11eb-8af1-5e471960eb95.jpg"></center>
-
 # 크로스 사이트 스크립팅(XSS: Cross-Site Scripting)
 
 공격자가 전달한 스크립트 코드가 사용자 브라우저를 통해서 실행
@@ -11,14 +9,20 @@ sort: 8
 악의적인 스크립트 코드
 계획되지 않은 스크립트 코드
 
+<center><img src = "https://user-images.githubusercontent.com/76420201/107176952-fad33280-6a13-11eb-8af1-5e471960eb95.jpg"></center>
+
 - 가짜 페이지를 생성하고, 사용자 입력을 유도, 정보를 탈취
 - 사용자 브라우저 또는 PC에 저장된 정보를 탈취
 - 해당 사용자 PC를 좀비화해서 원격에서 제어 가능
+
+---
 
 ## 반사 XSS (Reflective XSS)
  
 - **반사된 XSS**란 웹 페이지 URL에 존재하는 파라미터에 악의적인 스크립트 코드를 입력하여 사용자가 URL을 클릭하면 파라미터에 입력한 악성 스크립트 코드가 실행되게 하는 공격이다. 
 
 - 스크립트 코드가 포함된 URL을 메일로 전송하거나 게시물로 등록하여 사용자가 클릭하도록 유도한다.
+
+---
 
 ## 저장 XSS (Stored XSS)
