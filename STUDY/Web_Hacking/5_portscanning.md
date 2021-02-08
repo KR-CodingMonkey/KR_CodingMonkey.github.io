@@ -22,6 +22,8 @@ sort: 5
   | -sP| Ping(icmp/icmp echo) Scan|
   | -D| Decoy Scan|
 
+<br>
+
 ## 동작 방식
 
 **TCP SYN(Half-Open)스캔 (스텔스 스캔)**
@@ -63,7 +65,7 @@ sort: 5
 **Decoy 스캔**
 - 실제 스캐너 주소 외에 다양한 위조된 주소로 스캔하는 방식<br>
     
-    
+
 `nmap -sT -p [port No.] [상대 IP]`
 
 Attacker 가상 머신에서 `nmap -sT -p 192.168.126.129` 
