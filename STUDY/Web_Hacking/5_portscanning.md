@@ -39,9 +39,10 @@ sort: 5
 
 - 열려있는 경우
 
-```
+```javascript
 ┌──(kali㉿kali)-[~]
-└─$ sudo nmap -sS -p 80 192.168.94.133                                                                                  Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-25 21:19 EST
+└─$ sudo nmap -sS -p 80 192.168.94.133
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-25 21:19 EST
 Nmap scan report for 192.168.94.133
 Host is up (0.00077s latency).
 
@@ -54,7 +55,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.46 seconds
 
 - 닫혀있는 경우
 
-```
+```javascript
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -sS -p 8080 192.168.94.133 
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-25 21:19 EST
