@@ -35,8 +35,12 @@ sort: 5
 서비스 포트가 동작하지 않는 경우 : SYN → RST
 ```
 
-**TCP Connection(Open)스캔**
+---
 
+<details markdown="1">
+<summary><b>TCP Connection(Open)스캔</b></summary>
+
+<br>   
 - 결과가 가장 정확하지만 로그가 남는다.
 - 방화벽 존재시, DROP(해당 패킷 폐기) / REJECT(해당 패킷 폐기 후 ICMP 메시지 전송) 2방법 존재<br> 
 ```
@@ -71,6 +75,8 @@ PORT     STATE  SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
 ```
+
+</details>
 
 **TCP FIN/NULL/Xmas 스캔 (스텔스 스캔)**
 - TCP Header의 제어비트를 비정상적으로 설정해서 스캔하는 방식
