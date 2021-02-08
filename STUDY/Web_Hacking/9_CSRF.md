@@ -16,3 +16,15 @@
 <br>
 
 ## 공격 실습
+
+패스워드 변경 서비스를 제공하는 페이지(http://bee-box/bWAPP/csrf_1.php)의 코드를 분석한 후 로그인한 사용자가 http://bee-box/bWAPP/xss_stored_1.php에 접근했을 때 해당 사용자의 패스워드가 1234로 자동 변경되도록 코드 작성!!
+
+**Step 1. csrf_1.php 소스 분석**
+
+![csrf1](https://user-images.githubusercontent.com/76420201/107189246-675a2b80-6a2c-11eb-9706-b5aa5b3331a8.jpg)
+
+method="GET" 요청방식을 사용하고 있으므로 서버로 전달할 내용이 URL에 주소에 포함된다. Change 버튼을 클릭하면 http://bee-box/`csrf_1.php?password_new=_____&password_conf=______&action=change` 형태의 요청이 서버로 전달되는것을 알수있다
+
+**Step 2. 공격 URL을 호출하도록 게시판에 등록**
+
+<iframe src = "http://bee-box/bWAPP/csrf_1.php?password_new=1234&password_conf=1234&action=change" width = "0" height="0"></iframe>
