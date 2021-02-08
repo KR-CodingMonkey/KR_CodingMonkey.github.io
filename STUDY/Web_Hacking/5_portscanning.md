@@ -49,6 +49,7 @@ sort: 5
 ```
 
 - 열려있는 경우<br>
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ nmap -sT -p 80 192.168.94.133 
@@ -63,6 +64,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
 - 닫혀있는 경우<br>
+
 ```                                                                                                                            
 ┌──(kali㉿kali)-[~]
 └─$ nmap -sT -p 8080 192.168.94.133 
