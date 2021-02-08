@@ -54,7 +54,7 @@ sort: 5
 
 - 열려있는 경우<br>
 
-```
+```javascript
 ┌──(kali㉿kali)-[~]
 └─$ nmap -sT -p 80 192.168.94.133 
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-25 20:56 EST
@@ -62,14 +62,14 @@ Nmap scan report for 192.168.94.133
 Host is up (0.0013s latency).
 
 PORT   STATE SERVICE
-80/tcp 'open'  http
+80/tcp "open"  http
 
 Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 ```
 
 - 닫혀있는 경우<br>
 
-```                                                                                                                            
+```javascript               
 ┌──(kali㉿kali)-[~]
 └─$ nmap -sT -p 8080 192.168.94.133 
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-01-25 20:56 EST
@@ -77,7 +77,7 @@ Nmap scan report for 192.168.94.133
 Host is up (0.0014s latency).
 
 PORT     STATE  SERVICE
-8080/tcp 'closed' http-proxy
+8080/tcp "closed" http-proxy
 
 Nmap done: 1 IP address (1 host up) scanned in 0.23 seconds
 ```
