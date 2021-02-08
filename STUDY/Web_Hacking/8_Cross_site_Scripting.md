@@ -30,6 +30,8 @@ XSS 공격은 3가지 영역으로 구성된다.
 
 **DOM 기반 XSS**는 반사 XSS나 저장 XSS와 달리 웹 애플리케이션 서버 측이 아닌 클라이언트 측 코드(자바스크립트인 경우가 많다)를 공격해 희생자의 브라우저에 악성 코드를 실행시킨다.
 
+![xss2](https://user-images.githubusercontent.com/76420201/107179100-007f4700-6a19-11eb-9be1-f9a748a252b4.png)
+
 ---
 
 ## 반사 XSS (Reflective XSS)
