@@ -1,5 +1,5 @@
 
-# Algirithm
+# Algorithm
 
 source: `{{ page.path }}`
 
