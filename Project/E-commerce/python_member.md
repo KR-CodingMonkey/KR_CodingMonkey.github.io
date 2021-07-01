@@ -2,7 +2,7 @@
 sort: 3 
 ---
 
-# python_2
+# Member Mode
 ---
 
 회원 모드는 네가지 메뉴가 제공된다.<br/> <br/>
