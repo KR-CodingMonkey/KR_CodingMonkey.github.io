@@ -66,8 +66,10 @@ if __name__ == '__main__'
 |Windows | h:<br/>p: 13306 |  |
 |Linux | h:  127.0.0.1<br/>p: | h:<br/>p: 13306 |
 
-우선 DB 서버를 윈도우에 두고 파이썬을 리눅스에 테스트 하지 않을 거라고 믿습니다. <br/>
-Windows/Windows 와 Linux/Linux는 동일합니다. Docker에서 container를 생성하게 되면 컨테이너마다 아이피가 할당되는데 `172.17.0.x` 이렇게 컨테이너 생성 시기 순으로 순차적으로 할당이 됩니다. `docker inspect <option> <ID or Image name>`을 사용하게 되면 해당 컨테이너의 IP 주소를 확인하고 맞추어 연결할 수 있습니다. 물론 아이피를 고정으로 할당하는 방법도 있습니다.
+Windows/Windows 와 Linux/Linux는 동일합니다. <br>
+Docker에서 container를 생성하게 되면 컨테이너마다 아이피가 할당되는데 <br>
+`172.17.0.x` 이렇게 컨테이너 생성 시기 순으로 순차적으로 할당이 됩니다. <br?>
+`docker inspect <option> <ID or Image name>`을 사용하게 되면 해당 컨테이너의 IP 주소를 확인하고 맞추어 연결할 수 있습니다. 또한, 아이피를 고정으로 할당하는 방법도 있습니다.
 
 Windows/Linux 포트번호는 조금은 복잡합니다.<br/>
 ```
