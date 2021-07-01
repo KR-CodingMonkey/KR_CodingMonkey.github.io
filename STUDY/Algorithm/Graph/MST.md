@@ -4,7 +4,7 @@
 
 - 최소 신장 트리 (MST, Minimum Spanning Tree)
 - 간선의 가중치 합이 최소인 Spanning Tree
-- **greedy algorithm**을 기초로 하고 있음
+- **Greedy Algorithm(탐욕법)**을 기초로 하고 있음
 
 
 ## 구현
@@ -45,5 +45,4 @@ def solution(n, cost):
 n = 4
 cost = [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]]
 print(solution(n, cost))
-
 ```
