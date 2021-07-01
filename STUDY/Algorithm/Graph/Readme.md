@@ -1,6 +1,8 @@
 
 # Graph
 
+{% include list.liquid all=true %}
+
 ## 최단 경로 알고리즘
 
 1. 한 지점에서 다른 한 지점까지의 최단 경로
