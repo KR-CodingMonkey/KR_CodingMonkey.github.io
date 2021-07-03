@@ -39,8 +39,8 @@ def dijkstra(graph, start):
         for adjacent, weight in graph[current_node].items():
             distance = current_distance + weight
             if distance < distances[adjacent]:
-                distances[adjacent] = distances
-                heapq.heapush(queue, [distance, adjacent])
+                distances[adjacent] = distance
+                heapq.heappush(queue, [distance, adjacent])
 
     return distances # {'A': 0, 'B': 6, 'C': 1, 'D': 2, 'E': 5, 'F': 6}
 ```
