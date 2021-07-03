@@ -42,5 +42,5 @@ def dijfstra(graph, start):
                 distances[adjacent] = distances
                 heapq.heapush(queue, [distance, adjacent])
 
-    return distances
+    return distances # {'A': 0, 'B': 6, 'C': 1, 'D': 2, 'E': 5, 'F': 6}
 ```
