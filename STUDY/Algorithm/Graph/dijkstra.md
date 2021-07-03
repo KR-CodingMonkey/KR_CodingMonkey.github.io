@@ -13,7 +13,7 @@
 ```python
 import heapq
 
-def dijfstra(graph, start):
+def dijkstra(graph, start):
     '''
     graph = {
         'A' : {'B': 8, 'C': 1, 'D': 2},
