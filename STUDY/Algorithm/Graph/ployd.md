@@ -22,5 +22,5 @@ def Floyd_warshall(n, data):
 
 n = 4
 data = [[1,3,-2],[2,1,4],[2,3,3],[3,4,2],[4,2,-1]]
-print(Floyd_warshall(n, data))
+print(Floyd_warshall(n, data)) # [[0, -1, -2, 0], [4, 0, 2, 4], [5, 1, 0, 2], [3, -1, 1, 0]]
 ```
