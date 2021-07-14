@@ -1,8 +1,12 @@
 # 최단 경로 알고리즘(Ployd)
 
+- 모든 지점에서 다른 모든 지점까지의 최단 경로
+- 동적 프로그래밍(Dynamic programming)기법
+
+
 $$
 \begin{aligned}
-& D_ij = min(D_ij, D_ik + D_kj)
+& D_i_j = min(D_i_j, D_i_k + D_k_j)
 \end{aligned}
 $$
 
