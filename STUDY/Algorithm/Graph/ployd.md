@@ -6,7 +6,7 @@
 
 $$
 \begin{aligned}
-& D_i_j = min(D_i_j, D_i_k + D_k_j)
+& D_k(i,j) = min(D_k-1(i, j), D_k-1(i,k) + D_k-1(k,j))
 \end{aligned}
 $$
 
