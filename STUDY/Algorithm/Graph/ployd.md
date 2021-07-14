@@ -2,7 +2,7 @@
 
 $$
 \begin{aligned}
-& D_(ij) = min(D_(ij), D_(ik) + D_(kj))
+& D_ij = min(D_ij, D_ik + D_kj)
 \end{aligned}
 $$
 
