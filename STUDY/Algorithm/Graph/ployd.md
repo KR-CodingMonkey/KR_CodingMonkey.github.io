@@ -16,7 +16,9 @@ def Floyd_warshall(n, data):
         dist[k][k] = 0
         for i in range(n):
             for j in range(n):
-                dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+                if dist[i][j] > dist[i][k] + dist[k][j]: # 시간 절약 1/2
+                    dist[i][j] = dist[i][k] + dist[k][j]
+                # dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
 
     return dist
 
