@@ -2,10 +2,7 @@
 
 - 모든 지점에서 다른 모든 지점까지의 최단 경로
 - 동적 프로그래밍(Dynamic programming)기법
-- 점화식 :
-$$
-& D_k(i,j) = min{D_{k-1}(i, j), D_{k-1}(i,k) + D_{k-1}(k,j)}
-$$
+- 점화식 : $$ & D_k(i,j) = min{D_{k-1}(i, j), D_{k-1}(i,k) + D_{k-1}(k,j)} $$
 
 ```python
 def Floyd_warshall(n, data):
