@@ -2,6 +2,7 @@
 # 너비 우선 탐색(BFS)
 
 - 너비 우선 탐색(BFS, Breath Frist search) : 큐 사용
+- 간선간의 비용이 같을때 사용
 
 ```python
 from collections import deque
