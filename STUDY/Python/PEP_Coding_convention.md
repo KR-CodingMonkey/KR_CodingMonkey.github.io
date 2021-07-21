@@ -11,6 +11,7 @@
 ### Code Lay-out
     - 들여쓰기는 4개의 공백을 사용
     - 연속 라인은 요소를 수직적으로 정렬
+
 ```python
 # 여는 구분 기호에 맞춰 정렬됩니다. 
 foo = long_function_name(var_one, var_two, 
@@ -22,6 +23,7 @@ def long_function_name(
     var_four): 
 print(var_one) 
 ```
+
 ### String Quotes
 
 ### Whitespace in Expressions and Statements
