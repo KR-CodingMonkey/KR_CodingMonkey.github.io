@@ -36,6 +36,9 @@ income = (gross_wages
           - student_loan_interest)
 ```
 
+- 최상위(top-level) 함수와 클래스 정의는 2줄씩 띄움
+- 클래스 내의 메소드 정의는 1줄씩 띄움
+
 ### String Quotes
 
 ### Whitespace in Expressions and Statements
