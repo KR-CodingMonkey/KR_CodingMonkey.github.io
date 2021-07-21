@@ -27,6 +27,15 @@ print(var_one)
 
 - Python 표준 라이브러리는 보수적이며 줄을 79자로 제한(주석은 72자)
 
+```python
+# easy to match operators with operands
+income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+```
+
 ### String Quotes
 
 ### Whitespace in Expressions and Statements
