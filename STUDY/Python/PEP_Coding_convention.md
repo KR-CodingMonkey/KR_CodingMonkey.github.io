@@ -39,9 +39,18 @@ income = (gross_wages
 - 최상위(top-level) 함수와 클래스 정의는 2줄씩 띄움
 - 클래스 내의 메소드 정의는 1줄씩 띄움
 
-### String Quotes
-
 ### Whitespace in Expressions and Statements
+- 불필요한 공백은 지움
+```python
+# 괄호, 대괄호 또는 중괄호 바로 안에
+spam(ham[1], {eggs: 2})
+
+# 쉼표와 다음 닫는 괄호 사이
+foo = (0,)
+
+# 쉼표, 세미콜론 또는 콜론 바로 앞
+if x == 4: print x, y; x, y = y, x
+```
 
 ### Comments
 
