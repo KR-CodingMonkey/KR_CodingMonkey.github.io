@@ -52,6 +52,14 @@ foo = (0,)
 if x == 4: print x, y; x, y = y, x
 ```
 
+- 우선 순위가 다른 연산자를 사용하는 경우 우선 순위가 가장 낮은 연산자 주위에 공백을 추가
+```python
+i = i + 1
+submitted += 1
+x = x*2 - 1
+hypot2 = x*x + y*y
+c = (a+b) * (a-b)
+```
 ### Comments
 
 ### Naming Convention
