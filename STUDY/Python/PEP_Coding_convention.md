@@ -25,6 +25,8 @@ def long_function_name(
 print(var_one) 
 ```
 
+- Python 표준 라이브러리는 보수적이며 줄을 79자로 제한(주석은 72자)
+
 ### String Quotes
 
 ### Whitespace in Expressions and Statements
