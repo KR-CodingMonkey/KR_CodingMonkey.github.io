@@ -9,6 +9,7 @@
 - [PEP8](https://www.python.org/dev/peps/pep-0008/)
 
 ### Code Lay-out
+
     - 들여쓰기는 4개의 공백을 사용
     - 연속 라인은 요소를 수직적으로 정렬
 
