@@ -1,5 +1,8 @@
 # Linked List
 
+Node 구현
+- 파이썬에서 링크드 리스트 구현시, 클래스를 활용
+
 ```python
 class Node:
     def __init__(self, data):
