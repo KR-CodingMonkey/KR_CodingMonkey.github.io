@@ -22,12 +22,10 @@
   links:
     - title: Hadoop
       url: "docs/Skills/Hadoop"
-      childern:
+      children:
         - title: hadoop-0
         - url: "docs/Skills/Hadoop/hadoop0"
         - title: hadoop-1
         - url: "docs/Skills/Hadoop/hadoop1"
-
-
 
         
