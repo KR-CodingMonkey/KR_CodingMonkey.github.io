@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-permalink: /docs/skills
+permalink: /docs/Skills
 ---
 
 # skills
