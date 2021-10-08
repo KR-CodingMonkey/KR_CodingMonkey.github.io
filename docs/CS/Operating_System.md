@@ -4,7 +4,7 @@ tags:
  - CS
  - OS
 description: Operating System
-permalink: /OS/
+permalink: docs/OS/
 ---
 
 # 운영체제(OS)
