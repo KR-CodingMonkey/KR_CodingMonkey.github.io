@@ -32,7 +32,7 @@ url: "https://kr-codingmonkey.github.io/kcm.github.io/" # the base hostname & pr
 # Social (First three Required)
 repo: "https://github.com/KR-CodingMonkey/kcm.github.io"
 github_user: "kr-codingmonkey"
-github_repo: "kr-codingmonkey.github.io"
+github_repo: "kcm.github.io"
 github_branch: "master"
 
 # Optional
