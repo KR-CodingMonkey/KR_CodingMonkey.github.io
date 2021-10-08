@@ -23,10 +23,10 @@
     - title: Hadoop
       url: "docs/Skills/Hadoop"
       childern:
-        - title: hadoop-1
+        - title: hadoop-0
         - url: "docs/Skills/Hadoop/hadoop0"
-    - title: Service Catalog
-      url: "docs/bestpractices/servicecatalog"
+        - title: hadoop-1
+        - url: "docs/Skills/Hadoop/hadoop1"
 
 
 
