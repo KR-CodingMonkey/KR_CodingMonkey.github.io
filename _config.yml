@@ -16,7 +16,7 @@
 
 title: Coding Monkey
 email: ahippo@naver.com
-author: Coding Monkey
+author: CodingMonkey
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -27,10 +27,10 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/kcm.github.io" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io" # the base hostname & protocol for your site
+url: "https://kr-codingmonkey.github.io/kcm.github.io/" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/KR-CodingMonkey/KR-CodingMonkey.github.io"
+repo: "https://github.com/KR-CodingMonkey/kcm.github.io"
 github_user: "kr-codingmonkey"
 github_repo: "kr-codingmonkey.github.io"
 github_branch: "master"
