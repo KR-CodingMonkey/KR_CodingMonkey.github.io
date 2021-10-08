@@ -24,15 +24,15 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 # baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
-baseurl: "kr-codingmonkey.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/kcm.github.io" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://kr-codingmonkey.github.io" # the base hostname & protocol for your site
+url: "https://kr-codingmonkey.github.io/kcm.github.io/" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/KR-CodingMonkey"
+repo: "https://github.com/KR-CodingMonkey/kcm.github.io"
 github_user: "kr-codingmonkey"
-github_repo: "kr-codingmonkey.github.io"
+github_repo: "kcm.github.io"
 github_branch: "master"
 
 # Optional
