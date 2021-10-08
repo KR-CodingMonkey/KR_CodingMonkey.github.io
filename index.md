@@ -11,7 +11,3 @@ The Information Technology Services group at MSI maintains a complex Information
 #### Getting Started
 
 Use the pulldown bar on the left to navigate to the page that you want. 
-
-### Questions/Contact
-
-Email: help@msi.ucsb.edu    Phone: (805) 893-7145    Office: 4009 Marine Science Building
