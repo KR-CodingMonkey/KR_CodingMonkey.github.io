@@ -1,32 +1,99 @@
-title: KCM
-url: "https://KR-CodingMonkey.github.io"
-description: BLOG
+remote_theme: vsoch/docsy-jekyll
+# remote_theme: tomjoht/documentation-theme-jekyll@gh-pages
+# theme: jekyll-theme-slate
 
-theme: null
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# debug:
-#   compress: true
-#   dist: false
-#   shortcodes: true
+title: MSI Documentation
+email: help@msi.ucsb.edu
+author: MSI IT Department
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+# DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
+baseurl: "/" # the subpath of your site, e.g. /blog
+#baseurl: "/campus-cloud-docs" # the subpath of your site, e.g. /blog
 
-readme_index:
-  with_frontmatter: true
+# This is mostly for testing
+url: "https://msi-techwiki.github.io/" # the base hostname & protocol for your site
+#url: "https://ucsb.github.io/campus-cloud-docs/" # the base hostname & protocol for your site
 
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
+# Social (First three Required)
+repo: "https://github.com/msi-techwiki/msi-techwiki.github.io"
+github_user: "msi-techwiki"
+github_repo: "msi-techwiki.github.io"
 
-exclude:
-  - Makefile
-  - CNAME
-  - LICENSE
-  - update.sh
-  - Gemfile
-  - Gemfile.lock
-  - requirements.txt
-  - node_modules
-  - package.json
-  - package-lock.json
-  - webpack.config.js
-  - jekyll-rtd-theme.gemspec
+# Optional
+# twitter: unknown
+# linkedin: unknown
+# dockerhub: unknown
+
+# Should there be feedback buttons at the bottom of pages?
+feedback: false
+
+# Link to a privacy policy in footer, uncomment and define if wanted
+privacy: http://www.policy.ucsb.edu/privacy-notification/
+
+# google-analytics: UA-XXXXXXXXXX
+# Image and (square) dimension for logo (don't start with /)
+# If commented, will use material hat theme
+# logo: "assets/img/logo/SRCC-square-red.png"
+logo_pixels: 34
+color: "#4F7942"
+# color: "#8c1515" # primary color for header, buttons
+
+# Build settings
+markdown: kramdown
+
+# If you add tags to pages, define this variable to link them to some external search
+# If you want to link to tags locally on the site, leave this commented out
+# tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
+tag_color: primary # danger, success, warning, primary, info, secondary
+
+accentColor: red # purple, green, etc.
+themeColor: red # purple, green, blue, orange, purple, grey
+fixedNav: 'true' # true or false
+
+permalink: /:year/:title/
+markdown: kramdown
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+
+# Collections
+#collections_dir: collections
+collections:
+  docs:
+    title: Documentation
+    permalink: /:collection/:path
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: "docs"
+      type: "docs"
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+github: [metadata]
