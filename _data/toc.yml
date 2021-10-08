@@ -16,22 +16,18 @@
           url: docs/ML/Fake_news
         - title: Iris
           url: docs/ML/Iris
-    - title: "Best Practices"
-      url: "docs/bestpractices"
-      children:
-        - title: First Steps
-          url: "docs/bestpractices/firststeps"
-        - title: Service Catalog
-          url: "docs/bestpractices/servicecatalog"
-        - title: Account Contacts
-          url: "docs/bestpractices/contacts"
-        - title: Cost Models
-          url: "docs/bestpractices/costmodels"
-        - title: Resource Tagging
-          url: "docs/bestpractices/tagging"
-        - title: VPN Traffic
-          url: "docs/bestpractices/vpn"
-    - title: "Glossary"
-      url: "glossary"
+
+- title: "Skills"
+  url: "docs/Skills"
+  links:
+    - title: Hadoop
+      url: "docs/Skills/Hadoop"
+      childern:
+        - title: hadoop-1
+        - url: "docs/Skills/Hadoop/hadoop0"
+    - title: Service Catalog
+      url: "docs/bestpractices/servicecatalog"
+
+
 
         

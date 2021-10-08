@@ -5,10 +5,5 @@ tags:
  - hadoop
  - Data Engineer
 description: hadoop
-permalink: docs/Skills/Hadoop/hadoop0
+permalink: docs/Skills/Hadoop
 ---
-
-# Apache Hadoop
-
-
-test2
