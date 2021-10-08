@@ -3,14 +3,12 @@
     - title: "CS기초"
       url: "Services"
       children:
-        - title: Client Support
-          url: "Services#support"
-        - title: Consultation
-          url: "Services#consult"
-        - title: Budgeting
-          url: "Services#budgeting"
-        - title: Procuring an Account
-          url: "Services#procurement"
+        - title: Network
+          url: "docs/Network"
+        - title: 운영체제(OS)
+          url: "docs/OS"
+        - title: Data Engineer
+          url: "docs/DataEngineer"
     - title: "Guidelines"
       url: "docs/guidelines"
       children:
@@ -41,13 +39,5 @@
           url: "docs/bestpractices/vpn"
     - title: "Glossary"
       url: "glossary"
-    - title: "CS기초"
-      url: "docs/CS"
-      children:
-        - title: Network
-          url: docs/Network
-        - title: 운영체제(OS)
-          url: docs/OS
-        - title: Data Engineer
-          url: docs/DataEngineer
+
         

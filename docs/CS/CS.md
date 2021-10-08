@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-permalink: docs/CS
+permalink: /docs/CS
 ---
 
 # CS 기초

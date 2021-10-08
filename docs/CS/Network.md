@@ -4,7 +4,7 @@ tags:
  - CS
  - Network
 description: Network
-permalink: docs/Network/
+permalink: /docs/Network/
 ---
 
 # 네트워크 / 운영체제
