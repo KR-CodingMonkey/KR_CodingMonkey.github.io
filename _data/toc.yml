@@ -9,6 +9,8 @@
           url: "docs/CS/OS"
         - title: Data Engineer
           url: "docs/CS/DataEngineer"
+        - title: 개발언어(python)
+          url: docs/CS/Programming_Language
     - title: "Machine Learning"
       url: "docs/ML"
       children:
@@ -28,4 +30,27 @@
         - title: hadoop-1
           url: "docs/Skills/Hadoop/hadoop1"
 
-        
+
+# - title: Documentation
+#   url: docs
+#   links:
+#     - title: "Getting Started"
+#       url: "docs/getting-started"
+#       children:
+#         - title: Features
+#           url: "docs/getting-started#getting-started"
+#         - title: Development
+#           url: "docs/getting-started#development"
+#         - title: Customization
+#           url: "docs/getting-started#customization"
+#     - title: "Extras"
+#       url: "docs/extras"
+#       children:
+#         - title: Quizzes
+#           url: "docs/extras/example-quiz"
+#         - title: Tags Page
+#           url: "tags"
+#     - title: "About"
+#       url: "about"
+#     - title: "News"
+#       url: "news"

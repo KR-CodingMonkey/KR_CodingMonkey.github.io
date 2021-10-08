@@ -1,9 +1,15 @@
 ---
-layout: page
 title: About
 permalink: /about/
 ---
 
-# About Marine Science Institute Information Technology
+# About
 
-The Information Technology Services Group (ITS) plans, develops and maintains the MSI information technology (IT) infrastructure and provides leadership in IT matters. The ITS's responsibilities include the provision of infrastructure such as email, web, authentication, security, software licensing; MSI networking services; and client support to the MSI community.
+This is a [starter template](https://vsoch.github.com/docsy-jekyll/) for a Docsy jekyll theme, based
+on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
+native deployment on GitHub pages. See the [respository]({{ site.repo }}) for more details.
+
+## Support
+
+If you need help, please don't hesitate to [open an issue](https://www.github.com/{{ site.github_user }}/{{ site.github_repo }}).
+

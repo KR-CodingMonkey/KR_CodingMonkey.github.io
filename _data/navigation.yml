@@ -1,4 +1,5 @@
 - title: About
   url: about
-- title: Services
-  url: Services
+
+- title: Documentation
+  url: docs
