@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-permalink: /ML/
+permalink: docs/ML
 ---
 
 # ML 기초

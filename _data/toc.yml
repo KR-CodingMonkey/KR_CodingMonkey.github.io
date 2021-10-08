@@ -1,16 +1,16 @@
 - title: Documentation
   links:
     - title: "CS기초"
-      url: "Services"
+      url: "docs/CS"
       children:
         - title: Network
-          url: "docs/Network"
+          url: "docs/CS/Network"
         - title: 운영체제(OS)
-          url: "docs/OS"
+          url: "docs/CS/OS"
         - title: Data Engineer
-          url: "docs/DataEngineer"
-    - title: "Guidelines"
-      url: "docs/guidelines"
+          url: "docs/CS/DataEngineer"
+    - title: "Machine Learning"
+      url: "docs/ML"
       children:
         - title: Description
           url: "docs/guidelines/description"
