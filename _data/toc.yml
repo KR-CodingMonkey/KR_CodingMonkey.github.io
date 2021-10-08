@@ -17,8 +17,8 @@
         - title: Iris
           url: docs/ML/Iris
 
-- title: "Skills"
-  url: "docs/Skills"
+- title: Skills
+  # url: "docs/Skills"
   links:
     - title: Hadoop
       url: "docs/Skills/Hadoop"
