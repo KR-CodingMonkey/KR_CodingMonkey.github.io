@@ -12,16 +12,10 @@
     - title: "Machine Learning"
       url: "docs/ML"
       children:
-        - title: Description
-          url: "docs/guidelines/description"
-        - title: Networking
-          url: "docs/guidelines/networking"
-        - title: Tagging
-          url: "docs/guidelines/tagging"
-        - title: Compliance
-          url: "docs/guidelines/compliance"
-        - title: Security
-          url: "docs/guidelines/security"
+        - title: Fake News
+          url: docs/ML/Fake_news
+        - title: Iris
+          url: docs/ML/Iris
     - title: "Best Practices"
       url: "docs/bestpractices"
       children:

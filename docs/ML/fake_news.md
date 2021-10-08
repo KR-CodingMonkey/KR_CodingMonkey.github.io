@@ -7,7 +7,7 @@ tags:
  - big data
  - 인공지능(AI)
 description: Fake News Detection
-permalink: Fake_news
+permalink: docs/ML/Fake_news
 ---
 
 # Fake News Detection

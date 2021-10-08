@@ -6,7 +6,7 @@ tags:
  - Supervised Learning
  - 인공지능(AI)
 description: Iris Classification
-permalink: Iris
+permalink: docs/ML/Iris
 ---
 
 # Iris Classification
