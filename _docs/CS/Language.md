@@ -35,7 +35,6 @@ permalink: docs/CS/Programming_Language
     - 연결을 위한 중간 객체코드를 생성하기 때문에 더 많은 메모리가 필요하다
     - 한번에 번역하기 때문에 디버깅이 비교적 어렵다
     - C, C++, C#, JAVA, COBOL  
-
 <br/>
 
 - 인터프리터
@@ -52,6 +51,7 @@ permalink: docs/CS/Programming_Language
     - 순차적인 처리를 중요시하는 프로그래밍 기법
     - 실행속도가 빠름
     - C, COBOL, 파스칼
+<br/>
 
 - 객체지향 프로그래밍
     - 실제 세계의 사물들을 객체로 모델링하는 프로그래밍 기법
