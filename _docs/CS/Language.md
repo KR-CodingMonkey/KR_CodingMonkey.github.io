@@ -42,9 +42,11 @@ permalink: docs/CS/Programming_Language
     - 디버깅이 용이하다
     - Python, Ruby, Basic, JavaScript, SQL, HTML
 
-<br/><br/>
+<br/>
 
-**절차지향 / 객체지향 프로그래밍**
+---
+
+### 절차지향 / 객체지향 프로그래밍
 - 절차지향 프로그래밍
     - 순차적인 처리를 중요시하는 프로그래밍 기법
     - 실행속도가 빠름
@@ -57,10 +59,6 @@ permalink: docs/CS/Programming_Language
     - 캡슐화, 상속, 다형성 등과 같은 기법을 이용할 수 있다
     - JAVA, C++, Python 
 
-<br/><br/>
+<br/>
 
-**compile / interpreter**
-
-<br/><br/>
-
-**compile / interpreter**
+---
