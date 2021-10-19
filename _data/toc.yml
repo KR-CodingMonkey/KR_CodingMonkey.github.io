@@ -13,7 +13,7 @@
           url: docs/CS/Programming_Language
         - title: 자료구조
           url: docs/CS/DataStructure
-          childern:
+          children:
             - title: 트리(Tree)
               url: docs/CS/DataStructure/Tree
     - title: "Machine Learning"
