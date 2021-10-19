@@ -11,6 +11,11 @@
           url: "docs/CS/DataEngineer"
         - title: 개발언어(python)
           url: docs/CS/Programming_Language
+        - title: 자료구조
+          url: docs/CS/DataStructure
+          childern:
+            - title: 트리(Tree)
+              url: docs/CS/DataStructure/Tree
     - title: "Machine Learning"
       url: "docs/ML"
       children:
