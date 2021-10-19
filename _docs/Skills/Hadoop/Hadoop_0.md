@@ -28,7 +28,8 @@ permalink: docs/Skills/Hadoop/hadoop0
 ## 하둡의 핵심 구성 요소
 
 1. 하둡 분산 파일 시스템 (HDFS, Hadoop Distributed File System): 스토리지 서브시스템
-2. YARB (YARN, Yet Another Resource Negotiator): 프로세싱 또는 리소스 스케줄링 서브시스템
+2. YARN (YARN, Yet Another Resource Negotiator): 프로세싱 또는 리소스 스케줄링 서브시스템
 
 HDFS 클러스터와 YARN 클러스터가 서로 결합된 두 시스템의 조합을 **하둡 클러스터**라고 한다.
 
+플룸(Flume)이나 스쿱(Sqoop)과 같은 데이터 처리 프로젝트 또는 피그(Pig)나 하이브(Hive)와 같은 데이터 분석 툴처럼 하둡과 상호 작용하거나 통합하는 프로젝트를 **하둡 에코시스템** 프로젝트라고 한다.
