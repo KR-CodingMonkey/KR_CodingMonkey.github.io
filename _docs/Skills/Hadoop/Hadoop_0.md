@@ -28,8 +28,8 @@ permalink: docs/Skills/Hadoop/hadoop0
 
 ## 하둡의 핵심 구성 요소
 
-1. 하둡 분산 파일 시스템 (HDFS, Hadoop Distributed File System): 스토리지 서브시스템
-2. YARN (YARN, Yet Another Resource Negotiator): 프로세싱 또는 리소스 스케줄링 서브시스템
+- 하둡 분산 파일 시스템 (HDFS, Hadoop Distributed File System): 스토리지 서브시스템
+- YARN (YARN, Yet Another Resource Negotiator): 프로세싱 또는 리소스 스케줄링 서브시스템
 
 HDFS 클러스터와 YARN 클러스터가 서로 결합된 두 시스템의 조합을 **하둡 클러스터**라고 한다.
 
@@ -37,10 +37,11 @@ HDFS 클러스터와 YARN 클러스터가 서로 결합된 두 시스템의 조�
 
 <br/>
 
-### HDFS, Hadoop Distributed File System 이해
+#### HDFS, Hadoop Distributed File System 이해
 
 - HDFS는 클러스터의 하나 이상의 노드에 파일이 분산돼 있는 블록으로 구성된 가상 파일 시스템
 - 대부분의 분산환경에서 동작하는 분산 플랫폼들은 Master/Slave 구조와 Master가 없는 구조로 나눌 수 있음
+- HDFS는 실시간 처리보다는 배치처리를 위해 설계되었습니다. 따라서 빠른 데이터 응답시간이 필요한 작업에는 적합하지 않습니다
 
 <center><img src='https://t1.daumcdn.net/cfile/tistory/9981B2335A88438223' width="80%"></center>
 
@@ -53,3 +54,8 @@ GFS의 아키텍처는 Master/Slave 구조이다. Master/Slave의 구조에서 �
 > **병렬(Parallel Computing) / 분산(Distributed Computing)**<br/><br/>
 분산과 병렬은 비슷한데, 병렬은 보다 CPU 중심으로 한 용어로 사용이 됩니다. CPU를 병렬로 처리를 하는 것에 더 의미를 강조한 용어가 **병렬(Parallel)**이고, **분산(Distributed)**은 데이터에 포커싱되어 있는 용어입니다. 
 <br/><br/>데이터를 분산하고 분산된 데이터를 처리를 하면 보통 **분산 컴퓨팅(Distributed Computing)**이라고 하고<br/>데이터를 공용 스토리지에 공유해놓고 CPU코어 수나 메모리를 여러개로 늘려가면서 처리를 하는 것은 **병렬 컴퓨팅(Parallel Computing)**라고 합니다.
+
+HDFS는 마스터 슬레이브 구조로 하나의 네임노드와 여러 개의 데이터노드로 구성됩니다. 네임노드는 메타데이터를 가지고 있고, 데이터는 블록 단위로 나누어 데이터노드에 저장됩니다. 사용자는 네임노드를 이용해 데이터를 쓰고, 읽을 수 있습니다.
+
+
+####
