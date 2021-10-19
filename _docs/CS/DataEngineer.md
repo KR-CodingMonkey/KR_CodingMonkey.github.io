@@ -62,6 +62,7 @@ NoSQL은 정확한 데이터 구조를 알 수 없고 변경/확장이 될 수 �
 Reference: [데이터 웨어하우스(DW) 란 무엇일까 (1)](https://bomwo.cc/posts/Datawarehouse/)
 
 <br/><br/>
+---
 
 ### MapReduce
 
@@ -74,6 +75,8 @@ Reference: [데이터 웨어하우스(DW) 란 무엇일까 (1)](https://bomwo.cc
 3. 처리된 데이터 합치기(Reduce): 처리된 데이터를 다시 합칩니다.
 
 <br/><br/>
+
+---
 
 ### Apache Hadoop
 
