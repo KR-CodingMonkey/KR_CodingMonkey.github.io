@@ -42,7 +42,9 @@ RDBMS는 데이터 구조가 명확하며 변경 될 여지가 없으며 명확�
 
 NoSQL은 정확한 데이터 구조를 알 수 없고 변경/확장이 될 수 있는 경우에 사용하는 것이 좋습니다. 중복된 데이터가 변경될 시에는 모든 컬렉션에서 수정을 해야 하기 때문에 Update가 많이 이루어지지 않는 시스템이 좋으며 또한 Scale-out이 가능하다는 장점을 활용해 막대한 데이터를 저장해야 해서 Database를 Scale-Out를 해야 되는 시스템에 적합합니다.
 
-<br/><br/>
+<br/>
+
+---
 
 ### 데이터 웨어하우스(DW, Data Warehouse)
 
@@ -61,7 +63,8 @@ NoSQL은 정확한 데이터 구조를 알 수 없고 변경/확장이 될 수 �
 
 Reference: [데이터 웨어하우스(DW) 란 무엇일까 (1)](https://bomwo.cc/posts/Datawarehouse/)
 
-<br/><br/>
+<br/>
+
 ---
 
 ### MapReduce
@@ -74,7 +77,7 @@ Reference: [데이터 웨어하우스(DW) 란 무엇일까 (1)](https://bomwo.cc
 2. 데이터 처리하기(Map): 잘게 쪼개어진 파일을 인풋으로 받아서 데이터를 분석하는 로직을 수행합니다.
 3. 처리된 데이터 합치기(Reduce): 처리된 데이터를 다시 합칩니다.
 
-<br/><br/>
+<br/>
 
 ---
 
@@ -99,18 +102,20 @@ Hadoop은 적당한 성능의 범용 컴퓨터 여러 대를 클러스터화하�
 
 [Hadoop]({{ site.baseurl }}/docs/Skills/Hadoop) More detail..
 
-<br/><br/>
+<br/>
+
+---
 
 **Apache Spark**
 
-<br/><br/>
+<br/>
 
-**RDD**
-
-<br/><br/>
+---
 
 **Apache Kafka**
 
-<br/><br/>
+<br/>
+
+---
 
 **Master/Slave**
