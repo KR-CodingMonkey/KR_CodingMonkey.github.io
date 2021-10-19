@@ -24,6 +24,7 @@ permalink: docs/Skills/Hadoop/hadoop0
     - 데이터 지역성: 데이터를 원격 처리 시스템이나 호스트로 보내 처리하는 처리 방식  
     - 비공유: 서버를 추가하면 서버의 대수에 비례해 성능이 증가함
 
+<br/>
 
 ## 하둡의 핵심 구성 요소
 
@@ -34,12 +35,12 @@ HDFS 클러스터와 YARN 클러스터가 서로 결합된 두 시스템의 조�
 
 플룸(Flume)이나 스쿱(Sqoop)과 같은 데이터 처리 프로젝트 또는 피그(Pig)나 하이브(Hive)와 같은 데이터 분석 툴처럼 하둡과 상호 작용하거나 통합하는 프로젝트를 **하둡 에코시스템** 프로젝트라고 한다.
 
+<br/>
 
 ### HDFS, Hadoop Distributed File System 이해
 
-- HDFS는 클러스터의 하나 이상의 노드에 파일이 분산돼 있는 블록으로 구성된 가상 파일 시스템이다.
-
-대부분의 분산환경에서 동작하는 분산 플랫폼들은 Master/Slave 구조와 Master가 없는 구조로 나눌 수 있습니다.
+- HDFS는 클러스터의 하나 이상의 노드에 파일이 분산돼 있는 블록으로 구성된 가상 파일 시스템
+- 대부분의 분산환경에서 동작하는 분산 플랫폼들은 Master/Slave 구조와 Master가 없는 구조로 나눌 수 있음
 
 <center><img src='https://t1.daumcdn.net/cfile/tistory/9981B2335A88438223' width="80%"></center>
 
