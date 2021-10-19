@@ -72,3 +72,10 @@ class BinaryTree():
 
 
 ## AVL 트리
+
+
+## Reference
+
+1. https://blex.me/@baealex/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%9C-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC
+
+2. https://www.fun-coding.org/Chapter10-tree.html
