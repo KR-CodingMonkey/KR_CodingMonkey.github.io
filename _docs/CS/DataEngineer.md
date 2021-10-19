@@ -94,7 +94,8 @@ Hadoop은 적당한 성능의 범용 컴퓨터 여러 대를 클러스터화하�
 - 너무 많은 버전과 부실한 서포트
 - 설정의 어려움
 
-[Here]({{ site.baseurl }}/hadoop) is an example link to a relative path of a fil
+[Here]({{ site.baseurl }}/SKills/Hadoop/Hadoop.md) is an example link to a relative path of a fil
+[Here]({{ site.baseurl }}/docs/Skills/Hadoop) is an example link to a relative path of a fil
 
 <br/><br/>
 
