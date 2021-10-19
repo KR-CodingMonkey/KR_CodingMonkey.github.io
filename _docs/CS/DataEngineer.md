@@ -112,10 +112,10 @@ Hadoop은 적당한 성능의 범용 컴퓨터 여러 대를 클러스터화하�
 
 ---
 
-#### Apache Kafka**
+### Apache Kafka
 
 <br/>
 
 ---
 
-#### Master/Slave
+### Master/Slave
