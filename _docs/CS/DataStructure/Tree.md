@@ -90,6 +90,17 @@ def insert(self, node:Node, data):
     return node
 ```
 
+- 이진 탐색 트리 삭제
+
+1. 삭제할 노드가 리프노드인 경우
+    - 노드를 삭제
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png'>
+2. 삭제할 노드의 자식이 하나인 경우
+    - 노드를 삭제하고 자식 노드를 삭제된 노드의 부모에 직접 연결
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png'>
+3. 삭제할 노드의 자식이 둘인 경우
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png'>
+
 ---
 ## AVL 트리
 - 편향트리를 해결하기 위한 것
@@ -97,7 +108,7 @@ def insert(self, node:Node, data):
 - AVL 트리는 각 노드의 왼쪽 서브 트리의 높이와 오른쪽 서브 트리의 높이를 비교하여 트리의 균형을 조절
 - BF = hL-hR (왼쪽 서브트리 높이에서 오른쪽 서브트리를 뺀 값)
 
-<img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800' width='60%'>
+<center><img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800' width='60%'></center>
 
 ---
 ## Heap
