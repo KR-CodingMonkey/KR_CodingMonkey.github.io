@@ -97,6 +97,8 @@ def insert(self, node:Node, data):
 - AVL 트리는 각 노드의 왼쪽 서브 트리의 높이와 오른쪽 서브 트리의 높이를 비교하여 트리의 균형을 조절
 - BF = hL-hR (왼쪽 서브트리 높이에서 오른쪽 서브트리를 뺀 값)
 
+<img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800' width='60%'>
+
 ---
 ## Heap
 - 노드중에서 키값이 가장 큰 노드나 가장 작은 노드를 찾기 위해 만든 자료구조
@@ -109,11 +111,3 @@ def insert(self, node:Node, data):
 - 접두사를 빠르게 찾아보기 위한 방식, 모든 언어를 트라이에 저장해 놓는 방식
 - 유효한 단어 집합을 이용하는 문제들을 최적화 할 수 있음
 
-<img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800'>
-
-
-## Reference
-
-1. https://blex.me/@baealex/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%9C-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC
-
-2. https://www.fun-coding.org/Chapter10-tree.html
