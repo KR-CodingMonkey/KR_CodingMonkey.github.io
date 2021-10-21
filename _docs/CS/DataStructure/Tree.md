@@ -115,7 +115,7 @@ def insert(self, node:Node, data):
     3. 삭제할 노드와 successor 노드의 값을 바꾼다
     4. successor 노드를 삭제
 
-    <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='70%'></center>
+    <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='80%'></center>
 
 
 ```python
