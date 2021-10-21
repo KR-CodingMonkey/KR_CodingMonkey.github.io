@@ -96,23 +96,17 @@ def insert(self, node:Node, data):
 
 - 이진 탐색 트리의 삭제
 
-1. 삭제할 노드가 LeafNode인 경우
-    - 노드를 삭제
+1. 삭제할 노드가 Leaf Node인 경우
+    - parent node가 노드를 가르키지 않도록 함
 
     <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png' width='70%'></center>
     
-    ```python
-    if self.current_node.left == None and self.current_noderight == None:
-        if value < self.parent.value:
-            self.parent.left = None
-        else:
-            self.parent.right = None
-    ```
 
 2. 삭제할 노드의 자식이 하나인 경우
     - 노드를 삭제하고 자식 노드를 삭제된 노드의 부모에 직접 연결
 
     <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png' width='70%'></center>
+
 
 3. 삭제할 노드의 자식이 둘인 경우
     
@@ -122,6 +116,41 @@ def insert(self, node:Node, data):
     4. successor 노드를 삭제
 
     <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='70%'></center>
+
+
+```python
+def delete_node(self, current_node, value):
+    # 노드 찾기
+    if current_node is None:
+        return None
+    if current_node.value > value:
+        current_node.left = self.delete_node(self, current_node.left, value)
+        return current_node
+    elif current_node.value < value:
+        current_node.right = self.delete_node(self, current_node.right, value)
+        return current
+
+    else: #current.value == value
+        if (current_node.left is None) and (current_node.right is None):
+            # case 1
+            return None
+        elif current_node.left is None:
+            # case 2-1 오른쪽 자식만 있을 때
+            return current_node.right
+        elif current_node.right is None:
+            # case 2-2 왼쪽 자식만 있을 때
+            return current_node.left
+        else:
+            # 자식이 둘 다 있는 경우
+            # 3-2 successor node 찾기
+            successor_node = current_node.right
+            while successor_node.left is not None:
+                successor_node = successor_node.left
+
+            current_node.value = successor_node.value # 3-3
+            current_node.right = self.delete_node(curret_node.right, successor_node.value) # 3-4
+            return current_node
+```
 
 ---
 ## AVL 트리
