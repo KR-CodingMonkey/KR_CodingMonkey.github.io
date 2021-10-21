@@ -98,7 +98,9 @@ def insert(self, node:Node, data):
 
 1. 삭제할 노드가 LeafNode인 경우
     - 노드를 삭제
+
     <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png' width='70%'>
+    
     ```python
     if self.current_node.left == None and self.current_noderight == None:
         if value < self.parent.value:
