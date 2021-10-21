@@ -94,16 +94,25 @@ def insert(self, node:Node, data):
     return node
 ```
 
-- 이진 탐색 트리 삭제
+- 이진 탐색 트리의 삭제
 
-1. 삭제할 노드가 리프노드인 경우
+1. 삭제할 노드가 LeafNode인 경우
     - 노드를 삭제
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png'>
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png' width='70%'>
+    ```python
+    if self.current_node.left == None and self.current_noderight == None:
+        if value < self.parent.value:
+            self.parent.left = None
+        else:
+            self.parent.right = None
+    ```
+
 2. 삭제할 노드의 자식이 하나인 경우
     - 노드를 삭제하고 자식 노드를 삭제된 노드의 부모에 직접 연결
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png'>
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png' width='70%'>
+
 3. 삭제할 노드의 자식이 둘인 경우
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png'>
+    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='70%'>
 
 ---
 ## AVL 트리
