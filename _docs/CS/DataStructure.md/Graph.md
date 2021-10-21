@@ -1,5 +1,3 @@
-
-
 ---
 title: 그래프(Graph)
 tags: 
@@ -15,21 +13,20 @@ permalink: docs/CS/DataStructure/Graph
 
 # Graph
 
-
-## 최단 경로 알고리즘
+- 최단 경로 알고리즘
 
 1. 한 지점에서 다른 한 지점까지의 최단 경로
 2. 한 지점에서 다른 모든 지점까지의 최단 경로 - 다익스트라(dijkstra)
 3. 모든 지점에서 다른 모든 지점까지의 최단 경로 - 플로이드(floyd)
 
-## 그래프 탐색
+- 그래프 탐색
 
 1. 깊이 우선 탐색(DFS, Depth First Search) : 스택, 재귀함수 사용
 2. 너비 우선 탐색(BFS, Breath Frist search) : 큐 사용
 
 ![DFS_BFS](https://user-images.githubusercontent.com/76420201/124084659-2ff72480-da8a-11eb-8a87-9dfa8920323a.gif)
 
-## 최소 신장 트리
+- 최소 신장 트리
 
 1. Minimum spanning Tree, MST : Kruskal Algorithm, Prim's Algorithm 
 
@@ -131,4 +128,83 @@ def Solution(coin:list):
 
 coin = [[2, 3, 5, 1, 1], [0, 0, 7, 4, 5], [4, 1, 6, 3, 5], [0, 0, 5, 0, 1]]
 print(Solution(coin))
+```
+
+
+
+## 최단 경로 알고리즘(Dijkstra)
+
+- 다익스트라(Dijkstra Algorithm)
+- 다익스트라 알고리즘은 greedy 알고리즘이며 단방향, 양방향(사이클) 모두 사용 가능
+- 너비 우선 탐색(BFS) 방식과 유사
+
+### 다익스트라 알고리즘
+
+- 우선순위 큐로 구현
+- 지금까지 발견된 가장 짧은 거리의 노드에 대해서 먼저 계산
+- 더 긴 거리로 계산된 루트에 대해서는 계산을 스킵
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    '''
+    graph = {
+        'A' : {'B': 8, 'C': 1, 'D': 2},
+        'B' : {},
+        'C' : {'B': 5, 'D': 2},
+        'D' : {'E': 3, 'F': 5},
+        'E' : {'F': 1},
+        'F' : {'A': 5}
+    }
+    '''
+
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    queue = []
+    heapq.heappush(queue, [distances[start], start]) # (거리, 노드) 첫번째 값으로 정렬 됨(거리로 정렬이 됨)
+
+    while queue:
+        current_distance, current_node = heapq.heappop(queue)
+
+        if distances[current_node] < current_distance:
+            continue
+        
+        for adjacent, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[adjacent]:
+                distances[adjacent] = distance
+                heapq.heappush(queue, [distance, adjacent])
+
+    return distances # {'A': 0, 'B': 6, 'C': 1, 'D': 2, 'E': 5, 'F': 6}
+```
+
+
+## 최단 경로 알고리즘(Floyd Warshall)
+
+- 모든 지점에서 다른 모든 지점까지의 최단 경로
+- 동적 프로그래밍(Dynamic programming)기법
+- 점화식 :
+$$ \begin{aligned} & D_k(i,j) = min(D_{k-1}(i, j), D_{k-1}(i,k) + D_{k-1}(k,j)) \end{aligned}$$
+
+```python
+def Floyd_warshall(n, data):
+    dist = [[float('inf')] * n for _ in range(n)]
+
+    for i, j, edge in data:
+        dist[i-1][j-1] = edge
+        
+    for k in range(n):
+        dist[k][k] = 0
+        for i in range(n):
+            for j in range(n):
+                if dist[i][j] > dist[i][k] + dist[k][j]: # 시간 절약 1/2
+                    dist[i][j] = dist[i][k] + dist[k][j]
+                # dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+
+    return dist
+
+n = 4
+data = [[1,3,-2],[2,1,4],[2,3,3],[3,4,2],[4,2,-1]]
+print(Floyd_warshall(n, data)) # [[0, -1, -2, 0], [4, 0, 2, 4], [5, 1, 0, 2], [3, -1, 1, 0]]
 ```
