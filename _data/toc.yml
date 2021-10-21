@@ -15,6 +15,8 @@
       children:
         - title: 트리(Tree)
           url: docs/CS/DataStructure/Tree
+        - title: 그래프(Graph)
+          url: docs/CS/DataStructure/Graph
 
 
 - title: Skills
