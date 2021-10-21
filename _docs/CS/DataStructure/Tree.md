@@ -99,7 +99,7 @@ def insert(self, node:Node, data):
 1. 삭제할 노드가 LeafNode인 경우
     - 노드를 삭제
 
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png' width='70%'>
+    <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FeudyFG%2Fbtq2GXflqdC%2FTvIXkjTgEWoVoyvOv4xQN1%2Fimg.png' width='70%'></center>
     
     ```python
     if self.current_node.left == None and self.current_noderight == None:
@@ -111,10 +111,17 @@ def insert(self, node:Node, data):
 
 2. 삭제할 노드의 자식이 하나인 경우
     - 노드를 삭제하고 자식 노드를 삭제된 노드의 부모에 직접 연결
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png' width='70%'>
+
+    <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd9YABr%2Fbtq2y4HJBqp%2FDbafbadT1SL5WSnKO6AFLK%2Fimg.png' width='70%'></center>
 
 3. 삭제할 노드의 자식이 둘인 경우
-    <img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='70%'>
+    
+    1. 삭제할 노드를 찾는다
+    2. 삭제할 노드의 successor 노드를 찾는다 (successor 노드: right subtree의 최소값)
+    3. 삭제할 노드와 successor 노드의 값을 바꾼다
+    4. successor 노드를 삭제
+
+    <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYDgz%2Fbtq2BCDKWPR%2FT5wAjm1PwyAAKq9NNYctV0%2Fimg.png' width='70%'></center>
 
 ---
 ## AVL 트리
