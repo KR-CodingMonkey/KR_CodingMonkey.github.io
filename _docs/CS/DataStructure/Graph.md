@@ -67,7 +67,7 @@ def BFS(graph, root):
 
 - 깊이 우선 탐색(DFS, Depth First Search) : 스택, 재귀함수 사용
 
-### 스택
+**스택**
 ```python
 def DFS(graph, root):
     """
@@ -93,7 +93,7 @@ def DFS(graph, root):
 ```
 
 
-### 재귀
+**재귀**
 ```python
 
 # DFS 2차원 배열 0, 0 -> n, m 까지 가장 큰 경로
