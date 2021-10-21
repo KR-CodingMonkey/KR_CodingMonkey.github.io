@@ -12,11 +12,12 @@ permalink: docs/CS/DataStructure/Tree
 
 - 정점과 간선을 이용해 사이클을 이루지 않도록 구성한 Graph의 특수한 형태로, 계층이 있는 데이터를 표현하기에 적합하다.
 
-- 트리 중 이진 트리 형태의 구조로, 탐색(검색) 알고리즘 구현을 위해 많이 사용됨 
-
-1. 이진 트리
-2. 이진 탐색 트리
-3. AVL 트리
+- 용도
+    - 계층적 데이터 저장
+    - 트리 중 이진 트리 형태의 구조로, 탐색(검색) 알고리즘 구현을 위해 많이 사용됨 
+    - 힙(Heap) 
+    - 데이터베이스 인덱싱(데이터베이스 인덱싱을 구현하는데 트리를 사용, B-Tree, B+Tree, AVL-Tree)
+    - Trie (사전을 저장하는 데 사용되는 특별한 종류의 트리)
 
 
 ## 이진 트리(Binary Tree)
@@ -65,9 +66,9 @@ class BinaryTree():
 
 ## 이진 탐색 트리
 - 모든 왼쪽 자식들 <= n < 모든 오른쪽 자식들 (모든 노드 n에 대해서 반드시 참)
-- 용도: 데이터 탐색 -> 탐색 속도 logN
+- 용도: 데이터 탐색 -> 평균 탐색 속도 O(logn)
 
-<img src='https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif'>
+<center><img src='https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif'></center>
 
 ```python
 def insert(self, node:Node, data):
