@@ -92,8 +92,10 @@ def insert(self, node:Node, data):
 
 ---
 ## AVL 트리
-- 이진 탐색 트리는 좌우 균형이 잘 맞으면 탐색 성능이 높다.
+- 편향트리를 해결하기 위한 것
+- 이진 탐색 트리는 좌우 균형이 잘 맞으면 탐색 성능이 높아진다.
 - AVL 트리는 각 노드의 왼쪽 서브 트리의 높이와 오른쪽 서브 트리의 높이를 비교하여 트리의 균형을 조절
+- BF = hL-hR (왼쪽 서브트리 높이에서 오른쪽 서브트리를 뺀 값)
 
 ---
 ## Heap
@@ -106,6 +108,8 @@ def insert(self, node:Node, data):
 - 트리를 아래쪽으로 순회하면 단어가 나온다.
 - 접두사를 빠르게 찾아보기 위한 방식, 모든 언어를 트라이에 저장해 놓는 방식
 - 유효한 단어 집합을 이용하는 문제들을 최적화 할 수 있음
+
+<img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800'>
 
 
 ## Reference
