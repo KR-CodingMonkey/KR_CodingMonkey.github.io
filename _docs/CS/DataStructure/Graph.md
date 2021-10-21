@@ -32,7 +32,7 @@ permalink: docs/CS/DataStructure/Graph
 
 1. Minimum spanning Tree, MST : Kruskal Algorithm, Prim's Algorithm 
 
-
+---
 ## 너비 우선 탐색(BFS)
 
 - 너비 우선 탐색(BFS, Breath Frist search) : 큐 사용
@@ -64,9 +64,8 @@ def BFS(graph, root):
     return ' '.join(str(i) for i in visited) # 1 2 3 4
 ```
 
-
+---
 ## 깊이 우선 탐색(DFS)
-
 - 깊이 우선 탐색(DFS, Depth First Search) : 스택, 재귀함수 사용
 
 **스택**
@@ -132,8 +131,7 @@ coin = [[2, 3, 5, 1, 1], [0, 0, 7, 4, 5], [4, 1, 6, 3, 5], [0, 0, 5, 0, 1]]
 print(Solution(coin))
 ```
 
-
-
+---
 ## 최단 경로 알고리즘(Dijkstra)
 
 - 다익스트라(Dijkstra Algorithm)
@@ -181,7 +179,7 @@ def dijkstra(graph, start):
     return distances # {'A': 0, 'B': 6, 'C': 1, 'D': 2, 'E': 5, 'F': 6}
 ```
 
-
+---
 ## 최단 경로 알고리즘(Floyd Warshall)
 
 - 모든 지점에서 다른 모든 지점까지의 최단 경로
@@ -211,8 +209,7 @@ data = [[1,3,-2],[2,1,4],[2,3,3],[3,4,2],[4,2,-1]]
 print(Floyd_warshall(n, data)) # [[0, -1, -2, 0], [4, 0, 2, 4], [5, 1, 0, 2], [3, -1, 1, 0]]
 ```
 
-
-
+---
 ## 최소 신장 트리(Kruskal)
 
 - 최소 신장 트리 (MST, Minimum Spanning Tree)
