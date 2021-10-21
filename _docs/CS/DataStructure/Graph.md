@@ -12,6 +12,8 @@ permalink: docs/CS/DataStructure/Graph
 ---
 
 # Graph
+그래프는 노드와 엣지로 구성이 되어 있습니다. 또한, 많은 알고리즘에서 사용이 됩니다.
+
 
 - 최단 경로 알고리즘
 
