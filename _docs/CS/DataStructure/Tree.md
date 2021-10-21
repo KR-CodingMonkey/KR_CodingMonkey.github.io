@@ -65,6 +65,9 @@ class BinaryTree():
 
 ## 이진 탐색 트리
 - 모든 왼쪽 자식들 <= n < 모든 오른쪽 자식들 (모든 노드 n에 대해서 반드시 참)
+- 용도: 데이터 탐색 -> 탐색 속도 logN
+
+<img src='https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif'>
 
 ```python
 def insert(self, node:Node, data):
