@@ -4,6 +4,10 @@ tags:
  - Tree
  - Binary Tree
  - AVL Tree
+ - BST
+ - Thread Binary Tree
+ - Heap
+ - Trie
 description: 트리(Tree)
 permalink: docs/CS/DataStructure/Tree
 ---
