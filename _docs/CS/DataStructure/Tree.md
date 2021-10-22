@@ -166,16 +166,30 @@ def delete_node(self, current_node, value):
 **회전(rotation)**<br/>
 삽입 삭제시 노드들의 배열에 따라 4가지(LL, RR, LR, RL) 불균형이 발생할 수 있으며 각 상황마다 rotation에 방향을 달리하여 트리의 균형을 맞춥니다.
 
-<center><img src='https://i.imgur.com/s88CtUh.png' width ='50%'></center>
-
-1. 시나리오1 : U의 왼쪽 자식노드의 왼쪽 서브트리 A에 새 노드 삽입 : single right rotation
-2. 시나리오2 : U의 왼쪽 자식노드의 오른쪽 서브트리 B에 새 노드 삽입 : double rotation(left-right)
-3. 시나리오3 : U의 오른쪽 자식노드의 왼쪽 서브트리 C에 새 노드 삽입 : double rotation(right-left)
-4. 시나리오4 : U의 오른쪽 자식노드의 오른쪽 서브트리 D에 새 노드 삽입 : single left rotation
-
 - LL(Left Left) case
+    - y는 z의 왼쪽 자식 노드이고, x는 y의 왼쪽 자식 노드인 경우 right rotation
+    - y노드의 오른쪽 자식 노드를 z노드로 변경 - z노드 왼쪽 자식 노드를 y노드 오른쪽 서브트리(T2)로 변경
 
+<center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxLIeV%2Fbtq2Xb7eZdF%2F0tfPz6aL4PEFaIJC6CvTs1%2Fimg.png' width='70%'></center>
 
+- RR(Right Right) case
+    - y는 z의 오른쪽 자식 노드이고, x는 y의 오른쪽 자식 노드인 경우 left rotation
+    - y노드의 왼쪽 자식 노드를 z노드로 변경 - z노드 오른쪽 자식 노드를 y노드 왼쪽 서브트리(T2)로 변경
+
+<center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMgydF%2Fbtq2ZpcT9dF%2FWNzhK8Ka9KmiuX6iqj5Ws0%2Fimg.png' width ='70%'></center>
+
+- LR(Left Right) case
+    - y는 z의 왼쪽 자식 노드이고, x는 y의 오른쪽 자식 노드인 경우 left , right 순으로 총 두 번의 rotation을 수행
+
+<center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtMu3I%2Fbtq21Mk69Ei%2FTToajHJiFvy3FmNYlbagj0%2Fimg.png' width='70%'></center>
+
+- RL(Right Left) case
+    - y는 z의 오른쪽 자식 노드이고, x는 y의 왼쪽 자식 노드인 경우, right, left 순으로 총 두번의 rotation을 수행
+
+<center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbrTQV1%2Fbtq2TcMbXA3%2FmhrY8bPspDrRT90kkGDIR1%2Fimg.png' width='70%'></center>
+
+**삽입/삭제 연산**<br/>
+AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일합니다. 다만 마지막에 우리가 이미 정의해놓은 rebalance 함수를 호출하는 과정 하나가 다를 뿐입니다.
 
 
 ---
