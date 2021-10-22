@@ -33,7 +33,7 @@ permalink: docs/CS/DataStructure/Tree
     - 허프만 트리(Huffman Tree)
     - 이진검색 트리 (BST, Binary Search Tree)
     - 우선 순위 큐(PQ)
-    
+
 ```python
 class Node(object):
     def __init__(self, data):
@@ -47,7 +47,7 @@ class Node(object):
 
 class BinaryTree():
     def __init__(self, root):
-        self.root = root
+        self.root = Node(root)
 
     # DLR
     def preorder(self, node:Node, result:list):
@@ -123,14 +123,14 @@ def delete_node(self, current_node, value):
     # 노드 찾기
     if current_node is None:
         return None
-    if current_node.value > value:
+    if current_node.data > value:
         current_node.left = self.delete_node(self, current_node.left, value)
         return current_node
-    elif current_node.value < value:
+    elif current_node.data < value:
         current_node.right = self.delete_node(self, current_node.right, value)
-        return current
+        return current_node
 
-    else: #current.value == value
+    else: #current.value == data
         if (current_node.left is None) and (current_node.right is None):
             # case 1
             return None
@@ -147,8 +147,8 @@ def delete_node(self, current_node, value):
             while successor_node.left is not None:
                 successor_node = successor_node.left
 
-            current_node.value = successor_node.value # 3-3
-            current_node.right = self.delete_node(curret_node.right, successor_node.value) # 3-4
+            current_node.data = successor_node.data # 3-3
+            current_node.right = self.delete_node(current_node.right, successor_node.data) # 3-4
             return current_node
 ```
 
@@ -156,10 +156,22 @@ def delete_node(self, current_node, value):
 ## AVL 트리
 - 편향트리를 해결하기 위한 것
 - 이진 탐색 트리는 좌우 균형이 잘 맞으면 탐색 성능이 높아진다.
-- AVL 트리는 각 노드의 왼쪽 서브 트리의 높이와 오른쪽 서브 트리의 높이를 비교하여 트리의 균형을 조절
 - BF = hL-hR (왼쪽 서브트리 높이에서 오른쪽 서브트리를 뺀 값)
+- 어떤 시점에서 높이 차이(BF)가 1보다 커지면 회전(rotation)을 통해 균형을 잡아 높이 차이를 줄임
 
 <center><img src='https://mblogthumb-phinf.pstatic.net/MjAxNzA3MzBfMTcx/MDAxNTAxMzUyNzY0NDU1.qcfo5s1QBTAyzd-AcnBqo0t0cPsAdimQNtzWxDfdpoUg.XELErDPsGEIXtnYmmEMdmks_p689jXplNJDgiwdu6P0g.PNG.dhdh6190/AVL14.png?type=w800' width='50%'></center>
+
+<br>
+
+**회전(rotation)**
+삽입 삭제시 노드들의 배열에 따라 4가지(LL, RR, LR, RL) 불균형이 발생할 수 있으며 각 상황마다 rotation에 방향을 달리하여 트리의 균형을 맞춥니다.
+
+<img src='https://i.imgur.com/s88CtUh.png'>
+
+1. LL(Left Left) case
+
+
+
 
 ---
 ## Heap
@@ -173,3 +185,11 @@ def delete_node(self, current_node, value):
 - 접두사를 빠르게 찾아보기 위한 방식, 모든 언어를 트라이에 저장해 놓는 방식
 - 유효한 단어 집합을 이용하는 문제들을 최적화 할 수 있음
 
+
+AVL
+https://ratsgo.github.io/data%20structure&algorithm/2017/10/27/avltree/
+https://yoongrammer.tistory.com/72?category=956616
+
+thread
+
+https://mattlee.tistory.com/29
