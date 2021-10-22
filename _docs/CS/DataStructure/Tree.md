@@ -166,7 +166,12 @@ def delete_node(self, current_node, value):
 **회전(rotation)**
 삽입 삭제시 노드들의 배열에 따라 4가지(LL, RR, LR, RL) 불균형이 발생할 수 있으며 각 상황마다 rotation에 방향을 달리하여 트리의 균형을 맞춥니다.
 
-<img src='https://i.imgur.com/s88CtUh.png'>
+<center><img src='https://i.imgur.com/s88CtUh.png' width ='50%'></center>
+
+1. 시나리오1 : U의 왼쪽 자식노드의 왼쪽 서브트리 A에 새 노드 삽입 : single right rotation
+2. 시나리오2 : U의 왼쪽 자식노드의 오른쪽 서브트리 B에 새 노드 삽입 : double rotation(left-right)
+3. 시나리오3 : U의 오른쪽 자식노드의 왼쪽 서브트리 C에 새 노드 삽입 : double rotation(right-left)
+4. 시나리오4 : U의 오른쪽 자식노드의 오른쪽 서브트리 D에 새 노드 삽입 : single left rotation
 
 1. LL(Left Left) case
 
