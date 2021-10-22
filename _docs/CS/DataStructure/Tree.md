@@ -189,8 +189,7 @@ def delete_node(self, current_node, value):
 <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbrTQV1%2Fbtq2TcMbXA3%2FmhrY8bPspDrRT90kkGDIR1%2Fimg.png' width='70%'></center>
 
 **삽입/삭제 연산**<br/>
-AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일합니다. 다만 마지막에 우리가 이미 정의해놓은 rebalance 함수를 호출하는 과정 하나가 다를 뿐입니다.
-
+AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일합니다.
 
 ---
 ## Heap
