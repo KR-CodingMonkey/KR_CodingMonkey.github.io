@@ -201,13 +201,39 @@ AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일합�
 - 각 노드의 문자를 저장하는 자료구조
 - 트리를 아래쪽으로 순회하면 단어가 나온다.
 - 접두사를 빠르게 찾아보기 위한 방식, 모든 언어를 트라이에 저장해 놓는 방식
-- 유효한 단어 집합을 이용하는 문제들을 최적화 할 수 있음
+- 문자열을 빠르게 탐색할 수 있는 자료구조
+- 시간복잡도: O(M)
 
+```python
+class Trie:
+    head = dict()
+    
+    def add(self, word):
+        cur = self.head
 
-AVL
-https://ratsgo.github.io/data%20structure&algorithm/2017/10/27/avltree/
-https://yoongrammer.tistory.com/72?category=956616
+        for ch in word:
+            if ch not in cur:
+                cur[ch] = {}
+            cur = cur[ch]
+        cur['*'] = True
 
-thread
+    def search(self, word):
+        cur = self.head
 
-https://mattlee.tistory.com/29
+        for ch in word:
+            if ch not in cur:
+                return False
+            cur = cur[ch]
+        if '*' in cur:
+            return True
+        else:
+            return False
+
+dictionary = Trie()
+
+dictionary.add('hi')
+dictionary.add('hello')
+print(dictionary.search('hi'))
+print(dictionary.search('hello'))
+print(dictionary.search('hey'))
+```
