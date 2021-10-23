@@ -233,7 +233,7 @@ dictionary = Trie()
 
 dictionary.add('hi')
 dictionary.add('hello')
-print(dictionary.search('hi'))
-print(dictionary.search('hello'))
-print(dictionary.search('hey'))
+print(dictionary.search('hi')) # True
+print(dictionary.search('hello')) # True
+print(dictionary.search('hey')) # False
 ```
