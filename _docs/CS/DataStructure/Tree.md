@@ -77,7 +77,7 @@ class BinaryTree():
 - 스레드 이진 트리는 재귀 호출 없이 순회할 수 있도록 구현된 트리이다.
 - 가리키는 곳이 없는 모든 왼쪽 널 포인터를 중위 선행자 노드로 연결한 것
 
-<center><img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.crocus.co.kr%2F366&psig=AOvVaw1mUR715RrQHRYE1mfVk7T9&ust=1635243792699000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiIyPyr5fMCFQAAAAAdAAAAABAD' width='70%'></center>
+<center><img src='https://t1.daumcdn.net/cfile/tistory/251B1B4A5769124533' width='70%'></center>
 
 ---
 ## 이진 탐색 트리
