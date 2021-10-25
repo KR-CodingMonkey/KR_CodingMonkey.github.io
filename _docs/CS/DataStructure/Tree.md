@@ -75,6 +75,9 @@ class BinaryTree():
 - 이진 트리는 시스템 혹은 외부 스택을 관리해야하며 하위 레벨로 내려갈수록 재귀 호출의 깊이가 깊어져 비효율적일 수 있다.
 - 이진 트리의 순회구현은 간단하지만 성능적인 측면은 좋다고 할 수 없음
 - 스레드 이진 트리는 재귀 호출 없이 순회할 수 있도록 구현된 트리이다.
+- 가리키는 곳이 없는 모든 왼쪽 널 포인터를 중위 선행자 노드로 연결한 것
+
+<center><img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.crocus.co.kr%2F366&psig=AOvVaw1mUR715RrQHRYE1mfVk7T9&ust=1635243792699000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPiIyPyr5fMCFQAAAAAdAAAAABAD' width='70%'></center>
 
 ---
 ## 이진 탐색 트리
@@ -193,7 +196,8 @@ AVL 트리의 삽입 연산은 기본적으로 이진탐색트리와 동일합�
 
 ---
 ## Heap
-- 노드중에서 키값이 가장 큰 노드나 가장 작은 노드를 찾기 위해 만든 자료구조
+- 데이터에서 최대값과 최소값을 빠르게 찾기 위해 고안된 완전 이진 트리(Complete Binary Tree)
+- 시간복잡도: O(logn)
 - 최소힙(Min Heap), 최대힙(Max Heap)
 
 ---

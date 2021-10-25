@@ -58,4 +58,6 @@ GFS의 아키텍처는 Master/Slave 구조이다. Master/Slave의 구조에서 �
 HDFS는 마스터 슬레이브 구조로 하나의 네임노드와 여러 개의 데이터노드로 구성됩니다. 네임노드는 메타데이터를 가지고 있고, 데이터는 블록 단위로 나누어 데이터노드에 저장됩니다. 사용자는 네임노드를 이용해 데이터를 쓰고, 읽을 수 있습니다.
 
 
-####
+https://sites.google.com/site/medialoghadoop/01-hadub-gicho/03-hadub-bunsan-pail-siseutem
+
+https://wikidocs.net/22766
