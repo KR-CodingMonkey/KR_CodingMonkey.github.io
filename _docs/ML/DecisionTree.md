@@ -23,6 +23,7 @@ permalink: docs/ML/DT
 - y: Got an A<br>
 X 데이터를 통해 y를 예측하는 모델이 만들어지는 과정입니다.
 
+Decision Tree는 Root Node, Intermediate Node, Terminal Node(=Leaf Node)로 구성이 되어 있습니다. **Root Node**는 맨 처음 분류 기준, **Intermediate Node**는 중간 분류 기준, **Terminal Node(=Leaf Node)**는 결과 값이 됩니다.
 
 ## 불순도
 
@@ -32,4 +33,4 @@ X 데이터를 통해 y를 예측하는 모델이 만들어지는 과정입니�
 
 ## 가지치기
 
-## 
+## 마치며
