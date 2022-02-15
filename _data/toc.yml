@@ -36,6 +36,8 @@
           url: docs/ML/Fake_news
         - title: Iris
           url: docs/ML/Iris
+        - title: Decision Tree
+          url: docs/ML/DT
 
 # - title: Documentation
 #   url: docs
