@@ -39,17 +39,18 @@ Decision Tree는 Root Node, Intermediate Node, Terminal Node(=Leaf Node)로 구�
 - Information gain = (현재노드 불순도) - (자식노드 불순도)
 
 ### 지니(Gini)
-GiniIndex=1–∑jp2j
+<center><img width="168" alt="giniindex" src="https://user-images.githubusercontent.com/76420201/153979958-5f76cf94-d5fc-40c4-8161-8c53ad5f34ea.PNG"></center>
 
-$$
-\begin{aligned}
-f(x)&=ax^2+bx+c\\
-g(x)&=Ax^4
-\end{aligned}$$
-
-$\displaystyle\sum_{i=0}^{\infin}{(y_i-t_i)^2}$
+<center><img width="270" alt="gini_minmax" src="https://user-images.githubusercontent.com/76420201/153979997-b5089352-94c7-4274-b7ad-4db2aaca81c4.PNG"></center>
 
 ### 엔트로피(Entropy)
+
+<center><img width="209" alt="entropy" src="https://user-images.githubusercontent.com/76420201/153980029-f5392b0e-7867-49e6-88d8-44cdcabd792d.PNG"></center>
+
+<center><img width="351" alt="entropy_minmax" src="https://user-images.githubusercontent.com/76420201/153980062-deb2a12c-8518-498f-b4b0-0dbc4e3076a8.PNG"></center>
+
+
+[more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
 ## Information Gain(정보 획득)
 
