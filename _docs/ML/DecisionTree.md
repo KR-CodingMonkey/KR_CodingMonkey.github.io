@@ -38,7 +38,7 @@ Decision Tree는 Root Node, Intermediate Node, Terminal Node(=Leaf Node)로 구�
 - 분기기준을 정할 때 자식노드의 불순도가 현재노드의 불순도보다 낮게하는 기준을 분기기준으로 정해야 합니다.
 - Information gain = (현재노드 불순도) - (자식노드 불순도)
 
-불순도를 수치적으로 나타탤 수 있는 지수는 대표적으로 Gini와 Entropy가 있습니다.
+불순도를 수치적으로 나타낼 수 있는 지수는 대표적으로 Gini와 Entropy가 있습니다.
 
 ### 지니(Gini)
 
@@ -46,9 +46,9 @@ fomula:
 <center><img width="168" alt="giniindex" src="https://user-images.githubusercontent.com/76420201/153979958-5f76cf94-d5fc-40c4-8161-8c53ad5f34ea.PNG"></center>
 
 Gini index interval:
-<center><img width="270" alt="gini_minmax" src="https://user-images.githubusercontent.com/76420201/153979997-b5089352-94c7-4274-b7ad-4db2aaca81c4.PNG"></center>
+<center><img width="270" alt="gini_minmax" src="https://user-images.githubusercontent.com/76420201/153979997-b5089352-94c7-4274-b7ad-4db2aaca81c4.PNG"></center><br>
 
-만약 특정 그룹에 오직 한 종류의 label만 존재한다면, 해당 그룹의 Gini Impurity는 `0`이 됩니다. 데이터 분할 이후의 각 그룹의 불순도가 낮으면 낮을 수록 데이터가 잘 분류되었다고 할 수 있습니다.
+만약 특정 그룹에 오직 한 종류의 label만 존재한다면, 해당 그룹의 Gini Impurity는 `0`이 됩니다.<br> 데이터 분할 이후의 각 그룹의 불순도가 낮으면 낮을 수록 데이터가 잘 분류되었다고 할 수 있습니다.
 
 ### 엔트로피(Entropy)
 
@@ -63,12 +63,16 @@ Entropy interval:
 Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. 성능은 Entropy가 약간 우세하지만 차이가 크게 나지 않기 때문에 **Gini가 더 낫다**는 평가입니다. 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
-## Information Gain(정보 획득)
+## Information Gain(정보 이득)
+- information gain을 계산함으로써 분류기준을 정할 수 있습니다.
+- information gain = (현재노드 불순도) - (자식노드 불순도)
+    - `0.5` - (`0`+`0.375`+`0`) = `0.125`
 
+<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/info.svg'></center>
+
+## 가지치기
 - 위 구성방법을 사용하여 트리를 형성하게 되면, leaf 노드가 순도 100%의 한가지 범주만을 가지게 되는 Full tree(최대 트리)를 형성하게 된다.
 - 하지만 이러한 최대 트리는 새로운 데이터에 적용할 때 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어지게 된다.
 - 따라서 형성된 결정트리에 대해 가지치기(Pruning)를 수행하여 일반화 성능을 높힌다.
-
-## 가지치기
 
 ## 마치며
