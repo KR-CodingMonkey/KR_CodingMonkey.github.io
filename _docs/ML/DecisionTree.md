@@ -60,7 +60,7 @@ Entropy interval:
 
 <br>
 
-Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. 성능은 Entropy가 약간 우세하지만 차이가 크게 나지 않기 때문에 **Gini가 더 낫다**는 평가입니다. 
+Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다.<br>성능은 Entropy가 약간 우세하지만 차이가 크게 나지 않기 때문에 **Gini가 더 낫다**는 평가입니다. 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
 ## Information Gain(정보 이득)
