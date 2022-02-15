@@ -48,6 +48,8 @@ fomula:
 Gini index interval:
 <center><img width="270" alt="gini_minmax" src="https://user-images.githubusercontent.com/76420201/153979997-b5089352-94c7-4274-b7ad-4db2aaca81c4.PNG"></center>
 
+만약 특정 그룹에 오직 한 종류의 label만 존재한다면, 해당 그룹의 Gini Impurity는 `0`이 됩니다. 데이터 분할 이후의 각 그룹의 불순도가 낮으면 낮을 수록 데이터가 잘 분류되었다고 할 수 있습니다.
+
 ### 엔트로피(Entropy)
 
 fomula: 
