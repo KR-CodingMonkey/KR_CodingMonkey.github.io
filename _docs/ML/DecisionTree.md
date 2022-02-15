@@ -2,7 +2,8 @@
 title: Decision Tree
 tags: 
  - Machine Learning
- - github
+ - Decision Tree
+ - information gain
  - ML
  - Big Data
  - 인공지능(AI)
@@ -19,5 +20,16 @@ permalink: docs/ML/DT
 
 위 그림은 의사결정트리의 예시로서,<br> 
 - X: Hours Slept, Plans to Cheat, Hours Studied, Average Grade 
-- y: Got an A
+- y: Got an A<br>
 X 데이터를 통해 y를 예측하는 모델이 만들어지는 과정입니다.
+
+
+## 불순도
+
+### 지니 불순도
+
+## Information Gain(정보 획득)
+
+## 가지치기
+
+## 
