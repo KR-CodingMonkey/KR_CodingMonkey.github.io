@@ -38,17 +38,26 @@ Decision Tree는 Root Node, Intermediate Node, Terminal Node(=Leaf Node)로 구�
 - 분기기준을 정할 때 자식노드의 불순도가 현재노드의 불순도보다 낮게하는 기준을 분기기준으로 정해야 합니다.
 - Information gain = (현재노드 불순도) - (자식노드 불순도)
 
+불순도를 수치적으로 나타탤 수 있는 지수는 대표적으로 Gini와 Entropy가 있습니다.
+
 ### 지니(Gini)
+
+fomula: 
 <center><img width="168" alt="giniindex" src="https://user-images.githubusercontent.com/76420201/153979958-5f76cf94-d5fc-40c4-8161-8c53ad5f34ea.PNG"></center>
 
+Gini index interval:
 <center><img width="270" alt="gini_minmax" src="https://user-images.githubusercontent.com/76420201/153979997-b5089352-94c7-4274-b7ad-4db2aaca81c4.PNG"></center>
 
 ### 엔트로피(Entropy)
 
+fomula: 
 <center><img width="209" alt="entropy" src="https://user-images.githubusercontent.com/76420201/153980029-f5392b0e-7867-49e6-88d8-44cdcabd792d.PNG"></center>
 
+Entropy interval:
 <center><img width="351" alt="entropy_minmax" src="https://user-images.githubusercontent.com/76420201/153980062-deb2a12c-8518-498f-b4b0-0dbc4e3076a8.PNG"></center>
 
+
+- Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. (결과는 Entropy가 약간 우세) 
 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
