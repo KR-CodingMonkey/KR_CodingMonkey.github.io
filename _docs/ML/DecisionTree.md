@@ -63,10 +63,11 @@ Entropy interval:
 Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다.<br>성능은 Entropy가 약간 우세하지만 차이가 크게 나지 않기 때문에 **Gini가 더 낫다**는 평가입니다. 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
-## Information Gain(정보 이득)
+## 정보 이득(Information Gain)
 - information gain을 계산함으로써 분류기준을 정할 수 있습니다.
+    - information gain이 높을수록 데이터 분리에 있어서 중요한 변수
 - information gain = (현재노드 불순도) - (자식노드 불순도)
-    - `0.5` - (`2/10`*`0`+`5/10`*`0.375`+`3/10`*`0`) = `0.026`
+    - `0.5` - (`0.2`*`0`+`0.5`*`0.375`+`0.3`*`0`) = `0.026`
 
 <center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center><br>
 
@@ -78,3 +79,13 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 
 
 ## 마치며
+Decision Tree는 기본적으로 greedy한 알고리즘으로 항상 최적의 트리를 생성하지는 않지만 이러한 Decision Tree는 계산복잡성 대비 좋은 성능을 냅니다.
+
+Decision Tree 모델을 사용하는 주된 요인은 어떤 feature가 중요한 영향인자인지 직관적으로 확인할 수 있고 어느만큼의 척도로 분류를 했는지 상세한 기준을 파악할 수 있다는 것입니다.
+
+
+## REFERENCE
+
+1. [https://quantdare.com/decision-trees-gini-vs-entropy/](https://quantdare.com/decision-trees-gini-vs-entropy/)
+
+2. [https://www.codecademy.com/](https://www.codecademy.com/)
