@@ -17,7 +17,7 @@ permalink: docs/ML/DT
 - 지도학습 모델, 분류 규칙을 통해 데이터를 분류(Classification), 회귀(Regression)
     - 분류=최빈값, 회귀=평균
     - 분류 트리는 리프 노드에 속한 특정 클래스의 레이블을 결정하는 반면, 회귀 트리의 경우 리프 노드에 속하는 데이터의 평균값을 이용해 예측값을 계산한다는 차이점이 있습니다.
-
+- 수치형 범주형 변수를 한꺼번에 다룰 수 있다.
 
 <center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/tree_gif.gif' width="80%"></center><br>
 
@@ -68,11 +68,13 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 - information gain = (현재노드 불순도) - (자식노드 불순도)
     - `0.5` - (`2/10`*`0`+`5/10`*`0.375`+`3/10`*`0`) = `0.026`
 
-<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center>
+<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center><br>
 
-## 가지치기
-- 위 구성방법을 사용하여 트리를 형성하게 되면, leaf 노드가 순도 100%의 한가지 범주만을 가지게 되는 Full tree(최대 트리)를 형성하게 된다.
-- 하지만 이러한 최대 트리는 새로운 데이터에 적용할 때 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어지게 된다.
-- 따라서 형성된 결정트리에 대해 가지치기(Pruning)를 수행하여 일반화 성능을 높힌다.
+이런 방식으로 모든 분류후보(feature, column)들에 대해서 information gain을 계산하고, 가장 높게 나온 분류후보를 기준으로 삼아 데이터를 분할하면 됩니다.
+
+## 가지치기(Pruning)
+- 트리의 Depth가 깊어질수록 Leaf Node가 많아지고 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어질 수 있다.
+- 가지치기(Pruning): Max Depth, Leaf Node 개수 등을 제한함으로써 일반화 성능을 높일 수 있다.
+
 
 ## 마치며
