@@ -47,6 +47,8 @@ f(x)&=ax^2+bx+c\\
 g(x)&=Ax^4
 \end{aligned}$$
 
+$\displaystyle\sum_{i=0}^{\infin}{(y_i-t_i)^2}$
+
 ### 엔트로피(Entropy)
 
 ## Information Gain(정보 획득)
