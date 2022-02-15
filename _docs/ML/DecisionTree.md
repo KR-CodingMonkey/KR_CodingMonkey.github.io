@@ -66,9 +66,9 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 ## Information Gain(정보 이득)
 - information gain을 계산함으로써 분류기준을 정할 수 있습니다.
 - information gain = (현재노드 불순도) - (자식노드 불순도)
-    - `0.5` - (`0`+`0.375`+`0`) = `0.125`
+    - `0.5` - (`2/10`*`0`+`5/10`*`0.375`+`3/10`*`0`) = `0.026`
 
-<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/info.svg'></center>
+<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center>
 
 ## 가지치기
 - 위 구성방법을 사용하여 트리를 형성하게 되면, leaf 노드가 순도 100%의 한가지 범주만을 가지게 되는 Full tree(최대 트리)를 형성하게 된다.
