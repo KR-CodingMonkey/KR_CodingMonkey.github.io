@@ -56,8 +56,9 @@ fomula:
 Entropy interval:
 <center><img width="351" alt="entropy_minmax" src="https://user-images.githubusercontent.com/76420201/153980062-deb2a12c-8518-498f-b4b0-0dbc4e3076a8.PNG"></center>
 
+<br>
 
-- Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. (결과는 Entropy가 약간 우세) 
+Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. (결과는 Entropy가 약간 우세) 
 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
