@@ -14,10 +14,10 @@ permalink: docs/ML/DT
 
 # 의사결정트리(Decision Tree)
 - 결과 모델이 Tree 구조를 가지고 있다.
+- 수치형 범주형 변수를 한꺼번에 다룰 수 있다.
 - 지도학습 모델, 분류 규칙을 통해 데이터를 분류(Classification), 회귀(Regression)
     - 분류=최빈값, 회귀=평균
     - 분류 트리는 리프 노드에 속한 특정 클래스의 레이블을 결정하는 반면, 회귀 트리의 경우 리프 노드에 속하는 데이터의 평균값을 이용해 예측값을 계산한다는 차이점이 있습니다.
-- 수치형 범주형 변수를 한꺼번에 다룰 수 있다.
 
 <center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/tree_gif.gif' width="80%"></center><br>
 
@@ -71,15 +71,15 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 
 <center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center><br>
 
-이런 방식으로 모든 분류후보(feature, column)들에 대해서 information gain을 계산하고, 가장 높게 나온 분류후보를 기준으로 삼아 데이터를 분할하면 됩니다.
+이런 방식으로 모든 분류후보(feature, column)들에 대해서 information gain을 계산하고, 가장 높게 나온 분류후보를 기준으로 데이터를 분할하면 됩니다.
 
 ## 가지치기(Pruning)
-- 트리의 Depth가 깊어질수록 Leaf Node가 많아지고 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어질 수 있다.
-- 가지치기(Pruning): Max Depth, Leaf Node 개수 등을 제한함으로써 일반화 성능을 높일 수 있다.
+- 트리의 Depth가 깊어질수록 Leaf Node가 많아지고 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어질 수 있습니다.
+- 가지치기(Pruning): Max Depth, Leaf Node 개수 등을 제한함으로써 일반화 성능을 높일 수 있습니다.
 
 
 ## 마치며
-Decision Tree는 기본적으로 greedy한 알고리즘으로 항상 최적의 트리를 생성하지는 않지만 이러한 Decision Tree는 계산복잡성 대비 좋은 성능을 냅니다.
+Decision Tree는 기본적으로 greedy한 알고리즘으로 항상 최적의 트리를 생성하지는 않지만 이러한 Decision Tree는 계산복잡성 대비 좋은 성능을 보입니다.
 
 Decision Tree 모델을 사용하는 주된 요인은 어떤 feature가 중요한 영향인자인지 직관적으로 확인할 수 있고 어느만큼의 척도로 분류를 했는지 상세한 기준을 파악할 수 있다는 것입니다.
 
