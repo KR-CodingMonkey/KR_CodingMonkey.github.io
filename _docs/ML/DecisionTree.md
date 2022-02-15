@@ -16,10 +16,10 @@ permalink: docs/ML/DT
 - 결과 모델이 Tree 구조를 가지고 있다.
 - 지도학습 모델, 분류 규칙을 통해 데이터를 분류(Classification), 회귀(Regression)
     - 분류=최빈값, 회귀=평균
-    - 분류 트리는 리프 노드에 속한 특정 클래스의 레이블을 결정하는 반면,회귀 트리의 경우 리프 노드에 속하는 데이터의 평균값을 이용해 예측값을 계산한다는 차이점이 있습니다.
+    - 분류 트리는 리프 노드에 속한 특정 클래스의 레이블을 결정하는 반면, 회귀 트리의 경우 리프 노드에 속하는 데이터의 평균값을 이용해 예측값을 계산한다는 차이점이 있습니다.
 
 
-<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/tree_gif.gif' width="80%"></center>
+<center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/tree_gif.gif' width="80%"></center><br>
 
 위 그림은 의사결정트리의 예시로서,
 - X: Hours Slept, Plans to Cheat, Hours Studied, Average Grade 
@@ -58,8 +58,7 @@ Entropy interval:
 
 <br>
 
-Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. (결과는 Entropy가 약간 우세) 
-
+Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸립니다. 성능은 Entropy가 약간 우세하지만 차이가 크게 나지 않기 때문에 **Gini가 더 낫다**는 평가입니다. 
 [more...](https://quantdare.com/decision-trees-gini-vs-entropy/)
 
 ## Information Gain(정보 획득)
