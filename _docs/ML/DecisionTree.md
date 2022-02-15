@@ -67,7 +67,7 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 - information gain을 계산함으로써 분류기준을 정할 수 있습니다.
     - information gain이 높을수록 데이터 분리에 있어서 중요한 변수
 - information gain = (현재노드 불순도) - (자식노드 불순도)
-    - `0.5` - (`0.2`*`0`+`0.5`*`0.375`+`0.3`*`0`) = `0.026`
+    - `0.5` - (`0.2*0`+`0.5*0.375`+`0.3*0`) = `0.026`
 
 <center><img src='https://s3.amazonaws.com/codecademy-content/programs/data-science-path/decision-trees/weighted_info.svg'></center><br>
 
