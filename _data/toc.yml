@@ -22,43 +22,22 @@
 - title: Skills
   # url: "docs/Skills"
   links:
-    - title: Hadoop
-      url: "docs/Skills/Hadoop"
-      children:
-        - title: hadoop-0
-          url: "docs/Skills/Hadoop/hadoop0"
+    # - title: Hadoop
+    #   url: "docs/Skills/Hadoop"
+    #   children:
+    #     - title: hadoop-0
+    #       url: "docs/Skills/Hadoop/hadoop0"
         # - title: hadoop-1
         #   url: "docs/Skills/Hadoop/hadoop1"
     - title: "Machine Learning"
       url: "docs/ML"
       children:
-        - title: Fake News
-          url: docs/ML/Fake_news
-        - title: Iris
-          url: docs/ML/Iris
         - title: Decision Tree
           url: docs/ML/DT
-
-# - title: Documentation
-#   url: docs
-#   links:
-#     - title: "Getting Started"
-#       url: "docs/getting-started"
-#       children:
-#         - title: Features
-#           url: "docs/getting-started#getting-started"
-#         - title: Development
-#           url: "docs/getting-started#development"
-#         - title: Customization
-#           url: "docs/getting-started#customization"
-#     - title: "Extras"
-#       url: "docs/extras"
-#       children:
-#         - title: Quizzes
-#           url: "docs/extras/example-quiz"
-#         - title: Tags Page
-#           url: "tags"
-#     - title: "About"
-#       url: "about"
-#     - title: "News"
-#       url: "news"
+    - title: "Data Analysys"
+      url: "docs/DA"
+      children:
+        - title: Fake News
+          url: docs/DA/Fake_news
+        - title: Iris
+          url: docs/DA/Iris
