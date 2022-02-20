@@ -6,7 +6,6 @@ permalink: docs/DA
 
 ## 1. Load data & Library
 
-ML 기초를 다룹니다.
 
 ```python
 import pandas pd
