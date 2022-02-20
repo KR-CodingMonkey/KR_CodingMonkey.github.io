@@ -45,4 +45,4 @@ test = pd.read_csv('test.csv')
 - 이상치(Outlier): 울타리 밖에 있는 값
     - [more..](DA/outlier)
 
-<img src = 'https://miro.medium.com/max/10125/1*NRlqiZGQdsIyAu0KzP7LaQ.png'>
+<center><img src = 'https://miro.medium.com/max/10125/1*NRlqiZGQdsIyAu0KzP7LaQ.png' width=70%></center>
