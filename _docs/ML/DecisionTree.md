@@ -77,7 +77,7 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 - 트리의 Depth가 깊어질수록 Leaf Node가 많아지고 과적합 문제(Overfitting)가 발생하여 일반화 성능이 떨어질 수 있습니다.
 - 가지치기(Pruning): Max Depth, Leaf Node 개수 등을 제한함으로써 일반화 성능을 높일 수 있습니다.
 
-<center><img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fvelog.io%2F%40gr8alex%2FDecision-Tree&psig=AOvVaw1zYMGaWzHkdpQeQk7VI1z_&ust=1645426037562000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjUlPHXjfYCFQAAAAAdAAAAABAD'></center>
+<center><img src='https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1400%2F1*ElW-ERvIfiV6RSbs74RO_A.png&imgrefurl=https%3A%2F%2Fvelog.io%2F%40kkiyou%2FML-Tree-Algorithm&tbnid=omJk-lK5WNfN9M&vet=12ahUKEwiW3Lvr2o32AhWuy4sBHRR_AaQQMygMegUIARDOAQ..i&docid=YB7gcL5El9mo8M&w=1202&h=668&q=decision%20tree%20pruning&ved=2ahUKEwiW3Lvr2o32AhWuy4sBHRR_AaQQMygMegUIARDOAQ'></center>
 
 ## 마치며
 Decision Tree는 기본적으로 greedy한 알고리즘으로 항상 최적의 트리를 생성하지는 않지만 이러한 Decision Tree는 계산복잡성 대비 좋은 성능을 보입니다.
