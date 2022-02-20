@@ -43,6 +43,6 @@ test = pd.read_csv('test.csv')
         - 50%(Q2): 중앙값
         - 75%(Q3): 3/4번째 지점에 있는 값
 - 이상치(Outlier): 울타리 밖에 있는 값
-    - [more..](docs/DA/outlier)
+    - [more..](DA/outlier)
 
 <img src = 'https://miro.medium.com/max/10125/1*NRlqiZGQdsIyAu0KzP7LaQ.png'>
