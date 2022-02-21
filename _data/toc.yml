@@ -1,5 +1,5 @@
 
-- title: "CS기초"
+- title: Computer Science
   url: "docs/CS"
   links:
     - title: Network
@@ -19,7 +19,7 @@
           url: docs/CS/DataStructure/Graph
 
 
-- title: Skills
+- title: Data Science
   # url: "docs/Skills"
   links:
     # - title: Hadoop
