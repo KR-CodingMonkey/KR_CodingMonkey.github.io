@@ -118,13 +118,13 @@ test = pd.read_csv('test.csv')
 `pd.DataFrame.fillna(value)`<br>
 - NA/NAN 값을 value로 채우는 함수
 
-## 4. 변수 선택 및 모델 구축(Feature Engineering & Initial Modeling)
+## 4. 변수 선택 및 모델 구축(Feature Engineering & Select Algorithm)
 
 `sklearn.ensemble.RandomForestRegressor()`
 `sklearn.linear_model.LinearRegression()`
 `sklearn.linear_model.LogisticRegression()`
 
-## 5. 모델 학습 및 검증(Model Train)
+## 5. 모델 학습 및 검증(Model Training & Evaluation)
 `model.fit(X_train, y_train)`<br>
 - 모델 학습
 
