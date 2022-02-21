@@ -52,26 +52,29 @@ test = pd.read_csv('test.csv')
 - 집단에 대한 통계량
 
 ### 2.1 그래프
-`import matplotlib.pyplot as plt`
-
+`import matplotlib.pyplot as plt`<br>
+- 데이터를 차트나 플롯(plot)으로 그려주는 라이브러리
 
 - 색깔
 
-| 색깔 | 약자 | | 마커|의미|
-|--------|-----|-|-----|-----|
-| blue | b|| . | 점 |
-|green|g||o|원|
-|red|r||v|역삼각형|
-|cyan|c||^|삼각형|
-|megenta|m||s|사각형|
-|yellow|y||*|별|
-|black|k||x|엑스|
-|white|w||d|다이아몬드|
+| 문자열 | 약자 |
+|--------|-----|
+| blue | b|
+|green|g|
+|red|r|
+|cyan|c|
+|megenta|m|
+|yellow|y|
+|black|k|
+|white|w|
 
 - 마커
 
 | 마커 | 의미 |
 |--------|-----|
+| . | 점 |
+|o|원|
+|v|역삼각형|
 |^|삼각형|
 |s|사각형|
 |*|별|
