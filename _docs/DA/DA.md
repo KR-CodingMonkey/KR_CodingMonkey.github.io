@@ -83,7 +83,7 @@ test = pd.read_csv('test.csv')
 |x|엑스|
 |d|다이아몬드|
 
--선 
+- 선 
 
 | 문자열 | 약자 |
 |--------|-----|
@@ -109,20 +109,23 @@ test = pd.read_csv('test.csv')
 - 분야별로 차이가 있지만, 0.4이상이면 변수간 상관성이 있다고 볼 수 있음
 
 ![상관계수](https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008)
+<br>
 
 ## 3. 데이터 전처리(Pre-Processing)
 
-`pd.Series.isna()`<br>
+`pd.Series.isnull()`<br>
 - 결측치 여부를 확인 (결측치 - True, else - False)
 
 `pd.DataFrame.fillna(value)`<br>
 - NA/NAN 값을 value로 채우는 함수
+<br>
 
 ## 4. 변수 선택 및 모델 구축(Feature Engineering & Select Algorithm)
 
 `sklearn.ensemble.RandomForestRegressor()`
 `sklearn.linear_model.LinearRegression()`
 `sklearn.linear_model.LogisticRegression()`
+<br>
 
 ## 5. 모델 학습 및 검증(Model Training & Evaluation)
 `model.fit(X_train, y_train)`<br>
@@ -130,6 +133,7 @@ test = pd.read_csv('test.csv')
 
 `model.predict(y)`
 - 모델 예측
+<br>
 
 ## 6. 결과 및 결언
 
