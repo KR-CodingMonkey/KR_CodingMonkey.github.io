@@ -21,9 +21,8 @@ permalink: docs/DA/Bike
 ```python
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
-```
 
-```
+'''
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 1459 entries, 0 to 1458
 Data columns (total 11 columns):
@@ -40,4 +39,20 @@ Data columns (total 11 columns):
  8   hour_bef_pm10           1369 non-null   float64
  9   hour_bef_pm2.5          1342 non-null   float64
  10  count                   1459 non-null   float64
- ```
+'''
+```
+
+```python
+print(train.head())
+
+'''
+   id  hour  hour_bef_temperature  hour_bef_precipitation    ...    hour_bef_ozone  hour_bef_pm10  hour_bef_pm2.5  count
+0   3    20                  16.3                     1.0    ...              0.027           76.0            33.0   49.0   
+1   6    13                  20.1                     0.0    ...              0.042           73.0            40.0  159.0   
+2   7     6                  13.9                     0.0    ...              0.033           32.0            19.0   26.0   
+3   8    23                   8.1                     0.0    ...              0.040           75.0            64.0   57.0   
+4   9    18                  29.5                     0.0    ...              0.057           27.0            11.0  431.0  
+'''
+```
+
+ ## EDA
