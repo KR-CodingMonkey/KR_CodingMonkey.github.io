@@ -19,6 +19,7 @@ test = pd.read_csv('test.csv')
 
 ## 2. 탐색적 자료분석(EDA, Exploratory Data Analysis)
 
+### 2.1 수치
 `pd.DataFrame.head()`<br>
 - 데이터 프레임의 위에서 부터 n개 행을 보여주는 함수
 - n의 기본 값(default 값)은 5
@@ -46,3 +47,45 @@ test = pd.read_csv('test.csv')
     - [more..](DA/outlier)
 
 <center><img src = 'https://miro.medium.com/max/10125/1*NRlqiZGQdsIyAu0KzP7LaQ.png' width='70%'></center>
+
+`pd.DataFrame.groupby()`<br>
+- 집단에 대한 통계량
+
+### 2.1 그래프
+`import matplotlib.pyplot as plt`
+
+
+- 색깔
+
+| 문자열 | 약자 |
+|--------|-----|
+| blue | b|
+|green|g|
+|red|r|
+|cyan|c|
+|megenta|m|
+|yellow|y|
+|black|k|
+|white|w|
+
+- 마커
+
+| 마커 | 의미 |
+|--------|-----|
+| . | 점 |
+|o|원|
+|v|역삼각형|
+|^|삼각형|
+|s|사각형|
+|*|별|
+|x|엑스|
+|d|다이아몬드|
+
+-선 
+
+| 문자열 | 약자 |
+|--------|-----|
+| - |실선|
+|--|끊어진 실선|
+|-.|점+실선|
+|:|점선|
