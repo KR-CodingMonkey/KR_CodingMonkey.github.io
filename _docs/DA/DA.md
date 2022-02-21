@@ -4,7 +4,7 @@ title: Data Analysis
 permalink: docs/DA
 ---
 
-## 1. Load data & Library
+## 1. 데이터&라이브러리 불러오기(Load data & Library)
 
 
 ```python
@@ -51,6 +51,8 @@ test = pd.read_csv('test.csv')
 `pd.DataFrame.groupby()`<br>
 - 집단에 대한 통계량
 
+<center><img src="https://s3.amazonaws.com/files.dezyre.com/images/Tutorials/Split+Apply+Combine+Strategy.png" width="60%"></center>
+
 ### 2.1 그래프
 `import matplotlib.pyplot as plt`<br>
 - 데이터를 차트나 플롯(plot)으로 그려주는 라이브러리
@@ -89,3 +91,46 @@ test = pd.read_csv('test.csv')
 |--|끊어진 실선|
 |-.|점+실선|
 |:|점선|
+
+| 함수 | 설명 |
+|-----|------|
+|`plt.title(label, fontsize)`|그래프 제목 생성|
+|`plt.xlabel(label, fontsize)` | x축 이름 설정|
+|`plt.ylabel(label, fontsize)`| y축 이름 설정|
+|`plt.axvline(x, color)`| 축을 가로지르는 세로선 생성|
+|`plt.text(x, y, s, fontsize)`|원하는 위치에 텍스트 생성|
+
+### 상관계수
+
+`pd.DataFrame.corr()`<br>
+- 피어슨 상관 계수(Pearson correlation coefficient)
+- 상관계수: 두 개의 변수가 같이 일어나는 강도를 나타내는 수치
+- [-1, 1]사이의 값을 가진다
+- 분야별로 차이가 있지만, 0.4이상이면 변수간 상관성이 있다고 볼 수 있음
+
+![상관계수](https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008)
+
+## 3. 데이터 전처리(Pre-Processing)
+
+`pd.Series.isna()`<br>
+- 결측치 여부를 확인 (결측치 - True, else - False)
+
+`pd.DataFrame.fillna(value)`<br>
+- NA/NAN 값을 value로 채우는 함수
+
+## 4. 변수 선택 및 모델 구축(Feature Engineering & Initial Modeling)
+
+`sklearn.ensemble.RandomForestRegressor()`
+`sklearn.linear_model.LinearRegression()`
+`sklearn.linear_model.LogisticRegression()`
+
+## 5. 모델 학습 및 검증(Model Train)
+`model.fit(X_train, y_train)`<br>
+- 모델 학습
+
+`model.predict(y)`
+- 모델 예측
+
+## 6. 결과 및 결언
+
+
