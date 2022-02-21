@@ -57,10 +57,10 @@ test = pd.read_csv('test.csv')
 
 - 색깔
 
-| 문자열 | 약자 |
-|--------|-----|
-| blue | b|
-|green|g|
+| 문자열 | 약자 | | 마커|의미|
+|--------|-----|-|-----|-----|
+| blue | b| . | 점 |
+|green|g|o|원|
 |red|r|
 |cyan|c|
 |megenta|m|
