@@ -51,7 +51,7 @@ test = pd.read_csv('test.csv')
 `pd.DataFrame.groupby()`<br>
 - 집단에 대한 통계량
 
-<center><img src="https://s3.amazonaws.com/files.dezyre.com/images/Tutorials/Split+Apply+Combine+Strategy.png" width="60%"></center>
+<!-- <center><img src="https://s3.amazonaws.com/files.dezyre.com/images/Tutorials/Split+Apply+Combine+Strategy.png" width="50%"></center> -->
 
 ### 2.1 그래프
 `import matplotlib.pyplot as plt`<br>
@@ -116,7 +116,7 @@ test = pd.read_csv('test.csv')
 ```python
 import seaborn as sns
 
-sns.heatmap(train.corr())
+sns.heatmap(train.corr(), annot=True) # annot - 상관관계 수치를 표시
 ```
 
 <center><img src="https://miro.medium.com/max/1400/1*1dFSiFeqCKhMPFhCJCtJlA.png" width="70%"></center>
