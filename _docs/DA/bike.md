@@ -58,6 +58,8 @@ print(train.head())
 '''
 ```
 
+### 시간별 평균 따릉이 사용량
+
 ```python
 train_group = train.groupby('hour').mean()
 plt.plot(train_group['count'], 'o-')
@@ -68,20 +70,51 @@ plt.ylabel('count')
 plt.axvline(8, color='r')
 plt.axvline(18, color='r')
 ```
-- 시간별 평균 따릉이 사용량
-- 출/퇴근 시간에 사용량 증가
-
+- 출/퇴근 시간에 사용량 증가 (8시, 18시)
 ![Figure_1](https://user-images.githubusercontent.com/76420201/155281864-d3071577-deaa-4352-99ab-ad0bae64b8ef.png)
 
 
+### 변수간의 상관계수
 ```python
 import seaborn as sns
 plt.figure(figsize=(9,9))
 sns.heatmap(train.corr(), annot=True)
 plt.show()
 ```
-- 변수간의 상관계수
 - `count`와 `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 상관계수가 비교적 높음
+- `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 네 가지 변수로만 학습
+<center><img src="https://user-images.githubusercontent.com/76420201/155283947-edd9ac7d-061b-4894-bff6-2bfd254944a6.png" width="75%"></center>
 
-<center><img src="https://user-images.githubusercontent.com/76420201/155283947-edd9ac7d-061b-4894-bff6-2bfd254944a6.png" width="70%"></center>
 
+### 컬럼별 결측치 개수 확인
+```python
+train_X = train[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']]
+train_y = train[['count']]
+
+print(train_X.isnull().sum())
+'''
+hour                     0
+hour_bef_temperature     2
+hour_bef_windspeed       9
+hour_bef_ozone          76
+dtype: int64
+'''
+```
+
+## Pre Processing
+- train 데이터의 결측치는 train 데이터 평균 값으로 대체
+- test 데이터는 실제로는 **알 수 없는 값**이기 때문에 train 데이터의 평균 값으로 대체
+```python
+print(train_X.isnull().sum())
+train_X['hour_bef_temperature'].fillna(train_X['hour_bef_temperature'].mean(), inplace=True)
+train_X['hour_bef_windspeed'].fillna(train_X['hour_bef_windspeed'].mean(), inplace=True)
+train_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
+
+
+test_X = test[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']]
+
+print(test_X.isnull().sum())
+test_X['hour_bef_temperature'].fillna(train_X['hour_bef_temperature'].mean(), inplace=True)
+test_X['hour_bef_windspeed'].fillna(train_X['hour_bef_windspeed'].mean(), inplace=True)
+test_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
+```
