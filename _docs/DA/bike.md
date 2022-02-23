@@ -71,6 +71,7 @@ plt.axvline(8, color='r')
 plt.axvline(18, color='r')
 ```
 - 출/퇴근 시간에 사용량 증가 (8시, 18시)
+
 ![Figure_1](https://user-images.githubusercontent.com/76420201/155281864-d3071577-deaa-4352-99ab-ad0bae64b8ef.png)
 
 
