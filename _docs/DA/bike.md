@@ -22,6 +22,7 @@ permalink: docs/DA/Bike
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 
+print(train.info())
 '''
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 1459 entries, 0 to 1458
@@ -42,6 +43,8 @@ Data columns (total 11 columns):
 '''
 ```
 
+## EDA 
+
 ```python
 print(train.head())
 
@@ -55,4 +58,30 @@ print(train.head())
 '''
 ```
 
-## EDA
+```python
+train_group = train.groupby('hour').mean()
+plt.plot(train_group['count'], 'o-')
+plt.grid()
+plt.title('count by hour')
+plt.xlabel('hour')
+plt.ylabel('count')
+plt.axvline(8, color='r')
+plt.axvline(18, color='r')
+```
+- 시간별 평균 따릉이 사용량
+- 출/퇴근 시간에 사용량 증가
+
+![Figure_1](https://user-images.githubusercontent.com/76420201/155281864-d3071577-deaa-4352-99ab-ad0bae64b8ef.png)
+
+
+```python
+import seaborn as sns
+plt.figure(figsize=(9,9))
+sns.heatmap(train.corr(), annot=True)
+plt.show()
+```
+- 변수간의 상관계수
+- `count`와 `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 상관계수가 비교적 높음
+
+<center><img src="https://user-images.githubusercontent.com/76420201/155283947-edd9ac7d-061b-4894-bff6-2bfd254944a6.png" width="70%"></center>
+
