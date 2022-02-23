@@ -124,7 +124,6 @@ test = pd.read_csv('test.csv')
 <br>
 
 ## 4. 변수 선택 및 모델 구축(Feature Engineering & Select Algorithm)
-
 `sklearn.ensemble.RandomForestRegressor()`<br>
 `sklearn.linear_model.LinearRegression()`<br>
 `sklearn.linear_model.LogisticRegression()`<br>
