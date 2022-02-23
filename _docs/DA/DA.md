@@ -110,7 +110,8 @@ test = pd.read_csv('test.csv')
 - [-1, 1]사이의 값을 가진다
 - 분야별로 차이가 있지만, 0.4이상이면 변수간 상관성이 있다고 볼 수 있음
 
-![상관계수](https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008)
+<center><img src = "https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008"></center>
+<br>
 <br>
 
 ## 3. 데이터 전처리(Pre-Processing)
