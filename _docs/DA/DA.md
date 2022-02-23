@@ -57,7 +57,7 @@ test = pd.read_csv('test.csv')
 `import matplotlib.pyplot as plt`<br>
 - 데이터를 차트나 플롯(plot)으로 그려주는 라이브러리
 
-<img width="700" alt="pltplot" src="https://user-images.githubusercontent.com/76420201/155242217-09643f17-a0ea-4b6b-83d4-f906d61dd841.png">
+<img width="600" alt="pltplot" src="https://user-images.githubusercontent.com/76420201/155242217-09643f17-a0ea-4b6b-83d4-f906d61dd841.png">
 
 <!-- - 색깔
 
@@ -110,8 +110,17 @@ test = pd.read_csv('test.csv')
 - [-1, 1]사이의 값을 가진다
 - 분야별로 차이가 있지만, 0.4이상이면 변수간 상관성이 있다고 볼 수 있음
 
-<center><img src = "https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008"></center>
+<center><img src = "https://t1.daumcdn.net/cfile/tistory/99DEE1425C6A9F2008" width="60%"></center>
 <br>
+
+```python
+import seaborn as sns
+
+sns.heatmap(train.corr())
+```
+
+<center><img src="https://miro.medium.com/max/1400/1*1dFSiFeqCKhMPFhCJCtJlA.png" width="70%"></center>
+
 <br>
 
 ## 3. 데이터 전처리(Pre-Processing)
