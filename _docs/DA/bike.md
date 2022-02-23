@@ -113,7 +113,6 @@ train_X['hour_bef_temperature'].fillna(train_X['hour_bef_temperature'].mean(), i
 train_X['hour_bef_windspeed'].fillna(train_X['hour_bef_windspeed'].mean(), inplace=True)
 train_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
 
-
 test_X = test[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']] # train과 동일
 
 print(test_X.isnull().sum())
@@ -140,6 +139,7 @@ sub.to_csv('output.csv', index=False) # save to csv file
 ## Result
 
 score - 47.546691622..<br>
-다시보니 양의 상관계수만 고려했던거 같아 음의 상관계수 `hour_bef_humidity`를 포함시키고 `hour_bef_ozone`를 제외시켰더니<br>
-score - 44.759260241로 오차를 줄일 수 있었습니다.
+양의 상관계수만 고려했던거 같아 음의 상관계수 `hour_bef_humidity`를 포함시키고 `hour_bef_ozone`를 제외시켰더니<br>
+score - 44.759260241<br>
+로 오차를 줄일 수 있었습니다.
 
