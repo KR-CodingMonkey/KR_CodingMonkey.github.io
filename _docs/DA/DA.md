@@ -4,7 +4,7 @@ title: Data Analysis
 permalink: docs/DA
 ---
 
-## 1. 데이터&라이브러리 불러오기(Load data & Library)
+## 1. 데이터 & 라이브러리 불러오기(Load data & Library)
 
 
 ```python
@@ -57,7 +57,9 @@ test = pd.read_csv('test.csv')
 `import matplotlib.pyplot as plt`<br>
 - 데이터를 차트나 플롯(plot)으로 그려주는 라이브러리
 
-- 색깔
+<center><img width="438" alt="pltplot" src="https://user-images.githubusercontent.com/76420201/155242217-09643f17-a0ea-4b6b-83d4-f906d61dd841.png"></center>
+
+<!-- - 색깔
 
 | 문자열 | 약자 |
 |--------|-----|
@@ -90,7 +92,7 @@ test = pd.read_csv('test.csv')
 | - |실선|
 |--|끊어진 실선|
 |-.|점+실선|
-|:|점선|
+|:|점선| -->
 
 | 함수 | 설명 |
 |-----|------|
@@ -124,7 +126,9 @@ test = pd.read_csv('test.csv')
 
 `sklearn.ensemble.RandomForestRegressor()`<br>
 `sklearn.linear_model.LinearRegression()`<br>
-`sklearn.linear_model.LogisticRegression()`
+`sklearn.linear_model.LogisticRegression()`<br>
+                    :<br>
+                    :
 <br>
 
 ## 5. 모델 학습 및 검증(Model Training & Evaluation)
