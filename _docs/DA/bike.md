@@ -89,7 +89,7 @@ plt.show()
 - `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 네 가지 변수로만 학습
 
 ```python
-train_X = train[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']]
+train_X = train[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone', 'hour_bef_humidity']]
 train_y = train[['count']]
 
 print(train_X.isnull().sum())
@@ -122,16 +122,23 @@ test_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
 ```
 
 
-## Select Model & Predict
-- 
+## Model training & Predict
+
 ```python
 model = RandomForestRegressor(n_estimators=50, random_state=0)
 model.fit(train_X, train_y)
 
-pred = model.predict(test_X)
+pred = model.predict(test_X) # predict
 
 sub = pd.read_csv('submission.csv')
 sub['count'] = pred
 
-sub.to_csv('output.csv', index=False)
+sub.to_csv('output.csv', index=False) # save to csv file
 ```
+
+## Result
+
+score - 47.546691622..<br>
+다시보니 양의 상관계수만 고려했던거 같아 음의 상관계수 `hour_bef_humidity`를 포함시키고 `hour_bef_ozone`를 제외시켰더니<br>
+score - 44.759260241로 오차를 줄일 수 있었습니다.
+
