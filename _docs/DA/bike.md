@@ -82,11 +82,12 @@ sns.heatmap(train.corr(), annot=True)
 plt.show()
 ```
 - `count`와 `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 상관계수가 비교적 높음
-- `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 네 가지 변수로만 학습
 <center><img src="https://user-images.githubusercontent.com/76420201/155283947-edd9ac7d-061b-4894-bff6-2bfd254944a6.png" width="75%"></center>
 
 
 ### 컬럼별 결측치 개수 확인
+- `hour`, `hour_bef_temperature`, `hour_bef_windspeed`, `hour_bef_ozone` 네 가지 변수로만 학습
+
 ```python
 train_X = train[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']]
 train_y = train[['count']]
@@ -104,6 +105,7 @@ dtype: int64
 ## Pre Processing
 - train 데이터의 결측치는 train 데이터 평균 값으로 대체
 - test 데이터는 실제로는 **알 수 없는 값**이기 때문에 train 데이터의 평균 값으로 대체
+
 ```python
 print(train_X.isnull().sum())
 train_X['hour_bef_temperature'].fillna(train_X['hour_bef_temperature'].mean(), inplace=True)
@@ -111,10 +113,25 @@ train_X['hour_bef_windspeed'].fillna(train_X['hour_bef_windspeed'].mean(), inpla
 train_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
 
 
-test_X = test[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']]
+test_X = test[['hour', 'hour_bef_temperature', 'hour_bef_windspeed', 'hour_bef_ozone']] # train과 동일
 
 print(test_X.isnull().sum())
 test_X['hour_bef_temperature'].fillna(train_X['hour_bef_temperature'].mean(), inplace=True)
 test_X['hour_bef_windspeed'].fillna(train_X['hour_bef_windspeed'].mean(), inplace=True)
 test_X['hour_bef_ozone'].fillna(train_X['hour_bef_ozone'].mean(), inplace=True)
+```
+
+
+## Select Model & Predict
+- 
+```python
+model = RandomForestRegressor(n_estimators=50, random_state=0)
+model.fit(train_X, train_y)
+
+pred = model.predict(test_X)
+
+sub = pd.read_csv('submission.csv')
+sub['count'] = pred
+
+sub.to_csv('output.csv', index=False)
 ```
