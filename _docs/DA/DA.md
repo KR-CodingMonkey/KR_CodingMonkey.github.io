@@ -57,7 +57,7 @@ test = pd.read_csv('test.csv')
 `import matplotlib.pyplot as plt`<br>
 - 데이터를 차트나 플롯(plot)으로 그려주는 라이브러리
 
-<center><img width="438" alt="pltplot" src="https://user-images.githubusercontent.com/76420201/155242217-09643f17-a0ea-4b6b-83d4-f906d61dd841.png"></center>
+<img width="700" alt="pltplot" src="https://user-images.githubusercontent.com/76420201/155242217-09643f17-a0ea-4b6b-83d4-f906d61dd841.png">
 
 <!-- - 색깔
 
