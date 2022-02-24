@@ -20,4 +20,5 @@ permalink: docs/ML/RandomForest
 - Bagging 또는 랜덤 노드 최적화(Randomized node optimization)와 같은 기술을 통해 단점을 극복, 성능을 일반화 합니다.
 - 랜덤 포레스트는 일반화 된 트리를 만들기 위해 다수의 결정 트리들을 학습하는 앙상블 방법입니다. 
 - 랜덤 포레스트는 검출, 분류, 그리고 회귀 등 다양한 문제에 활용되고 있습니다.
+
 <center><img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Randomforests_ensemble.gif'></center>
