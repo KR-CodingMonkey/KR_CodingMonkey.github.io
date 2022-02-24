@@ -35,7 +35,7 @@
         - title: Decision Tree
           url: docs/ML/DT
         - title: Random Forest
-          url: docs/ML/docs/ML/RandomForest  
+          url: docs/ML/RandomForest  
     - title: "Data Analysys"
       url: "docs/DA"
       children:
