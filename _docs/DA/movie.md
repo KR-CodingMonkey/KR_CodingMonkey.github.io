@@ -1,15 +1,15 @@
 ---
-title: [문화]영화 관객수 예측 모델 개발
+title: 영화 관객수 예측 모델 개발
 tags: 
  - Data analysis
  - Dacon
  - movie
  - RandomForestRegressor
-description: [문화]영화 관객수 예측 모델 개발 
+description: 영화 관객수 예측 모델 개발 
 permalink: docs/DA/movie
 ---
 
-# 영화 관객수 예측 모델 개발
+# (문화)영화 관객수 예측 모델 개발
 
 영화 관객수를 예측해 보세요.
 
