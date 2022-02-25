@@ -31,7 +31,7 @@ permalink: docs/ML/RandomForest
 <center><img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Randomforests_ensemble.gif'></center>
 
 
-## 매개변수
+## 주요 파라미터
 
 `sklearn.ensemble.RandomForestClassifier`<br>
 `sklearn.ensemble.RandomForestRegressor`
