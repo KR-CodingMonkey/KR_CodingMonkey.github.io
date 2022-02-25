@@ -27,15 +27,13 @@ permalink: docs/DA/movie
 - box_off_num : 관객수
 
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-```
-
 ## Load Data
 
 
 ```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
 train = pd.read_csv('movies_train.csv')
 test = pd.read_csv('movies_test.csv')
 ```
