@@ -1,13 +1,15 @@
 ---
-title: 서울시 따릉이 자전거 이용 예측
+title: [문화]영화 관객수 예측 모델 개발
 tags: 
  - Data analysis
  - Dacon
- - 따릉이
+ - movie
  - RandomForestRegressor
-description: 서울시 따릉이 자전거 이용 예측 AI모델 
+description: [문화]영화 관객수 예측 모델 개발 
 permalink: docs/DA/movie
 ---
+
+# 영화 관객수 예측 모델 개발
 
 ```python
 import pandas as pd
