@@ -33,7 +33,7 @@ permalink: docs/ML/RandomForest
 
 ## 매개변수
 
-`sklearn.ensemble.RandomForestClassifier`
+`sklearn.ensemble.RandomForestClassifier`<br>
 `sklearn.ensemble.RandomForestRegressor`
 
 1. 트리의 개수, n_estimators
@@ -41,12 +41,14 @@ permalink: docs/ML/RandomForest
     - T가 작으면 시간이 짧게 걸리지만 일반화 성능이 떨어질 수 있음 
     - Defalut = 100 (version 0.22)
 
+<br>
 2. Featrue의 개수, max_feature
     - 트리하나의 선택할 feature의 개수
     - max_feature의 값이 너무 크면 트리들의 상관성이 커짐(안좋음)
     - max_feature의 값이 작으면 트리들의 모양이 달라져서 overfitting을 피할 수 있음
     - 일반적으로 Defalut(= sqrt(n_features)) 값을 따름
 
+<br>
 3. 트리 최대 깊이, max_depth
     - 하나의 트리에서의 최대 깊이를 설정하는 변수
     - 너무 낮으면 underfitting, 너무 크면 overfitting을 야기
