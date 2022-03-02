@@ -19,13 +19,10 @@ permalink: docs/ML/SVM
     - SVR: Support Vector Regression, 연속형 변수일 경우
     - 보통 SVM 자체는 범주형 변수일 때를 일컫습니다.
 
-<center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpA-9pXmR7jRJCd_PJ9H8p7L8BD3CgPzDklXD2e0E5_Du9ZTp4mPPLXwuSj7HySpGfd4&usqp=CAU' width="70%"></center>
+<center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpA-9pXmR7jRJCd_PJ9H8p7L8BD3CgPzDklXD2e0E5_Du9ZTp4mPPLXwuSj7HySpGfd4&usqp=CAU' width="50%"></center>
 
-<!-- 
-<center><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJyfbT%2FbtqEqtpxbch%2FflfwGbM7mgv1kP1kkn4nQK%2Fimg.png" width = "70%"></center> -->
 
-SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾는 것입니다.
-
+SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾는 것입니다.<br>
 **잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 멀어야 합니다.(Margin이 가장 큰 값일 때)
 
 용어들을 순차적으로 정리해보겠습니다.
@@ -58,6 +55,7 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 ### 1. 다항식(Polynomial)
 
 <center><img src="http://aidev.co.kr/files/attach/images/188/028/001/aba92769caba048452e9acea299ac655.PNG"></center>
+
 
 ### 2. 방사 기저 함수(RBF: Radial Bias Function)
 
