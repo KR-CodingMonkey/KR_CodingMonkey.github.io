@@ -36,7 +36,7 @@
           url: docs/ML/DT
         - title: Random Forest
           url: docs/ML/RandomForest
-        - title: Random Forest
+        - title: Support Vector Machine
           url: docs/ML/SVM
     - title: "Data Analysys"
       url: "docs/DA"
