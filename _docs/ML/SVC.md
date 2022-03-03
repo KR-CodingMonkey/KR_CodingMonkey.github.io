@@ -23,7 +23,7 @@ permalink: docs/ML/SVM
 
 
 SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾는 것입니다.<br>
-**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 멀어야 합니다.(Margin이 가장 큰 값일 때)
+**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때)
 
 용어들을 순차적으로 정리해보겠습니다.
 
@@ -31,16 +31,19 @@ SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 �
 
 - 클래스를 분류하기 위한 경계
 - 2차원의 결정 경계는 선, 3차원은 평면, 그 이상은 **초평면(Hyperplane)**이라고 부릅니다.
+    - 초평면은 시각적으로 표시할 수 없다.
 
+<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm01.png?fit=1024%2C806'>
+<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852'>
 
 ## 마진(Margin)
 
 - 마진(margin): 결정 경계와 서포트 벡터 사이의 거리
 - 서포트 벡터는 결정 경계와 가장 가까이 있는 데이터 Vector들을 의미합니다.
 
-<center><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJyfbT%2FbtqEqtpxbch%2FflfwGbM7mgv1kP1kkn4nQK%2Fimg.png" width = "50%"></center>
+<center><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJyfbT%2FbtqEqtpxbch%2FflfwGbM7mgv1kP1kkn4nQK%2Fimg.png" width = "40%"></center><br>
 
-SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대화해야 하기 때문에, 이상치(Outlier)들을 잘 다루는게 중요합니다. 여기서 **하드 마진(Hard margin)**과 **소프트 마진(Soft margin)**이라는 개념이 나옵니다.
+SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대화해야 하기 때문에, 이상치(Outlier)들을 잘 다루는게 중요합니다.<br> 여기서 **하드 마진(Hard margin)**과 **소프트 마진(Soft margin)**이라는 개념이 나옵니다.
 
 - 하드 마진
     - 결정 경계와 서포트 벡터의 거리가 좁은 마진
