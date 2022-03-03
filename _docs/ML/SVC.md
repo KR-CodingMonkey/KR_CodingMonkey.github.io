@@ -61,21 +61,29 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 
 ## 커널(Kernel)
 
-몇몇 데이터들은 선형SVM으로 분류하기 어려운 데이터들이 있습니다. 커널 기법은 데이터를 더 높은 차원으로 이동시켜 데이터를 분류하는 방법입니다.
-
 - 커널 종류: 선형, 다항식, 가우시안, 시그모이드
 
 ### 1. 다항식(Polynomial)
 
-- `(x,y)`처럼 2차원의 좌표를 3차원의 좌표로 변환
+몇몇 데이터들은 선형SVM으로 분류하기 어려운 데이터들이 있습니다. 커널 기법은 데이터를 더 높은 차원으로 이동시켜 데이터를 분류하는 방법입니다.
 
-<center><img src="https://user-images.githubusercontent.com/76420201/156521828-38e85f49-d536-4aa0-9854-e2d350e70326.png" width="70%"></center>
+- `(x,y)`처럼 2차원의 좌표를 3차원의 좌표로 변환
+- 더 높은 차원으로 변형하여 초평면 결정 경계를 얻을 수 있습니다.
+
+<center><img src="https://user-images.githubusercontent.com/76420201/156521828-38e85f49-d536-4aa0-9854-e2d350e70326.png" width="50%"></center>
 
 <center><img src="https://www.sallys.space/image/svm/2.png" width="70%"></center>
 
 ### 2. 가우시안 커널(RBF: Radial Bias Function, Gaussian kernel)
 
-- Parameter: gamma
+- 성능이 우수하여 가장 많이 쓰이는 기법
+- 2차원의 좌표를 무한한 차원의 좌표로 변환
+- gamma: SVM 가우시안 커널의 파라미터
+    - 값이 클수록 유연 -> 오버피팅 위험
+    - 값이 작을수록 뻣뻣 -> 언더피팅 위험
+
+<center><img src="https://datascienceschool.net/_images/13.03%20%EC%BB%A4%EB%84%90%20%EC%84%9C%ED%8F%AC%ED%8A%B8%20%EB%B2%A1%ED%84%B0%20%EB%A8%B8%EC%8B%A0_39_0.png" width = "70%"></center>
+
 
 ### 이상치(Outlier)
 
