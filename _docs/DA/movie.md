@@ -597,7 +597,7 @@ plt.show()
 
 
     
-![output_14_0](https://user-images.githubusercontent.com/76420201/155699753-db08afe0-3326-4c35-a8a6-11a4ab9b79ae.png)
+<center><img scr= "https://user-images.githubusercontent.com/76420201/155699753-db08afe0-3326-4c35-a8a6-11a4ab9b79ae.png"></center>
 
     
 
