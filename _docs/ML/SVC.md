@@ -68,9 +68,10 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 ### 1. 다항식(Polynomial)
 
 - `(x,y)`처럼 2차원의 좌표를 3차원의 좌표로 변환
-<center><img src="https://user-images.githubusercontent.com/76420201/156521828-38e85f49-d536-4aa0-9854-e2d350e70326.png" width="70%></center>
 
-<center><img src="https://www.sallys.space/image/svm/2.png" width="70%></center>
+<center><img src="https://user-images.githubusercontent.com/76420201/156521828-38e85f49-d536-4aa0-9854-e2d350e70326.png" width="70%"></center>
+
+<center><img src="https://www.sallys.space/image/svm/2.png" width="70%"></center>
 
 ### 2. 가우시안 커널(RBF: Radial Bias Function, Gaussian kernel)
 
