@@ -34,7 +34,7 @@ SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 �
     - 초평면은 시각적으로 표시할 수 없음
 
 <img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm01.png?fit=1024%2C806' width="45%">
-<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852' width="55%">
+<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852' width="50%">
 
 ## 마진(Margin)
 
@@ -61,12 +61,18 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 
 ## 커널(Kernel)
 
+몇몇 데이터들은 선형SVM으로 분류하기 어려운 데이터들이 있습니다. 커널 기법은 데이터를 더 높은 차원으로 이동시켜 데이터를 분류하는 방법입니다.
+
+- 커널 종류: 선형, 다항식, 가우시안, 시그모이드
+
 ### 1. 다항식(Polynomial)
 
-<center><img src="http://aidev.co.kr/files/attach/images/188/028/001/aba92769caba048452e9acea299ac655.PNG"></center>
+- `(x,y)`처럼 2차원의 좌표를 3차원의 좌표로 변환
+<center><img src="https://user-images.githubusercontent.com/76420201/156521828-38e85f49-d536-4aa0-9854-e2d350e70326.png" width="70%></center>
 
+<center><img src="https://www.sallys.space/image/svm/2.png" width="70%></center>
 
-### 2. 방사 기저 함수(RBF: Radial Bias Function)
+### 2. 가우시안 커널(RBF: Radial Bias Function, Gaussian kernel)
 
 - Parameter: gamma
 
