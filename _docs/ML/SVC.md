@@ -24,7 +24,7 @@ permalink: docs/ML/SVM
 
 
 SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾습니다.<br>
-**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때) 어느 한쪽에 치우치지 않게 분류하며, 빈 공간이라도, 양쪽 군집과 균등한 위치에 있어야합니다. 
+**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때)<br>어느 한쪽에 치우치지 않게 분류하며, 빈 공간이라도, 양쪽 군집과 균등한 위치에 있어야합니다. 
 
 ## 결정 경계(Decision Boundary)
 
@@ -52,9 +52,12 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 - 소프트 마진: 
     - 결정 경계와 서포트 벡터의 거리가 넓은 마진
     - 과소적합(Underfitting)을 야기할 수 있음 
+![margin](https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png)
+
+<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png'></center>
 
 <br>
-데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자를 데이터의 노이즈에 지나치게 민감하게 만듭니다.
+데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자가 데이터의 노이즈에 지나치게 민감하게 만듭니다.
 
 - 하드 마진을 할 경우 빨간색 이상치가 경계를 결정하며 과적합을 일으키는 경우
 <center><img src='https://user-images.githubusercontent.com/76420201/156518004-3931f475-9457-4c2a-baed-bff822789e79.png' width="25%"></center>
