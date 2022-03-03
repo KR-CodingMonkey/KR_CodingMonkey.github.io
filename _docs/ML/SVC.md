@@ -53,7 +53,7 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
     - 결정 경계와 서포트 벡터의 거리가 넓은 마진
     - 과소적합(Underfitting)을 야기할 수 있음 
 
-<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png' width="200%"></center>
+<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png' width=120%"></center>
 
 <br>
 데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자가 데이터의 노이즈에 지나치게 민감하게 만듭니다.
