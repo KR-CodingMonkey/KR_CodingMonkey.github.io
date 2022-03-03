@@ -14,6 +14,7 @@ permalink: docs/ML/SVM
 ---
 
 # SVM(Support Vector Machine)
+- SVM은 Support Vector와 Hyperplane(초평면) 이용하여 분류를 하는 알고리즘
 - SVM: 서포트 벡터 머신, Support Vector Machine
     - SVC: Support Vector Classifier, 범주형 변수일 경우
     - SVR: Support Vector Regression, 연속형 변수일 경우
@@ -23,9 +24,7 @@ permalink: docs/ML/SVM
 
 
 SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾는 것입니다.<br>
-**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때)
-
-용어들을 순차적으로 정리해보겠습니다.
+**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때) 어느 한쪽에 치우치지 않게 분류하며, 빈 공간이라도, 양쪽 군집데이터와 균등한 위치에 있어야합니다. 
 
 ## 결정 경계(Decision Boundary)
 
@@ -85,10 +84,11 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 <center><img src="https://datascienceschool.net/_images/13.03%20%EC%BB%A4%EB%84%90%20%EC%84%9C%ED%8F%AC%ED%8A%B8%20%EB%B2%A1%ED%84%B0%20%EB%A8%B8%EC%8B%A0_39_0.png" width = "70%"></center>
 
 
-### 이상치(Outlier)
 
 
-### 정리
+## 정리
+
+- SVM은 학습데이터를 모두 사용하는 모델들과는 달리 Suppor Vector만 가지고 학습이 
 
 
 ## REFERENCE
