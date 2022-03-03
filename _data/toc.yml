@@ -41,11 +41,12 @@
     - title: "Data Analysys"
       url: "docs/DA"
       children:
-        - title: Fake News
-          url: docs/DA/Fake_news
-        - title: Iris
-          url: docs/DA/Iris
         - title: 1.Bike(DACON)
           url: docs/DA/Bike
         - title: 2.Movie(DACON)
           url: docs/DA/movie
+        - title: Fake News
+          url: docs/DA/Fake_news
+        - title: Iris
+          url: docs/DA/Iris
+        
