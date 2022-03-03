@@ -34,7 +34,7 @@ SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 �
     - 초평면은 시각적으로 표시할 수 없음
 
 <img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm01.png?fit=1024%2C806' width="50%">
-<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852' width="60%">
+<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852' width="55%">
 
 ## 마진(Margin)
 
