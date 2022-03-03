@@ -33,7 +33,7 @@ SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 �
 - 2차원의 결정 경계는 선, 3차원은 평면, 그 이상은 **초평면(Hyperplane)**이라고 부릅니다.
     - 초평면은 시각적으로 표시할 수 없음
 
-<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm01.png?fit=1024%2C806' width="50%">
+<img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm01.png?fit=1024%2C806' width="45%">
 <img src = 'https://i0.wp.com/hleecaster.com/wp-content/uploads/2020/01/svm02.png?fit=1024%2C852' width="55%">
 
 ## 마진(Margin)
@@ -53,11 +53,11 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
     - 결정 경계와 서포트 벡터의 거리가 넓은 마진
     - 과소적합(Underfitting)을 야기할 수 있음 
 
-```note
-    데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자를 데이터의 노이즈에 지나치게 민감하게 만듭니다.
-```
-    - 하드 마진을 할 경우 빨간색 이상치가 경계를 결정하며 과적합을 일으키는 경우
-<center><img src='https://user-images.githubusercontent.com/76420201/156518004-3931f475-9457-4c2a-baed-bff822789e79.png' width="20%"></center>
+
+데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자를 데이터의 노이즈에 지나치게 민감하게 만듭니다.
+
+- 하드 마진을 할 경우 빨간색 이상치가 경계를 결정하며 과적합을 일으키는 경우
+<center><img src='https://user-images.githubusercontent.com/76420201/156518004-3931f475-9457-4c2a-baed-bff822789e79.png' width="25%"></center>
 
 ## 커널(Kernel)
 
