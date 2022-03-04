@@ -53,7 +53,7 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
     - 결정 경계와 서포트 벡터의 거리가 넓은 마진
     - 과소적합(Underfitting)을 야기할 수 있음 
 
-<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png' width="100%"></center>
+<center><img src='https://hyunkyung12.github.io/files/soft%20margin%20SVM.PNG' width="100%"></center>
 
 **하드마진 VS 소프트마진**
 <br>
