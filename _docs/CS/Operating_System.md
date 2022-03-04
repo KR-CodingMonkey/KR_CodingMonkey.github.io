@@ -11,7 +11,7 @@ permalink: /docs/CS/OS
 
 ---
 
-**운영체제(OS, Operating System)**
+#### 운영체제(OS, Operating System)
 
 운영체제란 컴퓨터 하드웨어 바로 윗단에 설치되는 소프트웨어를 말한다.
 
@@ -32,7 +32,7 @@ permalink: /docs/CS/OS
 
 <br/><br/>
 
-**REST**
+#### REST
 - 웹에 존재하는 모든 자원(문서, 이미지, 동영상 등)에 고유한 URI를 부여해 활용하는 것으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법론
 - 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
 - 서버와 클라이언트가 데이터를 주고받는 형식은 json, xml, text, rss 등이 있으며 Key와 Value를 활용하는 json을 주로 사용한다.
@@ -44,20 +44,20 @@ permalink: /docs/CS/OS
 
 <br/><br/>
 
-**REST API**
+#### REST API
 - REST의 특징을 기반으로 API를 제공하는 것
 - 공공데이터, 구글 맵, 마이크로 서비스 등 대부분이 REST API를 통해 제공한다.
 - HTTP 표준을 기반으로 구현하기 때문에 HTTP를 지원하는 프로그램 언어를 사용하여 클라이언트와 서버를 구현할 수 있다.
 
 <br/><br/>
 
-**RESTful API**
+#### RESTful API
 - REST의 규칙(6가지)을 잘 지켜서 설계된 API를 RESTful API라고 한다.
 - 이해하기 쉽고 사용하기 쉬운 REST API를 만드는 것을 목적으로 성능이 중요하다면 꼭 RESTful하게 구현할 필요는 없다.
 
 <br/><br/>
 
-**프로세스 / 쓰레드**
+#### 프로세스 / 쓰레드
 
 프로세스
 - 정의
@@ -84,7 +84,7 @@ permalink: /docs/CS/OS
 
 <br/><br/>  
 
-**컨텍스트 스위칭(Context Switching)**
+#### 컨텍스트 스위칭(Context Switching)
 
 현재 진행하고 있는 Task(Process, Thread)의 상태를 저장하고 다음 진행할 Task의 상태 값을 읽어 적용하는 과정이다.
 
@@ -93,7 +93,7 @@ permalink: /docs/CS/OS
 
 <br/><br/>
 
-**멀티 프로세스 / 멀티 쓰레드**
+#### 멀티 프로세스 / 멀티 쓰레드
 
 멀티 프로세스
 - 하나의 작업(Task)을 다수의 프로세스가 나누어서 동시에 처리하는 것(병렬)
