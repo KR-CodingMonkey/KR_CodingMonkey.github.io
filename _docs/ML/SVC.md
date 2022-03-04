@@ -101,7 +101,5 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 
 ## REFERENCE
 [https://hleecaster.com/ml-svm-concept/](https://hleecaster.com/ml-svm-concept/)
-
 [https://techblog-history-younghunjo1.tistory.com/78](https://techblog-history-younghunjo1.tistory.com/78)
-
 [김성범 [핵심 머신러닝]SVM모델](https://youtu.be/qFg8cDnqYCI)
