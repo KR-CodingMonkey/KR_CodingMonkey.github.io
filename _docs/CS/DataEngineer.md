@@ -14,7 +14,7 @@ permalink: /docs/CS/DataEngineer
 
 ### RDBMS / NoSQL
 
-#### RDBMS
+**RDBMS**
 
 장점
 - 명확하게 정의된 스키마, 데이터 무결성 보장
@@ -26,7 +26,7 @@ permalink: /docs/CS/DataEngineer
 
 <br/>
 
-#### NoSQL
+**NoSQL**
 
 장점
 - 스키마가 없어서 유연하다. 자유로운 데이터 구조를 가질 수 있다.
@@ -100,11 +100,11 @@ Hadoop은 적당한 성능의 범용 컴퓨터 여러 대를 클러스터화하�
 - 너무 많은 버전과 부실한 서포트
 - 설정의 어려움
 
-[Hadoop]({{ site.baseurl }}/docs/Skills/Hadoop) More detail..
+<!-- [Hadoop]({{ site.baseurl }}/docs/Skills/Hadoop) More detail.. -->
 
 <br/>
 
----
+<!-- ---
 
 ### Apache Spark
 
@@ -116,4 +116,4 @@ Hadoop은 적당한 성능의 범용 컴퓨터 여러 대를 클러스터화하�
 
 <br/>
 
----
+--- -->
