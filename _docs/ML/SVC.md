@@ -23,8 +23,8 @@ permalink: docs/ML/SVM
 <center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpA-9pXmR7jRJCd_PJ9H8p7L8BD3CgPzDklXD2e0E5_Du9ZTp4mPPLXwuSj7HySpGfd4&usqp=CAU' width="50%"></center><br>
 
 
-SVM은 두 개의 다른 클래스를 분류할 수 있는 여러가지 결정 경계(Decision Boundary)중에 가장 잘 분류할 수 있는 결정 경계를 찾습니다.<br>
-**잘 분류한다는 것**(결정 경계의 조건)은 서포트 벡터(Support Vector)로부터 거리가 가장 먼 결정 경계를 찾는 것 입니다.(Margin이 가장 큰 값일 때)<br>어느 한쪽에 치우치지 않게 분류하며, 빈 공간이라도, 양쪽 군집과 균등한 위치에 있어야합니다. 
+SVM의 목적은 두 개의 다른 클래스를 가장 잘 분류할 수 있는 결정 경계(Decision Boundary)를 찾는 것입니다.<br>
+**잘 분류한다는 것**(결정 경계의 조건)은 **서포트 벡터(Support Vector)**로부터 거리가 가장 먼 결정 경계를 찾는 것인데(**Margin**이 가장 큰 값일 때)<br>어느 한쪽에 치우치지 않게 하며, 빈 공간이라도 양쪽 군집과 균등한 위치에 있어야 합니다. 
 
 ## 결정 경계(Decision Boundary)
 
@@ -53,7 +53,7 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
     - 결정 경계와 서포트 벡터의 거리가 넓은 마진
     - 과소적합(Underfitting)을 야기할 수 있음 
 
-<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png' width=120%"></center>
+<center><img src='https://user-images.githubusercontent.com/76420201/156563288-d653cf05-ddcb-490e-886e-6b7df8f4d00d.png' width="120%"></center>
 
 <br>
 데이터 세트가 선형으로 분리 될 때 소프트 마진 SVM이 더 좋아질 것으로 기대합니다. 그 이유는 하드 마진 SVM에서 단일 이상치가 경계를 결정할 수 있기 때문에 분류자가 데이터의 노이즈에 지나치게 민감하게 만듭니다.
@@ -91,6 +91,8 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 
 ## 정리
 
+- 고차원 데이터의 분류문제의 좋은 성능을 보임
+- 
 
 ## REFERENCE
 [https://hleecaster.com/ml-svm-concept/](https://hleecaster.com/ml-svm-concept/)
@@ -98,4 +100,5 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 [https://techblog-history-younghunjo1.tistory.com/78](https://techblog-history-younghunjo1.tistory.com/78)
 
 [https://muzukphysics.tistory.com/entry/ML-8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-SVM-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-Support-Vector-Machine]
+
 (https://muzukphysics.tistory.com/entry/ML-8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-SVM-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-Support-Vector-Machine)
