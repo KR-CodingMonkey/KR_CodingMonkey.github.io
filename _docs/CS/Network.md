@@ -7,21 +7,21 @@ description: Network
 permalink: /docs/CS/Network
 ---
 
-# 네트워크 / 운영체제
+# 네트워크
 
 ---
 
-## OSI 7계층
+### OSI 7계층
 
-<center><img src='https://user-images.githubusercontent.com/33534771/74589801-e603cf00-504b-11ea-862c-765c57d3169b.png' width='60%'></center>
+<center><img src='https://user-images.githubusercontent.com/33534771/74589801-e603cf00-504b-11ea-862c-765c57d3169b.png' width='50%'></center><br>
 
-상위층(7,6,5) : 데이터를 만들어내는게 주된업무
+상위층(7,6,5) : 데이터를 만드는 것이 주기능
 - 7 계층(응용 계층): 사용자와 직접 상호작용하는 응용 프로그램들이 포함된 계층
 - 6 계층(표현 계층): 데이터의 형식(Format)을 정의하는 계층
 - 5 계층(세션 계층): 컴퓨터끼리 통신을 하기 위해 세션을 만드는 계층
 <br>
 
-하위층(4,3,2) : 데이터를 전송하는게 주된업무
+하위층(4,3,2) : 데이터를 전송하는 것이 주기능
 - 4 계층(전송 계층): 최종 수신 프로세스로 데이터의 전송을 담당하는 계층
 - 3 계층(네트워크 계층): 패킷을 목적지까지 가장 빠른 길로 전송하기 위한 계층
 - 2 계층(데이터링크 계층): 데이터의 물리적인 전송과 에러 검출, 흐름 제어를 담당하는 계층
@@ -33,7 +33,7 @@ permalink: /docs/CS/Network
 
 <br/><br/>
 
-## DNS(Domain Name System)
+### DNS(Domain Name System)
 - 도메인 이름과 IP 주소의 대응 관계를 데이터베이스 형태로 저장하고 제공하는 서비스 
 - 네트워크 상에서 사람이 기억할 수 쉽게 문자로 만들어진 도메인을 컴퓨터가 처리할 수 있는 IP주소로 바꾸는 시스템
 
@@ -41,7 +41,7 @@ permalink: /docs/CS/Network
 
 <br/><br/>
 
-**TCP / UDP**
+### TCP / UDP
 
 UDP
 - 전송 방식은 너무 단순해서 서비스의 신뢰성이 낮고, 데이터그램 도착 순서가 바뀌거나 중복되거나 누락이 되기도한다.
@@ -72,7 +72,7 @@ POST
 
 <br/><br/>
 
-**HTTP(Hyper Text Transfer Protocol)**
+### HTTP(Hyper Text Transfer Protocol)
 
 HTTP는 텍스트 기반의 통신 규약으로 인터넷에서 데이터를 주고받을 수 있는 프로토콜입니다.
 - HTTP 메시지는 HTTP 서버와 HTTP 클라이언트에 의해 해석이 된다.
@@ -81,6 +81,6 @@ HTTP는 텍스트 기반의 통신 규약으로 인터넷에서 데이터를 주
 - HTTP는 연결을 유지하지 않는 프로토콜이기 때문에 요청/응답 방식으로 동작한다.
 
 <center><img src='https://mdn.mozillademos.org/files/13691/HTTP_Response.png' width='70%'></center>
-x
+
 <br/><br/>
 
