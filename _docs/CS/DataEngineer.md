@@ -12,7 +12,7 @@ permalink: /docs/CS/DataEngineer
 
 ---
 
-## RDBMS / NoSQL
+### RDBMS / NoSQL
 
 #### RDBMS
 
@@ -46,7 +46,7 @@ NoSQL은 정확한 데이터 구조를 알 수 없고 변경/확장이 될 수 �
 
 ---
 
-## 데이터 웨어하우스(DW, Data Warehouse)
+### 데이터 웨어하우스(DW, Data Warehouse)
 
 사용자의 의사 결정에 도움을 주기 위하여, 기간시스템의 데이터베이스에 축적된 데이터를 공통의 형식으로 변환해서 관리하는 데이터베이스
 
