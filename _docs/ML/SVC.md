@@ -104,6 +104,4 @@ SVM은 데이터들을 올바르게 분리하면서 마진의 크기를 최대�
 
 [https://techblog-history-younghunjo1.tistory.com/78](https://techblog-history-younghunjo1.tistory.com/78)
 
-[https://muzukphysics.tistory.com/entry/ML-8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-SVM-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-Support-Vector-Machine]
-
-(https://muzukphysics.tistory.com/entry/ML-8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-SVM-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-Support-Vector-Machine)
+[김성범 [핵심 머신러닝]SVM모델](https://youtu.be/qFg8cDnqYCI)
