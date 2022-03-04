@@ -11,7 +11,7 @@ permalink: /docs/CS/Network
 
 ---
 
-### OSI 7계층
+## OSI 7계층
 
 <center><img src='https://user-images.githubusercontent.com/33534771/74589801-e603cf00-504b-11ea-862c-765c57d3169b.png' width='60%'></center>
 
@@ -33,7 +33,7 @@ permalink: /docs/CS/Network
 
 <br/><br/>
 
-### DNS(Domain Name System)
+## DNS(Domain Name System)
 - 도메인 이름과 IP 주소의 대응 관계를 데이터베이스 형태로 저장하고 제공하는 서비스 
 - 네트워크 상에서 사람이 기억할 수 쉽게 문자로 만들어진 도메인을 컴퓨터가 처리할 수 있는 IP주소로 바꾸는 시스템
 
@@ -55,7 +55,7 @@ TCP
 
 <br/><br/>
 
-**GET / POST**
+### GET / POST
 
 GET
 - GET은 서버로부터 정보를 조회하기 위해 설계된 메소드
