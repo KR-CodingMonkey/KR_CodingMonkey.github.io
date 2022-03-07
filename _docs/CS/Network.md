@@ -51,7 +51,7 @@ UDP
 TCP
 - 전송 제어 프로토콜(TCP)은 인터넷에 연결된 컴퓨터에서 실행되는 프로그램 간에 통신을 안정적으로, 순서대로, 누락없이 교환할 수 있게 합니다.
 - TCP는 UDP보다 느리지만 안전합니다.
-
+- TCP의 연결은 3-way handshake를 통해 이루어진다.
 <center><img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9a0c2%2FbtqKIpf6QGI%2Fv5akvGVZj4kVVvAzLVThF1%2Fimg.png" width = "70%"></center>
 
 <br/><br/>
