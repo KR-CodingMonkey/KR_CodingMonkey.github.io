@@ -30,7 +30,9 @@ permalink: /docs/CS/OS
 - 사용자 및 프로그램들 간에 자원이 형평성 있게 분배되도록 하는 균형자 역할도 제공한다.
 - 사용자와 운영 체제 자신을 보호하는 역할을 담당.
 
-<br/><br/>
+<br/>
+
+---
 
 ### REST
 - 웹에 존재하는 모든 자원(문서, 이미지, 동영상 등)에 고유한 URI를 부여해 활용하는 것으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법론
@@ -42,20 +44,26 @@ permalink: /docs/CS/OS
     - HTTP Method(POST, GET, PUT, DELETE)를 통해    
     - 해당 자원(URI)에 대한 CRUD Operation을 적용하는 것을 의미합니다.
 
-<br/><br/>
+<br/>
+
+---
 
 ### REST API
 - REST의 특징을 기반으로 API를 제공하는 것
 - 공공데이터, 구글 맵, 마이크로 서비스 등 대부분이 REST API를 통해 제공한다.
 - HTTP 표준을 기반으로 구현하기 때문에 HTTP를 지원하는 프로그램 언어를 사용하여 클라이언트와 서버를 구현할 수 있다.
 
-<br/><br/>
+<br/>
+
+---
 
 ### RESTful API
 - REST의 규칙(6가지)을 잘 지켜서 설계된 API를 RESTful API라고 한다.
 - 이해하기 쉽고 사용하기 쉬운 REST API를 만드는 것을 목적으로 성능이 중요하다면 꼭 RESTful하게 구현할 필요는 없다.
 
-<br/><br/>
+<br/>
+
+---
 
 ### 프로세스 / 쓰레드
 
@@ -82,7 +90,9 @@ permalink: /docs/CS/OS
 
 <center><img src="https://gmlwjd9405.github.io/images/os-process-and-thread/thread.png" width="50%"></center>
 
-<br/><br/>  
+<br/>
+
+--- 
 
 ### 컨텍스트 스위칭(Context Switching)
 
@@ -91,7 +101,9 @@ permalink: /docs/CS/OS
 - 컴퓨터는 메모리에 해야 할 여러 일(프로세스)들을 늘어놓고 하나씩 가져와서 처리한 다음 일이 끝나면 다시 메모리에 돌려준다.
 - 이 때, CPU는 한 번에 하나의 일만 처리할 수 있지만 Task를 빠르게 바꿔가며 실행하기 때문에 동시에 처리하는 것으로 보인다.
 
-<br/><br/>
+<br/>
+
+---
 
 ### 멀티 프로세스 / 멀티 쓰레드
 
