@@ -31,7 +31,9 @@ permalink: /docs/CS/Network
 
 - 1 계층(물리 계층): 데이터를 전기 신호로 바꾸어주는 계층(하드웨어적인 부분)
 
-<br/><br/>
+<br/>
+
+---
 
 ### DNS(Domain Name System)
 - 도메인 이름과 IP 주소의 대응 관계를 데이터베이스 형태로 저장하고 제공하는 서비스 
@@ -39,7 +41,9 @@ permalink: /docs/CS/Network
 
     ex ) www.naver.com -> 125.209.222.141
 
-<br/><br/>
+<br/>
+
+---
 
 ### TCP / UDP
 
@@ -54,7 +58,9 @@ TCP
 - TCP의 연결은 3-way handshake를 통해 이루어진다.
 <center><img src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9a0c2%2FbtqKIpf6QGI%2Fv5akvGVZj4kVVvAzLVThF1%2Fimg.png" width = "70%"></center>
 
-<br/><br/>
+<br/>
+
+---
 
 ### GET / POST
 
@@ -72,7 +78,9 @@ POST
 - 완전히 안전하다는 것은 아니지만 URL에 데이터가 노출되지 않아 GET보다는 안전합니다.
 
 
-<br/><br/>
+<br/>
+
+---
 
 ### HTTP(Hyper Text Transfer Protocol)
 
@@ -84,5 +92,7 @@ HTTP는 텍스트 기반의 통신 규약으로 인터넷에서 데이터를 주
 
 <center><img src='https://mdn.mozillademos.org/files/13691/HTTP_Response.png' width='70%'></center>
 
-<br/><br/>
+<br/>
+
+---
 
