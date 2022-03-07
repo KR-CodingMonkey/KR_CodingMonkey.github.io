@@ -26,9 +26,10 @@ permalink: docs/DA/movie
 - num_actor : 주연배우수
 - box_off_num : 관객수
 
+**데이터 셋**: [영화 관객수 데이터](https://dacon.io/competitions/open/235536/data)
+
 
 ## Load Data
-
 
 ```python
 import pandas as pd
