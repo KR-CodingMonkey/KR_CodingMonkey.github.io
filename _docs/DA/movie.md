@@ -581,7 +581,7 @@ train[train['screening_rat']=='전체 관람가']
 
 
 
-전체 관람가의 관객수가 왜 이렇게 낮은지 봤더니... 이해했습니다..
+전체 관람가의 관객수가 왜 이렇게 낮은지 봤더니...
 
 
 ```python
@@ -591,9 +591,7 @@ sns.heatmap(train.corr(), annot=True)
 plt.show()
 ```
 
-
-    
-<center><img scr= "https://user-images.githubusercontent.com/76420201/155699753-db08afe0-3326-4c35-a8a6-11a4ab9b79ae.png"></center>
+<center><img src="https://user-images.githubusercontent.com/76420201/155699753-db08afe0-3326-4c35-a8a6-11a4ab9b79ae.png"></center>
 
     
 
