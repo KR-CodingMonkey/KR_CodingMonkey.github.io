@@ -581,12 +581,7 @@ train[train['screening_rat']=='전체 관람가']
 
 
 
-음... 그럴만 한걸로..
-
-
-```python
-
-```
+전체 관람가의 관객수가 왜 이렇게 낮은지 봤더니... 이해했습니다..
 
 
 ```python
@@ -697,8 +692,8 @@ X_train = pd.get_dummies(X_train)
 X_test = pd.get_dummies(X_test)
 
 X_train.info()
-```
 
+'''
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 600 entries, 0 to 599
     Data columns (total 24 columns):
@@ -730,7 +725,8 @@ X_train.info()
      23  distributor_롯데엔터테인먼트    600 non-null    uint8
     dtypes: int64(2), uint8(22)
     memory usage: 22.4 KB
-    
+'''
+``` 
 
 ## 모델 학습 
 
@@ -833,9 +829,4 @@ sub.head()
 
 ```python
 sub.to_csv('output.csv', index=False)
-```
-
-
-```python
-
 ```
