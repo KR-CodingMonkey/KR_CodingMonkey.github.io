@@ -31,10 +31,10 @@ permalink: docs/DA/movie
 <script type="text/javascript">
 function calcHeight() {
 //find the height of the internal page
-var the_height= document.getElementById('handmotion').contentWindow. document.body.scrollHeight;
+var the_height= document.getElementById('movie').contentWindow. document.body.scrollHeight;
 //change the height of the iframe
-document.getElementById('handmotion').height= the_height; top.location.href = "#";
+document.getElementById('movie').height= the_height; top.location.href = "#";
 }
-
 </script>
-<iframe id="movie" src="{{ site.baseurl }}/docs/DA/notebooks/hand" frameborder="0" width="100%" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px" onload="calcHeight(),window.scrollTo(0,0)" height="1">movie</iframe>
+
+<iframe id="movie" src="{{ site.baseurl }}/docs/DA/notebooks/movie" frameborder="0" width="100%" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px" onload="calcHeight(),window.scrollTo(0,0)" height="1">movie</iframe>
