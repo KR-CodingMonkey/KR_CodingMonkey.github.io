@@ -29,6 +29,4 @@ document.getElementById('handmotion').height= the_height; top.location.href = "#
 <iframe id="handmotion" src="{{ site.baseurl }}/docs/DA/notebooks/hand" frameborder="0" width="100%" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px" onload="calcHeight(),window.scrollTo(0,0)" height="1"></iframe>
 
 
-https://ksy1526.github.io/myblog/jupyter/book/deep%20learning/pytorch/dacon/classifier/2022/03/07/dacon_hands.html
 
-https://seungwubaek.github.io/blog/tips/jupyter_to_html/
