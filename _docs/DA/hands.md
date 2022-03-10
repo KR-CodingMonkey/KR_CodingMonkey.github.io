@@ -26,13 +26,12 @@ permalink: docs/DA/handmotion
 [hand]({{ site.baseurl }}../assets/iframes/jupyter_notebooks/handmotion.html)
 <!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
 
-{{ site.baseurl }}
 
 test1
 {% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}
 
 test2
-{% include doc.html name="Sherlock Cluster" path="getting-started.md" %}
+{% include doc.html name="Sherlock Cluster" path="getting-started" %}
 
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
