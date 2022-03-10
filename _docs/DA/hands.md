@@ -22,7 +22,10 @@ permalink: docs/DA/handmotion
 
 
 [example]({{ site.baseurl }}_docs\getting-started.md)
+
 [hand]({{ site.baseurl }}assets/iframes/jupyter_notebooks/handmotion.html)
 <!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
+
+{{ site.baseurl }}
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
