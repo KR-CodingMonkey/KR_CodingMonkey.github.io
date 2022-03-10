@@ -41,9 +41,11 @@
     - title: "Data Analysys"
       url: "docs/DA"
       children:
-        - title: 1.Bike(DACON)
+        - title: 1.Bike[DACON]
           url: docs/DA/Bike
-        - title: 2.Movie(DACON)
+        - title: 2.Movie[DACON]
+          url: docs/DA/movie
+        - title: 3.handmotion[DACON]
           url: docs/DA/movie
         - title: Fake News
           url: docs/DA/Fake_news
