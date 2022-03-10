@@ -13064,6 +13064,8 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
+}div#notebook-container{
+  padding: 6ex 12ex 8ex 12ex;
 }@media print {
   div.cell {
     display: block;
@@ -13111,7 +13113,21 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">dirve</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -13127,7 +13143,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;id&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -13143,11 +13159,7 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[33]:</div>
-
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13406,7 +13418,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span>
@@ -13419,11 +13431,7 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[34]:</div>
-
 
 
 
@@ -13472,7 +13480,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">df_data</span> <span class="o">=</span> <span class="n">train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;target&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -13488,11 +13496,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(2335, 32) (2335,)
@@ -13506,7 +13510,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -13525,11 +13529,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
 
 
 
@@ -13545,7 +13545,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
@@ -13562,11 +13562,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
 
 
 
@@ -13582,7 +13578,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># rf.predict(y_train)</span>
@@ -13599,11 +13595,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>0.565068493150685
@@ -13618,7 +13610,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -13634,7 +13626,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">k_list</span><span class="p">:</span>
@@ -13653,11 +13645,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt"></div>
-
 
 
 
@@ -13675,7 +13663,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -13689,11 +13677,7 @@ Name: target, dtype: float64</pre>
 <div class="output_wrapper">
 <div class="output">
 
-
 <div class="output_area">
-
-    <div class="prompt output_prompt">Out[26]:</div>
-
 
 
 
@@ -13709,7 +13693,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">pre</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
@@ -13722,7 +13706,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span>
@@ -13735,7 +13719,7 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/Dacon/hand_gesture_data/sample_submission.csv&#39;</span><span class="p">)</span>
@@ -13750,7 +13734,200 @@ Name: target, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># %%shell </span>
+<span class="c1"># jupyter nbconvert --to html --no-promt ///content/Untitled0.ipynb</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This application is used to convert notebook files (*.ipynb) to various other
+formats.
+
+WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see &#39;--help-all&#39;.
+
+--execute
+    Execute the notebook prior to export.
+--allow-errors
+    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if &#39;--execute&#39; was specified, too.
+--no-input
+    Exclude input cells and output prompts from converted document. 
+    This mode is ideal for generating code-free reports.
+--stdout
+    Write notebook output to stdout instead of files.
+--stdin
+    read a single notebook file from stdin. Write the resulting notebook with default basename &#39;notebook.*&#39;
+--inplace
+    Run nbconvert in place, overwriting the existing notebook (only 
+    relevant when converting to notebook format)
+-y
+    Answer yes to any questions instead of prompting.
+--clear-output
+    Clear output of current file and save in place, 
+    overwriting the existing notebook.
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--no-prompt
+    Exclude input and output prompts from converted document.
+--generate-config
+    generate default config file
+--nbformat=&lt;Enum&gt; (NotebookExporter.nbformat_version)
+    Default: 4
+    Choices: [1, 2, 3, 4]
+    The nbformat version to write. Use this to downgrade notebooks.
+--output-dir=&lt;Unicode&gt; (FilesWriter.build_directory)
+    Default: &#39;&#39;
+    Directory to write output(s) to. Defaults to output to the directory of each
+    notebook. To recover previous default behaviour (outputting to the current
+    working directory) use . as the flag value.
+--writer=&lt;DottedObjectName&gt; (NbConvertApp.writer_class)
+    Default: &#39;FilesWriter&#39;
+    Writer class used to write the  results of the conversion
+--log-level=&lt;Enum&gt; (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, &#39;DEBUG&#39;, &#39;INFO&#39;, &#39;WARN&#39;, &#39;ERROR&#39;, &#39;CRITICAL&#39;)
+    Set the log level by value or name.
+--reveal-prefix=&lt;Unicode&gt; (SlidesExporter.reveal_url_prefix)
+    Default: u&#39;&#39;
+    The URL prefix for reveal.js (version 3.x). This defaults to the reveal CDN,
+    but can be any url pointing to a copy  of reveal.js.
+    For speaker notes to work, this must be a relative path to a local  copy of
+    reveal.js: e.g., &#34;reveal.js&#34;.
+    If a relative path is given, it must be a subdirectory of the current
+    directory (from which the server is run).
+    See the usage documentation
+    (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-
+    slideshow) for more details.
+--to=&lt;Unicode&gt; (NbConvertApp.export_format)
+    Default: &#39;html&#39;
+    The export format to be used, either one of the built-in formats
+    [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;,
+    &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;] or a dotted object name that represents
+    the import path for an `Exporter` class
+--template=&lt;Unicode&gt; (TemplateExporter.template_file)
+    Default: u&#39;&#39;
+    Name of the template file to use
+--output=&lt;Unicode&gt; (NbConvertApp.output_base)
+    Default: &#39;&#39;
+    overwrite base name use for output files. can only be used when converting
+    one notebook at a time.
+--post=&lt;DottedOrNone&gt; (NbConvertApp.postprocessor_class)
+    Default: u&#39;&#39;
+    PostProcessor class used to write the results of the conversion
+--config=&lt;Unicode&gt; (JupyterApp.config_file)
+    Default: u&#39;&#39;
+    Full path of a config file.
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    The simplest way to use nbconvert is
+    
+    &gt; jupyter nbconvert mynotebook.ipynb
+    
+    which will convert mynotebook.ipynb to the default format (probably HTML).
+    
+    You can specify the export format with `--to`.
+    Options include [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;].
+    
+    &gt; jupyter nbconvert --to latex mynotebook.ipynb
+    
+    Both HTML and LaTeX support multiple output templates. LaTeX includes
+    &#39;base&#39;, &#39;article&#39; and &#39;report&#39;.  HTML includes &#39;basic&#39; and &#39;full&#39;. You
+    can specify the flavor of the format used.
+    
+    &gt; jupyter nbconvert --to html --template basic mynotebook.ipynb
+    
+    You can also pipe the output to stdout, rather than a file
+    
+    &gt; jupyter nbconvert mynotebook.ipynb --stdout
+    
+    PDF is generated via latex
+    
+    &gt; jupyter nbconvert mynotebook.ipynb --to pdf
+    
+    You can get (and serve) a Reveal.js-powered slideshow
+    
+    &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
+    
+    Multiple notebooks can be given at the command line in a couple of 
+    different ways:
+    
+    &gt; jupyter nbconvert notebook*.ipynb
+    &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
+    
+    or you can specify the notebooks list in a config file, containing::
+    
+        c.NbConvertApp.notebooks = [&#34;my_notebook.ipynb&#34;]
+    
+    &gt; jupyter nbconvert --config mycfg.py
+
+[NbConvertApp] CRITICAL | Bad config encountered during initialization:
+[NbConvertApp] CRITICAL | Unrecognized flag: &#39;--no-promt&#39;
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-43010070d151&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_cell_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;shell&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;jupyter nbconvert --to html --no-promt ///content/Untitled0.ipynb&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2115</span>             magic_arg_s <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>var_expand<span class="ansi-blue-fg">(</span>line<span class="ansi-blue-fg">,</span> stack_depth<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2116</span>             <span class="ansi-green-fg">with</span> self<span class="ansi-blue-fg">.</span>builtin_trap<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 2117</span><span class="ansi-red-fg">                 </span>result <span class="ansi-blue-fg">=</span> fn<span class="ansi-blue-fg">(</span>magic_arg_s<span class="ansi-blue-fg">,</span> cell<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2118</span>             <span class="ansi-green-fg">return</span> result
+<span class="ansi-green-intense-fg ansi-bold">   2119</span> 
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">_shell_cell_magic</span><span class="ansi-blue-fg">(args, cmd)</span>
+<span class="ansi-green-intense-fg ansi-bold">    111</span>   result <span class="ansi-blue-fg">=</span> _run_command<span class="ansi-blue-fg">(</span>cmd<span class="ansi-blue-fg">,</span> clear_streamed_output<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    112</span>   <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> parsed_args<span class="ansi-blue-fg">.</span>ignore_errors<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 113</span><span class="ansi-red-fg">     </span>result<span class="ansi-blue-fg">.</span>check_returncode<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    114</span>   <span class="ansi-green-fg">return</span> result
+<span class="ansi-green-intense-fg ansi-bold">    115</span> 
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">check_returncode</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    137</span>     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>returncode<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    138</span>       raise subprocess.CalledProcessError(
+<span class="ansi-green-fg">--&gt; 139</span><span class="ansi-red-fg">           returncode=self.returncode, cmd=self.args, output=self.output)
+</span><span class="ansi-green-intense-fg ansi-bold">    140</span> 
+<span class="ansi-green-intense-fg ansi-bold">    141</span>   <span class="ansi-green-fg">def</span> _repr_pretty_<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> p<span class="ansi-blue-fg">,</span> cycle<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># pylint:disable=unused-argument</span>
+
+<span class="ansi-red-fg">CalledProcessError</span>: Command &#39;jupyter nbconvert --to html --no-promt ///content/Untitled0.ipynb&#39; returned non-zero exit status 1.</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span>
