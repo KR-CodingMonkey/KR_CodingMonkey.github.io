@@ -23,4 +23,17 @@ permalink: docs/DA/handmotion
 
 <iframe src='{{ site.baseurl }}/docs/DA/hand' width="100%" height="100%" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no style="overflow-y:hidden">test</iframe>
 
+
+<script type="text/javascript">
+function calcHeight() {
+//find the height of the internal page
+var the_height= document.getElementById('handmotion').contentWindow. document.body.scrollHeight;
+//change the height of the iframe
+document.getElementById('handmotion').height= the_height; top.location.href = "#";
+}
+
+</script>
+<iframe id="handmotion" src="{{ site.baseurl }}/docs/DA/hand" frameborder="0" width="100%" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px" onload="calcHeight(),window.scrollTo(0,0)" height="1"></iframe>
+
+
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
