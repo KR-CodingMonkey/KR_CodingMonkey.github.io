@@ -22,7 +22,9 @@ permalink: docs/DA/handmotion
 
 - [here is that link](assets/iframes/jupyter_notebooks/handmotion/)
 - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html)
-- [here is that link](assets/iframes/jupyter_notebooks/_docs\DA\Iris.md)
+- [here is that link](\DA\Iris.md)
+- [here is that link](assets\iframes\jupyter_notebooks\test.html)
+pages\search.html
 
 
 
