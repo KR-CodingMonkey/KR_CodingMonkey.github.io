@@ -21,7 +21,8 @@ permalink: docs/DA/handmotion
 <iframe id="handmotion" name="handmotion" src="subfolder/example-page">test</iframe>
 
 
-[example]({{ site.baseurl }}/docs/clusters/sherlock/getting-started.md)
-- [here is that link](assets/iframes/jupyter_notebooks/handmotion.html)
+[example]({{ site.baseurl }}_docs\getting-started.md)
+[hand]({{ site.baseurl }}assets/iframes/jupyter_notebooks/handmotion.html)
+<!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
