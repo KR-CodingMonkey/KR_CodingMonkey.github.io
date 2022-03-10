@@ -23,15 +23,11 @@ permalink: docs/DA/handmotion
 
 [example]({{ site.baseurl }}/_docs/getting-started.md)
 
-[hand]({{ site.baseurl }}../assets/iframes/jupyter_notebooks/handmotion.html)
+[hand]({{ site.baseurl }}/assets/iframes/jupyter_notebooks/handmotion)
 <!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
 
-[doc/getting-started]({{ site.baseurl }}doc/getting-started)
-[/doc/getting-started]({{ site.baseurl }}/doc/getting-started)
 
-
-test1
-{% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}
+[/doc/getting-started]({{ site.baseurl }}/docs/getting-started)
 
 test2
 {% include doc.html name="Sherlock Cluster" path="getting-started" %}
