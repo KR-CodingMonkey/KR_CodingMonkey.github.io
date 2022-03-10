@@ -19,7 +19,7 @@ permalink: docs/DA/handmotion
 
 
 
-<iframe id="handmotion1" name="handmotion1" src="{{ site.baseurl }}/docs/DA/hand">test</iframe>
+<iframe id="handmotion" name="handmotion" src="{{ site.baseurl }}/docs/DA/hand" width="90%" height="300">test</iframe>
 
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
