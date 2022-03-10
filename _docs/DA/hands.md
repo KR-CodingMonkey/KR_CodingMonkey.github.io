@@ -28,4 +28,11 @@ permalink: docs/DA/handmotion
 
 {{ site.baseurl }}
 
+test1
+{% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}
+
+test2
+{% include doc.html name="Sherlock Cluster" path="_docs\getting-started.md" %}
+
+
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
