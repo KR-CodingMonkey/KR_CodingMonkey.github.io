@@ -21,6 +21,6 @@ permalink: docs/DA/handmotion
 
 <!-- <iframe id="handmotion1" name="handmotion1" src="{{ site.baseurl }}/docs/DA/hand">test</iframe> -->
 
-<iframe src='{{ site.baseurl }}/docs/DA/hand' width="100%" height="100%" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=yes vspace=0>/iframe>
+<iframe src='{{ site.baseurl }}/docs/DA/hand' width="100%" height="100%" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=yes vspace=0>test</iframe>
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
