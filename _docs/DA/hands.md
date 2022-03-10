@@ -17,13 +17,6 @@ permalink: docs/DA/handmotion
 
 **데이터 셋**: [서울시 따릉이 데이터](https://dacon.io/competitions/open/235576/data)
 
-<!-- <iframe id="handmotion" name="handmotion" src="{{ site.baseurl }}/assets/iframes/jupyter_notebooks/handmotion">test</iframe> -->
-
-<!-- <iframe id="handmotion1" name="handmotion1" src="{{ site.baseurl }}/docs/DA/hand">test</iframe> -->
-
-<iframe src='{{ site.baseurl }}/docs/DA/hand' width="100%" height="100%" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no style="overflow-y:hidden">test</iframe>
-
-
 <script type="text/javascript">
 function calcHeight() {
 //find the height of the internal page
@@ -34,6 +27,3 @@ document.getElementById('handmotion').height= the_height; top.location.href = "#
 
 </script>
 <iframe id="handmotion" src="{{ site.baseurl }}/docs/DA/hand" frameborder="0" width="100%" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px" onload="calcHeight(),window.scrollTo(0,0)" height="1"></iframe>
-
-
-https://seungwubaek.github.io/blog/tips/jupyter_to_html/
