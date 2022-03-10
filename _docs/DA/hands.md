@@ -1,11 +1,11 @@
 ---
-title: 서울시 따릉이 자전거 이용 예측
+title: 손동작 분류
 tags: 
  - Data analysis
  - Dacon
  - 따릉이
  - RandomForestRegressor
-description: 서울시 따릉이 자전거 이용 예측 AI모델 
+description: 손동작 분류
 permalink: docs/DA/handmotion
 ---
 
