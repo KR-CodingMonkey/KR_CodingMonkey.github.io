@@ -28,18 +28,8 @@ permalink: docs/DA/handmotion
 
 
 
-<style type="text/css">
-    /*!
-*
-* Twitter Bootstrap
-*
-*/
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+<!-- <style type="text/css">
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -12964,7 +12954,7 @@ ul.typeahead-list  > li > a.pull-right {
   margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
-    </style>
+    </style> -->
 <style type="text/css">
     .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
