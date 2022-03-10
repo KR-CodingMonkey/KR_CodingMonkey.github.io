@@ -17,7 +17,8 @@ permalink: docs/DA/handmotion
 
 **데이터 셋**: [서울시 따릉이 데이터](https://dacon.io/competitions/open/235576/data)
 
-<iframe id="handmotion" name="handmotion" src="{{ site.baseurl }}/assets/iframes/jupyter_notebooks/handmotion">test</iframe>
+<iframe id="handmotion" name="handmotion" src="{{ site.baseurl }}/assets/iframes/jupyter_notebooks/handmotion">
+<!-- <iframe id="handmotion" name="handmotion" src="{{ site.baseurl }}/assets/iframes/jupyter_notebooks/handmotion">test</iframe> -->
 
 
 
