@@ -28,7 +28,7 @@ permalink: docs/DA/handmotion
 
 
 
-<!-- <style type="text/css">
+<style type="text/css">
 
 html {
   font-family: sans-serif;
@@ -12954,8 +12954,8 @@ ul.typeahead-list  > li > a.pull-right {
   margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
-    </style> -->
-<style type="text/css">
+    </style>
+<!-- <style type="text/css">
     .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
@@ -13021,8 +13021,8 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-    </style>
-<style type="text/css">
+    </style> -->
+<!-- <style type="text/css">
     
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
@@ -13060,7 +13060,7 @@ ul.typeahead-list  > li > a.pull-right {
 
 .ansi-bold { font-weight: bold; }
 
-    </style>
+    </style> -->
 
 
 <style type="text/css">
