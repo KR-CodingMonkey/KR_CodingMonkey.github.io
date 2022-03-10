@@ -20,6 +20,8 @@ permalink: docs/DA/handmotion
 <iframe id="handmotion" name="handmotion" src="assets/iframes/jupyter_notebooks/handmotion.html">test</iframe>
 <iframe id="handmotion" name="handmotion" src="assets/iframes/jupyter_notebooks/handmotion/">test</iframe>
 
+- [here is that link](assets/iframes/jupyter_notebooks/handmotion/)
+- [here is that link](assets/iframes/jupyter_notebooks/handmotion.html)
 
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
