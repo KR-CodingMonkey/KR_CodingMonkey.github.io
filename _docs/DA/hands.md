@@ -26,6 +26,8 @@ permalink: docs/DA/handmotion
 [hand]({{ site.baseurl }}../assets/iframes/jupyter_notebooks/handmotion.html)
 <!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
 
+[hand]({{ site.baseurl }}/getting-started)
+
 
 test1
 {% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}
