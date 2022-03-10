@@ -21,9 +21,9 @@ permalink: docs/DA/handmotion
 <iframe id="handmotion" name="handmotion" src="subfolder/example-page">test</iframe>
 
 
-[example]({{ site.baseurl }}_docs\getting-started.md)
+[example]({{ site.baseurl }}../_docs\getting-started.md)
 
-[hand]({{ site.baseurl }}assets/iframes/jupyter_notebooks/handmotion.html)
+[hand]({{ site.baseurl }}../assets/iframes/jupyter_notebooks/handmotion.html)
 <!-- - [here is that link](assets/iframes/jupyter_notebooks/handmotion.html) -->
 
 {{ site.baseurl }}
@@ -32,7 +32,7 @@ test1
 {% include doc.html name="Sherlock Cluster" path="clusters/sherlock/getting-started" %}
 
 test2
-{% include doc.html name="Sherlock Cluster" path="_docs\getting-started.md" %}
+{% include doc.html name="Sherlock Cluster" path="getting-started.md" %}
 
 
 https://seungwubaek.github.io/blog/tips/jupyter_to_html/
