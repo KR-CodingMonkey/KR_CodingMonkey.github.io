@@ -28,7 +28,7 @@
         # - title: hadoop-1
         #   url: "docs/Skills/Hadoop/hadoop1"
     - title: Data Engineer
-      url: "docs/CS/DataEngineer"
+      url: "docs/DE/DataEngineer"
       children:
         - title: Decision Tree
           url: docs/ML/DT
