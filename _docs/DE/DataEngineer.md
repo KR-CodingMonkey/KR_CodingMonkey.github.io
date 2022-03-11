@@ -5,7 +5,7 @@ tags:
  - Data
  - Data Engineer
 description: Data Engineer
-permalink: /docs/CS/DataEngineer
+permalink: /docs/DE/DataEngineer
 ---
 
 # Data Engineer
