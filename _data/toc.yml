@@ -30,8 +30,8 @@
     - title: Data Engineer
       url: "docs/DE/DataEngineer"
       children:
-        - title: Decision Tree
-          url: docs/ML/DT
+        - title: TABLE
+          url: docs/DE/table
     - title: "Machine Learning"
       url: "docs/ML"
       children:
