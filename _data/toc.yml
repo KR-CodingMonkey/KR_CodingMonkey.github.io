@@ -6,8 +6,6 @@
       url: "docs/CS/Network"
     - title: 운영체제(OS)
       url: "docs/CS/OS"
-    - title: Data Engineer
-      url: "docs/CS/DataEngineer"
     - title: 개발언어(python)
       url: docs/CS/Programming_Language
     - title: 자료구조
@@ -29,6 +27,11 @@
     #       url: "docs/Skills/Hadoop/hadoop0"
         # - title: hadoop-1
         #   url: "docs/Skills/Hadoop/hadoop1"
+    - title: Data Engineer
+      url: "docs/CS/DataEngineer"
+      children:
+        - title: Decision Tree
+          url: docs/ML/DT
     - title: "Machine Learning"
       url: "docs/ML"
       children:
