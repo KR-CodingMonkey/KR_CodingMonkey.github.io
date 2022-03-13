@@ -32,6 +32,8 @@
       children:
         - title: TABLE
           url: docs/DE/table
+          - title: TABLE
+          url: docs/DE/datatype
     - title: "Machine Learning"
       url: "docs/ML"
       children:
