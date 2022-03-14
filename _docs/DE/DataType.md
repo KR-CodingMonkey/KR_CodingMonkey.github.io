@@ -55,6 +55,8 @@ permalink: /docs/DE/datatype
 - 수치적인 의미를 가지나 소수점의 형태로 표현할 수 없는 데이터
 - 사람(1명, 2명..), 불량품(1대, 2대..)
 
+<br>
+
 ## 4. 연속형 데이터(Continous Data)
 
 - 연속되는 수치형 데이터
@@ -77,6 +79,6 @@ permalink: /docs/DE/datatype
 | 다변량(2개 이상) | 연속형 데이터 |      선 그래프(Line Chart)     |
 |                  |               |         산점도(Scatter)        |
 |                  | 범주형 데이터 |         히트맵(Heatmap)        |
-    
+
 
 https://junklee.tistory.com/10
