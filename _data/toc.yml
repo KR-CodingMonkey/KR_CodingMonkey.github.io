@@ -32,7 +32,7 @@
       children:
         - title: TABLE
           url: docs/DE/table
-          - title: DataType
+        - title: DataType
           url: docs/DE/datatype
     - title: "Machine Learning"
       url: "docs/ML"
