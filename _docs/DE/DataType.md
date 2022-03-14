@@ -67,8 +67,9 @@ permalink: /docs/DE/datatype
     - 20대, 30대: 순서형 데이터
 
 
-<center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG"></center>
+<center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG" width="120%"></center>
 
 
+## REF
 
-https://junklee.tistory.com/10
+[https://junklee.tistory.com/10](https://junklee.tistory.com/10)
