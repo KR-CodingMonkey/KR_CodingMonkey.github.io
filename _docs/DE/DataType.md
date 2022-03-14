@@ -67,18 +67,8 @@ permalink: /docs/DE/datatype
     - 20대, 30대: 순서형 데이터
 
 
+<center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG"></center>
 
-|     변수 개수    |   변수 형태   |             그래프             |
-|:----------------:|:-------------:|:------------------------------:|
-|    일변량(1개)   | 연속형 데이터 |      히스토그램(Histogram)     |
-|                  |               |      박스 그래프(Box Plot)     |
-|                  |               | 커널 밀도 곡선(Kernel Density) |
-|                  |               |  바이올린 그래프(Violin Plot)  |
-|                  | 범주형 데이터 |     막대 그래프(Bar Chart)     |
-|                  |               |      원 그래프(Pie Chart)      |
-| 다변량(2개 이상) | 연속형 데이터 |      선 그래프(Line Chart)     |
-|                  |               |         산점도(Scatter)        |
-|                  | 범주형 데이터 |         히트맵(Heatmap)        |
 
 
 https://junklee.tistory.com/10
