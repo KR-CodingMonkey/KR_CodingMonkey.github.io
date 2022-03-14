@@ -3,8 +3,9 @@ title: 손동작 분류
 tags: 
  - Data analysis
  - Dacon
- - 따릉이
+ - hand gesture
  - RandomForestRegressor
+ - KNN
 description: 손동작 분류
 permalink: docs/DA/handmotion
 ---
