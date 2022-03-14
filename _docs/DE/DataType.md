@@ -18,6 +18,8 @@ permalink: /docs/DE/datatype
 
 # 데이터 타입(Data Type)
 
+<center><img src="https://studyonline.unsw.edu.au/sites/default/files/field/image/types%20of%20data.png"></center>
+
 데이터 분석 시 다양한 데이터 타입들을 볼 수 있습니다.
 
 - Qualitative(질적), Categorical(범주형)
@@ -73,3 +75,4 @@ permalink: /docs/DE/datatype
 ## REF
 
 [https://junklee.tistory.com/10](https://junklee.tistory.com/10)
+[https://studyonline.unsw.edu.au/blog/types-of-data](https://studyonline.unsw.edu.au/blog/types-of-data)
