@@ -64,3 +64,4 @@ permalink: /docs/DE/table
 
 
 
+[https://www.sciencedirect.com/topics/computer-science/transactional-data](https://www.sciencedirect.com/topics/computer-science/transactional-data)
