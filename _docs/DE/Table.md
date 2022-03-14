@@ -1,12 +1,13 @@
 ---
 title: Data Engineer
 tags: 
- - CS
+ - DB
  - BigData
  - Data Engineer
  - Master Table
  - Transaction Table
  - History Table
+ - Database
 description: Data Engineer
 permalink: /docs/DE/table
 ---
@@ -14,20 +15,21 @@ permalink: /docs/DE/table
 # Master Table & Transaction Table
 
 - 데이터베이스 시스템에는 Master와 Transaction 두 가지 유형의 테이블이 있습니다.
-- 데이터 웨어하우스 혹은 데이터 레이크 구축시, 원천테이블의 종류와  특성을 파악하고 설계하는 것이 중요합니다.
-- 데이터베이스 개발 중에 Master Table과 Transaction Table을 식별하여 어떻게 상호작용이 일어나는지 이해하는 것 또한 중요합니다. 
+- 데이터 웨어하우스 혹은 데이터 레이크 구축 시, 원천테이블의 종류와  특성을 파악하고 설계하는 것이 중요합니다.
+- 데이터베이스 개발 중에는 Master Table과 Transaction Table을 식별하여 어떻게 상호작용이 일어나는지 이해하는 것 또한 중요합니다. 
 
-<center><img src="https://metamug.com/article/images/differ-master-vs-transaction-table.svg"></center>
+<center><img src="https://metamug.com/article/images/differ-master-vs-transaction-table.svg"></center><br>
 
 
 ## Master Table
 
 - 기준이 되는 테이블
 - 마스터 테이블은 DB를 설계할 때 가장 우선적으로 설계됩니다 
-- 마스터 테이블은 시스템의 기본이 되는 테이블이기 때문에 마스터 테이블의 열과 제약조건은 시스템의 Entity를 나타냅니다.
-- ex) 고객마스터, 계정마스터..
+- 마스터 테이블은 시스템의 기본이 되는 테이블이기 때문에 마스터 테이블의 열(column)과 제약조건은 시스템의 Entity를 나타냅니다.
+- ex) 고객마스터, 계정마스터, etc
 
 또한 마스터 테이블은 가장 최신의 상태를 유지하고 변경이 있을때마다 마스터 테이블의 정보를 저장하는 History Table(이력 테이블)이 존재합니다.(가변속성들을 관리 위함)
+<br>
 
 ## Transaction Table
 
@@ -36,6 +38,8 @@ permalink: /docs/DE/table
 
 - 주문, 서비스이용내역.. etc 
 - CREATE OR DELETE, UPDATE는 없음
+
+<cetner><img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124055476000122-f12-01-9780124055476.jpg"></center>
 
 원칙적으로 트랜잭션 테이블은 등록만 가능한 테이블입니다. 즉, 레코드를 등록 또는 삭제만 가능하기 때문에, History Table은 존재하지 않습니다.
 
