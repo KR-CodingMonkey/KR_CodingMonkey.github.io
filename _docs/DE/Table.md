@@ -47,7 +47,7 @@ permalink: /docs/DE/table
 
 일반적으로 마스터 데이터는 변경되지 않으며 모든 트랜잭션에 대해서 생성 될 필요가 없습니다. 예를 들어 한 고객이 서로 다른 시간에 여러 제품을 구매하는 경우 각 판매에 대해 Transaction record를 생성해야 하지만 고객에 대한 데이터는 동일하게 유지됩니다. 
 
-<cetner><img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124055476000122-f12-01-9780124055476.jpg"></center>
+<center><img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124055476000122-f12-01-9780124055476.jpg"></center>
 
 마스터 데이터가 트랜잭션 레코드의 일부를 형성하는 방법을 보여줍니다. 이 경우 램프 및 의자 제품을 판매할 때 해당 제품ID 및 고객ID를 참조하는 트랜잭션입니다. 제품 및 고객 레코드가 이미 있는 경우 이 새 트랜잭션에 대해 다시 만들거나 수정할 필요가 없습니다. 그러나 거래의 고유 식별자(예: 판매 ID) 및 판매 시간과 같은 거래의 다른 데이터는 변경해야 합니다. 따라서 트랜잭션 데이터는 일반적으로 더 자주 생성되고 변경되기 때문에 마스터 데이터보다 변동성이 높습니다. 이 간단한 예는 거래의 실제 판매 가격과 마스터 데이터의 제품 가격을 보여주고 있으며 거래에 따라 실제 가격이 변동될 수 있음을 보여주고 있습니다.
 
@@ -63,5 +63,6 @@ permalink: /docs/DE/table
 
 
 
+## REF
 
 [https://www.sciencedirect.com/topics/computer-science/transactional-data](https://www.sciencedirect.com/topics/computer-science/transactional-data)
