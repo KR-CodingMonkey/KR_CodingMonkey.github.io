@@ -34,3 +34,4 @@ but generated with the include statement:
 {% raw %}{% include doc.html name="here" path="subfolder/example-page" %}{% endraw %}
 ```
 
+https://www.tablesgenerator.com/markdown_tables
