@@ -4,9 +4,13 @@ tags:
  - CS
  - BigData
  - Data Engineer
- - Master Table
- - Transaction Table
- - History Table
+ - Data Type
+ - Qualitative
+ - Quantitative
+ - Continuous
+ - Ordinal
+ - Categorical
+ - Numerical
 description: Data Type
 permalink: /docs/DE/datatype
 ---
