@@ -29,6 +29,7 @@ permalink: /docs/DE/table
 - ex) 고객마스터, 계정마스터, etc.
 
 또한 마스터 테이블은 가장 최신의 상태를 유지하고 변경이 있을때마다 마스터 테이블의 정보를 저장하는 History Table(이력 테이블)이 존재합니다.(가변속성들을 관리 위함)
+
 <br>
 
 ## Transaction Table
