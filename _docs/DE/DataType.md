@@ -30,7 +30,7 @@ permalink: /docs/DE/datatype
 
 <br>
 
-## 1. 명목형 데이터(Normial Data)
+## 1. 명목형 데이터(Nominal Data)
 
 - 순서가 없는 범주형 데이터
 - 성별(남/녀), 혈액형(A, B..), 요일(월, 화, 수..)
