@@ -74,7 +74,8 @@ permalink: /docs/DE/datatype
 
 ## 5. 구간 데이터(Interval Data)
 
-- Interval Data는 nominal data와 ordered data(순서형)의 특성을 가지고 있지만 정량화 할 수 있고 데이터 간의 차이를 수치로 나타낼 수 있습니다.<br>수치끼리 더하거나 뺄 수 있지만 곱하거나 나눌 수는 없습니다. 
+- nominal data와 ordered data(순서형)의 특성을 가지고 있지만 정량화 할 수 있고 데이터 간의 차이를 수치로 나타낼 수 있습니다.
+- 수치끼리 더하거나 뺄 수 있지만 곱하거나 나눌 수는 없습니다. 
     - ex) 20도 X 2는 40도가 아닙니다.
 - Interval Data의 0이라는 척도는 존재하지 않음을 의미하는 것이 아니라 의미가 있는 데이터로 인지해야 합니다. 
     - ex) 시간 00:00, 온도 0도
