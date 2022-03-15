@@ -25,7 +25,7 @@ permalink: /docs/DE/datatype
 
 - Qualitative(질적), Categorical(범주형)
     - Nomial(명목형): 순서가 없는 범주
-    - Ordinal(순서형): 순서가 있는 범주<br>
+    - Ordinal(순서형): 순서가 있는 범주
 
 - Quantitative(양적), Numerical(수치형)
     - Discrete(불연속적, 이산형): 연속되지 않는 수치
@@ -84,7 +84,7 @@ permalink: /docs/DE/datatype
 
 <br>
 
-### 6. 비율 데이터(Radio Data)
+## 6. 비율 데이터(Radio Data)
 
 - 비율 데이터 ex) 키, 무게, 높이, 거리 
 - 더하기, 빼기, 곱하기, 나누기 가능
