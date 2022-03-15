@@ -27,7 +27,7 @@
     #       url: "docs/Skills/Hadoop/hadoop0"
         # - title: hadoop-1
         #   url: "docs/Skills/Hadoop/hadoop1"
-    - title: Data Engineer
+    - title: "Data Engineer"
       url: "docs/DE/DataEngineer"
       children:
         - title: TABLE
