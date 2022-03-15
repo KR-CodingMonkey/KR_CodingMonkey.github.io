@@ -25,7 +25,7 @@ permalink: /docs/DE/datatype
 
 - Qualitative(질적), Categorical(범주형)
     - Nomial(명목형): 순서가 없는 범주
-    - Ordinal(순서형): 순서가 있는 범주
+    - Ordinal(순서형): 순서가 있는 범주<br>
 
 - Quantitative(양적), Numerical(수치형)
     - Discrete(불연속적, 이산형): 연속되지 않는 수치
@@ -98,7 +98,7 @@ permalink: /docs/DE/datatype
 비율 척도는 동일성, 순서 및 차이에 대한 추가 정보와 함께 각 데이터 포인트 내의 수치적 세부 사항에 대한 분석을 제공합니다.
 
 <br>
-<center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG" width="110%"></center>
+<center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG" width="100%"></center>
 
 <br>
 
