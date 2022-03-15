@@ -33,27 +33,6 @@ permalink: /docs/DE/datatype
 
 <br>
 
-
-## 1. 이산형 데이터(Discrete Data)
-
-- 연속되지 않는 수치형 데이터
-- 수치적인 의미를 가지나 소수점의 형태로 표현할 수 없는 데이터
-- 사람(1명, 2명..), 불량품(1대, 2대..)
-
-<br>
-
-## 2. 연속형 데이터(Continous Data)
-
-- 연속되는 수치형 데이터
-- 수치적으로 의미가 있고 소수점으로 표현되는 데이터
-- 키, 몸무게, 나이
-- 데이터 수집 방법에 따라 데이터 타입이 다를 수 있음
-    - 29살, 18살: 연속형 데이터
-    - 20대, 30대: 순서형 데이터
-
-<br>
-
-
 ## 1. 명목형 데이터(Nominal Data)
 
 - 순서가 없는 범주형 데이터
@@ -74,24 +53,45 @@ permalink: /docs/DE/datatype
 
 <br>
 
-## 3. 구간 데이터(Interval Data)
+## 3. 이산형 데이터(Discrete Data)
 
-- Interval 
+- 연속되지 않는 수치형 데이터
+- 수치적인 의미를 가지나 소수점의 형태로 표현할 수 없는 데이터
+- 사람(1명, 2명..), 불량품(1대, 2대..)
 
-The interval scale contains properties of nominal and ordered data, but the difference between data points can be quantified. This type of data shows both the order of the variables and the exact differences between the variables. They can be added to or subtracted from each other, but not multiplied or divided. For example, 40 degrees is not 20 degrees multiplied by two.
-
-This scale is also characterised by the fact that the number zero is an existing variable. In the ordinal scale, zero means that the data does not exist. In the interval scale, zero has meaning – for example, if you measure degrees, zero has a temperature.
-
-Data points on the interval scale have the same difference between them. The difference on the scale between 10 and 20 degrees is the same between 20 and 30 degrees. This scale is used to quantify the difference between variables, whereas the other two scales are used to describe qualitative values only. Other examples of interval scales include the year a car was made or the months of the year.
-- 데이터의 
 <br>
 
-### 4. 비율 데이터(Radio Data)
+## 4. 연속형 데이터(Continous Data)
 
+- 연속되는 수치형 데이터
+- 수치적으로 의미가 있고 소수점으로 표현되는 데이터
+- 키, 몸무게, 나이
+- 데이터 수집 방법에 따라 데이터 타입이 다를 수 있음
+    - 29살, 18살: 연속형 데이터
+    - 20대, 30대: 순서형 데이터
+
+<br>
+
+## 5. 구간 데이터(Interval Data)
+
+- Interval Data는 nominal data와 ordered data(순서형)의 특성을 가지고 있지만 정량화 할 수 있고 데이터 간의 차이를 수치로 나타낼 수 있습니다.<br>수치끼리 더하거나 뺄 수 있지만 곱하거나 나눌 수는 없습니다. 
+    - ex) 20도 X 2는 40도가 아닙니다.
+- Interval Data의 0이라는 척도는 존재하지 않음을 의미하는 것이 아니라 의미가 있는 데이터로 인지해야 합니다. 
+    - ex) 시간 00:00, 온도 0도
+- 데이터 간격은 동일한 의미를 가집니다.
+    - ex) 12:30-13:00 = 14:15-14:45 (30분)
+
+<br>
+
+### 6. 비율 데이터(Radio Data)
+
+- 비율 데이터 ex) 키, 무게, 높이, 거리 
+- 더하기, 빼기, 곱하기, 나누기 가능
+- 비율데이터의 0은 없음을 의미합니다. (키와 몸무게가 0혹은 음수가 될 수 없음)
 
 ## 정리
 
-요약하자면 명목 척도는 값에 레이블을 지정하거나 설명하는 데 사용됩니다. 
+명목 척도는 값에 레이블을 지정하거나 설명하는 데 사용됩니다. 
 서수 척도는 데이터 포인트의 특정 순서에 대한 정보를 제공하는 데 사용되며 주로 만족도 조사에서 볼 수 있습니다. 
 간격 척도는 순서와 차이점을 이해하는 데 사용됩니다. 
 비율 척도는 동일성, 순서 및 차이에 대한 추가 정보와 함께 각 데이터 포인트 내의 수치적 세부 사항에 대한 분석을 제공합니다.
@@ -99,8 +99,8 @@ Data points on the interval scale have the same difference between them. The dif
 <br>
 <center><img width="650" alt="DT" src="https://user-images.githubusercontent.com/76420201/158094169-c9d295d0-5739-4015-a7a5-39d13c076e2b.PNG" width="110%"></center>
 
+<br>
 
 ## REF
 
-[https://junklee.tistory.com/10](https://junklee.tistory.com/10)<br>
 [https://studyonline.unsw.edu.au/blog/types-of-data](https://studyonline.unsw.edu.au/blog/types-of-data)
