@@ -43,6 +43,8 @@
           url: docs/ML/RandomForest
         - title: Support Vector Machine
           url: docs/ML/SVM
+        - title: K-Nearest Neighbor
+          url: docs/ML/kNN
     - title: "Data Analysys"
       url: "docs/DA"
       children:
