@@ -79,7 +79,7 @@ Entropy는 로그를 사용하기 때문에 조금 더 복잡하고 오래 걸�
 
 <center><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKu6sB7QVhZvaJNbD75WAGmpZZKJwoEV43g&usqp=CAU'></center>
 
-## 마치며
+## 정리
 Decision Tree는 기본적으로 greedy한 알고리즘으로 항상 최적의 트리를 생성하지는 않지만 이러한 Decision Tree는 계산복잡성 대비 좋은 성능을 보입니다.<br>
 Decision Tree 모델을 사용하는 주된 요인은 어떤 feature가 중요한 영향인자인지 직관적으로 확인할 수 있고 어느만큼의 척도로 분류를 했는지 상세한 기준을 파악할 수 있다는 점입니다.
 
