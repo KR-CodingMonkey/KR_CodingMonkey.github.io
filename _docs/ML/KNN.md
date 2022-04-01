@@ -32,9 +32,9 @@ k가 작을 경우 데이터의 직역적 특성을 지나치게 반영하여 ov
 <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAtIiM%2FbtqP4kPIND2%2FDkjRlEnb69KEDKUwXOoYxK%2Fimg.png' width='80%'></center>
 
 ## 최적의 K값
-데이터에 적합한 k를 선택하기 위해서 k의 범위를(ex. 1~100) 지정하고, 각 k에 대하여 KNN알고리즘을 여러 번 실행하여 오차를 가장 작게 하는 k값을 선택합니다.
+데이터에 가장 적합한 k를 선택하기 위해서는 k의 범위를(ex. 1~100) 지정하고, 각 k에 대하여 KNN알고리즘을 여러 번 실행하여 오차를 가장 작게 하는 k값을 선택해야 합니다.
 
-<center><img src='https://i.imgur.com/j4EsgY8.png'></center>
+<center><img src='https://i.imgur.com/j4EsgY8.png' width='70%'></center>
 
 
 ## 장단점
