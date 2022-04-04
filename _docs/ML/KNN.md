@@ -22,17 +22,18 @@ permalink: docs/ML/kNN
 위의 이미지에서 볼 수 있듯이 유사한 데이터 포인트끼리 서로 거리가 가깝다는 것을 알 수 있습니다. KNN은 이러한 가정으로부터 고안된 알고리즘입니다.
 KNN은 주변 이웃의 분포에 따라 예측 결과를 예측하는데 가장 단순한 결정 방식은 다수결(Majority voting)입니다. 이웃들 범주 가운데 빈도 기준 제일 많은 범주로 새 데이터의 범주를 예측하는 것입니다. 만약 k개중에 동률이 발생하면 입력 데이터와 가장 가까운 범주로 예측을 하거나 랜덤으로 하나를 고를 수 있습니다.
 
-다른 방식으로는, 가중합(weighted voting) 방식도 있습니다. 거리(d)가 가까운(=유사도가 높은) 이웃의 정보에 좀 더 가중치를 줍니다. 1/(1+d), 1/(1+d2), exp(−d) 등 단조감소함수이기만 하면 무엇이든 가중치 산출 함수로 쓸 수 있다고 합니다.
+다른 방식으로는, 가중합(weighted voting) 방식도 있습니다. 거리(d)가 가까운(=유사도가 높은) 이웃의 정보에 좀 더 가중치를 줍니다. 1/(1+d), 1/(1+d2), exp(−d) 등 가중치를 통해서 범주를 예측할 수 있습니다.
 
-KNN의 하이퍼파라미터는 `k`(탐색할 이웃 수)와 `거리 측정 방법` 두 가지 입니다. 
-k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어 **overfitting**의 위험이 있습니다.
-반대로, k값이 너무 클 경우 지나치게 ㄴ정규화 되어 **underfitting**의 위험이 있습니다. 아래 그림처럼 k값의 크기에 따라(k=1, k=15) 경계면이 단순해지는 것을 확인할 수 있습니다. 
+KNN의 하이퍼 파라미터는 `k`(탐색할 이웃 수)와 `거리 측정 방법` 두 가지 입니다. 
+k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어 **overfitting**의 위험이 있고, 
+반대로, k값이 너무 클 경우 지나치게 정규화 되어 **underfitting**의 위험이 있습니다. 아래 그림처럼 k값의 크기에 따라(k=1, k=15) 경계면이 단순해지는 것을 확인할 수 있습니다. 
 
 <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAtIiM%2FbtqP4kPIND2%2FDkjRlEnb69KEDKUwXOoYxK%2Fimg.png' width='80%'></center>
 
-데이터 포인트 간의 거리 측정 방법은 여러가지 있지만, 일반적으로 대중적인 유클리디안 거리를 많이 사용합니다. (거리 지표: Euclidean Distance,  Manhattan Distance, Mahalanobis Distance etc.)  
-    - 유클리디안 거리: n차원의 공간에서 두 점간의 거리를 알아내는 방식
-    <center><img src = 'https://blog.kakaocdn.net/dn/bzaX5W/btq3VhZfXT8/gHEF9bYkeHpk9M6cljgKsK/img.png' ></center>
+데이터 포인트 간의 거리 측정 방법은 여러가지 있지만, 일반적으로 대중적인 유클리디안 거리를 많이 사용합니다. (거리 지표: Euclidean Distance,  Manhattan Distance, Mahalanobis Distance etc.)
+
+- 유클리디안 거리: n차원의 공간에서 두 점간의 거리를 알아내는 방식
+<center><img src = 'https://blog.kakaocdn.net/dn/bzaX5W/btq3VhZfXT8/gHEF9bYkeHpk9M6cljgKsK/img.png' ></center>
 
 
 ## 최적의 K값
