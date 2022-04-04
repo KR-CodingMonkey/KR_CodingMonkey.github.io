@@ -30,6 +30,8 @@ k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어
 <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAtIiM%2FbtqP4kPIND2%2FDkjRlEnb69KEDKUwXOoYxK%2Fimg.png' width='80%'></center>
 
 데이터 포인트 간의 거리 측정 방법은 여러가지 있지만, 일반적으로 대중적인 유클리디안 거리를 많이 사용합니다. (거리 지표: Euclidean Distance,  Manhattan Distance, Mahalanobis Distance etc.)  
+    - 유클리디안 거리: n차원의 공간에서 두 점간의 거리를 알아내는 방식
+    <center><img src = 'https://blog.kakaocdn.net/dn/bzaX5W/btq3VhZfXT8/gHEF9bYkeHpk9M6cljgKsK/img.png' ></center>
 
 
 ## 최적의 K값
@@ -49,7 +51,7 @@ k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어
 
 
 ## 정리
-데이터 양이 증가함에 따라 상당히 느려진다는KNN의 주요 단점은 빠르게 예측을 해야 하는 환경에서 비실용적인 방안일 수 있습니다. 그러나 예측에 사용하는 데이터를 신속하게 처리할 수 있는 충분한 커퓨팅 리소스가 있는 경우 KNN은 유사한 개체 식별이 필요한 솔루션에 여전히 쓸만합니다. 
+KNN 알고리즘은 분류, 회귀 문제를 해결하는데 사용할 수 있는 간단한 머신러닝 알고리즘입니다. 구현하고 이해하기 쉽지만 데이터 양이 많아질수록 속도가 크게 느려진다는 KNN의 단점은 빠르게 예측을 해야 하는 환경에서 비실용적인 방안일 수 있습니다. 그러나 예측에 사용하는 데이터를 신속하게 처리할 수 있는 충분한 컴퓨팅 리소스가 있는 경우 KNN은 유사한 개체 식별이 요구되는 솔루션에는 여전히 쓸만합니다. 
 
 ## KNN 수행시 주의점
 
