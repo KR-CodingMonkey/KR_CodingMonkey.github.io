@@ -26,7 +26,7 @@ KNN은 주변 이웃의 분포에 따라 예측 결과를 예측하는데 가장
 
 KNN의 하이퍼파라미터는 `k`(탐색할 이웃 수)와 `거리 측정 방법` 두 가지 입니다. 
 k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어 **overfitting**의 위험이 있습니다.
-반대로, k값이 너무 클 경우 지나치게 정규화 되어 **underfitting**의 위험이 있습니다. 아래 그림처럼 k값의 크기에 따라(k=1, k=15) 경계면이 단순해지는 것을 확인할 수 있습니다. 
+반대로, k값이 너무 클 경우 지나치게 ㄴ정규화 되어 **underfitting**의 위험이 있습니다. 아래 그림처럼 k값의 크기에 따라(k=1, k=15) 경계면이 단순해지는 것을 확인할 수 있습니다. 
 
 <center><img src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAtIiM%2FbtqP4kPIND2%2FDkjRlEnb69KEDKUwXOoYxK%2Fimg.png' width='80%'></center>
 
@@ -54,8 +54,3 @@ k값이 작을 경우 데이터의 직역적 특성에 민감하게 반영되어
 
 ## 정리
 KNN 알고리즘은 분류, 회귀 문제를 해결하는데 사용할 수 있는 간단한 지도학습 머신러닝 알고리즘입니다. 구현하고 이해하기 쉽지만 데이터 양이 많아질수록 속도가 크게 느려진다는 KNN의 단점은 빠르게 예측을 해야 하는 환경에서 비실용적인 방안일 수 있습니다. 그러나 예측에 사용하는 데이터를 신속하게 처리할 수 있는 충분한 컴퓨팅 리소스가 있는 경우 KNN은 유사한 개체 식별이 요구되는 솔루션에서 여전히 잘 사용되고 있다고 합니다. 
-
-
-## Reference
-https://m.blog.naver.com/bestinall/221760380344
-https://ratsgo.github.io/machine%20learning/2017/04/17/KNN/
