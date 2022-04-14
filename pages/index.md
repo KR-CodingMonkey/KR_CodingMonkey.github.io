@@ -7,20 +7,21 @@ permalink: /
 ## 데이터 엔지니어
 
 [업무]
-- 서비스 데이터 추출/분석
+- 서비스 데이터 추출 및 분석
+- ML 피처 개발
 - 데이터 분석 업무의 효율화를 위한 데이터 가공/추출 관련 개발
-- 의사결정과 인사이트 도출을 위한 데이터웨어하우징/시각화/배치 파이프라인 운영
-- A/B 테스트 데이터 파이프라인 운영
+- 의사결정과 인사이트 도출을 위한 데이터웨어하우징/시각화/배치 파이프라인 개발 및 운영
+- A/B 테스트 데이터 파이프라인 개발 및 운영
 
-[신입에게 바랍니다]
-- SQL(HQL)을 활용한 데이터 가공/추출이 능숙한 분이면 좋습니다.
-- Hadoop Eco-system에 대한 기본적인 이해가 있는 분이면 좋습니다.
-- 데이터 분석과 추출을 위한 Python, Scala, Git VCS에 대한 활용 능력이 있는 분이면 좋습니다.
+[신에게 바랍니다.]
+- SQL(HQL)을 활용한 데이터 가공/추출이 능숙한 분
+- Hadoop ecosystem, Spark 에 대한 기본적인 이해가 있는 분
+- 데이터 분석과 추출을 위한 Python, Scala, Git VCS에 대한 활용 능력이 있는 분
 
-[필수는 아니지만 아래의 경험이 있으시면 좋습니다]
-- Cohort 분석과 Funnel 분석 등 마케팅 관련 데이터 분석 기법에 대한 경험이 있는 분이면 좋습니다.
-- 데이터 분산처리 관련 기술을 활용한 로그데이터 파이프라인 Flow에 대한 이해가 있는 분이면 좋습니다.
- (Kafka/Hadoop/Redis/MongoDB/Elasticsearch/Cassandra 등)
+[필수는 아니지만 아래의 경험이 있으시면 좋아요.]
+- Cohort 분석과 funnel 분석 등 마케팅 관련 데이터 분석 기법에 대한 경험이 있으면 좋아요.
+- 데이터 분산처리 관련 기술을 활용한 로그데이터 파이프라인 flow에 대한 이해가 있으면 좋아요.
+(Kafka, Hadoop, Redis, MongoDB, Elasticsearch, Cassandra 등)
 
 <!-- This is a starter template for a docsy jekyll theme.
 
