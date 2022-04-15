@@ -35,7 +35,7 @@
         - title: Data Type
           url: docs/DE/datatype
         - title: CAP 이론
-          url: /docs/DE/CAP
+          url: docs/DE/CAP
     - title: "Machine Learning"
       url: "docs/ML"
       children:
