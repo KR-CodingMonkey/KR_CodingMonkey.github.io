@@ -18,7 +18,7 @@ permalink: /docs/DE/table
 - 데이터 웨어하우스 혹은 데이터 레이크 구축 시, 원천테이블의 종류와  특성을 파악하고 설계하는 것이 중요합니다.
 - 데이터베이스 개발 중에는 Master Table과 Transaction Table을 식별하여 어떻게 상호작용이 일어나는지 이해하는 것 또한 중요합니다. 
 
-<center><img src="https://metamug.com/article/images/differ-master-vs-transaction-table.svg" width = '60%'></center><br>
+<center><img src="https://metamug.com/article/images/differ-master-vs-transaction-table.svg"></center><br>
 
 
 ## Master Table
