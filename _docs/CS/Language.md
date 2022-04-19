@@ -58,14 +58,15 @@ permalink: docs/CS/Programming_Language
 ---
 
 ### 오버라이딩(Overriding) / 오버로딩(Overloading)
-- 완전히 다른 개념이지만 이름이 헷갈림
+완전히 다른 개념이지만 이름이 헷갈림
 
 - 오버라이딩(Overriding)
     - 클래스의 상속 시 부모 클래스에서 정의한 메소드를 자식 클래스에서 변경하는 것
+<br/>
 
 - 오버로딩(Overloading)
     - 동일한 이름의 함수를 매개변수에 따라 다른 기능으로 동작하는 것 (다형성)
-    
+
 <br/>
 
 ---
