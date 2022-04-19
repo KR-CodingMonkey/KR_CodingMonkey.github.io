@@ -52,6 +52,9 @@ permalink: docs/CS/Programming_Language
 
 ### Python Standard Sorting Algorithm
 - Timsort: 삽입정렬 + 병합정렬
+- 평균 시간복잡도, 최악의 경우 시간 복잡도 = O(nlogn)
+- Timsort는 정렬 아고리즘의 단점을 최대한 극복하기 위해 고안된 알고리즘
+- python, java, swift 등 많은 프로그래밍 언어에서 표준 정렬 알고리즘으로 사용됨
 
 <br/>
 
