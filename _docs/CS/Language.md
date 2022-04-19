@@ -70,3 +70,16 @@ permalink: docs/CS/Programming_Language
 <br/>
 
 ---
+
+
+### GIL, Global Interpreter Lock
+
+- 파이썬 인터프리터가 하나의 Thread만 하나의 하나의 바이트 코드를 실행 시킬 수 있도록 해주는 장치
+
+<center><img src = 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAMe0O%2FbtqHOZLSxjm%2Fg3KOLQOBuZAFZQ5tz5OrK0%2Fimg.png' width='50%'></center>
+
+위 그림은 python에서 3개의 Thread가 동작하는 예시인데
+
+<br/>
+
+---
