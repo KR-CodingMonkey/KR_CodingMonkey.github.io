@@ -74,11 +74,17 @@ permalink: docs/CS/Programming_Language
 
 ### GIL, Global Interpreter Lock
 
-- 파이썬 인터프리터가 하나의 Thread만 하나의 하나의 바이트 코드를 실행 시킬 수 있도록 해주는 장치
+- 파이썬 인터프리터가 하나의 Thread만 하나의 바이트 코드를 실행 시킬 수 있도록 해주는 장치
+- 하나의 Thread에 모든 자원을 할당하고 Lock을 걸어서 다른 Thread를 실행할 수 없게 막음
 
 <center><img src = 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAMe0O%2FbtqHOZLSxjm%2Fg3KOLQOBuZAFZQ5tz5OrK0%2Fimg.png' width='50%'></center>
 
-위 그림은 python에서 3개의 Thread가 동작하는 예시인데
+위 그림은 python에서 3개의 Thread가 동작하는 예시인데, 하나의 Thread가 동작할 때 다른 Thread들은 동작을 멈추게 됩니다.
+
+<br>
+
+**Global Interpreter Lock을 쓰는 이유**
+python에서는 메모리 관리를 garbage collection과 reference counting을 통해서 하게 됩니다.
 
 <br/>
 
