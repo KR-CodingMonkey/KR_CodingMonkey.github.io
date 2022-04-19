@@ -42,7 +42,6 @@ permalink: /docs/DE/CAP
 
 ## SQL vs NoSQL
 
-관계형 데이터베이스(RDBMS)은 일관성(C)와 가용성(A)를 챙기고, 분단 허용성(P)를 포기하는 형태인 CA시스템이다. 
-같은 경우 동시에 다량의 서버를 운용하는 클러스터링에 적합하지 않는다.
+- 관계형 데이터베이스(RDBMS)은 일관성(C)와 가용성(A)를 챙기고, 분단 허용성(P)를 포기하는 형태인 CA시스템이기 때문에 다량의 서버를 운용하는 클러스터링에 적합하지 않는다.
 
-[dfsf](https://dongwooklee96.github.io/post/2021/03/26/cap-%EC%9D%B4%EB%A1%A0%EC%9D%B4%EB%9E%80/)
+- 대부분의 NoSQL 데이터베이스는 CA가 아닌 CP나 AP시스템이다.
