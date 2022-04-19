@@ -40,7 +40,7 @@ permalink: /docs/DE/CAP
 - DynamoDB, Cassandra.. 
 
 
-## SQL vs NoSQL
+## SQL / NoSQL
 
 - 관계형 데이터베이스(RDBMS)은 일관성(C)와 가용성(A)를 챙기고, 분단 허용성(P)를 포기하는 형태인 CA시스템이기 때문에 다량의 서버를 운용하는 클러스터링에 적합하지 않는다.
 
