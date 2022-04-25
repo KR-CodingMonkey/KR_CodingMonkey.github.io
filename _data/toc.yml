@@ -7,7 +7,10 @@
     - title: 운영체제(OS)
       url: "docs/CS/OS"
     - title: 개발언어(python)
-      url: docs/CS/Programming_Language
+      url: docs/CS/Python
+      childern:
+        - title: Pythom Memory
+          url: docs/CS/Python/memory
     - title: 자료구조
       url: docs/CS/DataStructure
       children:

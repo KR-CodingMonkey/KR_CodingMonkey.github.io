@@ -4,7 +4,7 @@ tags:
  - python
  - programming
 description: 개발언어(Python)
-permalink: docs/CS/Programming_Language
+permalink: docs/CS/Python
 ---
 
 # 개발언어 (Python)
@@ -88,7 +88,7 @@ permalink: docs/CS/Programming_Language
 **Global Interpreter Lock을 쓰는 이유**
 
 python에서는 메모리 관리를 garbage collection과 reference counting을 통해서 하게 됩니다.
-
+https://ssungkang.tistory.com/entry/python-GIL-Global-interpreter-Lock%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C
 <br/>
 
 ---
@@ -96,4 +96,11 @@ python에서는 메모리 관리를 garbage collection과 reference counting을 
 ### 가비지 컬렉션, 컬렉터(Garbage Collection, GC)
 
 - 메모리 관리 방법 중 하나로, 시스템에서 더이상 사용하지 않는 동적메모리 블럭을 찾아가 자동으로 다시 사용 가능한 자원으로 회수하는 것
-- 시스템에서 가비지컬렉션을 수행하는 부분을 가비지 컬렉터(Garbage Collector)라고 부름
+- 시스템에서 가비지 컬렉션을 수행하는 부분을 가비지 컬렉터(Garbage Collector)라고 부름
+
+프로그램은 실행될 때 메모리를 관리하는 OS에 필요한 메모리를 요청합니다. 이때 OS는 프로그램 실행에 필요한 메모리를 어디에 저장할지 그 주소를 할당해줍니다.
+
+기존에 가리키고 있던 메모리를 새롭게 선언하거나 형변환을 하면서 다른 주소를 가리키게 되어 정리되지 않는 메모리가 생겨버리게 됩니다. 
+이렇게 프로그램이 돌아가면서 메모리 누수가 발생하게 되는데,  파이썬에서는 기본적으로 **레퍼런스 카운팅(Reference Counting)**을 통해 GC를 수행하고 메모리를 관리합니다.
+
+- 레퍼런스 카운팅(Reference Countion): 모든 객체는 참조될 때 레퍼런스 카운트가 증가하고, 참조가 해제될 때 감소된다. 값이 0이 되면 메모리에서 해제
