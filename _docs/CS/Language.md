@@ -74,7 +74,6 @@ permalink: docs/CS/Programming_Language
 
 ---
 
-
 ### GIL, Global Interpreter Lock
 
 - 파이썬 인터프리터가 하나의 Thread만 하나의 바이트 코드를 실행 시킬 수 있도록 해주는 장치
@@ -87,8 +86,14 @@ permalink: docs/CS/Programming_Language
 <br>
 
 **Global Interpreter Lock을 쓰는 이유**
+
 python에서는 메모리 관리를 garbage collection과 reference counting을 통해서 하게 됩니다.
 
 <br/>
 
 ---
+
+### 가비지 컬렉션, 컬렉터(Garbage Collection, GC)
+
+- 메모리 관리 방법 중 하나로, 시스템에서 더이상 사용하지 않는 동적메모리 블럭을 찾아가 자동으로 다시 사용 가능한 자원으로 회수하는 것
+- 시스템에서 가비지컬렉션을 수행하는 부분을 가비지 컬렉터(Garbage Collector)라고 부름
