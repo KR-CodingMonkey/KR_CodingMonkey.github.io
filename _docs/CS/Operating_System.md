@@ -15,7 +15,7 @@ permalink: /docs/CS/OS
 
 운영체제란 컴퓨터 하드웨어 바로 윗단에 설치되는 소프트웨어를 말한다.
 
-<center><img src = "https://camo.githubusercontent.com/48fa22ffe1a5a518a734aca3ba8c3ba2763eb862936ecdc57f077ed5c8cc756a/68747470733a2f2f6b2e6b616b616f63646e2e6e65742f646e2f626a686164532f627471766e473438774c672f43424a4e644f614a6144415a6c7430724b356a4d52312f696d672e706e67" width="70%"></center>
+<center><img src = "https://camo.githubusercontent.com/48fa22ffe1a5a518a734aca3ba8c3ba2763eb862936ecdc57f077ed5c8cc756a/68747470733a2f2f6b2e6b616b616f63646e2e6e65742f646e2f626a686164532f627471766e473438774c672f43424a4e644f614a6144415a6c7430724b356a4d52312f696d672e706e67" width="40%"></center>
 
 기능 
 - 컴퓨터 시스템 내의 자원을 효율적으로 관리하는 것
