@@ -81,15 +81,16 @@ permalink: docs/CS/Python
 
 <center><img src = 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbAMe0O%2FbtqHOZLSxjm%2Fg3KOLQOBuZAFZQ5tz5OrK0%2Fimg.png' width='50%'></center>
 
-위 그림은 python에서 3개의 Thread가 동작하는 예시인데, 하나의 Thread가 동작할 때 다른 Thread들은 동작을 멈추게 됩니다.
+위 그림은 python에서 3개의 Thread가 동작하는 예시인데, 하나의 Thread가 동작할 때 다른 Thread들은 동작을 멈추게 됩니다.<br>
+
 
 <br>
 
 **Global Interpreter Lock을 쓰는 이유**
 
-python에서는 메모리 관리를 garbage collection과 reference counting을 통해서 하게 됩니다.
-https://ssungkang.tistory.com/entry/python-GIL-Global-interpreter-Lock%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C
+python에서는 garbage collection과 reference counting을 통해 메모리를 관리합니다. ([파이썬 메모리](CS/Python/memory) 참고) 
 
+따라서 파이썬의 모든 객체는 reference count를 통해 변수가 참조된 수를 저장하고 있는데, 멀티스레드를 사용할 경우 여러 스레드가 동시에 하나의 객체에 접근하게 되는 경우가 발생하고, 이런 상황을 대비하기 위해 GIL을 사용하게 됩니다. 
 <br/>
 
 ---
@@ -105,3 +106,7 @@ https://ssungkang.tistory.com/entry/python-GIL-Global-interpreter-Lock%EC%9D%80-
 이렇게 프로그램이 돌아가면서 메모리 누수가 발생하게 되는데,  파이썬에서는 기본적으로 **레퍼런스 카운팅(Reference Counting)**을 통해 GC를 수행하고 메모리를 관리합니다.
 
 - 레퍼런스 카운팅(Reference Countion): 모든 객체는 참조될 때 레퍼런스 카운트가 증가하고, 참조가 해제될 때 감소된다. 값이 0이 되면 메모리에서 해제
+
+
+
+https://ssungkang.tistory.com/entry/python-GIL-Global-interpreter-Lock%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C
