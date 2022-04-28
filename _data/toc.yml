@@ -13,6 +13,8 @@
           url: docs/CS/DataStructure/Tree
         - title: 그래프(Graph)
           url: docs/CS/DataStructure/Graph
+        - title: Python Memory
+          url: docs/CS/Python/memory
     - title: 개발언어(python)
       url: docs/CS/Python
       childern:
