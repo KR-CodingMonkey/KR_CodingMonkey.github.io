@@ -88,7 +88,7 @@ permalink: docs/CS/Python
 
 **Global Interpreter Lock을 쓰는 이유**
 
-python에서는 garbage collection과 reference counting을 통해 메모리를 관리합니다. ([파이썬 메모리](CS/Python/memory) 참고) 
+python에서는 garbage collection과 reference counting을 통해 메모리를 관리합니다. ([파이썬 메모리](Python/memory) 참고) 
 
 따라서 파이썬의 모든 객체는 reference count를 통해 변수가 참조된 수를 저장하고 있는데, 멀티스레드를 사용할 경우 여러 스레드가 동시에 하나의 객체에 접근하게 되는 경우가 발생하고, 이런 상황을 대비하기 위해 GIL을 사용하게 됩니다. 
 <br/>
