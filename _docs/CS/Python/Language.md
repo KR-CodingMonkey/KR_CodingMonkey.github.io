@@ -89,6 +89,7 @@ permalink: docs/CS/Python
 
 python에서는 메모리 관리를 garbage collection과 reference counting을 통해서 하게 됩니다.
 https://ssungkang.tistory.com/entry/python-GIL-Global-interpreter-Lock%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C
+
 <br/>
 
 ---
